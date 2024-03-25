@@ -1,0 +1,464 @@
+
+:root {
+    /* Color styles */
+    --gray-fig: #ECEBE9;
+    --black-banana: #000000;
+    --black-strawberry: #2E2D33;
+    --white-avocado: #FAF9F6;
+    --liliac-tangerine: #DAC4F7;
+    --yellow-grape: #F8D047;
+    --green-peach: #0BA85B;
+    --orange-kiwi: #FD8040;
+
+    --dug-black: #39383F;
+    --dug-gray: #9891A1;
+
+    --bamp-w-grigino-chiaro: #E4E4E7;
+    --bamp-w-grigio-titolo: #DCDCE0;
+    --bamp-w-grigio-medio: #C5C4CB;
+    --bamp-w-grigio-scuro: #6C6A78;
+    --bamp-w-grigio-scuro-card: #1D1C22;
+
+    /*bootstrap customized*/
+    --bs-border-color: var(--black-banana) !important;
+    --bs-body-color: var(--black-strawberry) !important;
+
+    /*border*/
+    --bs-border-radius-075: 0.75rem;
+}
+
+.rounded-075{
+    border-radius: var(--bs-border-radius-075) !important;
+}
+
+/*h1*/
+.text-style-h1 {
+     font-size: 2.5rem;
+     font-family: Brice, serif;
+     font-weight: 900;
+     font-style: normal;
+     line-height: 100%;
+     text-decoration: none;
+     text-transform: uppercase;
+ }
+@media (min-width: 576px) {
+    .text-style-h1 {
+        font-size: 3.5rem;
+        font-family: Brice, serif;
+        font-weight: 900;
+        font-style: normal;
+        line-height: 100%;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+/*h2*/
+.text-style-h2 {
+    font-size: 2rem;
+    font-family: Brice, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+@media (min-width: 576px) {
+    .text-style-h2 {
+        font-size: 2.5rem;
+        font-family: Brice, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 100%;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+/*h3*/
+.text-style-h3 {
+    font-size: 1.5rem;
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 100%;
+    text-decoration: none;
+    text-transform: none;
+}
+@media (min-width: 576px) {
+    .text-style-h3 {
+        font-size: 2rem;
+        font-family: Space Grotesk;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 100%;
+        text-decoration: none;
+        text-transform: none;
+    }
+}
+
+/*h4*/
+.text-style-h4 {
+    font-size: 1.25rem;
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 100%;
+    text-decoration: none;
+    text-transform: none;
+}
+@media (min-width: 576px) {
+    .text-style-h4 {
+        font-size: 1.5rem;
+        font-family: Space Grotesk;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 24px;
+        text-decoration: none;
+        text-transform: none;
+    }
+}
+
+/*h5*/
+.text-style-h5 {
+    font-size: 1rem;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 100%;
+    text-decoration: none;
+    text-transform: none;
+}
+@media (min-width: 576px) {
+    .text-style-h5 {
+        font-size: 1.125rem;
+        font-family: Space Grotesk;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 125%;
+        text-decoration: none;
+        text-transform: none;
+    }
+}
+
+/*h5-regular*/
+.text-style-h5-regular {
+    font-size: 1rem;
+    font-family: Space Grotesk;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    text-decoration: none;
+    text-transform: none;
+}
+@media (min-width: 576px) {
+    .text-style-h5-regular {
+        font-size: 1.125rem;
+        font-family: Space Grotesk;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 125%;
+        text-decoration: none;
+        text-transform: none;
+    }
+}
+
+/*body-copy*/
+.text-style-body-copy {
+    font-size: 1rem;
+    font-family: Space Grotesk;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 110%;
+    text-decoration: none;
+    text-transform: none;
+}
+@media (min-width: 576px) {
+    .text-style-body-copy {
+        font-size: 1.125rem;
+        font-family: Space Grotesk;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 125%;
+        text-decoration: none;
+        text-transform: none;
+    }
+}
+
+/*body-copy-small*/
+.text-style-body-copy-small {
+    font-size: 0.875rem;
+    font-family: Space Grotesk;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 110%;
+    text-decoration: none;
+    text-transform: none;
+}
+@media (min-width: 576px) {
+    .text-style-body-copy-small {
+        font-size: 1rem;
+        font-family: Space Grotesk;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 125%;
+        text-decoration: none;
+        text-transform: none;
+    }
+}
+
+/*button*/
+.text-style-body-copy-small {
+    font-size: 1.125rem;
+    font-family: Space Grotesk;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    text-decoration: none;
+    text-transform: none;
+}
+@media (min-width: 576px) {
+    .text-style-button {
+        font-size: 1.25rem;
+        font-family: Space Grotesk;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 100%;
+        text-decoration: none;
+        text-transform: none;
+    }
+}
+
+/*header-footer*/
+.text-style-header-footer {
+    font-size: 1.125rem;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 100%;
+    text-decoration: none;
+    text-transform: none;
+}
+@media (min-width: 576px) {
+    .text-style-header-footer {
+        font-size: 1.25rem;
+        font-family: Space Grotesk;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 100%;
+        text-decoration: none;
+        text-transform: none;
+    }
+}
+
+ /*
+Non sono sicuro dove queste verranno usate, quindi aspetto a sistemarle
+
+.text-style-desktop-titolo-tendina {
+    font-size: 1.25rem;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 100%;
+    text-decoration: none;
+    text-transform: none;
+}
+.text-style-desktop-b-w-h-2 {
+    font-size: 2.5rem;
+    font-family: Good Times;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.text-style-desktop-b-w-h-4 {
+    font-size: 1.25rem;
+    font-family: Good Times;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+.text-style-desktop-b-w-body-copy {
+    font-size: 1.125rem;
+    font-family: Space Mono;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 125%;
+    text-decoration: none;
+    text-transform: none;
+}
+.text-style-desktop-b-w-button {
+    font-size: 1.25rem;
+    font-family: Space Mono;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    text-decoration: none;
+    text-transform: none;
+}
+.text-style-desktop-b-w-h-3 {
+    font-size: 2rem;
+    font-family: Good Times;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    text-decoration: none;
+    text-transform: none;
+}
+.text-style-desktop-b-w-h-1 {
+    font-size: 3.5rem;
+    font-family: Good Times;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+
+.text-style-mobile-titolo-tendina {
+    font-size: 1.125rem;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 100%;
+    text-decoration: none;
+    text-transform: none;
+}
+.text-style-mobile-b-w-body-copy {
+    font-size: 1rem;
+    font-family: Space Mono;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 110%;
+    text-decoration: none;
+    text-transform: none;
+}
+.text-style-mobile-b-w-h-4 {
+    font-size: 1.125rem;
+    font-family: Good Times;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 105%;
+    text-decoration: none;
+    text-transform: none;
+}
+.text-style-mobile-b-w-button {
+    font-size: 1.125rem;
+    font-family: Space Mono;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    text-decoration: none;
+    text-transform: none;
+}
+.text-style-mobile-b-w-h-3 {
+    font-size: 1.5rem;
+    font-family: Good Times;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.text-style-mobile-b-w-h-2 {
+    font-size: 2rem;
+    font-family: Good Times;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.text-style-mobile-b-w-h-1 {
+    font-size: 2.5rem;
+    font-family: Good Times;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+*/
+
+
+
+/*ombre*/
+.effect-style-default-shadow {
+    box-shadow: 4px 4px 0px #000000;
+}
+.effect-style-pressed-shadow {
+    box-shadow: 2px 2px 0px #000000;
+}
+.effect-style-dug-up {
+    box-shadow: -2px -10px 10px #000000;
+}
+.effect-style-dug-down {
+    box-shadow: -2px 10px 10px #000000;
+}
+.effect-style-dug-right {
+    box-shadow: 10px 0px 10px #000000;
+}
+.effect-style-dug-left {
+    box-shadow: -10px 0px 10px #000000;
+}
+.effect-style-scavato-card-mate-sinistra {
+    box-shadow: -10px 0px 10px #000000;
+}
+.effect-style-scavato-card-mate-sopra {
+    box-shadow: 0px -10px 10px #000000;
+}
+
+
+
+.sl-bg-avocado{
+    background-color: var(--white-avocado);
+}
+
+
+
+
+/*navbar*/
+.navbar-brand img{
+    width: 197px;
+    height: 21px;
+}
+@media (min-width: 576px) {
+    .navbar-brand img{
+        width: 358px;
+        height: 38px;
+    }
+}
+
+.nav-link {
+    font-size: 1.125rem;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 100%;
+    text-decoration: none;
+    text-transform: none;
+}
+.nav-link:hover{
+    color: var(--orange-kiwi);
+}
+.active{
+    color: var(--orange-kiwi) !important;
+}
+@media (min-width: 576px) {
+    .nav-link {
+        font-size: 1.25rem;
+        font-family: Space Grotesk;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 100%;
+        text-decoration: none;
+        text-transform: none;
+    }
+}
+
