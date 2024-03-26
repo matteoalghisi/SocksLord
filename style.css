@@ -36,8 +36,7 @@
 
 @font-face{
     font-family: 'Brice';
-    src: url('font/brice_font/brice-black-webfont.woff') format('woff');
-    src: url('font/brice_font/brice-black-webfont.woff2') format('woff2');
+    src: url('font/brice_font/Brice-Black.ttf');
 }
 
 
