@@ -33,19 +33,18 @@
 }
 
 /*inserimento font Brice*/
-
 @font-face{
-    font-family: 'Brice';
-    src: url('font/brice_font/Brice-Black.ttf');
+    font-family: Brice;
+    src: url(font/brice_font/Brice-Black.ttf);
 }
 
 
 /*h1*/
 .text-style-h1 {
      font-size: 2.5rem;
-     font-family: 'Brice', serif;
+     font-family: Brice, serif;
      font-weight: 900;
-     font-style: normal;
+     font-style:normal;
      line-height: 100%;
      text-decoration: none;
      text-transform: uppercase;
@@ -429,6 +428,10 @@ Non sono sicuro dove queste verranno usate, quindi aspetto a sistemarle
     background-color: var(--white-avocado);
 }
 
+.sl-bg-strawberry {
+    background-color: var(--black-strawberry);
+}
+
 
 
 
@@ -445,13 +448,14 @@ Non sono sicuro dove queste verranno usate, quindi aspetto a sistemarle
 }
 
 .nav-link {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     font-family: Space Grotesk;
     font-weight: 500;
     font-style: normal;
     line-height: 100%;
     text-decoration: none;
     text-transform: none;
+    color: var(--black-strawberry);
 }
 .nav-link:hover{
     color: var(--orange-kiwi);
@@ -459,9 +463,9 @@ Non sono sicuro dove queste verranno usate, quindi aspetto a sistemarle
 .active{
     color: var(--orange-kiwi) !important;
 }
-@media (min-width: 576px) {
+@media only screen and (min-width: 576px) {
     .nav-link {
-        font-size: 1.25rem;
+        font-size: 1.125rem;
         font-family: Space Grotesk;
         font-weight: 500;
         font-style: normal;
