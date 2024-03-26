@@ -448,7 +448,7 @@ Non sono sicuro dove queste verranno usate, quindi aspetto a sistemarle
 }
 
 .nav-link {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-family: Space Grotesk;
     font-weight: 500;
     font-style: normal;
@@ -465,7 +465,7 @@ Non sono sicuro dove queste verranno usate, quindi aspetto a sistemarle
 }
 @media only screen and (min-width: 576px) {
     .nav-link {
-        font-size: 1.125rem;
+        font-size: 1.25rem; 
         font-family: Space Grotesk;
         font-weight: 500;
         font-style: normal;
