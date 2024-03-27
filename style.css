@@ -474,4 +474,31 @@ Non sono sicuro dove queste verranno usate, quindi aspetto a sistemarle
         text-transform: none;
     }
 }
-
+.navbar-toggler-icon {
+    background-image: url("img/icon/Hamburger.svg");
+    background-size: 100%;
+    background-position: center center;
+    width: 30px;
+    height: 30px;
+    display: flex;
+ }
+ @media only screen and (min-width: 576px){
+    .navbar-toggler-icon{
+        width: 40px;
+        height: 40px;
+     }
+}
+.cart-icon {
+    background-image: url("img/icon/Sacchetto-default.svg");
+    background-size: 100%;
+    background-position: center center;
+    width: 30px;
+    height: 30px;
+    display: flex;
+ }
+ @media only screen and (min-width: 576px){
+    .cart-icon{
+        width: 40px;
+        height: 40px;
+     }
+}
