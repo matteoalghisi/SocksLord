@@ -23,6 +23,7 @@
     /*bootstrap customized*/
     --bs-border-color: var(--black-banana) !important;
     --bs-body-color: var(--black-strawberry) !important;
+    --bs-link-color-rgb: var(--black-strawberry) !important;
 
     /*border*/
     --bs-border-radius-075: 0.75rem;
@@ -216,8 +217,8 @@
 }
 
 /*button*/
-.text-style-body-copy-small {
-    font-size: 1.125rem;
+.text-style-button {
+    font-size: 0.875rem;
     font-family: Space Grotesk;
     font-weight: 400;
     font-style: normal;
@@ -503,4 +504,14 @@ Non sono sicuro dove queste verranno usate, quindi aspetto a sistemarle
         height: 38px;
     }
     
+}
+
+
+
+
+
+/*footer*/
+.footer-icon{
+    width: 40px;
+    height: 40px;
 }
