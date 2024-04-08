@@ -23,6 +23,7 @@
     /*bootstrap customized*/
     --bs-border-color: var(--black-banana) !important;
     --bs-body-color: var(--black-strawberry) !important;
+    --bs-link-color-rgb: var(--black-strawberry) !important;
 
     /*border*/
     --bs-border-radius-075: 0.75rem;
@@ -216,8 +217,8 @@
 }
 
 /*button*/
-.text-style-body-copy-small {
-    font-size: 1.125rem;
+.text-style-button {
+    font-size: 0.875rem;
     font-family: Space Grotesk;
     font-weight: 400;
     font-style: normal;
@@ -440,13 +441,6 @@ Non sono sicuro dove queste verranno usate, quindi aspetto a sistemarle
     width: 197px;
     height: 21px;
 }
-@media (min-width: 576px) {
-    .navbar-brand img{
-        width: 358px;
-        height: 38px;
-    }
-}
-
 .nav-link {
     font-size: 1.125rem;
     font-family: Space Grotesk;
@@ -463,7 +457,28 @@ Non sono sicuro dove queste verranno usate, quindi aspetto a sistemarle
 .active{
     color: var(--orange-kiwi) !important;
 }
-@media only screen and (min-width: 576px) {
+.navbar-toggler-icon {
+    background-image: url("img/icon/Hamburger.svg");
+    background-size: 100%;
+    background-position: center center;
+    width: 30px;
+    height: 30px;
+    display: flex;
+ }
+.cart-icon {
+    background-image: url("img/icon/Sacchetto-default.svg");
+    background-size: 100%;
+    background-position: center center;
+    width: 30px;
+    height: 30px;
+    display: flex;
+ }
+
+@media (min-width: 576px) {
+    .navbar-brand img{
+        width: 320px;
+        height: 34px;
+    }
     .nav-link {
         font-size: 1.25rem; 
         font-family: Space Grotesk;
@@ -473,5 +488,30 @@ Non sono sicuro dove queste verranno usate, quindi aspetto a sistemarle
         text-decoration: none;
         text-transform: none;
     }
+    .navbar-toggler-icon{
+        width: 40px;
+        height: 40px;
+     }
+     .cart-icon{
+        width: 40px;
+        height: 40px;
+     }
 }
 
+@media (min-width: 768px) {
+    .navbar-brand img{
+        width: 358px;
+        height: 38px;
+    }
+    
+}
+
+
+
+
+
+/*footer*/
+.footer-icon{
+    width: 40px;
+    height: 40px;
+}
