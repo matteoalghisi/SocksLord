@@ -97,7 +97,7 @@
 /*h3*/
 .text-style-h3 {
     font-size: 1.5rem;
-    font-family: Space-Grotesk;
+    font-family: "Space Grotesk";
     font-weight: 700;
     font-style: normal;
     line-height: 100%;
@@ -107,7 +107,7 @@
 @media (min-width: 576px) {
     .text-style-h3 {
         font-size: 2rem;
-        font-family: Space-Grotesk;
+        font-family: "Space Grotesk";
         font-weight: 700;
         font-style: normal;
         line-height: 100%;
@@ -119,7 +119,7 @@
 /*h4*/
 .text-style-h4 {
     font-size: 1.25rem;
-    font-family: Space-Grotesk;
+    font-family: "Space Grotesk";
     font-weight: 700;
     font-style: normal;
     line-height: 100%;
@@ -129,7 +129,7 @@
 @media (min-width: 576px) {
     .text-style-h4 {
         font-size: 1.5rem;
-        font-family: Space-Grotesk;
+        font-family: "Space Grotesk";
         font-weight: 700;
         font-style: normal;
         line-height: 24px;
@@ -141,7 +141,7 @@
 /*h5*/
 .text-style-h5 {
     font-size: 1rem;
-    font-family: Space-Grotesk;
+    font-family: "Space Grotesk";
     font-weight: 500;
     font-style: normal;
     line-height: 100%;
@@ -151,7 +151,7 @@
 @media (min-width: 576px) {
     .text-style-h5 {
         font-size: 1.125rem;
-        font-family: Space-Grotesk;
+        font-family: "Space Grotesk";
         font-weight: 500;
         font-style: normal;
         line-height: 125%;
@@ -163,7 +163,7 @@
 /*h5-regular*/
 .text-style-h5-regular {
     font-size: 1rem;
-    font-family: Space-Grotesk;
+    font-family: "Space Grotesk";
     font-weight: 400;
     font-style: normal;
     line-height: 100%;
@@ -173,7 +173,7 @@
 @media (min-width: 576px) {
     .text-style-h5-regular {
         font-size: 1.125rem;
-        font-family: Space-Grotesk;
+        font-family: "Space Grotesk";
         font-weight: 400;
         font-style: normal;
         line-height: 125%;
@@ -185,7 +185,7 @@
 /*body-copy*/
 .text-style-body-copy {
     font-size: 1rem;
-    font-family: Space-Grotesk;
+    font-family: "Space Grotesk";
     font-weight: 400;
     font-style: normal;
     line-height: 110%;
@@ -195,7 +195,7 @@
 @media (min-width: 576px) {
     .text-style-body-copy {
         font-size: 1.125rem;
-        font-family: Space-Grotesk;
+        font-family: "Space Grotesk";
         font-weight: 400;
         font-style: normal;
         line-height: 125%;
@@ -207,7 +207,7 @@
 /*body-copy-small*/
 .text-style-body-copy-small {
     font-size: 0.875rem;
-    font-family: Space-Grotesk;
+    font-family: "Space Grotesk";
     font-weight: 400;
     font-style: normal;
     line-height: 110%;
@@ -217,7 +217,7 @@
 @media (min-width: 576px) {
     .text-style-body-copy-small {
         font-size: 1rem;
-        font-family: Space-Grotesk;
+        font-family: "Space Grotesk";
         font-weight: 400;
         font-style: normal;
         line-height: 125%;
@@ -229,7 +229,7 @@
 /*button*/
 .text-style-button {
     font-size: 0.875rem;
-    font-family: Space-Grotesk;
+    font-family: "Space Grotesk";
     font-weight: 400;
     font-style: normal;
     line-height: 100%;
@@ -239,7 +239,7 @@
 @media (min-width: 576px) {
     .text-style-button {
         font-size: 1.25rem;
-        font-family: Space-Grotesk;
+        font-family: "Space Grotesk";
         font-weight: 400;
         font-style: normal;
         line-height: 100%;
@@ -251,7 +251,7 @@
 /*header-footer*/
 .text-style-header-footer {
     font-size: 1.125rem;
-    font-family: Space-Grotesk;
+    font-family: "Space Grotesk";
     font-weight: 500;
     font-style: normal;
     line-height: 100%;
@@ -261,7 +261,7 @@
 @media (min-width: 576px) {
     .text-style-header-footer {
         font-size: 1.25rem;
-        font-family: Space-Grotesk;
+        font-family: "Space Grotesk";
         font-weight: 500;
         font-style: normal;
         line-height: 100%;
@@ -271,8 +271,30 @@
 }
 
 /*black and white text styles*/
+/*h1 home*/
+.text-style-bw-h1-home {
+    font-size: 3rem;
+    font-family: Good Times;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+@media (min-width: 576px) {
+    .text-style-bw-h1-home {
+        font-size: 6rem;
+        font-family: Good Times;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 100%;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
 /*h1*/
-.text-style-desktop-bw-h1 {
+.text-style-bw-h1 {
     font-size: 2.5rem;
     font-family: Good Times;
     font-weight: 400;
@@ -282,7 +304,7 @@
     text-transform: uppercase;
 }
 @media (min-width: 576px) {
-    .text-style-desktop-bw-h1 {
+    .text-style-bw-h1 {
         font-size: 3.5rem;
         font-family: Good Times;
         font-weight: 400;
@@ -294,7 +316,7 @@
 }
 
 /*h2*/
-.text-style-desktop-bw-h2 {
+.text-style-bw-h2 {
     font-size: 1.125rem;
     font-family: Good Times;
     font-weight: 400;
@@ -304,7 +326,7 @@
     text-transform: none;
 }
 @media (min-width: 576px) {
-    .text-style-desktop-bw-h2 {
+    .text-style-bw-h2 {
         font-size: 2.5rem;
         font-family: Good Times;
         font-weight: 400;
@@ -316,7 +338,7 @@
 }
 
 /*h3*/
-.text-style-desktop-bw-h3 {
+.text-style-bw-h3 {
     font-size: 1.5rem;
     font-family: Good Times;
     font-weight: 400;
@@ -326,7 +348,7 @@
     text-transform: uppercase;
 }
 @media (min-width: 576px) {
-    .text-style-desktop-bw-h3 {
+    .text-style-bw-h3 {
         font-size: 2rem;
         font-family: Good Times;
         font-weight: 400;
@@ -348,7 +370,7 @@
 
 .text-style-desktop-titolo-tendina {
     font-size: 1.25rem;
-    font-family: Space-Grotesk;
+    font-family: "Space Grotesk";
     font-weight: 500;
     font-style: normal;
     line-height: 100%;
@@ -383,7 +405,7 @@
 
 .text-style-mobile-titolo-tendina {
     font-size: 1.125rem;
-    font-family: Space-Grotesk;
+    font-family: "Space Grotesk";
     font-weight: 500;
     font-style: normal;
     line-height: 100%;
@@ -450,6 +472,154 @@
     background-color: var(--black-strawberry);
 }
 
+/*buttons*/
+/*
+.sl-btn{
+    position: relative; 
+}
+.sl-btn .text{
+  
+    color: var(--black-banana); 
+    padding-right: 16px; 
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.sl-btn .btn-icon{
+    z-index: -1;
+    position: absolute;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    padding-right: 22px;
+    
+    
+    background-color: var(--orange-kiwi);
+    background-image: url(img/icon/Arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+
+.sl-btn:hover .btn-icon{
+    padding-left: 80px;
+    background-position: right;  
+    left: 0;
+}
+*/
+
+/*default button orange*/
+.sl-btn {
+    margin: 16px auto;
+    border: none;
+    padding: 8px 10px 8px 14px;
+    position: relative;
+    text-decoration: none;
+    color: var(--black-strawberry);
+}
+.sl-btn::after {
+    transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
+    content: '';
+    width:  40px;
+    height: 40px;
+    background: var(--orange-kiwi);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 50px;
+}
+.sl-btn .sl-btn-text {
+    display: inline-block;
+    height: 100%;
+    margin-right: 16px;
+    vertical-align: top;
+}
+.sl-btn .sl-btn-icon{
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+.sl-btn:hover{
+    transform: translateX(4px);
+    transform: translatey(-4px);
+    transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
+}
+.sl-btn:hover::after {
+    box-shadow: 4px 4px 0px var(--black-banana);
+    width: 100%;
+}
+.sl-btn:focus{
+    transform: translateX(2px);
+    transform: translatey(-2px);
+    transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
+}
+.sl-btn:focus::after {
+    box-shadow: 2px 2px 0px var(--black-banana);
+    width: 100%;
+}
+
+/*default button bw white*/
+.sl-btn-bw-white {
+    margin: 16px auto;
+    border: none;
+    padding: 8px 10px 8px 14px;
+    position: relative;
+    text-decoration: none;
+    color: var(--white-avocado);
+}
+.sl-btn-bw-white::after {
+    transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
+    content: '';
+    width:  40px;
+    height: 40px;
+    background: var(--white-avocado);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.sl-btn-bw-white .sl-btn-text {
+    display: inline-block;
+    height: 100%;
+    margin-right: 16px;
+    vertical-align: top;
+}
+.sl-btn-bw-white .sl-btn-icon{
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+.sl-btn-bw-white:hover{
+    transform: translateX(4px);
+    transform: translatey(-4px);
+    transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
+}
+.sl-btn-bw-white:hover::after {
+    box-shadow: 4px 4px 0px var(--black-banana);
+    width: 100%;
+}
+.sl-btn-bw-white:hover .sl-btn-text{
+    color: var(--black-strawberry);
+}
+.sl-btn-bw-white:focus{
+    transform: translateX(2px);
+    transform: translatey(-2px);
+    transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
+}
+.sl-btn-bw-white:focus::after {
+    box-shadow: 2px 2px 0px var(--black-banana);
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -460,7 +630,7 @@
 }
 .nav-link {
     font-size: 1.125rem;
-    font-family: Space-Grotesk;
+    font-family: "Space Grotesk";
     font-weight: 500;
     font-style: normal;
     line-height: 100%;
@@ -498,7 +668,7 @@
     }
     .nav-link {
         font-size: 1.25rem; 
-        font-family: Space-Grotesk;
+        font-family: "Space Grotesk";
         font-weight: 500;
         font-style: normal;
         line-height: 100%;
