@@ -649,9 +649,12 @@
         text-decoration: none;
         text-transform: none;
     }
-    .navbar-toggler-icon{
+    .toggler-icon{
         width: 40px;
-        height: 40px;
+        height: 4px;
+     }
+     .middle-bar{
+        margin: 7px auto;
      }
      .cart-icon{
         width: 40px;
