@@ -473,38 +473,6 @@
 }
 
 /*buttons*/
-/*
-.sl-btn{
-    position: relative; 
-}
-.sl-btn .text{
-  
-    color: var(--black-banana); 
-    padding-right: 16px; 
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
-.sl-btn .btn-icon{
-    z-index: -1;
-    position: absolute;
-    padding-top: 12.5px;
-    padding-bottom: 12.5px;
-    padding-right: 22px;
-    
-    
-    background-color: var(--orange-kiwi);
-    background-image: url(img/icon/Arrow-right.svg);
-    background-repeat: no-repeat;
-    background-position: center;  
-}
-
-
-.sl-btn:hover .btn-icon{
-    padding-left: 80px;
-    background-position: right;  
-    left: 0;
-}
-*/
 
 /*default button orange*/
 .sl-btn {
