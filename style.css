@@ -472,8 +472,9 @@
     background-color: var(--black-strawberry);
 }
 
-/*buttons*/
 
+
+/*buttons*/
 /*button genral settings*/
 .sl-btn, .sl-btn-bw-white {
     margin: 16px auto;
@@ -544,62 +545,6 @@
 
 
 
-/*default button bw white*/
-/*
-.sl-btn-bw-white {
-    margin: 16px auto;
-    border: none;
-    padding: 8px 10px 8px 14px;
-    position: relative;
-    text-decoration: none;
-    color: var(--white-avocado);
-}
-.sl-btn-bw-white::after {
-    transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
-    content: '';
-    width:  40px;
-    height: 40px;
-    background: var(--white-avocado);
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    transform: skew(-15deg);
-}
-.sl-btn-bw-white .sl-btn-text {
-    display: inline-block;
-    height: 100%;
-    margin-right: 16px;
-    vertical-align: top;
-}
-.sl-btn-bw-white .sl-btn-icon{
-    height: 100%;
-    display: inline-flex;
-    align-items: center;
-}
-.sl-btn-bw-white:hover{
-    transform: translateX(4px);
-    transform: translatey(-4px);
-    transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
-}
-.sl-btn-bw-white:hover::after {
-    box-shadow: 4px 4px 0px var(--black-banana);
-    width: 100%;
-}
-.sl-btn-bw-white:hover .sl-btn-text{
-    color: var(--black-strawberry);
-}
-.sl-btn-bw-white:focus{
-    transform: translateX(2px);
-    transform: translatey(-2px);
-    transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
-}
-.sl-btn-bw-white:focus::after {
-    box-shadow: 2px 2px 0px var(--black-banana);
-    width: 100%;
-}
-
-/*
 
 
 
@@ -634,17 +579,54 @@
     color: var(--orange-kiwi) !important;
 }
 
-.navbar-toggler-icon {
-    background-image: url("img/icon/Hamburger.svg");
-    background-size: 100%;
-    background-position: center center;
-    width: 30px;
-    height: 30px;
- }
- /* la x non torna hamburger menu */
-.navbar-toggler-icon:hover {
-    background-image: url("img/icon/x-menu-small.svg"); 
+/*navbar toggler icon hamburger animation*/
+.navbar-toggler{
+    border: 0;
 }
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+    outline: none; 
+    box-shadow: none;
+    border: 0;
+}
+.toggler-icon{
+    width: 30px;
+    height: 3px;
+    background-color: var(--black-strawberry);
+    display: block;
+    transition: all 0.2s;
+}
+.middle-bar{
+    margin: 5px auto;
+}
+.navbar-toggler .top-bar{
+    transform: rotate(45deg) translatey(-1px);
+    transform-origin: 10% 10%;
+}
+.navbar-toggler .middle-bar{
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.navbar-toggler .bottom-bar{
+    transform: rotate(-45deg);
+    transform-origin: 10% 10%;
+}
+.navbar-toggler.collapsed .top-bar{
+    transform: rotate(0);
+}
+.navbar-toggler.collapsed .middle-bar{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.navbar-toggler.collapsed .bottom-bar{
+    transform: rotate(0);
+}
+.navbar-toggler.collapsed .toggler-icon{
+    background-color: var(--black-strawberry);
+}
+/*end toggler icon animation*/
+
 .cart-icon {
     background-image: url("img/icon/Sacchetto-default.svg");
     background-size: 100%;
@@ -652,8 +634,6 @@
     width: 30px;
     height: 30px;
  }
-
- 
 
 @media (min-width: 576px) {
         .navbar-brand img{
@@ -684,8 +664,8 @@
         width: 358px;
         height: 38px;
     }
-    
 }
+/*end navbar*/
 
 
 
@@ -694,3 +674,5 @@
     width: 40px;
     height: 40px;
 }
+
+
