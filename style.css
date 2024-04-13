@@ -544,6 +544,7 @@
     top: 0;
     right: 0;
     z-index: -1;
+    transform: skew(-15deg);
 }
 .sl-btn-bw-white .sl-btn-text {
     display: inline-block;
@@ -612,25 +613,30 @@
 .active{
     color: var(--orange-kiwi) !important;
 }
+
 .navbar-toggler-icon {
     background-image: url("img/icon/Hamburger.svg");
     background-size: 100%;
     background-position: center center;
     width: 30px;
     height: 30px;
-    display: flex;
  }
+ /* la x non torna hamburger menu */
+.navbar-toggler-icon:hover {
+    background-image: url("img/icon/x-menu-small.svg"); 
+}
 .cart-icon {
     background-image: url("img/icon/Sacchetto-default.svg");
     background-size: 100%;
     background-position: center center;
     width: 30px;
     height: 30px;
-    display: flex;
  }
 
+ 
+
 @media (min-width: 576px) {
-    .navbar-brand img{
+        .navbar-brand img{
         width: 320px;
         height: 34px;
     }
