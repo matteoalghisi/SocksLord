@@ -33,6 +33,16 @@
     border-radius: var(--sl-border-radius-075) !important;
 }
 
+.sl-mt-first-div{
+    margin-top: 64px;
+}
+@media (min-width: 576px) {
+    .sl-mt-first-div{
+        margin-top: 84px;
+    }
+}
+
+
 /*inserimento font Brice*/
 @font-face{
     font-family: Brice;
@@ -260,8 +270,81 @@
     }
 }
 
- /*
-Non sono sicuro dove queste verranno usate, quindi aspetto a sistemarle
+/*black and white text styles*/
+/*h1*/
+.text-style-desktop-bw-h1 {
+    font-size: 2.5rem;
+    font-family: Good Times;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+@media (min-width: 576px) {
+    .text-style-desktop-bw-h1 {
+        font-size: 3.5rem;
+        font-family: Good Times;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 100%;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+/*h2*/
+.text-style-desktop-bw-h2 {
+    font-size: 1.125rem;
+    font-family: Good Times;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 105%;
+    text-decoration: none;
+    text-transform: none;
+}
+@media (min-width: 576px) {
+    .text-style-desktop-bw-h2 {
+        font-size: 2.5rem;
+        font-family: Good Times;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 100%;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+/*h3*/
+.text-style-desktop-bw-h3 {
+    font-size: 1.5rem;
+    font-family: Good Times;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+@media (min-width: 576px) {
+    .text-style-desktop-bw-h3 {
+        font-size: 2rem;
+        font-family: Good Times;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 100%;
+        text-decoration: none;
+        text-transform: none;
+    }
+}
+
+
+
+
+
+
+
+
+/*altri non ancora usati e che non so se si useranno*/
 
 .text-style-desktop-titolo-tendina {
     font-size: 1.25rem;
@@ -272,25 +355,9 @@ Non sono sicuro dove queste verranno usate, quindi aspetto a sistemarle
     text-decoration: none;
     text-transform: none;
 }
-.text-style-desktop-b-w-h-2 {
-    font-size: 2.5rem;
-    font-family: Good Times;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 100%;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-.text-style-desktop-b-w-h-4 {
-    font-size: 1.25rem;
-    font-family: Good Times;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 24px;
-    text-decoration: none;
-    text-transform: lowercase;
-}
-.text-style-desktop-b-w-body-copy {
+
+
+.text-style-desktop-bw-body-copy {
     font-size: 1.125rem;
     font-family: Space Mono;
     font-weight: 400;
@@ -299,7 +366,7 @@ Non sono sicuro dove queste verranno usate, quindi aspetto a sistemarle
     text-decoration: none;
     text-transform: none;
 }
-.text-style-desktop-b-w-button {
+.text-style-desktop-bw-button {
     font-size: 1.25rem;
     font-family: Space Mono;
     font-weight: 400;
@@ -308,24 +375,8 @@ Non sono sicuro dove queste verranno usate, quindi aspetto a sistemarle
     text-decoration: none;
     text-transform: none;
 }
-.text-style-desktop-b-w-h-3 {
-    font-size: 2rem;
-    font-family: Good Times;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 100%;
-    text-decoration: none;
-    text-transform: none;
-}
-.text-style-desktop-b-w-h-1 {
-    font-size: 3.5rem;
-    font-family: Good Times;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 100%;
-    text-decoration: none;
-    text-transform: uppercase;
-}
+
+
 
 
 
@@ -339,7 +390,7 @@ Non sono sicuro dove queste verranno usate, quindi aspetto a sistemarle
     text-decoration: none;
     text-transform: none;
 }
-.text-style-mobile-b-w-body-copy {
+.text-style-mobile-bw-body-copy {
     font-size: 1rem;
     font-family: Space Mono;
     font-weight: 400;
@@ -348,16 +399,8 @@ Non sono sicuro dove queste verranno usate, quindi aspetto a sistemarle
     text-decoration: none;
     text-transform: none;
 }
-.text-style-mobile-b-w-h-4 {
-    font-size: 1.125rem;
-    font-family: Good Times;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 105%;
-    text-decoration: none;
-    text-transform: none;
-}
-.text-style-mobile-b-w-button {
+
+.text-style-mobile-bw-button {
     font-size: 1.125rem;
     font-family: Space Mono;
     font-weight: 400;
@@ -366,33 +409,7 @@ Non sono sicuro dove queste verranno usate, quindi aspetto a sistemarle
     text-decoration: none;
     text-transform: none;
 }
-.text-style-mobile-b-w-h-3 {
-    font-size: 1.5rem;
-    font-family: Good Times;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 100%;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-.text-style-mobile-b-w-h-2 {
-    font-size: 2rem;
-    font-family: Good Times;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 100%;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-.text-style-mobile-b-w-h-1 {
-    font-size: 2.5rem;
-    font-family: Good Times;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 100%;
-    text-decoration: none;
-    text-transform: uppercase;
-}
+
 */
 
 
