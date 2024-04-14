@@ -633,6 +633,7 @@
     background-position: center center;
     width: 30px;
     height: 30px;
+    display: flex;
  }
 
 @media (min-width: 576px) {
@@ -668,6 +669,9 @@
         height: 38px;
     }
 }
+
+
+
 /*end navbar*/
 
 
