@@ -21,6 +21,14 @@
 }
 */
 .section-welcome h1{
-    color: white;
+    color: var(--white-avocado);
     text-align: center;
+}
+
+.section-whats-new{
+    
+}
+.section-whats-new h2{
+    color: var(--black-strawberry);
+    text-align:left;
 }
