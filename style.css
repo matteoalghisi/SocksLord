@@ -344,6 +344,7 @@
     line-height: 105%;
     text-decoration: none;
     text-transform: none;
+    text-align: left;
 }
 @media (min-width: 576px) {
     .text-style-bw-h2 {
@@ -354,6 +355,7 @@
         line-height: 100%;
         text-decoration: none;
         text-transform: uppercase;
+        text-align: left;
     }
 }
 
@@ -492,6 +494,10 @@
     background-color: var(--black-strawberry);
 }
 
+.sl-bg-tangerine {
+    background-color: var(--liliac-tangerine);
+}
+
 
 
 /*buttons*/
@@ -558,6 +564,11 @@
 .sl-btn{
     color: var(--black-strawberry);
 }
+/* .sl-btn-icon{
+    background: var(--orange-kiwi);
+    border-radius: 50px;
+} */
+
 .sl-btn::after {
     background: var(--orange-kiwi);
     border-radius: 50px;
