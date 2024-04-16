@@ -65,3 +65,47 @@
     border-width: 2px 2px 2px 0px;
     padding: 17px 9px 17px 9px;
 }
+
+
+.section-resocks {
+    height: 500px;
+    padding-left: 16px;
+    /* background-image: url('img/home/Stars/star-home-resocks-mobile.png'); queste sono le stelle che dovrebbero apparire solo nel mobile*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-resocks h2 {
+    color: var(--white-avocado);
+    text-align: left;
+    padding-bottom: 1.5rem;
+}
+
+.section-resocks h4 {
+    color: var(--white-avocado);
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+.section-resocks .text-style-body-copy {
+    color: var(--white-avocado);
+    text-align: left;
+    padding-bottom: 1.5rem;
+}
+/* ci sono da sistemare le stelline e il bottone che rimane centrale, ma non riesco a trovare il punto in cui dargli l'allineamento a sinistra */
+@media (min-width: 576px) {
+    .section-resocks {
+        height: 1000px;
+        padding-left: 82px;
+    }
+    .section-resocks h2 {
+        padding-bottom: 2rem;
+    }
+    .stars {
+        height: 500px;
+        background-image: url('img/home/Stars/star-home-resocks.png');
+        background-position: center;
+        background-size: cover;
+    }
+}
