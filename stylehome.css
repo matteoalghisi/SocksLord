@@ -1,3 +1,30 @@
-.welcome {
-    background-image: url('img/home/home_scavato_top.png');
+.section-welcome {
+    height: 500px;
+    
+    background-image: url('img/home/Stars/stars-home-div1.png');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+/*
+.section-welcome .star-home-welcome{
+    background-position: center;
+    background-size: contain;
+}
+.section-welcome .star-home-welcome-sx{
+    background-image: url("img/home/Stars/star-home-div1-sx.png");
+    
+}
+.section-welcome .star-home-welcome-dx{
+    background-image: url("img/home/Stars/star-home-div1-dx.png");
+}
+*/
+.section-welcome h1{
+    color: var(--white-avocado);
+    text-align: center;
+}
+
+.section-whats-new h2{
+    color: var(--black-strawberry);
 }
