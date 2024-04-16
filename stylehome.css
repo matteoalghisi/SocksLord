@@ -38,11 +38,13 @@
 .card-collab{
     height: 350px;
     width: 308px;
+    box-sizing: border-box;
 }
 @media (min-width: 576px) {
     .card-collab{
         height: 412px;
         width: 345px;
+        box-sizing: border-box;
     }
 }
 
@@ -64,4 +66,16 @@
     border-radius: 0 200px 200px 0;
     border-width: 2px 2px 2px 0px;
     padding: 17px 9px 17px 9px;
+}
+
+.carousel-control-prev{
+    left: -44.7px;
+    opacity: 1;
+}
+.carousel-control-next{
+    right: -47.1px;
+    opacity: 1;
+}
+.carousel-indicators{
+    bottom: -42px;
 }
