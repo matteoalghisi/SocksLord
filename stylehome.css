@@ -28,3 +28,40 @@
 .section-whats-new h2{
     color: var(--black-strawberry);
 }
+
+@media (min-width: 576px) {
+    .section-whats-new{
+        padding: 5rem 11.875rem !important;  /* 80px e 190px */
+    }
+}
+
+.card-collab{
+    height: 350px;
+    width: 308px;
+}
+@media (min-width: 576px) {
+    .card-collab{
+        height: 412px;
+        width: 345px;
+    }
+}
+
+.sl-btn-card {
+    margin: 16px auto;
+    border-style: solid;
+    border-color: var(--black-banana);
+    text-decoration: none;
+    background-color: var( --orange-kiwi);
+}
+
+.sl-btn-card-l{
+    border-radius: 200px 0 0 200px;
+    border-width: 2px 0px 2px 2px;
+    padding: 17px 5px 17px 9px;
+}
+
+.sl-btn-card-r{
+    border-radius: 0 200px 200px 0;
+    border-width: 2px 2px 2px 0px;
+    padding: 17px 9px 17px 9px;
+}

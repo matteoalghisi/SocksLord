@@ -17,7 +17,7 @@
   </head>
   
   <body class="sl-bg-strawberry">
-    <nav class="navbar navbar-expand-xl fixed-top sl-bg-avocado mt-1 mx-1 mt-sm-3 mx-sm-3 rounded-075 effect-style-default-shadow">
+    <nav class="navbar navbar-expand-xl fixed-top sl-bg-avocado mt-1 mx-1 mt-sm-3 mx-sm-3 rounded-075-1 effect-style-default-shadow">
       <div class="prova container-fluid d-flex justify-content-between px-3">
         <button class="navbar-toggler border-0 px-0 px-sm-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="toggler-icon top-bar"></span>
@@ -66,19 +66,40 @@
   </section>
 
 
-  <section class="section-whats-new container-fluid d-flex justify-content-center align-items-center sl-bg-avocado px-3 py-5 px-sm-5 m-0 row">
-    <div class="whats-new-text col-sm-5 col-12">
+  <section class="section-whats-new container-fluid d-flex flex-sm-row flex-column justify-content-center align-items-center sl-bg-avocado px-3 py-5 m-0">
+    <div class="whats-new-text">
       <h2 class="text-style-h2">What's new</h2>
       <h4 class="text-style-h4">Ecco le collaborazioni con i partner più stellari da cui nascono le nostre Edizioni Limitate!</h4>
-      <p class="text-style-body-copy">Siamo entusiasti di presentare le nostre straordinarie collaborazioni con menti creative da ogni angolo dell'universo e di esplorare con voi nuove frontiere della moda. 
+      <p class="text-style-body-copy">Siamo entusiasti di presentare le nostre straordinarie collaborazioni con menti creative da ogni angolo dell'universo e di esplorare con voi nuove frontiere della moda.</p>
       <p class="text-style-body-copy">
-        Ogni partnership rappresenta un viaggio unico che dà vita a prodotti straordinari in grado di sorprenderti di continuo. Abbraccia l'unicità dell'universo con le nostre esclusive calze a tiratura limitata!</p>
+        Ogni partnership rappresenta un viaggio unico che dà vita a prodotti straordinari in grado di sorprenderti di continuo. Abbraccia l'unicità dell'universo con le nostre esclusive calze a tiratura limitata!
       </p>
     </div>
-    <div class="collab col-sm-4 justify-content-center align-items-center">
-      <div class="card-collab sl-bg-tangerine ">
-        <h3 class="text-style-h3">Lux x SocksLord</h3>
-        <img src="img/home/calza-collab.png" alt="">
+    <!-- Card da mobile -->
+    <div class="d-flex flex-column justify-content-center align-items-center d-block d-sm-none pt-9">
+      <div class="card-collab sl-bg-tangerine effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-1 mb-3">
+        <h3 class="text-style-h3 pb-9">Lux x SocksLord</h3>
+        <img src="img/home/calza-collab-mobile.png" alt="">
+      </div>
+      <div class="slider"></div>
+      <a href="" class="sl-btn">
+        <span class="sl-btn-text text-style-button">Scopri la Collab</span>
+        <span class="sl-btn-icon"><img src="img/icon/Arrow-right.svg" alt=""></span>
+      </a>
+    </div>
+    <!-- Card da desktop -->
+    <div class="d-flex flex-column justify-content-center align-items-center d-none d-sm-block ml-7">
+      <div class="d-flex flex-row justify-content-center align-items-center">
+        <a href="" class="sl-btn-card sl-btn-card-l">
+          <span class="sl-btn-icon"><img src="img/icon/freccia-slider-left.svg" alt=""></span>
+        </a>
+        <div class="card-collab sl-bg-tangerine effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-6 z-3">
+          <h3 class="text-style-h3 pb-6">Lux x SocksLord</h3>
+          <img src="img/home/calza-collab.png" alt="">
+        </div>
+        <a href="" class="sl-btn-card sl-btn-card-r z-2">
+          <span class="sl-btn-icon"><img src="img/icon/freccia-slider-right.svg" alt=""></span>
+        </a>
       </div>
       <a href="" class="sl-btn">
         <span class="sl-btn-text text-style-button">Scopri la Collab</span>
