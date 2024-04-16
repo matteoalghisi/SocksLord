@@ -55,8 +55,7 @@
 
 
   <section class="container-fluid sl-mt-first-div d-flex flex-column justify-content-center align-items-center section-welcome">
-      <h1 class="text-style-bw-h1-home">Welcome</h1>
-      <h1 class="text-style-bw-h1-home">to the bizzare</h1>
+      <h1 class="text-style-bw-h1-home">Welcome</br>to the bizzare</h1>
       
       <!--questo è il template per i bottoni, le classi sono sl-btn-bw-white e sl-btn-->
       <a href="" class="sl-btn-bw-white">
@@ -84,7 +83,7 @@
       <div class="slider"></div>
       <a href="" class="sl-btn">
         <span class="sl-btn-text text-style-button">Scopri la Collab</span>
-        <span class="sl-btn-icon"><img src="img/icon/Arrow-right.svg" alt=""></span>
+        <span class="sl-btn-icon"><img src="img/icon/Arrow-right-mobile.svg" alt=""></span>
       </a>
     </div>
     <!-- Card da desktop -->
@@ -110,9 +109,84 @@
 
 
 
+<!-- prova slider -->
+<section class="section-whats-new container-fluid d-flex flex-sm-row flex-column justify-content-center align-items-center sl-bg-avocado px-3 py-5 m-0">
+  <div class="whats-new-text">
+    <h2 class="text-style-h2">What's new</h2>
+    <h4 class="text-style-h4">Ecco le collaborazioni con i partner più stellari da cui nascono le nostre Edizioni Limitate!</h4>
+    <p class="text-style-body-copy">Siamo entusiasti di presentare le nostre straordinarie collaborazioni con menti creative da ogni angolo dell'universo e di esplorare con voi nuove frontiere della moda.</p>
+    <p class="text-style-body-copy">
+      Ogni partnership rappresenta un viaggio unico che dà vita a prodotti straordinari in grado di sorprenderti di continuo. Abbraccia l'unicità dell'universo con le nostre esclusive calze a tiratura limitata!
+    </p>
+  </div>
 
+  <!-- slider mobile -->
+  <div id="carousel-all" class="carousel slide d-block d-sm-none" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="0" class="active rounded-075-1 stepper" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="1" class="rounded-075-1 stepper" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="2" class="rounded-075-1 stepper" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="card-collab sl-bg-tangerine effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-1 mb-3">
+          <h3 class="text-style-h3 pb-9">Lux x SocksLord</h3>
+          <img src="img/home/calza-collab-mobile.png" alt="">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card-collab sl-bg-tangerine effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-1 mb-3">
+          <h3 class="text-style-h3 pb-9">Lux x SocksLord</h3>
+          <img src="img/home/calza-collab-mobile.png" alt="">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card-collab sl-bg-tangerine effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-1 mb-3">
+          <h3 class="text-style-h3 pb-9">Lux x SocksLord</h3>
+          <img src="img/home/calza-collab-mobile.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- slider desktop -->
+  <div id="carousel-all" class="carousel slide d-none d-sm-block" data-bs-ride="carousel">
+    <div class="carousel-indicators d-none d-sm-none">
+      <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="0" class="active rounded-075-1 stepper" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="1" class="rounded-075-1 stepper" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="2" class="rounded-075-1 stepper" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="card-collab sl-bg-tangerine effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-6 z-3">
+          <h3 class="text-style-h3 pb-6">Lux x SocksLord</h3>
+          <img src="img/home/calza-collab.png" alt="">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card-collab sl-bg-strawberry effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-6 z-3">
+          <h3 class="text-style-h3 pb-6">Lux x SocksLord</h3>
+          <img src="img/home/calza-collab.png" alt="">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card-collab sl-bg-tangerine effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-6 z-3">
+          <h3 class="text-style-h3 pb-6">Lux x SocksLord</h3>
+          <img src="img/home/calza-collab.png" alt="">
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-all" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel-all" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
+</section>
 
     <footer  class="container-fluid sl-bg-avocado">
       <div class="container">
@@ -154,7 +228,7 @@
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-   
   
+
   </body>
 </html>
