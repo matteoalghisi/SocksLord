@@ -1,5 +1,5 @@
 .section-welcome {
-    height: 500px;
+    height: 700px;
     
     background-image: url('img/home/Stars/stars-home-div1.png');
     background-position: center;
@@ -21,6 +21,8 @@
 }
 */
 .section-welcome h1{
+    padding-top: 200px; /*mettendo la distanza più o meno come su figma, nel mio pc non rimane più al centro dello schermo il titolo*/
+    padding-bottom: 54px;
     color: var(--white-avocado);
     text-align: center;
 }
