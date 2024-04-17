@@ -45,20 +45,22 @@
 }
 @media (min-width: 576px) {
     .carousel-home{
-        margin-left: 4.75rem;
+        /* margin-left: 4.75rem; */
     }
 }
 
 .card-collab{
     height: 350px;
     width: 308px;
-    box-sizing: border-box;
+    
 }
 @media (min-width: 576px) {
     .card-collab{
         height: 412px;
         width: 327px;
         margin-bottom: 2.5rem;
+
+        margin-left: 43px;
     }
 }
 
@@ -101,17 +103,21 @@
     padding: 17px 9px 17px 9px;
 }
 .carousel-control-prev{
-    /* left: -44.7px; */
+    /* left: -4.7px; */
     opacity: 1;
+    position: relative !important;
 }
 .carousel-control-next{
-    /* right: -5.1px; */
-    opacity: 1;
+    /* right: -6.1px; */
+    opacity: 1;  
+    position: relative !important;
 }
 .carousel-indicators{
     bottom: -42px;
 }
-
+/* .carousel-item{
+    margin-right: -40%;
+} */
 
 .section-resocks {
     height: 500px;

@@ -67,8 +67,8 @@
 
 
 <!-- inizio section what's new -->
-<section class="section-whats-new container-fluid sl-bg-avocado">
-  <div class="row">
+<section class="section-whats-new container-fluid sl-bg-avocado m-0">
+  <div class="row justify-content-start">
     <div class="whats-new-text offset-sm-1 col-sm-5">
       <h2 class="text-style-h2">What's new</h2>
       <h4 class="text-style-h4">Ecco le collaborazioni con i partner più stellari da cui nascono le nostre Edizioni Limitate!</h4>
@@ -80,49 +80,58 @@
 
     <!-- slider -->
     <div id="carousel-all" class="carousel slide carousel-home offset-sm-1 col-sm-4" data-bs-ride="carousel">
-      <div class="carousel-indicators d-block d-sm-none">
-        <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="0" class="active stepper" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="1" class="stepper" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="2" class="stepper" aria-label="Slide 3"></button>
+      <div class="row  align-middle">
+        <div class="col align-items-center"> 
+          <button class="carousel-control-prev d-none d-sm-block" type="button" data-bs-target="#carousel-all" data-bs-slide="prev">
+            <span class="sl-btn-card sl-btn-card-l" aria-hidden="true"><img src="img/icon/freccia-slider-left.svg" alt=""></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+        
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card-collab sl-bg-tangerine effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-xs-3">
+                <h3 class="text-style-h3">Lux x SocksLord</h3>
+                <img src="img/home/calza-collab.png" alt="">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card-collab sl-bg-strawberry effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-xs-3">
+                <h3 class="text-style-h3">Lux x SocksLord</h3>
+                <img src="img/home/calza-collab.png" alt="">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card-collab sl-bg-avocado effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-xs-3">
+                <h3 class="text-style-h3">Lux x SocksLord</h3>
+                <img src="img/home/calza-collab.png" alt="">
+              </div>
+            </div>
+          </div>
+        
+          <button class="carousel-control-next d-none d-sm-block position-static" type="button" data-bs-target="#carousel-all" data-bs-slide="next">
+            <span class="sl-btn-card sl-btn-card-r" aria-hidden="true"><img src="img/icon/freccia-slider-right.svg" alt=""></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
-      <div class="carousel-inner z-3">
-        <div class="carousel-item active">
-          <div class="card-collab sl-bg-tangerine effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-xs-3">
-            <h3 class="text-style-h3">Lux x SocksLord</h3>
-            <img src="img/home/calza-collab.png" alt="">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="card-collab sl-bg-strawberry effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-xs-3">
-            <h3 class="text-style-h3">Lux x SocksLord</h3>
-            <img src="img/home/calza-collab.png" alt="">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="card-collab sl-bg-avocado effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-xs-3">
-            <h3 class="text-style-h3">Lux x SocksLord</h3>
-            <img src="img/home/calza-collab.png" alt="">
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev z-1 d-none d-sm-block" type="button" data-bs-target="#carousel-all" data-bs-slide="prev">
-        <span class="sl-btn- sl-btn-card sl-btn-card-l" aria-hidden="true"><img src="img/icon/freccia-slider-left.svg" alt=""></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next z-1 d-none d-sm-block" type="button" data-bs-target="#carousel-all" data-bs-slide="next">
-        <span class="sl-btn- sl-btn-card sl-btn-card-r" aria-hidden="true"><img src="img/icon/freccia-slider-right.svg" alt=""></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-      <a href="" class="sl-btn">
-        <span class="">Scopri la Collab</span>
-        <span class=""><img src="img/icon/Arrow-right.svg" alt=""></span>
-      </a>
+      <div class="row">
+        <a href="" class="sl-btn">
+          <span class="">Scopri la Collab</span>
+          <span class=""><img src="img/icon/Arrow-right.svg" alt=""></span>
+        </a>
+      </div>   
+    </div>
+    <!-- stepper solo per mobile -->
+    <div class="carousel-indicators d-block d-sm-none">
+      <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="0" class="active stepper" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="1" class="stepper" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="2" class="stepper" aria-label="Slide 3"></button>
     </div>
   </div>
 </section>
 
 <!-- Inizio sezione Our Socks-->
-<section class="section-our-socks container-fluid d-flex flex-column justify-content-left align-items-left sl-bg-tangerine m-0">
+<section class="section-our-socks container-fluid d-flex flex-column justify-content-left align-items-left sl-bg-tangerine">
   <h2 class="text-style-h2 pl-10">Our Socks</h2>
 </section>
 
