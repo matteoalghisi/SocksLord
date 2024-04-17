@@ -694,7 +694,8 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
 }
 /*end toggler icon animation*/
 
-.cart-icon {
+/* Icona del sacchetto */
+/* .cart-icon {
     background-image: url("img/icon/Sacchetto-default.svg");
     background-size: 100%;
     background-position: center center;
@@ -702,6 +703,26 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     height: 30px;
     display: flex;
  }
+*/
+.cart-toggle-checkbox {
+    display: none;
+}
+
+.cart-toggle-label {
+    cursor: pointer;
+}
+
+.cart-toggle-label:last-of-type img {
+    display: none;
+}
+
+.cart-toggle-checkbox:checked ~ .cart-toggle-label:first-of-type img {
+    display: none;
+}
+
+.cart-toggle-checkbox:checked ~ .cart-toggle-label:last-of-type img {
+    display: block;
+}
 
 @media (min-width: 576px) {
         .navbar-brand img{
