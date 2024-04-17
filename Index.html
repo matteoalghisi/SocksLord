@@ -58,128 +58,115 @@
     
 
 
-    
-
-
-  <section class="container-fluid sl-mt-first-div d-flex flex-column justify-content-center align-items-center section-welcome">
-      <h1 class="text-style-bw-h1-home">Welcome</br>to the bizzare</h1>
-      
-      <!--questo è il template per i bottoni, le classi sono sl-btn-bw-white e sl-btn-->
-      <a href="" class="sl-btn-bw-white">
-        <span class="sl-btn-text text-style-button">Discover our socky experience</span>
-        <span class="sl-btn-icon"><img src="img/icon/Arrow-right.svg" alt=""></span>
-      </a>
-  </section>
+    <section class="container-fluid sl-mt-first-div d-flex flex-column justify-content-center align-items-center section-welcome">
+        <h1 class="text-style-bw-h1-home">Welcome</br>to the bizzare</h1>
+        
+        <!--questo è il template per i bottoni, le classi sono sl-btn-bw-white e sl-btn-->
+        <a href="" class="sl-btn-bw-white">
+          <span class="sl-btn-text text-style-button">Discover our socky experience</span>
+          <span class="sl-btn-icon"><img src="img/icon/Arrow-right.svg" alt=""></span>
+        </a>
+    </section>
 
 
 
 <!-- inizio section what's new -->
-<section class="section-whats-new container-fluid sl-bg-avocado m-0">
-  <div class="row justify-content-start">
-    <div class="whats-new-text offset-sm-1 col-sm-5">
-      <h2 class="text-style-h2">What's new</h2>
-      <h4 class="text-style-h4">Ecco le collaborazioni con i partner più stellari da cui nascono le nostre Edizioni Limitate!</h4>
-      <p class="text-style-body-copy">Siamo entusiasti di presentare le nostre straordinarie collaborazioni con menti creative da ogni angolo dell'universo e di esplorare con voi nuove frontiere della moda.</p>
-      <p class="text-style-body-copy">
-        Ogni partnership rappresenta un viaggio unico che dà vita a prodotti straordinari in grado di sorprenderti di continuo. Abbraccia l'unicità dell'universo con le nostre esclusive calze a tiratura limitata!
-      </p>
-    </div>
-
-    <!-- slider -->
-    <div id="carousel-all" class="carousel slide carousel-home offset-sm-1 col-sm-4" data-bs-ride="carousel">
-      <div class="row align-items-center">
-        <div class="col align-items-center"> 
-          <div class="button_container">
-            <button class="carousel-control-prev d-none d-sm-block" type="button" data-bs-target="#carousel-all" data-bs-slide="prev">
-              <span class="sl-btn-card sl-btn-card-l" aria-hidden="true"><img src="img/icon/freccia-slider-left.svg" alt=""></span>
+    <section class="section-whats-new container-fluid sl-bg-avocado m-0">
+      <!--div contiene tutta prima sezione-->
+      <div class="row justify-content-center justify-content-lg-start">
+        <div class="whats-new-text offset-lg-1 col-lg-5 col-6 d-flex flex-column justify-content-center pb-5 pb-lg-0">
+          <h2 class="text-style-h2 sl-color-banana">What's new</h2>
+          <h4 class="text-style-h4 sl-color-banana">Ecco le collaborazioni con i partner più stellari da cui nascono le nostre Edizioni Limitate!</h4>
+          <p class="text-style-body-copy">Siamo entusiasti di presentare le nostre straordinarie collaborazioni con menti creative da ogni angolo dell'universo e di esplorare con voi nuove frontiere della moda.</p>
+          <p class="text-style-body-copy">
+            Ogni partnership rappresenta un viaggio unico che dà vita a prodotti straordinari in grado di sorprenderti di continuo. Abbraccia l'unicità dell'universo con le nostre esclusive calze a tiratura limitata!
+          </p>
+        </div>
+        <!-- slider -->
+        <div id="carousel-all" class="carousel slide sl-carousel-home  col-lg-6  d-flex flex-column justify-content-center pt-5 pt-lg-0" data-bs-ride="carousel">
+          <div class="sl-button_container d-none d-lg-inline-block">
+            <button class="carousel-control-prev sl-btn-carousel-l" type="button" data-bs-target="#carousel-all" data-bs-slide="prev">
+              <span class="d-flex justify-content-center align-items-center" aria-hidden="true"><img src="img/icon/freccia-slider-left.svg" alt=""></span>
               <span class="visually-hidden">Previous</span>
             </button>
-
-            <button class="carousel-control-next d-none d-sm-block position-static" type="button" data-bs-target="#carousel-all" data-bs-slide="next">
-              <span class="sl-btn-card sl-btn-card-r" aria-hidden="true"><img src="img/icon/freccia-slider-right.svg" alt=""></span>
+            <button class="carousel-control-next sl-btn-carousel-r" type="button" data-bs-target="#carousel-all" data-bs-slide="next">
+              <span class="d-flex justify-content-center align-items-center" aria-hidden="true"><img src="img/icon/freccia-slider-right.svg" alt=""></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-        
-          <div class="carousel-inner">
+          <div class="carousel-inner pb-5 pe-2">
             <div class="carousel-item active">
-              <div class="card-collab sl-bg-tangerine effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-xs-3">
-                <h3 class="text-style-h3">Lux x SocksLord</h3>
+              <div class="sl-card-collab sl-bg-tangerine effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 py-5 px-6 m-auto">
+                <h3 class="text-style-h3 pb-6">Lux x SocksLord</h3>
                 <img src="img/home/calza-collab.png" alt="">
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card-collab sl-bg-strawberry effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-xs-3">
-                <h3 class="text-style-h3">Lux x SocksLord</h3>
+              <div class="sl-card-collab sl-bg-strawberry effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 p-5 px-6 m-auto">
+                <h3 class="text-style-h3 pb-6">Lux x SocksLord</h3>
                 <img src="img/home/calza-collab.png" alt="">
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card-collab sl-bg-avocado effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-xs-3">
-                <h3 class="text-style-h3">Lux x SocksLord</h3>
+              <div class="sl-card-collab sl-bg-avocado effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 py-5 px-6 m-auto">
+                <h3 class="text-style-h3 pb-6">Lux x SocksLord</h3>
                 <img src="img/home/calza-collab.png" alt="">
               </div>
             </div>
-          </div>
-          <!-- <button class="carousel-control-next d-none d-sm-block position-static" type="button" data-bs-target="#carousel-all" data-bs-slide="next">
-            <span class="sl-btn-card sl-btn-card-r" aria-hidden="true"><img src="img/icon/freccia-slider-right.svg" alt=""></span>
-            <span class="visually-hidden">Next</span>
-          </button> -->
+          </div>   
+          <a href="" class="sl-btn">
+            <span class="sl-btn-text text-style-button">Scopri la collab</span>
+            <span class="sl-btn-icon"><img src="img/icon/Arrow-right.svg" alt=""></span>
+          </a>     
+        </div>
+
+        <!-- stepper solo per mobile -->
+        <div class="carousel-indicators d-block d-sm-none">
+          <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="0" class="active stepper" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="1" class="stepper" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="2" class="stepper" aria-label="Slide 3"></button>
         </div>
       </div>
-      <div class="row">
-        <a href="" class="sl-btn">
-          <span class="">Scopri la Collab</span>
-          <span class=""><img src="img/icon/Arrow-right.svg" alt=""></span>
-        </a>
-      </div>   
-    </div>
-    <!-- stepper solo per mobile -->
-    <div class="carousel-indicators d-block d-sm-none">
-      <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="0" class="active stepper" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="1" class="stepper" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="2" class="stepper" aria-label="Slide 3"></button>
-    </div>
-  </div>
-</section>
-
-<!-- Inizio sezione Our Socks-->
-<section class="section-our-socks container-fluid d-flex flex-column justify-content-left align-items-left sl-bg-tangerine">
-  <h2 class="text-style-h2 pl-10">Our Socks</h2>
-
-  <div class="card_socks d-flex">
-    <div class="card-socks sl-bg-avocado effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-xs-3">
-      <h3 class="text-style-h3">Calzino</h3>
-      <img src="img/home/calza-ourSocks.png" alt="">
-    </div>
-    <div class="card-socks sl-bg-avocado effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-xs-3">
-      <h3 class="text-style-h3">Calzone</h3>
-      <img src="img/home/calza-ourSocks.png" alt="">
-    </div>
-    <div class="card-socks sl-bg-avocado effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-xs-3">
-      <h3 class="text-style-h3">Calzetta</h3>
-      <img src="img/home/calza-ourSocks.png" alt="">
-    </div>
-  </div>
-</section>
+    </section>
 
 
-<!-- Resocks section -->
+    <!-- Inizio sezione Our Socks-->
+    <section class="section-our-socks container-fluid d-flex flex-column justify-content-left align-items-left sl-bg-tangerine">
+      <h2 class="text-style-h2 pl-10">Our Socks</h2>
 
-<section class="container-fluid sl-mt-first-div d-flex flex-column justify-content-left align-items-left section-resocks">
-  <h2 class="text-style-bw-h2">Don't be a <br>
-    black hole</h2>
-    <h4 class="text-style-h4">In un universo in costante evoluzione, anche la moda <br> abbraccia la sostenibilità. </h4>
-    <p class="text-style-body-copy">Con il nostro progetto "Resocks", ti offriamo la possibilità di contribuire <br> alla conservazione del nostro straordinario pianeta. Le tue calze hanno <br> esplorato abbastanza galassie e sono pronte per un nuovo viaggio? Non <br>lasciarle in un buco nero, restituiscile per dar loro nuova vita! <br>
-      Per sapere di più sulle opzioni di restituzione, visita il nostro Resocks e <br>compila il form dedicato.</p>
-  
-  <a href="" class="sl-btn-bw-white">
-    <span class="sl-btn-text text-style-button">Scopri Resocks</span>
-    <span class="sl-btn-icon"><img src="img/icon/Arrow-right.svg" alt=""></span>
-  </a>
+      <div class="card_socks d-flex">
+        <div class="card-socks sl-bg-avocado effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-xs-3">
+          <h3 class="text-style-h3">Calzino</h3>
+          <img src="img/home/calza-ourSocks.png" alt="">
+        </div>
+        <div class="card-socks sl-bg-avocado effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-xs-3">
+          <h3 class="text-style-h3">Calzone</h3>
+          <img src="img/home/calza-ourSocks.png" alt="">
+        </div>
+        <div class="card-socks sl-bg-avocado effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-xs-3">
+          <h3 class="text-style-h3">Calzetta</h3>
+          <img src="img/home/calza-ourSocks.png" alt="">
+        </div>
+      </div>
+    </section>
 
-  <div class="stars"></div>
-</section>
+
+    <!-- Resocks section -->
+
+    <section class="container-fluid sl-mt-first-div d-flex flex-column justify-content-left align-items-left section-resocks">
+      <h2 class="text-style-bw-h2">Don't be a <br>
+        black hole</h2>
+        <h4 class="text-style-h4">In un universo in costante evoluzione, anche la moda <br> abbraccia la sostenibilità. </h4>
+        <p class="text-style-body-copy">Con il nostro progetto "Resocks", ti offriamo la possibilità di contribuire <br> alla conservazione del nostro straordinario pianeta. Le tue calze hanno <br> esplorato abbastanza galassie e sono pronte per un nuovo viaggio? Non <br>lasciarle in un buco nero, restituiscile per dar loro nuova vita! <br>
+          Per sapere di più sulle opzioni di restituzione, visita il nostro Resocks e <br>compila il form dedicato.</p>
+      
+      <a href="" class="sl-btn-bw-white">
+        <span class="sl-btn-text text-style-button">Scopri Resocks</span>
+        <span class="sl-btn-icon"><img src="img/icon/Arrow-right.svg" alt=""></span>
+      </a>
+
+      <div class="stars"></div>
+    </section>
 
 
 <!-- Footer -->

@@ -34,6 +34,10 @@
 .pb-6 {
   padding-bottom: 2.5rem !important;  /* 40px */
 }
+.px-6{
+    padding-right: 2.5rem !important;  /* 40px */
+    padding-left: 2.5rem !important;  /* 40px */
+}
 
 .mb-6 {
     margin-bottom: 2.5rem !important;  /* 40px */
@@ -58,7 +62,7 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     padding-left: 5.125rem !important;  /* 82px */
 }
 
-
+/*questo rounded sarebbe slo per il border radius, per il bordo dovremmo usare border già di bootstrap e farne uno tipo border-2 per 2 px*/
 .rounded-075-1{
     border-radius: var(--sl-border-radius-075) !important;
     border: 1px solid var(--black-banana) !important;
@@ -85,6 +89,7 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     src: url(font/brice_font/Brice-Black.ttf);
 }
 
+/*font*/
 
 /*h1*/
 .text-style-h1 {
@@ -417,13 +422,6 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     }
 }
 
-
-
-
-
-
-
-
 /*altri non ancora usati e che non so se si useranno*/
 
 .text-style-desktop-titolo-tendina {
@@ -455,12 +453,6 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     text-decoration: none;
     text-transform: none;
 }
-
-
-
-
-
-
 .text-style-mobile-titolo-tendina {
     font-size: 1.125rem;
     font-family: "Space Grotesk";
@@ -489,10 +481,6 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     text-decoration: none;
     text-transform: none;
 }
-
-
-
-
 
 /*ombre*/
 .effect-style-default-shadow {
@@ -534,12 +522,18 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     background-color: var(--liliac-tangerine);
 }
 
+.sl-color-avocado{
+    color: var(--white-avocado);
+}
+.sl-color-banana{
+    color: var(--black-banana);
+}
 
 
-/*buttons*/
-/*button general settings*/
+
+/*button genral settings*/
 .sl-btn, .sl-btn-bw-white {
-    margin: 16px auto;
+    margin: 0 auto;
     border: none;
     padding: 8px 10px 8px 14px;
     position: relative;
@@ -553,18 +547,23 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     position: absolute;
     top: 0;
     right: 0;
-    z-index: -1;
+    z-index: 0;
+    border: solid 1px var(--black-banana);
 }
 .sl-btn .sl-btn-text, .sl-btn-bw-white .sl-btn-text {
     display: inline-block;
     height: 100%;
     margin-right: 16px;
     vertical-align: top;
+    position: relative;
+    z-index: 2;
 }
 .sl-btn .sl-btn-icon, .sl-btn-bw-white .sl-btn-icon{
     height: 100%;
     display: inline-flex;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 .sl-btn:hover, .sl-btn-bw-white:hover{
     transform: translateX(4px);
@@ -572,7 +571,7 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
 }
 .sl-btn:hover::after, .sl-btn-bw-white:hover::after{
-    box-shadow: 4px 4px 0px 0px var(--black-banana);
+    box-shadow: 4px 4px 0px var(--black-banana);
     width: 100%;
 }
 .sl-btn:focus, .sl-btn-bw-white:focus{
@@ -581,7 +580,7 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
 }
 .sl-btn:focus::after, .sl-btn-bw-white:focus::after {
-    box-shadow: 2px 2px 0px 0px var(--black-banana);
+    box-shadow: 2px 2px 0px var(--black-banana);
     width: 100%;
 }
 /*button bw white*/
@@ -600,24 +599,22 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
 .sl-btn{
     color: var(--black-strawberry);
 }
-/* .sl-btn-icon{
-    background: var(--orange-kiwi);
-    border-radius: 50px;
-} */
-
 .sl-btn::after {
     background: var(--orange-kiwi);
     border-radius: 50px;
 }
-
-
-
-
-
-
-
-
-
+/*button bw black*/
+.sl-btn-bw-black{
+    color: var(--black-strawberry);
+}
+.sl-btn-bw-black::after {
+    background: var(    --black-strawberry);
+    transform: skew(-15deg);
+    border-radius: 0;
+}
+.sl-btn-bw-black:hover  {
+    color: var(--white-avocado);
+}
 
 
 
@@ -704,22 +701,20 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     display: flex;
  }
 */
+
+/* cose per cambiare l'icona del carrello in gialla, aspetterei a fare questo perchè vediamo se riusciamo a far si che aggiungendo un item nel carrello questo diventa giallo*/
 .cart-toggle-checkbox {
     display: none;
 }
-
 .cart-toggle-label {
     cursor: pointer;
 }
-
 .cart-toggle-label:last-of-type img {
     display: none;
 }
-
 .cart-toggle-checkbox:checked ~ .cart-toggle-label:first-of-type img {
     display: none;
 }
-
 .cart-toggle-checkbox:checked ~ .cart-toggle-label:last-of-type img {
     display: block;
 }
@@ -738,7 +733,7 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
         text-decoration: none;
         text-transform: none;
     }
-    .toggler-icon{
+    .toggler-i\con{
         width: 40px;
         height: 4px;
      }
@@ -787,5 +782,11 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     width: 40px;
     height: 40px;
 }
+
+
+
+
+
+
 
 
