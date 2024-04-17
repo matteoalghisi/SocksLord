@@ -65,8 +65,11 @@
   </section>
 
 
-  <section class="section-whats-new container-fluid d-flex flex-sm-row flex-column justify-content-center align-items-center sl-bg-avocado px-3 py-5 m-0">
-    <div class="whats-new-text">
+
+<!-- inizio section what's new -->
+<section class="section-whats-new container-fluid sl-bg-avocado">
+  <div class="row">
+    <div class="whats-new-text offset-sm-1 col-sm-5">
       <h2 class="text-style-h2">What's new</h2>
       <h4 class="text-style-h4">Ecco le collaborazioni con i partner più stellari da cui nascono le nostre Edizioni Limitate!</h4>
       <p class="text-style-body-copy">Siamo entusiasti di presentare le nostre straordinarie collaborazioni con menti creative da ogni angolo dell'universo e di esplorare con voi nuove frontiere della moda.</p>
@@ -74,119 +77,47 @@
         Ogni partnership rappresenta un viaggio unico che dà vita a prodotti straordinari in grado di sorprenderti di continuo. Abbraccia l'unicità dell'universo con le nostre esclusive calze a tiratura limitata!
       </p>
     </div>
-    <!-- Card da mobile -->
-    <div class="d-flex flex-column justify-content-center align-items-center d-block d-sm-none pt-9">
-      <div class="card-collab sl-bg-tangerine effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-1 mb-3">
-        <h3 class="text-style-h3 pb-9">Lux x SocksLord</h3>
-        <img src="img/home/calza-collab-mobile.png" alt="">
+
+    <!-- slider -->
+    <div id="carousel-all" class="carousel slide carousel-home offset-sm-1 col-sm-4" data-bs-ride="carousel">
+      <div class="carousel-indicators d-block d-sm-none">
+        <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="0" class="active stepper" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="1" class="stepper" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="2" class="stepper" aria-label="Slide 3"></button>
       </div>
-      <div class="slider"></div>
+      <div class="carousel-inner z-3">
+        <div class="carousel-item active">
+          <div class="card-collab sl-bg-tangerine effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-xs-3">
+            <h3 class="text-style-h3">Lux x SocksLord</h3>
+            <img src="img/home/calza-collab.png" alt="">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card-collab sl-bg-strawberry effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-xs-3">
+            <h3 class="text-style-h3">Lux x SocksLord</h3>
+            <img src="img/home/calza-collab.png" alt="">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card-collab sl-bg-avocado effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-xs-3">
+            <h3 class="text-style-h3">Lux x SocksLord</h3>
+            <img src="img/home/calza-collab.png" alt="">
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev z-1 d-none d-sm-block" type="button" data-bs-target="#carousel-all" data-bs-slide="prev">
+        <span class="sl-btn- sl-btn-card sl-btn-card-l" aria-hidden="true"><img src="img/icon/freccia-slider-left.svg" alt=""></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next z-1 d-none d-sm-block" type="button" data-bs-target="#carousel-all" data-bs-slide="next">
+        <span class="sl-btn- sl-btn-card sl-btn-card-r" aria-hidden="true"><img src="img/icon/freccia-slider-right.svg" alt=""></span>
+        <span class="visually-hidden">Next</span>
+      </button>
       <a href="" class="sl-btn">
-        <span class="sl-btn-text text-style-button">Scopri la Collab</span>
-        <span class="sl-btn-icon"><img src="img/icon/Arrow-right-mobile.svg" alt=""></span>
+        <span class="">Scopri la Collab</span>
+        <span class=""><img src="img/icon/Arrow-right.svg" alt=""></span>
       </a>
     </div>
-    <!-- Card da desktop -->
-    <div class="d-flex flex-column justify-content-center align-items-center d-none d-sm-block ml-7">
-      <div class="d-flex flex-row justify-content-center align-items-center">
-        <a href="" class="sl-btn-card sl-btn-card-l">
-          <span class="sl-btn-icon"><img src="img/icon/freccia-slider-left.svg" alt=""></span>
-        </a>
-        <div class="card-collab sl-bg-tangerine effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-6 z-3">
-          <h3 class="text-style-h3 pb-6">Lux x SocksLord</h3>
-          <img src="img/home/calza-collab.png" alt="">
-        </div>
-        <a href="" class="sl-btn-card sl-btn-card-r z-2">
-          <span class="sl-btn-icon"><img src="img/icon/freccia-slider-right.svg" alt=""></span>
-        </a>
-      </div>
-      <a href="" class="sl-btn">
-        <span class="sl-btn-text text-style-button">Scopri la Collab</span>
-        <span class="sl-btn-icon"><img src="img/icon/Arrow-right.svg" alt=""></span>
-      </a>
-    </div>
-  </section>
-
-
-
-<!-- prova slider -->
-<section class="section-whats-new container-fluid d-flex flex-sm-row flex-column justify-content-center align-items-center sl-bg-avocado px-3 py-5 m-0">
-  <div class="whats-new-text">
-    <h2 class="text-style-h2">What's new</h2>
-    <h4 class="text-style-h4">Ecco le collaborazioni con i partner più stellari da cui nascono le nostre Edizioni Limitate!</h4>
-    <p class="text-style-body-copy">Siamo entusiasti di presentare le nostre straordinarie collaborazioni con menti creative da ogni angolo dell'universo e di esplorare con voi nuove frontiere della moda.</p>
-    <p class="text-style-body-copy">
-      Ogni partnership rappresenta un viaggio unico che dà vita a prodotti straordinari in grado di sorprenderti di continuo. Abbraccia l'unicità dell'universo con le nostre esclusive calze a tiratura limitata!
-    </p>
-  </div>
-
-  <!-- slider mobile -->
-  <div id="carousel-all" class="carousel slide d-block d-sm-none pt-9" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="0" class="active stepper" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="1" class="stepper" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="2" class="stepper" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="card-collab sl-bg-tangerine effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-1 mb-3">
-          <h3 class="text-style-h3 pb-9">Lux x SocksLord</h3>
-          <img src="img/home/calza-collab-mobile.png" alt="">
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="card-collab sl-bg-tangerine effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-1 mb-3">
-          <h3 class="text-style-h3 pb-9">Lux x SocksLord</h3>
-          <img src="img/home/calza-collab-mobile.png" alt="">
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="card-collab sl-bg-tangerine effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-1 mb-3">
-          <h3 class="text-style-h3 pb-9">Lux x SocksLord</h3>
-          <img src="img/home/calza-collab-mobile.png" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
-  <a href="" class="sl-btn d-block d-sm-none">
-    <span class="sl-btn-text text-style-button">Scopri la Collab</span>
-    <span class="sl-btn-icon"><img src="img/icon/Arrow-right-mobile.svg" alt=""></span>
-  </a>
-
-  <!-- slider desktop -->
-  <div id="carousel-all-desktop" class="carousel slide d-none d-sm-block ml-7" data-bs-ride="carousel">
-    <div class="carousel-inner z-3">
-      <div class="carousel-item active">
-        <div class="card-collab sl-bg-tangerine effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-6">
-          <h3 class="text-style-h3 pb-6">Lux x SocksLord</h3>
-          <img src="img/home/calza-collab.png" alt="">
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="card-collab sl-bg-strawberry effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-6">
-          <h3 class="text-style-h3 pb-6">Lux x SocksLord</h3>
-          <img src="img/home/calza-collab.png" alt="">
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="card-collab sl-bg-avocado effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-6">
-          <h3 class="text-style-h3 pb-6">Lux x SocksLord</h3>
-          <img src="img/home/calza-collab.png" alt="">
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev z-1" type="button" data-bs-target="#carousel-all-desktop" data-bs-slide="prev">
-      <span class="sl-btn- sl-btn-card sl-btn-card-l" aria-hidden="true"><img src="img/icon/freccia-slider-left.svg" alt=""></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next z-1" type="button" data-bs-target="#carousel-all-desktop" data-bs-slide="next">
-      <span class="sl-btn- sl-btn-card sl-btn-card-r" aria-hidden="true"><img src="img/icon/freccia-slider-right.svg" alt=""></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-    <a href="" class="sl-btn">
-      <span class="sl-btn-text text-style-button">Scopri la Collab</span>
-      <span class="sl-btn-icon"><img src="img/icon/Arrow-right.svg" alt=""></span>
-    </a>
   </div>
 </section>
 

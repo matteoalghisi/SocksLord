@@ -27,13 +27,25 @@
     text-align: center;
 }
 
+
+
+/* section what's new */
 .section-whats-new h2{
     color: var(--black-strawberry);
 }
 
 @media (min-width: 576px) {
     .section-whats-new{
-        padding: 5rem 11.875rem !important;  /* 80px e 190px */
+        padding: 5rem 0 !important;
+    }
+}
+
+.carousel-home{
+    padding-top: 2rem;
+}
+@media (min-width: 576px) {
+    .carousel-home{
+        margin-left: 4.75rem;
     }
 }
 
@@ -45,8 +57,27 @@
 @media (min-width: 576px) {
     .card-collab{
         height: 412px;
-        width: 345px;
-        box-sizing: border-box;
+        width: 327px;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.card-collab h3{
+    padding-bottom: 2rem;
+}
+@media (min-width: 576px) {
+    .card-collab h3{
+        padding-bottom: 2.5rem;
+    }
+}
+.card-collab img{
+    width: 145px;
+    height: 204px;
+}
+@media (min-width: 576px) {
+    .card-collab img{
+        width: auto;
+        height: auto;
     }
 }
 
@@ -68,6 +99,17 @@
     border-radius: 0 200px 200px 0;
     border-width: 2px 2px 2px 0px;
     padding: 17px 9px 17px 9px;
+}
+.carousel-control-prev{
+    /* left: -44.7px; */
+    opacity: 1;
+}
+.carousel-control-next{
+    /* right: -5.1px; */
+    opacity: 1;
+}
+.carousel-indicators{
+    bottom: -42px;
 }
 
 
@@ -115,14 +157,3 @@
 }
 
 
-.carousel-control-prev{
-    left: -44.7px;
-    opacity: 1;
-}
-.carousel-control-next{
-    right: -47.1px;
-    opacity: 1;
-}
-.carousel-indicators{
-    bottom: -42px;
-}
