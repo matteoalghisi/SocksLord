@@ -102,6 +102,15 @@
     border-width: 2px 2px 2px 0px;
     padding: 17px 9px 17px 9px;
 }
+
+.button_container {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 400px;
+    width: 430px;
+    margin: 0 auto;
+}
+
 .carousel-control-prev{
     /* left: -4.7px; */
     opacity: 1;
@@ -115,10 +124,49 @@
 .carousel-indicators{
     bottom: -42px;
 }
+
 /* .carousel-item{
     margin-right: -40%;
 } */
 
+/* section our socks */
+.card-socks{
+    height: 350px;
+    width: 308px;
+    background-image: url('img/home/crateri_arancio_mobile.png');
+    background-size: cover; 
+}
+@media (min-width: 576px) {
+    .card-socks{
+        height: 412px;
+        width: 327px;
+        margin-bottom: 2.5rem;
+
+        margin-left: 43px;
+        background-image: url('img/home/crateri_arancio.png');
+        background-size: cover;
+    }
+}
+.card-socks h3{
+    padding-bottom: 2rem;
+}
+@media (min-width: 576px) {
+    .card-socks h3{
+        padding-bottom: 2.5rem;
+    }
+}
+.card-socks img{
+    width: 145px;
+    height: 204px;
+}
+@media (min-width: 576px) {
+    .card-socks img{
+        width: auto;
+        height: auto;
+    }
+}
+
+/* section resocks */
 .section-resocks {
     height: 500px;
     padding-left: 16px;

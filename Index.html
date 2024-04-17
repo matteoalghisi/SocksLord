@@ -87,12 +87,19 @@
 
     <!-- slider -->
     <div id="carousel-all" class="carousel slide carousel-home offset-sm-1 col-sm-4" data-bs-ride="carousel">
-      <div class="row  align-middle">
+      <div class="row align-items-center">
         <div class="col align-items-center"> 
-          <button class="carousel-control-prev d-none d-sm-block" type="button" data-bs-target="#carousel-all" data-bs-slide="prev">
-            <span class="sl-btn-card sl-btn-card-l" aria-hidden="true"><img src="img/icon/freccia-slider-left.svg" alt=""></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
+          <div class="button_container">
+            <button class="carousel-control-prev d-none d-sm-block" type="button" data-bs-target="#carousel-all" data-bs-slide="prev">
+              <span class="sl-btn-card sl-btn-card-l" aria-hidden="true"><img src="img/icon/freccia-slider-left.svg" alt=""></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next d-none d-sm-block position-static" type="button" data-bs-target="#carousel-all" data-bs-slide="next">
+              <span class="sl-btn-card sl-btn-card-r" aria-hidden="true"><img src="img/icon/freccia-slider-right.svg" alt=""></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -114,11 +121,10 @@
               </div>
             </div>
           </div>
-        
-          <button class="carousel-control-next d-none d-sm-block position-static" type="button" data-bs-target="#carousel-all" data-bs-slide="next">
+          <!-- <button class="carousel-control-next d-none d-sm-block position-static" type="button" data-bs-target="#carousel-all" data-bs-slide="next">
             <span class="sl-btn-card sl-btn-card-r" aria-hidden="true"><img src="img/icon/freccia-slider-right.svg" alt=""></span>
             <span class="visually-hidden">Next</span>
-          </button>
+          </button> -->
         </div>
       </div>
       <div class="row">
@@ -140,6 +146,21 @@
 <!-- Inizio sezione Our Socks-->
 <section class="section-our-socks container-fluid d-flex flex-column justify-content-left align-items-left sl-bg-tangerine">
   <h2 class="text-style-h2 pl-10">Our Socks</h2>
+
+  <div class="card_socks d-flex">
+    <div class="card-socks sl-bg-avocado effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-xs-3">
+      <h3 class="text-style-h3">Calzino</h3>
+      <img src="img/home/calza-ourSocks.png" alt="">
+    </div>
+    <div class="card-socks sl-bg-avocado effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-xs-3">
+      <h3 class="text-style-h3">Calzone</h3>
+      <img src="img/home/calza-ourSocks.png" alt="">
+    </div>
+    <div class="card-socks sl-bg-avocado effect-style-default-shadow d-flex flex-column justify-content-center align-items-center rounded-075-2 mb-xs-3">
+      <h3 class="text-style-h3">Calzetta</h3>
+      <img src="img/home/calza-ourSocks.png" alt="">
+    </div>
+  </div>
 </section>
 
 
