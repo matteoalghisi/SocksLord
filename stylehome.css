@@ -28,7 +28,6 @@
 }
 
 /* section what's new */
-
 @media (min-width: 576px) {
     .section-whats-new{
         padding: 5rem 0 !important;
@@ -104,6 +103,7 @@
     background-image: url('img/home/crateri_arancio_mobile.png');
     background-size: cover; 
 }
+
 @media (min-width: 576px) {
     .card-socks{
         height: 412px;
@@ -161,6 +161,7 @@
     text-align: left;
     padding-bottom: 1.5rem;
 }
+
 /* ci sono da sistemare le stelline e il bottone che rimane centrale, ma non riesco a trovare il punto in cui dargli l'allineamento a sinistra */
 @media (min-width: 576px) {
     .section-resocks {
