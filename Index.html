@@ -72,6 +72,7 @@
 
 <!-- inizio section what's new -->
     <section class="section-whats-new container-fluid sl-bg-avocado m-0">
+      
       <!--div contiene tutta prima sezione-->
       <div class="row justify-content-center justify-content-lg-start">
         <div class="whats-new-text offset-lg-1 col-lg-5 col-10 d-flex flex-column justify-content-center pb-5 pb-lg-0">
@@ -82,21 +83,29 @@
             Ogni partnership rappresenta un viaggio unico che dà vita a prodotti straordinari in grado di sorprenderti di continuo. Abbraccia l'unicità dell'universo con le nostre esclusive calze a tiratura limitata!
           </p>
         </div>
+
         <!-- slider -->
         <div id="carousel-all" class="carousel slide sl-carousel-home col-lg-6 d-flex flex-column justify-content-center pt-5 pt-lg-0" data-bs-ride="carousel">
+          
           <div class="sl-button_container d-none d-lg-inline-block">
             <button class="carousel-control-prev sl-btn-carousel-l" type="button" data-bs-target="#carousel-all" data-bs-slide="prev">
               <span class="d-flex justify-content-center align-items-center" aria-hidden="true"><img src="img/icon/freccia-slider-left.svg" alt=""></span>
               <span class="visually-hidden">Previous</span>
             </button>
+            <div id="collab-slider-placeholder" class="sl-card-collab sl-bg-tangerine border-2 effect-style-default-shadow d-flex flex-column justify-content-center align-items-center py-5 px-6">
+              <h3 class="text-style-h3 pb-6">Lux x SocksLord</h3>
+              <img class></img>
+            </div>
             <button class="carousel-control-next sl-btn-carousel-r" type="button" data-bs-target="#carousel-all" data-bs-slide="next">
               <span class="d-flex justify-content-center align-items-center" aria-hidden="true"><img src="img/icon/freccia-slider-right.svg" alt=""></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-          <div class="carousel-inner pb-3 pe-2">
+
+          <div class="carousel-inner pb-3">
             <div class="carousel-item active">
               <div class="sl-card-collab sl-bg-tangerine border-2 rounded-3 rounded-sm-2 effect-style-default-shadow d-flex flex-column justify-content-center align-items-center py-5 px-6 m-auto">
+                <!--questo h3 dovrà essere fixed in width probabilmente-->
                 <h3 class="text-style-h3 pb-6">Lux x SocksLord</h3>
                 <img src="img/home/calza-collab.png" alt="">
               </div>
@@ -114,12 +123,15 @@
               </div>
             </div>
           </div>  
+
           <!-- stepper solo per mobile -->
           <div class="carousel-indicators d-block d-lg-none justify-content-center d-flex">
             <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="0" class="active stepper" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="1" class="stepper" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carousel-all" data-bs-slide-to="2" class="stepper" aria-label="Slide 3"></button>
           </div> 
+
+
           <!-- bottone -->
           <div class="d-flex justify-content-center">
             <a href="" class="sl-btn">
