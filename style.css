@@ -26,9 +26,28 @@
     --bs-link-color-rgb: var(--black-strawberry) !important;
 
     /*border*/
-    --sl-border-radius-075: 0.75rem;
+    /*--sl-border-radius-075: 0.75rem;*/
 }
 
+/* background */
+.sl-bg-avocado{
+    background-color: var(--white-avocado);
+}
+
+.sl-bg-strawberry {
+    background-color: var(--black-strawberry);
+}
+
+.sl-bg-tangerine {
+    background-color: var(--liliac-tangerine);
+}
+
+.sl-color-avocado{
+    color: var(--white-avocado);
+}
+.sl-color-banana{
+    color: var(--black-banana);
+}
 
 /* Sizes customized */
 .pb-6 {
@@ -62,15 +81,17 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     padding-left: 5.125rem !important;  /* 82px */
 }
 
-/*questo rounded sarebbe slo per il border radius, per il bordo dovremmo usare border già di bootstrap e farne uno tipo border-2 per 2 px*/
-.rounded-075-1{
+/*questo rounded sarebbe slo per il border radius, per il bordo dovremmo usare border già di bootstrap e farne uno tipo border-2 per 2 px
+Dobbiamo rivalutare il fatto di non creare misure ad hoc, ma sistemare piuttosto figma
+Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
+/*.rounded-075-1{
     border-radius: var(--sl-border-radius-075) !important;
     border: 1px solid var(--black-banana) !important;
 }
 .rounded-075-2{
     border-radius: var(--sl-border-radius-075) !important;
     border: 2px solid var(--black-banana) !important;
-}
+}*/
 
 
 .sl-mt-first-div{
@@ -509,28 +530,6 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
 }
 
 
-
-.sl-bg-avocado{
-    background-color: var(--white-avocado);
-}
-
-.sl-bg-strawberry {
-    background-color: var(--black-strawberry);
-}
-
-.sl-bg-tangerine {
-    background-color: var(--liliac-tangerine);
-}
-
-.sl-color-avocado{
-    color: var(--white-avocado);
-}
-.sl-color-banana{
-    color: var(--black-banana);
-}
-
-
-
 /*button genral settings*/
 .sl-btn, .sl-btn-bw-white {
     margin: 0 auto;
@@ -622,6 +621,9 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
 
 
 /*navbar*/
+.navbar{
+    height: 80px;
+}
 .navbar-brand img{
     width: 197px;
     height: 21px;
