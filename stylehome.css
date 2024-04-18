@@ -65,7 +65,7 @@
 .sl-btn-carousel-l, .sl-btn-carousel-r{
     opacity: 1;
     padding: 12px 12px 12px 12px;
-    border: solid var(--bs-border-color);
+    border: 2px solid var(--bs-border-color);
     background-color: var(--orange-kiwi);
     height: fit-content;
     width: fit-content;

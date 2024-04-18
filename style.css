@@ -93,6 +93,9 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
     border: 2px solid var(--black-banana) !important;
 }*/
 
+.border-2 {
+    border: 2px solid var(--black-banana);
+}
 
 .sl-mt-first-div{
     margin-top: 64px;
@@ -532,7 +535,7 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 
 /*button genral settings*/
 .sl-btn, .sl-btn-bw-white {
-    margin: 0 auto;
+    margin: 0 0;
     border: none;
     padding: 8px 10px 8px 14px;
     position: relative;
@@ -776,6 +779,14 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
     background-color: transparent;
     background-image: url("img/icon/stepper-mondo-mobile.svg");
     
+}
+
+
+.carousel-indicators {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
 }
 
 
