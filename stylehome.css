@@ -37,11 +37,9 @@
 .sl-carousel-home{
     padding-top: 2rem;
 }
-@media (min-width: 576px) {
-    .sl-carousel-home{
-        /* margin-left: 4.75rem; */
-    }
-}
+
+
+
 
 .sl-card-collab{
    width: fit-content; 
@@ -56,23 +54,26 @@
         height: 230px;
     }
 }
-/*button carousel*/
-.sl-button_container {
-    position: absolute;
+.carousel-inner{
+    pointer-events: none;
+}
 
-    gap: 0; */
+/*button carousel*/
+.sl-button-container{
+    transform: translatex(50%);
+}
+.sl-button-container-small {
     position: absolute;
-    top: 0;
-    left: 0;
-    /* margin: auto; */
-    width: 100%;
     display: flex !important;
     align-content: center;
     justify-content: center;
-    /* flex-direction: column; */
     align-items: center;
+    transform: translateX(-50%);
 }
-.sl-btn-carousel-l, .sl-btn-carousel-r{
+.sl-button-container .sl-card-collab{
+    opacity: 0;
+}
+.sl-button-container .sl-btn-carousel-l, .sl-button-container .sl-btn-carousel-r{
     position: static;
     opacity: 1;
     padding: 12px 12px 12px 12px;
@@ -81,36 +82,31 @@
     height: fit-content;
     width: fit-content;
 }
-.sl-btn-carousel-l{
+.sl-button-container .sl-btn-carousel-l{
     border-radius: 50% 0 0 50%;
+    transform: translateX(2px);
 }
-.sl-btn-carousel-r{
+.sl-button-container .sl-btn-carousel-r{
     border-radius: 0 50% 50% 0;
-
 }
-.sl-carousel-home:hover  .sl-button_container{
-
-
-}
-.sl-button_container:hover .sl-btn-carousel-l {
+/*sistemare transition*/
+.sl-button-container .sl-button-container-small:hover .sl-btn-carousel-l{
+    transition: translate 1s;
     border-radius: 50%;
     padding: 12px 12px 12px 12px;
     transform: translateX(-8px);
-    z-index: 1;
 }
-.sl-button_container:hover .sl-btn-carousel-r{
+.sl-button-container .sl-button-container-small:hover .sl-btn-carousel-r{
+    transition: translate 1s;
     border-radius: 50%;
     padding: 12px 12px 12px 12px;
-    transform: translateX(+8px);
-    z-index: 1;
+    transform: translateX(+9px);
 }
-.sl-button_container:hover .sl-btn-carousel-r{
-    z-index: -1
-}
-
 /* end button carousel*/
 
 /*end section what's new*/
+
+
 
 
 /* section our socks */
