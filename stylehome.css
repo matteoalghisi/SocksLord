@@ -1,5 +1,5 @@
 .section-welcome {
-    height: 700px;
+    
     
     background-image: url('img/home/Stars/stars-home-div1.png');
     background-position: center;
@@ -27,7 +27,18 @@
     text-align: center;
 }
 
+.wave-home-1{
+    width: 100%;
+   height: 340px;
+    background-image: url(img/home/wave-home-1.png);
+    background-position: center;
+    background-size: cover;
+}
+
 /* section what's new */
+
+
+
 @media (min-width: 576px) {
     .section-whats-new{
         padding: 5rem 0 !important;

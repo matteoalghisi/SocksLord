@@ -106,12 +106,19 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
     }
 }
 
+/*remove bootstrap default padding right left*/
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 
 /*inserimento font Brice*/
 @font-face{
     font-family: Brice;
     src: url(font/brice_font/Brice-Black.ttf);
 }
+
 
 /*font*/
 
