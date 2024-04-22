@@ -42,6 +42,14 @@
     background-color: var(--liliac-tangerine);
 }
 
+.sl-bg-peach {
+    background-color: var(--green-peach);
+}
+
+.sl-bg-grape {
+    background-color: var(--yellow-grape);
+}
+
 .sl-color-avocado{
     color: var(--white-avocado);
 }

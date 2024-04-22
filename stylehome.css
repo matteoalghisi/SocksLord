@@ -121,6 +121,12 @@
 
 
 /* section our socks */
+
+.section-our-socks {
+    padding-top: 52px;
+    padding-bottom: 52px;
+}
+
 .card-socks{
     height: 350px;
     width: 308px;
