@@ -21,36 +21,35 @@
 }
 */
 .section-welcome h1{
-    padding-top: 200px; /*mettendo la distanza più o meno come su figma, nel mio pc non rimane più al centro dello schermo il titolo*/
+   /* padding-top: 200px; mettendo la distanza più o meno come su figma, nel mio pc non rimane più al centro dello schermo il titolo*/
     padding-bottom: 54px;
     color: var(--white-avocado);
     text-align: center;
 }
 
+
 .wave-home-1{
     width: 100%;
-   height: 340px;
-    background-image: url(img/home/wave-home-1.png);
+    height: 272px;
+    background-image: url(img/home/wave-home-1-mobile.png);
     background-position: center;
     background-size: cover;
 }
-
-/* section what's new */
-
-
-
 @media (min-width: 576px) {
-    .section-whats-new{
-        padding: 5rem 0 !important;
+    .wave-home-1{
+        width: 100%;
+        height: 340px;
+        background-image: url(img/home/wave-home-1-desktop.png);
+        background-position: center;
+        background-size: cover;
     }
 }
 
-.sl-carousel-home{
-    padding-top: 2rem;
+
+/* section what's new */
+.section-whats-new{
+   padding: 5rem 0 !important;
 }
-
-
-
 
 .sl-card-collab{
    width: fit-content; 
