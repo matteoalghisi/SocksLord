@@ -120,12 +120,44 @@
 
 
 /* section our socks */
-
 .section-our-socks {
     padding-top: 52px;
     padding-bottom: 52px;
 }
+.sl-our-socks-container{
+    white-space: nowrap;
+}
 
+.sl-socks-slide{
+    display: inline-block;
+    overflow: hidden;
+    animation: 5s slide infinite linear; 
+}
+.sl-card-slider img{
+    width: 130px;
+    height: 174px;
+}
+.sl-card-slider{
+    display: inline;
+    width: fit-content; 
+    background-image: url('img/home/crateri_arancio_mobile.png');
+    background-size: cover;
+    margin: 0 24px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+/*
 .card-socks{
     height: 350px;
     width: 308px;
@@ -162,6 +194,8 @@
         height: auto;
     }
 }
+
+*/
 
 /* section resocks */
 .section-resocks {
