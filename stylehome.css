@@ -123,17 +123,23 @@
 .section-our-socks {
     padding-top: 52px;
     padding-bottom: 52px;
+    background-image: url(img/home/Bacgkround-home-green-yellow.png);
+    background-size: cover;
+    background-position: center;
+    
 }
 .sl-our-socks-container{
     white-space: nowrap;
+    overflow: hidden;
 }
 
 .sl-socks-slide{
     display: inline-block;
     overflow: hidden;
-    animation: 5s slide infinite linear; 
+    animation: 12s slide infinite linear; 
 }
 .sl-card-slider img{
+    padding-top: 32px;
     width: 130px;
     height: 174px;
 }
@@ -142,7 +148,8 @@
     width: fit-content; 
     background-image: url('img/home/crateri_arancio_mobile.png');
     background-size: cover;
-    margin: 0 24px;
+    margin: 0 32px;
+    padding: 48px;
 }
 
 @keyframes slide {
