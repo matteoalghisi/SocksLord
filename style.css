@@ -2,7 +2,8 @@
 
 :root {
     /* Color styles */
-    --gray-fig: #ECEBE9;
+    --gray-fig: #DCDCE0;
+    --gray-lemon: #1D1C22;
     --black-banana: #000000;
     --black-strawberry: #2E2D33;
     --white-avocado: #FAF9F6;
@@ -11,16 +12,7 @@
     --green-peach: #0BA85B;
     --orange-kiwi: #FD8040;
 
-    --dug-black: #39383F;
-    --dug-gray: #9891A1;
-
-    --bamp-w-grigino-chiaro: #E4E4E7;
-    --bamp-w-grigio-titolo: #DCDCE0;
-    --bamp-w-grigio-medio: #C5C4CB;
-    --bamp-w-grigio-scuro: #6C6A78;
-    --bamp-w-grigio-scuro-card: #1D1C22;
-
-    /*bootstrap customized*/
+    /* Bootstrap customized */
     --bs-border-color: var(--black-banana) !important;
     --bs-body-color: var(--black-strawberry) !important;
     --bs-link-color-rgb: var(--black-strawberry) !important;
@@ -29,33 +21,45 @@
     /*--sl-border-radius-075: 0.75rem;*/
 }
 
-/* background */
-.sl-bg-avocado{
-    background-color: var(--white-avocado);
-}
 
-.sl-bg-strawberry {
-    background-color: var(--black-strawberry);
+/* Color classes */
+.sl-color-fig{
+    color: var(--gray-fig);
 }
-
-.sl-bg-tangerine {
-    background-color: var(--liliac-tangerine);
-}
-
-.sl-bg-peach {
-    background-color: var(--green-peach);
-}
-
-.sl-bg-grape {
-    background-color: var(--yellow-grape);
-}
-
-.sl-color-avocado{
-    color: var(--white-avocado);
+.sl-color-lemon{
+    color: var(--gray-lemon);
 }
 .sl-color-banana{
     color: var(--black-banana);
 }
+.sl-color-strawberry{
+    color: var(--black-strawberry);
+}
+.sl-color-avocado{
+    color: var(--white-avocado);
+}
+.sl-color-kiwi{
+    color: var(--orange-kiwi);
+}
+
+
+/* Background colors */
+.sl-bg-avocado{
+    background-color: var(--white-avocado);
+}
+.sl-bg-strawberry {
+    background-color: var(--black-strawberry);
+}
+.sl-bg-tangerine {
+    background-color: var(--liliac-tangerine);
+}
+.sl-bg-peach {
+    background-color: var(--green-peach);
+}
+.sl-bg-grape {
+    background-color: var(--yellow-grape);
+}
+
 
 /* Sizes customized */
 .pb-6 {
@@ -524,6 +528,9 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 /*ombre*/
 .effect-style-default-shadow {
     box-shadow: 4px 4px 0px 0px var(--black-banana);
+}
+.effect-style-text-shadow {
+    text-shadow: 4px 4px var(--black-banana);
 }
 .effect-style-pressed-shadow {
     box-shadow: 2px 2px 0px 0px var(--black-banana);
