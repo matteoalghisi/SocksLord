@@ -24,6 +24,7 @@
     --bs-border-color: var(--black-banana) !important;
     --bs-body-color: var(--black-strawberry) !important;
     --bs-link-color-rgb: var(--black-strawberry) !important;
+    --bs-nav-tabs-link-active-border-color: var(--black-banana) !important;
 
     /*border*/
     /*--sl-border-radius-075: 0.75rem;*/
@@ -48,6 +49,9 @@
 
 .sl-bg-grape {
     background-color: var(--yellow-grape);
+}
+.sl-bg-kiwi {
+    background-color: var(--orange-kiwi);
 }
 
 .sl-color-avocado{
@@ -554,6 +558,7 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
     border: none;
     padding: 8px 10px 8px 14px;
     position: relative;
+    width: fit-content;
     text-decoration: none;
 }
 .sl-btn::after, .sl-btn-bw-white::after {
@@ -659,7 +664,7 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 .nav-link:hover{
     color: var(--orange-kiwi);
 }
-.active{
+.navbar .active{
     color: var(--orange-kiwi) !important;
 }
 
