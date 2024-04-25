@@ -60,6 +60,9 @@
 .sl-bg-grape {
     background-color: var(--yellow-grape);
 }
+.sl-bg-kiwi {
+    background-color: var(--orange-kiwi);
+}
 
 
 /* Sizes customized */
