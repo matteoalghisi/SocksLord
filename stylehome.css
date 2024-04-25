@@ -254,7 +254,7 @@ END SECTION OUR SOCKS
 .sl-create-nav-tab .nav .active{
     background-color: var(--orange-kiwi);
     border-width: 1px;
-    color: var(--black-strawberry);
+    color: var(--black-strawberry) !important;
     border-right: 1px solid var(--orange-kiwi); 
 } 
 @media (min-width: 576px) {
