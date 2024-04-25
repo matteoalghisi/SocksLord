@@ -19,16 +19,19 @@
   </head>
   
   <body class="sl-bg-strawberry">
-    <nav class="navbar navbar-expand-xl fixed-top sl-bg-avocado mt-1 mx-1 mt-sm-3 mx-sm-3 border rounded-3 rounded-sm-2 effect-style-default-shadow">
-      <div class="prova container-fluid d-flex justify-content-between px-3">
-        <button class="navbar-toggler border-0 px-0 px-sm-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+    <nav class="navbar navbar-expand-xl fixed-top  mt-1 mx-1 mt-sm-3 mx-sm-3 ">
+      <div class="sl-not-collapsed container-fluid d-flex justify-content-between px-3 sl-bg-avocado border p-2 p-sm-3 effect-style-default-shadow">
+        <button id="navbar-toggler" class="navbar-toggler border-0 px-0 px-sm-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="toggler-icon top-bar"></span>
           <span class="toggler-icon middle-bar"></span>
           <span class="toggler-icon bottom-bar"></span>
         </button>
         <a class="navbar-brand d-flex align-items-center px-0 px-sm-3 m-0" href="#"><img src="img/logo/Logo-sockslord.svg" alt="sockslord's logo"/></a>
         <a class="py-1 px-sm-3 d-xl-none" href="#"><span class="cart-icon"></span></a>
-        <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+        
+        <!--desktop-->
+        <div class="d-none d-xl-inline collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link px-3" href="#">Product</a>
@@ -47,7 +50,36 @@
             </li>
           </ul>
         </div>
-        <!-- <a class="py-1 px-sm-3 d-none d-xl-inline" href="#"><span class="cart-icon"></span></a> -->
+        
+        <a class="py-1 px-sm-3 d-none d-xl-inline" href="#"><span class="cart-icon"></span></a>
+      </div>
+
+      <!--mobile-->
+      <div class="d-xl-none ">
+      <div class="sl-collapse-mobile collapse navbar-collapse d-xl-none flex-row-reverse border-start border-end border-bottom sl-bg-avocado effect-style-default-shadow" id="navbarSupportedContent" aria-e>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link px-3 py-4" href="#">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3 py-4" href="#">Emporium</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3 py-4" href="#">SocksLab</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3 py-4" aria-current="page" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3 py-4" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+
+
+    </nav>
+        <!--
         <input type="checkbox" id="cart-toggle" class="cart-toggle-checkbox">
         <label for="cart-toggle" class="cart-toggle-label">
             <img src="img/icon/Sacchetto-default.svg" alt="Image 1" class="cart">
@@ -55,8 +87,8 @@
         <label for="cart-toggle" class="cart-toggle-label">
             <img src="img/icon/Sachetto-active.svg" alt="Image 2" class="cart">
         </label>
-      </div>
-    </nav>
+        -->
+      
     
 
 
@@ -394,8 +426,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script>
-
-
+   /*script for toggling the navbar corner*/
+      $("#navbar-toggler").click(function(){
+        if ( $('.navbar-toggler').attr('aria-expanded') == 'true' ) {
+          $(".sl-not-collapsed").css({"border-radius": "1rem 1rem 1rem 0rem"});
+        } else {
+          $(".sl-not-collapsed").delay(400).queue(function (next) { 
+            $(this).css({"border-radius": "1rem"}); 
+            next(); 
+          });
+        }
+        });
     </script>
 
   </body>
