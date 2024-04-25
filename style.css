@@ -116,11 +116,23 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 .sl-mt-first-div{
     margin-top: 64px;
 }
+.sl-mt-last-div{
+    margin-bottom: 564px;
+}
 @media (min-width: 576px) {
     .sl-mt-first-div{
         margin-top: 84px;
     }
+    .sl-mt-last-div{
+        margin-bottom: 0;
+    }
 }
+@media (min-width: 992px) {
+    .sl-mt-last-div{
+        margin-bottom: 0px;
+    }
+}
+
 
 /*remove bootstrap default padding right left*/
 .container-fluid{

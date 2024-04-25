@@ -64,6 +64,9 @@
         height: 230px;
     }
 }
+.sl-carousel-home{
+    overflow: hidden;
+}
 .carousel-inner{
     pointer-events: none;
 }
@@ -207,7 +210,8 @@ END SECTION OUR SOCKS
 
 /*start section create socks*/
 .section-create{
-    padding: 5rem 0 !important;
+    padding-top: 6rem;
+    padding-bottom: 12rem;
 }
 .sl-create-nav-tab{
     width: fit-content;
@@ -269,7 +273,6 @@ END SECTION OUR SOCKS
         width: fit-content;
     } 
 }
-
 .sl-create-nav-tab .nav .nav-link:hover{
     border-left: 1px solid var(--black-banana);
     border-top: 1px solid var(--black-banana);
@@ -343,15 +346,55 @@ END SECTION OUR SOCKS
 
 
 /* section resocks */
-.section-resocks {
-    height: 500px;
-    padding-left: 16px;
-    /* background-image: url('img/home/Stars/star-home-resocks-mobile.png'); queste sono le stelle che dovrebbero apparire solo nel mobile*/
-    background-position: center;
+.section-resocks{
+    
+}
+.section-resocks .row{
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+.wave-home-2{
+    width: 100%;
+    height: 310px;
+    background-image: url(img/home/wave-home-2-mobile.png);
+    background-position: top;
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
+@media (min-width: 576px) {
+    .section-resocks{
+        
+    }
+    .section-resocks .row{
+        padding-top: 400px;
+        padding-bottom: 120px;
+    }
+    .wave-home-2{
+        height: 340px;
+        background-image: url(img/home/wave-home-2-lg.png);
+        background-position-y: top;
+        background-position-x: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .section-resocks{
+        
+    }
+    .wave-home-2{
+        height: 792px;
+        background-image: url(img/home/wave-home-2-desktop.png);
+        background-position: top;
+
+    }
+    .section-resocks .row{
+        padding-top: 340px;
+        padding-bottom: 120px;
+    }
+}
+
+
+/*
 .section-resocks h2 {
     color: var(--white-avocado);
     text-align: left;
@@ -369,9 +412,10 @@ END SECTION OUR SOCKS
     text-align: left;
     padding-bottom: 1.5rem;
 }
-
+*/
 /* ci sono da sistemare le stelline e il bottone che rimane centrale, ma non riesco a trovare il punto in cui dargli l'allineamento a sinistra */
 @media (min-width: 576px) {
+    /*
     .section-resocks {
         height: 1000px;
         padding-left: 82px;
@@ -385,6 +429,7 @@ END SECTION OUR SOCKS
         background-position: center;
         background-size: cover;
     }
+    */
 }
 
 
