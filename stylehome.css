@@ -212,10 +212,16 @@ END SECTION OUR SOCKS
 .section-create{
     padding-top: 6rem;
     padding-bottom: 6rem;
+    
 }
 .sl-create-nav-tab{
     width: fit-content;
 }
+.sl-create-nav-tab>img{
+    width: 207px;
+    height: 155px;
+    transform: translateX(50%) translateY(50%);
+};
 .sl-create-nav-tab .nav{
     width: fit-content;
     border-bottom: 1px solid var(--black-banana);
@@ -292,6 +298,7 @@ END SECTION OUR SOCKS
     border-right: 1px solid var(--black-banana);
     border-bottom: 1px solid var(--black-banana);
     border-radius: 0px 8px 8px 0px;
+    z-index: 1;
 }
 @media (min-width: 576px) {
     .sl-create-nav-tab .tab-content{

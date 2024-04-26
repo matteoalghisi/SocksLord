@@ -445,6 +445,7 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
     text-decoration: none;
     text-transform: none;
     text-align: left;
+    margin: 0 0 24px 0;
 }
 @media (min-width: 576px) {
     .text-style-bw-h2 {
@@ -456,6 +457,7 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
         text-decoration: none;
         text-transform: uppercase;
         text-align: left;
+        margin: 0 0 32px 0;
     }
 }
 
