@@ -66,6 +66,7 @@
 }
 .sl-carousel-home{
     overflow: hidden;
+    padding-bottom: 4px;
 }
 .carousel-inner{
     pointer-events: none;

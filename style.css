@@ -42,6 +42,9 @@
 .sl-color-kiwi{
     color: var(--orange-kiwi);
 }
+.sl-color-grape{
+    color: var(--yellow-grape);
+}
 
 
 /* Background colors */
@@ -116,12 +119,18 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 .sl-mt-first-div{
     margin-top: 64px;
 }
+.sl-pt-first-div{
+    padding-top: 64px;
+}
 .sl-mt-last-div{
     margin-bottom: 564px;
 }
 @media (min-width: 576px) {
     .sl-mt-first-div{
         margin-top: 84px;
+    }
+    .sl-pt-first-div{
+        padding-top: 84px;
     }
     .sl-mt-last-div{
         margin-bottom: 0;
@@ -575,12 +584,17 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 
 /*button genral settings*/
 .sl-btn, .sl-btn-bw-white {
+    display: flex;
+    gap: 8px;
     margin: 0 0;
     border: none;
     padding: 8px 10px 8px 14px;
     position: relative;
     width: fit-content;
     text-decoration: none;
+}
+.sl-btn img, .sl-btn-bw-white img{
+    padding-top: 3px;
 }
 .sl-btn::after, .sl-btn-bw-white::after {
     transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
