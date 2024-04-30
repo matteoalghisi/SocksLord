@@ -26,21 +26,48 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         
         //gsap animation for aircraft in product page
-        let tl = gsap.timeline({
+        let tlMd = gsap.timeline({
             scrollTrigger: {
-                trigger: ".aircraft",
-                start: "100",
-                end: "800",
+                trigger: ".aircraft-md",
+                start: "400 center" ,
+                end: "1200 center" ,
                 scrub: true,
-                markers: false
+                markers: true,
+                //toggleActions: "play pause pause pause"
             }
         })
+        tlMd.to('.aircraft-md', {
+            y: 430,
+            rotation: 45
+        })
+        .from('.aircraft-light-md', {
+            opacity: 0
+        })
+        .to('.aircraft-text', {
+            color: "#000000"
+        }, "<" )
         
-        tl.to('.aircraft', {
+        let tlLg = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".aircraft-lg",
+                start: "400 center" ,
+                end: "1200 center" ,
+                scrub: true,
+                markers: true,
+                //toggleActions: "play pause pause pause"
+            }
+        })
+        tlLg.to('.aircraft-lg', {
             y: 660,
             rotation: 45
         })
-    
+        .from('.aircraft-light-lg', {
+            opacity: 0
+        })
+        .to('.aircraft-text', {
+            color: "#000000"
+        }, "<" )
+
 
 
    });
