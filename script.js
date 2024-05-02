@@ -26,24 +26,54 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         
         //gsap animation for aircraft in product page
+        let tlSm = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".aircraft-sm",
+                start: "100 center" ,
+                end: "800 center" ,
+                scrub: true,
+                markers: false,
+                //toggleActions: "play pause pause pause"
+            }
+        })
+        tlSm.to('.aircraft-sm', {
+            y: 380,
+            x: 130,
+            rotation: 45
+        })
+        .from('.aircraft-light-sm', {
+            opacity: 0
+        })
+        .to('.aircraft-text', {
+            color: "#000000"
+        }, "<" )
+        .to('.aircraft-btn-text', {
+            color: "#000000"
+        }, "<" )
+
+        
+        
         let tlMd = gsap.timeline({
             scrollTrigger: {
                 trigger: ".aircraft-md",
-                start: "400 center" ,
-                end: "1200 center" ,
+                start: "200 center" ,
+                end: "950 center" ,
                 scrub: true,
                 markers: true,
                 //toggleActions: "play pause pause pause"
             }
         })
         tlMd.to('.aircraft-md', {
-            y: 430,
+            y: 510,
             rotation: 45
         })
         .from('.aircraft-light-md', {
             opacity: 0
         })
         .to('.aircraft-text', {
+            color: "#000000"
+        }, "<" )
+        .to('.aircraft-btn-text', {
             color: "#000000"
         }, "<" )
         
@@ -53,7 +83,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 start: "400 center" ,
                 end: "1200 center" ,
                 scrub: true,
-                markers: true,
+                markers: false,
                 //toggleActions: "play pause pause pause"
             }
         })
@@ -65,6 +95,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
             opacity: 0
         })
         .to('.aircraft-text', {
+            color: "#000000"
+        }, "<" )
+        .to('.aircraft-btn-text', {
             color: "#000000"
         }, "<" )
 

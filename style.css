@@ -583,7 +583,7 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 
 
 /*button genral settings*/
-.sl-btn, .sl-btn-bw-white {
+.sl-btn, .sl-btn-bw-white, .sl-btn-bw-dark {
     display: flex;
     gap: 8px;
     margin: 0 0;
@@ -593,10 +593,10 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
     width: fit-content;
     text-decoration: none;
 }
-.sl-btn img, .sl-btn-bw-white img{
+.sl-btn img, .sl-btn-bw-white img, .sl-btn-bw-dark img{
     padding-top: 3px;
 }
-.sl-btn::after, .sl-btn-bw-white::after {
+.sl-btn::after, .sl-btn-bw-white::after, .sl-btn-bw-dark::after {
     transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
     content: '';
     width:  40px;
@@ -607,7 +607,7 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
     z-index: 0;
     border: solid 1px var(--black-banana);
 }
-.sl-btn .sl-btn-text, .sl-btn-bw-white .sl-btn-text {
+.sl-btn .sl-btn-text, .sl-btn-bw-white .sl-btn-text, .sl-btn-bw-dark .sl-btn-text {
     display: inline-block;
     height: 100%;
     margin-right: 16px;
@@ -615,28 +615,28 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
     position: relative;
     z-index: 2;
 }
-.sl-btn .sl-btn-icon, .sl-btn-bw-white .sl-btn-icon{
+.sl-btn .sl-btn-icon, .sl-btn-bw-white .sl-btn-icon, .sl-btn-bw-dark .sl-btn-icon{
     height: 100%;
     display: inline-flex;
     align-items: center;
     position: relative;
     z-index: 2;
 }
-.sl-btn:hover, .sl-btn-bw-white:hover{
+.sl-btn:hover, .sl-btn-bw-white:hover, .sl-btn-bw-dark:hover{
     transform: translateX(4px);
     transform: translatey(-4px);
     transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
 }
-.sl-btn:hover::after, .sl-btn-bw-white:hover::after{
+.sl-btn:hover::after, .sl-btn-bw-white:hover::after, .sl-btn-bw-dark:hover::after{
     box-shadow: 4px 4px 0px var(--black-banana);
     width: 100%;
 }
-.sl-btn:focus, .sl-btn-bw-white:focus{
+.sl-btn:focus, .sl-btn-bw-white:focus, .sl-btn-bw-dark:focus{
     transform: translateX(2px);
     transform: translatey(-2px);
     transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
 }
-.sl-btn:focus::after, .sl-btn-bw-white:focus::after {
+.sl-btn:focus::after, .sl-btn-bw-white:focus::after, .sl-btn-bw-dark:focus::after {
     box-shadow: 2px 2px 0px var(--black-banana);
     width: 100%;
 }
@@ -652,6 +652,19 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 .sl-btn-bw-white:hover  {
     color: var(--black-strawberry);
 }
+/*button bw dark*/
+.sl-btn-bw-dark{
+    color: var(--black-strawberry);
+}
+.sl-btn-bw-dark::after {
+    background: var(--black-strawberry);
+    transform: skew(-15deg);
+    border-radius: 0;
+}
+.sl-btn-bw-dark:hover  {
+    color: var(--white-avocado);
+}
+
 /*button orange*/
 .sl-btn{
     color: var(--black-strawberry);
