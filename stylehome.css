@@ -10,7 +10,22 @@
     }
 }*/
 
+
 .sx-stars{
+    background-image: url('img/home/Stars/sx-stars.png');
+    background-size: cover;
+    width: 10%;
+}
+.dx-stars{
+    background-image: url('img/home/Stars/sx-stars.png');
+    background-size: cover;
+    width: 10%;
+}
+.hero-block{
+    width: 80%;
+}
+
+/*.sx-stars{
     background-image: url('img/home/Stars/sx-stars.png');
     background-size: contain;
     width: 200px;
@@ -19,7 +34,7 @@
     top: 0%;
     margin-right: 20vw;
     z-index: -1;
-}
+}*/
 
 /*
 .section-welcome .star-home-welcome{
