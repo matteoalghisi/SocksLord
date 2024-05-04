@@ -44,10 +44,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
         .from('.aircraft-light-sm', {
             opacity: 0
         })
-        .to('.aircraft-text', {
+        .to('.aircraft-text-sm', {
             color: "#000000"
         }, "<" )
-        .to('.aircraft-btn-text', {
+        .to('.aircraft-btn-text-sm', {
             color: "#000000"
         }, "<" )
 
@@ -70,10 +70,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
         .from('.aircraft-light-md', {
             opacity: 0
         })
-        .to('.aircraft-text', {
+        .to('.aircraft-text-md', {
             color: "#000000"
         }, "<" )
-        .to('.aircraft-btn-text', {
+        .to('.aircraft-btn-text-md', {
             color: "#000000"
         }, "<" )
         
@@ -94,10 +94,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
         .from('.aircraft-light-lg', {
             opacity: 0
         })
-        .to('.aircraft-text', {
+        .to('.aircraft-text-lg', {
             color: "#000000"
         }, "<" )
-        .to('.aircraft-btn-text', {
+        .to('.aircraft-btn-text-lg', {
             color: "#000000"
         }, "<" )
 

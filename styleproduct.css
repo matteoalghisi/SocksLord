@@ -1,17 +1,9 @@
-
-
-.wave-product-1{
-    width: 100%;
-    height: 990px;
-    background-image: url(img/product/wave-product-1-mobile.png);
-    background-position-y: top;
-    background-position-x: left;
-    background-size: cover;
-    z-index: -1;
-}
 .section-product-first {
     margin-bottom: 800px;
     height: 519px;
+}
+.section-product-second{
+    margin-bottom: 300px;
 }
 
 .section-product-second .aircraft-md, .section-product-second .aircraft-lg, .section-product-second .aircraft-sm{
@@ -21,18 +13,16 @@
 .section-product-second .aircraft-light-md, .section-product-second .aircraft-light-lg, .section-product-second .aircraft-light-sm{
     background-color: var(--white-avocado);
     width: 100%;
-    transform: translateY(-570px);
     z-index: -1;
-
 } 
-
-
-
 .wave-product-1{
     width: 100%;
     height: 902px;
     background-image: url(img/product/wave-product-1-mobile.png);
-    transform: translateY(0);
+    background-position-y: top;
+    background-position-x: left;
+    background-size: cover;
+    z-index: -1;
 }
 .section-product-second .aircraft-sm{
     top: 810px;
@@ -41,7 +31,8 @@
     right: 100px;
 }
 .section-product-second .aircraft-light-sm{
-    top: 1828px;
+    transform: translateY(-570px);
+    /*top: 1828px;*/
     height: 2060px;
     right: 100px;
     clip-path: polygon(100% 0, 0 2%, 0 100%);
@@ -52,10 +43,8 @@
 .section-product-second .sl-product-second-p2{
     max-width: 50%;
 }
-
 @media (min-width: 576px) {
     .wave-product-1{
-        width: 100%;
         height: 902px;
         background-image: url(img/product/wave-product-1-mobile.png);
         transform: translateY(0);
@@ -67,7 +56,7 @@
         right: 100px;
     }
     .section-product-second .aircraft-light-sm{
-        top: 1828px;
+        /*top: 1828px;*/
         height: 2060px;
         right: 100px;
         clip-path: polygon(100% 0, 0 2%, 0 100%);
@@ -92,7 +81,7 @@
         right: 20px;
     }
     .section-product-second .aircraft-light-md{
-        top: 1828px;
+        /*top: 1828px;*/
         right: 170px;
         height: 1560px;
         clip-path: polygon(100% 0, 0 4.5%, 0 86%);
@@ -104,7 +93,6 @@
         max-width: 80%;
     }
 }
-
 @media (min-width: 992px) {
     .wave-product-1{
         background-position: top;
@@ -117,7 +105,7 @@
         right: 0px;
     }
     .section-product-second .aircraft-light-lg{
-        top: 1738px;
+        /*top: 1738px;*/
         right: 170px;
         height: 1560px;
         clip-path: polygon(100% 0, 0 5%, 0 70%);
@@ -129,10 +117,9 @@
         max-width: 64%;
     }
 }
-
 @media (min-width: 1200px) {
     .section-product-second .aircraft-light-lg{
-        top: 1750px;
+        /*top: 1750px;*/
         right: 220px;
         clip-path: polygon(100% 0, 0 5%, 0 74%);
     }
@@ -147,10 +134,9 @@
         max-width: 84%;
     }
 }
-
 @media (min-width: 1400px) {
     .section-product-second .aircraft-light-lg{
-        top: 1780px;
+        /*top: 1780px;*/
         right: 270px;
         clip-path: polygon(100% 0, 0 5%, 0 64%);
     }
@@ -162,4 +148,20 @@
         max-width: 96%;
     }
     
+}
+
+/*start product-material section*/
+.sl-product-materials{
+    background-color: red;
+    z-index: 4;
+}
+
+.sl-product-materials .sl-card-main{
+    width: 80%;
+    
+}
+
+
+.sl-product-materials .sl-card-scroll{
+    width: 80%;
 }
