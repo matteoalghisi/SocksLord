@@ -10,7 +10,34 @@
     }
 }*/
 
+
 .sx-stars{
+    background-image: url('img/home/Stars/sx-stars-mobile.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15%;
+}
+@media (min-width: 576px) {
+    .sx-stars{
+        background-image: url('img/home/Stars/sx-stars-tablet.png');
+    }
+}
+@media (min-width: 992px) {
+    .sx-stars{
+        background-image: url('img/home/Stars/sx-stars-desktop.png');
+    }
+}
+
+.dx-stars{
+    background-image: url('img/home/Stars/sx-stars.png');
+    background-size: cover;
+    width: 15%;
+}
+.hero-block{
+    width: 70%;
+}
+
+/*.sx-stars{
     background-image: url('img/home/Stars/sx-stars.png');
     background-size: contain;
     width: 200px;
@@ -19,7 +46,7 @@
     top: 0%;
     margin-right: 20vw;
     z-index: -1;
-}
+}*/
 
 /*
 .section-welcome .star-home-welcome{
