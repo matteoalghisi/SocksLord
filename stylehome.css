@@ -12,17 +12,29 @@
 
 
 .sx-stars{
-    background-image: url('img/home/Stars/sx-stars.png');
-    background-size: cover;
-    width: 10%;
+    background-image: url('img/home/Stars/sx-stars-mobile.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15%;
 }
+@media (min-width: 576px) {
+    .sx-stars{
+        background-image: url('img/home/Stars/sx-stars-tablet.png');
+    }
+}
+@media (min-width: 992px) {
+    .sx-stars{
+        background-image: url('img/home/Stars/sx-stars-desktop.png');
+    }
+}
+
 .dx-stars{
     background-image: url('img/home/Stars/sx-stars.png');
     background-size: cover;
-    width: 10%;
+    width: 15%;
 }
 .hero-block{
-    width: 80%;
+    width: 70%;
 }
 
 /*.sx-stars{
