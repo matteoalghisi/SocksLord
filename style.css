@@ -173,13 +173,6 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 @media (min-width: 576px) {
     .text-style-h1 {
         font-size: 3.5rem;
-        font-family: Brice, serif;
-        font-weight: 900;
-        font-style: normal;
-        line-height: 100%;
-        text-decoration: none;
-        text-transform: uppercase;
-        margin: 0;
     }
 }
 
@@ -197,12 +190,6 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 @media (min-width: 576px) {
     .text-style-h2 {
         font-size: 2.5rem;
-        font-family: Brice, sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        line-height: 100%;
-        text-decoration: none;
-        text-transform: uppercase;
         margin: 0 0 32px 0;
     }
 }
@@ -221,13 +208,6 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 @media (min-width: 576px) {
     .text-style-h3 {
         font-size: 2rem;
-        font-family: "Space Grotesk";
-        font-weight: 700;
-        font-style: normal;
-        line-height: 100%;
-        text-decoration: none;
-        text-transform: none;
-        margin: 0;
     }
 }
 
@@ -245,13 +225,7 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 @media (min-width: 576px) {
     .text-style-h4 {
         font-size: 1.5rem;
-        font-family: "Space Grotesk";
-        font-weight: 700;
-        font-style: normal;
         line-height: 24px;
-        text-decoration: none;
-        text-transform: none;
-        margin: 0 0 16px 0;
     }
 }
 
@@ -269,17 +243,11 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 @media (min-width: 576px) {
     .text-style-h5 {
         font-size: 1.125rem;
-        font-family: "Space Grotesk";
-        font-weight: 500;
-        font-style: normal;
         line-height: 125%;
-        text-decoration: none;
-        text-transform: none;
-        margin: 0;
     }
 }
 
-/*h5-regular*/
+/*h6*/
 .text-style-h5-regular {
     font-size: 1rem;
     font-family: "Space Grotesk";
@@ -293,13 +261,7 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 @media (min-width: 576px) {
     .text-style-h5-regular {
         font-size: 1.125rem;
-        font-family: "Space Grotesk";
-        font-weight: 400;
-        font-style: normal;
         line-height: 125%;
-        text-decoration: none;
-        text-transform: none;
-        margin: 0;
     }
 }
 
@@ -320,13 +282,7 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 @media (min-width: 576px) {
     .text-style-body-copy {
         font-size: 1.125rem;
-        font-family: "Space Grotesk";
-        font-weight: 400;
-        font-style: normal;
         line-height: 125%;
-        text-decoration: none;
-        text-transform: none;
-        margin: 0;
         + p {
             margin-top: 8px;
         }
@@ -346,12 +302,7 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 @media (min-width: 576px) {
     .text-style-body-copy-small {
         font-size: 1rem;
-        font-family: "Space Grotesk";
-        font-weight: 400;
-        font-style: normal;
         line-height: 125%;
-        text-decoration: none;
-        text-transform: none;
     }
 }
 
@@ -368,12 +319,6 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 @media (min-width: 576px) {
     .text-style-button {
         font-size: 1.25rem;
-        font-family: "Space Grotesk";
-        font-weight: 400;
-        font-style: normal;
-        line-height: 100%;
-        text-decoration: none;
-        text-transform: none;
     }
 }
 
@@ -390,20 +335,14 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 @media (min-width: 576px) {
     .text-style-header-footer {
         font-size: 1.25rem;
-        font-family: "Space Grotesk";
-        font-weight: 500;
-        font-style: normal;
-        line-height: 100%;
-        text-decoration: none;
-        text-transform: none;
     }
 }
 
 /*black and white text styles*/
-/*h1 home*/
-.text-style-bw-h1-home {
+/*h1 hero*/
+.text-style-bw-h1-hero {
     font-size: 3rem;
-    font-family: Good Times;
+    font-family: "Good Times";
     font-weight: 400;
     font-style: normal;
     line-height: 100%;
@@ -412,34 +351,20 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
     text-align: center;
 }
 @media (min-width: 576px) {
-    .text-style-bw-h1-home {
+    .text-style-bw-h1-hero {
         font-size: 4rem;
-        font-family: Good Times;
-        font-weight: 400;
-        font-style: normal;
-        line-height: 100%;
-        text-decoration: none;
-        text-transform: uppercase;
-        text-align: center;
     }
 }
 @media (min-width: 768px) {
-    .text-style-bw-h1-home {
+    .text-style-bw-h1-hero {
         font-size: 6rem;
-        font-family: Good Times;
-        font-weight: 400;
-        font-style: normal;
-        line-height: 100%;
-        text-decoration: none;
-        text-transform: uppercase;
-        text-align: center;
     }
 }
 
 /*h1*/
 .text-style-bw-h1 {
     font-size: 2.5rem;
-    font-family: Good Times;
+    font-family: "Good Times";
     font-weight: 400;
     font-style: normal;
     line-height: 100%;
@@ -449,19 +374,13 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 @media (min-width: 576px) {
     .text-style-bw-h1 {
         font-size: 3.5rem;
-        font-family: Good Times;
-        font-weight: 400;
-        font-style: normal;
-        line-height: 100%;
-        text-decoration: none;
-        text-transform: uppercase;
     }
 }
 
 /*h2*/
 .text-style-bw-h2 {
     font-size: 1.125rem;
-    font-family: Good Times;
+    font-family: "Good Times";
     font-weight: 400;
     font-style: normal;
     line-height: 105%;
@@ -473,13 +392,8 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 @media (min-width: 576px) {
     .text-style-bw-h2 {
         font-size: 2.5rem;
-        font-family: Good Times;
-        font-weight: 400;
-        font-style: normal;
         line-height: 100%;
-        text-decoration: none;
         text-transform: uppercase;
-        text-align: left;
         margin: 0 0 32px 0;
     }
 }
@@ -487,7 +401,7 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 /*h3*/
 .text-style-bw-h3 {
     font-size: 1.5rem;
-    font-family: Good Times;
+    font-family: "Good Times";
     font-weight: 400;
     font-style: normal;
     line-height: 100%;
@@ -497,11 +411,6 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 @media (min-width: 576px) {
     .text-style-bw-h3 {
         font-size: 2rem;
-        font-family: Good Times;
-        font-weight: 400;
-        font-style: normal;
-        line-height: 100%;
-        text-decoration: none;
         text-transform: none;
     }
 }
