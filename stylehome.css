@@ -1,66 +1,43 @@
-/*.section-welcome {
-    background-image: url('img/home/Stars/prova-stelle-mobile.png');
-    background-position: top;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-@media (min-width: 576px) {
-    .section-welcome{
-        background-image: url('img/home/Stars/prova-stelle.png');
-    }
-}*/
-
-
+/* sfondo stelle hero */
 .sx-stars{
-    background-image: url('img/home/Stars/sx-stars-mobile.png');
+    background-image: url('img/home/Stars/sx-stars-hero-mobile.png');
     background-size: contain;
     background-repeat: no-repeat;
     width: 15%;
 }
 @media (min-width: 576px) {
     .sx-stars{
-        background-image: url('img/home/Stars/sx-stars-tablet.png');
+        background-image: url('img/home/Stars/sx-stars-hero-tablet.png');
     }
 }
 @media (min-width: 992px) {
     .sx-stars{
-        background-image: url('img/home/Stars/sx-stars-desktop.png');
+        background-image: url('img/home/Stars/sx-stars-hero-desktop.png');
     }
 }
 
 .dx-stars{
-    background-image: url('img/home/Stars/sx-stars.png');
-    background-size: cover;
+    background-image: url('img/home/Stars/dx-stars-hero-mobile.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
     width: 15%;
+}
+@media (min-width: 576px) {
+    .dx-stars{
+        background-image: url('img/home/Stars/dx-stars-hero-tablet.png');
+    }
+}
+@media (min-width: 992px) {
+    .dx-stars{
+        background-image: url('img/home/Stars/dx-stars-hero-desktop.png');
+    }
 }
 .hero-block{
     width: 70%;
 }
 
-/*.sx-stars{
-    background-image: url('img/home/Stars/sx-stars.png');
-    background-size: contain;
-    width: 200px;
-    height: 700px;
-    left: 0;
-    top: 0%;
-    margin-right: 20vw;
-    z-index: -1;
-}*/
 
-/*
-.section-welcome .star-home-welcome{
-    background-position: center;
-    background-size: contain;
-}
-.section-welcome .star-home-welcome-sx{
-    background-image: url("img/home/Stars/star-home-div1-sx.png");
-    
-}
-.section-welcome .star-home-welcome-dx{
-    background-image: url("img/home/Stars/star-home-div1-dx.png");
-}
-*/
 .section-welcome h1{
    /* padding-top: 200px; mettendo la distanza più o meno come su figma, nel mio pc non rimane più al centro dello schermo il titolo*/
     padding-bottom: 54px;

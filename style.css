@@ -421,7 +421,6 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
         text-decoration: none;
         text-transform: uppercase;
         text-align: center;
-        max-width: 972px;
     }
 }
 @media (min-width: 768px) {
@@ -434,7 +433,6 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
         text-decoration: none;
         text-transform: uppercase;
         text-align: center;
-        max-width: 972px;
     }
 }
 
