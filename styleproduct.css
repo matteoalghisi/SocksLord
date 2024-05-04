@@ -155,13 +155,13 @@
     background-color: red;
     z-index: 4;
 }
-
 .sl-product-materials .sl-card-main{
-    width: 80%;
-    
+    width: 90%;
 }
-
-
 .sl-product-materials .sl-card-scroll{
-    width: 80%;
+    width: 90%;
+    height: 180px;
+}
+.sl-product-materials .sl-card-scroll h3, .sl-product-materials .sl-card-scroll p{
+    width: fit-content;
 }
