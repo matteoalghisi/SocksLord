@@ -92,8 +92,8 @@
         <!-- section socky emporium -->
         <section class="section-emporium-first sl-bg-strawberry position-relative">
             <div class="sl-pt-first-div top-0 sl-bg-strawberry w-100 "></div>
-            <div class="row">
-                <div class="col-sm-3 col-lg-7">
+            <div class="row justify-content-center justify-content-lg-start mx-3">
+                <div class="col-sm-3 col-lg-7 pb-5 pb-lg-5">
                     <h1 class="text-style-bw-h2 sl-color-avocado">
                         socky emporium
                     </h1>
@@ -101,17 +101,57 @@
                         Inizia un viaggio personalizzato alla scoperta del tuo stile
                     </h4>
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-lg-5">
                             <p class="text-style-bw-body-copy sl-color-avocado">
                                 Scegli tra le nostre calze pronte all'uso o crea la tua per un tocco unico nel nostro Custom Lab
                             </p>
                         </div>
                     </div>
-                    
+                    <div class="pt-4">
+                        <a href="" class="sl-btn-bw-white">
+                          <span class="sl-btn-text text-style-button">Scopri ReSocks</span>
+                          <span class="sl-btn-icon"><img src="img/icon/Arrow-right.svg" alt=""></span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- section calze con filtri -->
+        <section>
+            <div class="dropdown">
+                <button onclick="funzioneCollab()" class="dropbtn text-style-button border-2">
+                    <span>Collabs</span>
+                    <span class="sl-btn-icon"><img src="img/icon/arrow-bottom-desktop.svg" alt=""></span>
+                </button>
+                <div id="dropdownCollab" class=" myDropdown dropdown-content">
+                    <a href="#collab1">Lux x SocksLord</a>
+                    <a href="#collab2">collab2</a>
+                    <a href="#collab3">collab3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="funzioneColore()" class="dropbtn text-style-button border-2">
+                    <span>Collabs</span>
+                    <span class="sl-btn-icon"><img src="img/icon/arrow-bottom-desktop.svg" alt=""></span>
+                </button>
+                <div id="dropdownColor" class="dropdown-content">
+                    <a href="#colore1">colore</a>
+                    <a href="#colore2">colore2</a>
+                    <a href="#colore3">colore3</a>
+                </div>
+            </div>
+        </section>
       
+    
+        <script>
+            /* Script per far funzionare il dropdown dei filtri */
+            function funzioneCollab() {
+                document.getElementById("dropdownCollab").classList.toggle("show");
+            } 
+            function funzioneColore() {
+                document.getElementById("dropdownColor").classList.toggle("show");
+            } 
+        </script>
     </body>
 </html>
