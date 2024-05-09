@@ -16,6 +16,7 @@ $(document).ready(function(){
         }
     });
 
+
 });
 
 
@@ -24,7 +25,6 @@ $(document).ready(function(){
 document.addEventListener("DOMContentLoaded", (event) => {
     gsap.registerPlugin(ScrollTrigger)
 
-        
         //gsap animation for aircraft in product page
         let tlSm = gsap.timeline({
             scrollTrigger: {
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 start: "200 center" ,
                 end: "950 center" ,
                 scrub: true,
-                markers: true,
+                markers: false,
                 //toggleActions: "play pause pause pause"
             }
         })
@@ -102,6 +102,34 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }, "<" )
 
 
+
+
+        //animation for scrolling card in product page
+        const cards = gsap.utils.toArray(".sl-card-scroll");
+        const spacer = 20;
+
+        cards.forEach((card, index) => {
+        ScrollTrigger.create({
+            trigger: card,
+            start: `top-=${index * spacer} top+=400px`,
+            endTrigger: ".pin-panel",
+            end: `bottom top+=${200 + cards.length * spacer}`,
+            pin: true,
+            pinSpacing: false,
+            markers: true,
+            id: "card-pin",
+            invalidateOnRefresh: true
+        });
+        });
+
+        ScrollTrigger.create({
+        trigger: ".sl-card-main",
+        start: "top 400",
+        end: (self) => self.previous().end,
+        pin: true,
+        markers: false
+        });
+        
 
    });
   

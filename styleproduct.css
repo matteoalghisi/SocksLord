@@ -3,7 +3,7 @@
     height: 519px;
 }
 .section-product-second{
-    margin-bottom: 300px;
+    margin-bottom: 100px;
 }
 
 .section-product-second .aircraft-md, .section-product-second .aircraft-lg, .section-product-second .aircraft-sm{
@@ -152,16 +152,28 @@
 
 /*start product-material section*/
 .sl-product-materials{
-    background-color: red;
+
     z-index: 4;
 }
 .sl-product-materials .sl-card-main{
     width: 90%;
+    height: 180px;
 }
 .sl-product-materials .sl-card-scroll{
     width: 90%;
     height: 180px;
+    margin-bottom: 300px;
 }
 .sl-product-materials .sl-card-scroll h3, .sl-product-materials .sl-card-scroll p{
     width: fit-content;
+}
+
+.sl-product-materials .row{
+    padding-top: 40vh;
+    padding-bottom: 40vh;
+}
+
+.prova{
+    height: 800px;
+    background-color: blueviolet;
 }
