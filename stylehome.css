@@ -38,7 +38,7 @@
 }
 
 
-.section-welcome h1{
+.section-hero h1{
    /* padding-top: 200px; mettendo la distanza più o meno come su figma, nel mio pc non rimane più al centro dello schermo il titolo*/
     padding-bottom: 54px;
     color: var(--gray-fig);

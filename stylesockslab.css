@@ -1,0 +1,184 @@
+.socks-img {
+    height: 540px;
+    margin-bottom: 40px;
+    background-image: url(img/sockslab/star-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* transform: skewY(-10deg); */
+}
+
+.socks-img h1 {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.filters .sl-btn-static {
+    display: flex;
+    width: 358px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    border: 1px solid var(--black-banana);
+    background-color: var(--orange-kiwi);
+    text-decoration: none;
+}
+
+.filters .sl-btn-static:hover {
+    color: var(--black-banana);
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter {
+    width: 292px;
+    height: 194px;
+    background-color: var(--gray-fig);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: 1.5px solid var(--black-banana);
+    border-radius: 12px;
+}
+
+.color-container {
+    max-width: 252px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 16px;
+}
+.color {
+    width: 48px;
+    height: 48px;
+    border: 0.5px solid var(--black-banana);
+    border-radius: 6px;
+}
+
+.color-1 {
+    background-color: #FF9726;
+}
+
+.color-2 {
+    background-color: #FFA4F7;
+}
+
+.color-3 {
+    background-color: #03964A;
+}
+
+.color-4 {
+    background-color: #ABA5F7;
+}
+
+.color-5 {
+    background-color: #FFED35;
+}
+
+.color-6 {
+    background-color: #9F498B;
+}
+
+.color-7 {
+    background-color: #AD9BCB;
+}
+
+.color-8 {
+    background-color: #F67231;
+}
+
+.green-background {
+    margin-top: 65px;
+    max-width: 400px;
+    height: 600px;
+    background-image: url(img/sockslab/background-green.png);
+}
+
+@media screen and (min-width: 576px) {
+    .lab-container {
+        display: flex;
+    }
+
+    .socks-img {
+        width: 50%;
+        height: 823px;
+    }
+    
+    .socks-img h1 {
+        padding-top: 88px;
+        padding-bottom: 88px;
+        font-family: 'brice';
+    }
+    
+    .small-size {
+        font-size: 40px;
+    }
+
+    .filters .sl-btn-static {
+        display: flex;
+        width: 104px;
+        padding: 16px 32px;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 10px;
+        border-radius: 12px;
+        border: 1px solid var(--black-banana);
+        background-color: var(--orange-kiwi);
+        text-decoration: none;
+    }
+    
+    .filters .sl-btn-static:hover {
+        color: var(--black-banana);
+    }
+    
+    .filters {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 182px;
+    }
+    
+    .filter {
+        width: 348px;
+        height: 250px;
+        background-color: var(--gray-fig);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border: 1.5px solid var(--black-banana);
+        border-radius: 12px;
+    }
+    
+    .color-container {
+        max-width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-top: 16px;
+    }
+
+    .color {
+        width: 60px;
+        height: 60px;
+        border: 0.5px solid var(--black-banana);
+        border-radius: 12px;
+    }
+        
+    .green-background {
+        max-width: 100%;
+        height: 900px;
+    }
+}
