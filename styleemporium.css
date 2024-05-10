@@ -1,5 +1,5 @@
 /* Dropdown Button */
-.dropbtn {
+/* .dropbtn {
     background-color: var(--white-avocado);
     padding: 12px 20px;
     border-radius: 25px;
@@ -53,4 +53,8 @@
   }
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
+  .show {display:block;} */
+
+  .dropdown{
+    position: relative;
+  }
