@@ -21,6 +21,7 @@
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <!--jquery-->
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <!--gsap-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
@@ -132,13 +133,13 @@
             </div>
             <div class="dropdown">
                 <button onclick="funzioneColore()" class="dropbtn text-style-button border-2">
-                    <span>Collabs</span>
+                    <span>Colore</span>
                     <span class="sl-btn-icon"><img src="img/icon/arrow-bottom-desktop.svg" alt=""></span>
                 </button>
                 <div id="dropdownColor" class="dropdown-content">
-                    <a href="#colore1">colore</a>
-                    <a href="#colore2">colore2</a>
-                    <a href="#colore3">colore3</a>
+                    <a class="text-style-body-copy" href="#colore1">colore</a>
+                    <a class="text-style-body-copy" href="#colore2">colore2</a>
+                    <a class="text-style-body-copy" href="#colore3">colore3</a>
                 </div>
             </div>
         </section>
@@ -152,6 +153,11 @@
             function funzioneColore() {
                 document.getElementById("dropdownColor").classList.toggle("show");
             } 
+
+            $('button').on('click', function(){
+                $('button').removeClass('selected');
+                $(this).addClass('selected');
+            });
         </script>
     </body>
 </html>
