@@ -12,6 +12,10 @@
     padding-bottom: 40px;
 }
 
+.title-right {
+    display: none;
+}
+
 .filters .sl-btn-static {
     display: flex;
     width: 358px;
@@ -100,10 +104,12 @@
     margin-top: 65px;
     max-width: 400px;
     height: 600px;
-    background-image: url(img/sockslab/background-green.png);
+    background-image: url(img/sockslab/SfondoVerde_mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 576px) {
+@media (min-width: 576px) {
     .lab-container {
         display: flex;
     }
@@ -118,6 +124,18 @@
         padding-bottom: 88px;
         font-family: 'brice';
     }
+
+    .title-left {
+        display: none;
+    }
+
+    .title-right {
+        display: inline-block;
+        font-family: 'Brice';
+        padding-top: 88px;
+        padding-bottom: 88px;
+        align-self: flex-start;
+    }
     
     .small-size {
         font-size: 40px;
@@ -127,8 +145,8 @@
         display: flex;
         width: 104px;
         padding: 16px 32px;
-        justify-content: flex-end;
-        align-items: flex-end;
+        justify-content: center;
+        align-self: flex-end;
         gap: 10px;
         border-radius: 12px;
         border: 1px solid var(--black-banana);
@@ -141,11 +159,12 @@
     }
     
     .filters {
+        width: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-left: 182px;
+        padding-left: 30px;
     }
     
     .filter {
@@ -158,6 +177,7 @@
         justify-content: center;
         padding-top: 16px;
         padding-bottom: 16px;
+        margin-bottom: 150px;
         border: 1.5px solid var(--black-banana);
         border-radius: 12px;
     }
@@ -178,7 +198,8 @@
     }
         
     .green-background {
+        background-image: url(img/sockslab/SfondoVerde_desktop.png);
         max-width: 100%;
-        height: 900px;
+        height: 800px;
     }
 }
