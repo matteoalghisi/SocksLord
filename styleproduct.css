@@ -96,7 +96,7 @@
 @media (min-width: 992px) {
     .wave-product-1{
         background-position: top;
-        transform: translateY(0px);
+        transform: translateY(-120px);
     }
     .section-product-second .aircraft-lg{
         top: 420px;
@@ -156,24 +156,50 @@
     z-index: 4;
 }
 .sl-product-materials .sl-card-main{
-    width: 90%;
+    width: 100%;
     height: 180px;
 }
 .sl-product-materials .sl-card-scroll{
-    width: 90%;
+    width: 100%;
     height: 180px;
     margin-bottom: 300px;
 }
+.sl-product-materials .row{
+    padding-top: 30vh;
+    padding-bottom: 80vh;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .sl-product-materials .sl-card-main{
+        width: 80%;
+    }
+    .sl-product-materials .sl-card-scroll{
+        width: 80%;
+    }
+    .sl-product-materials .row{
+        gap: 0;
+    }
+}
+
 .sl-product-materials .sl-card-scroll h3, .sl-product-materials .sl-card-scroll p{
     width: fit-content;
 }
 
-.sl-product-materials .row{
-    padding-top: 40vh;
-    padding-bottom: 40vh;
-}
 
+
+#sl-card-scroll-2{
+    transform: translateX(4px);
+}
+#sl-card-scroll-3{
+    transform: translateX(8px);
+}
 .prova{
     height: 800px;
     background-color: blueviolet;
 }
+.sl-card-scroll-wrapper{
+    margin-top: 200p !important;
+}
+
+/*end product-material section*/

@@ -11,6 +11,7 @@
     --yellow-grape: #F8D047;
     --green-peach: #0BA85B;
     --orange-kiwi: #FD8040;
+    --gray-lemon: #1D1C22;
 
     /* Bootstrap customized */
     --bs-border-color: var(--black-banana) !important;
@@ -65,6 +66,9 @@
 }
 .sl-bg-kiwi {
     background-color: var(--orange-kiwi);
+}
+.sl-bg-lemon {
+    background-color: var(--gray-lemon);
 }
 
 

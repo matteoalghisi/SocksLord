@@ -1,26 +1,5 @@
 
 
-
-
-$(document).ready(function(){
-    
-    //script for toggling the navbar corner
-    $("#navbar-toggler").click(function(){
-        if ( $('.navbar-toggler').attr('aria-expanded') == 'true' ) {
-            $(".sl-not-collapsed").css({"border-radius": "1rem 1rem 1rem 0rem"});
-        } else {
-            $(".sl-not-collapsed").delay(400).queue(function (next) { 
-                $(this).css({"border-radius": "1rem"}); 
-                next(); 
-            });
-        }
-    });
-
-
-});
-
-
-
 // use a script tag or an external JS file
 document.addEventListener("DOMContentLoaded", (event) => {
     gsap.registerPlugin(ScrollTrigger)
@@ -105,15 +84,25 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
         //animation for scrolling card in product page
+        var minWidth768 = window.matchMedia("(min-width: 768px)")
+        let slCardMainStart;
+
+            if (minWidth768.matches) { // If media query matches
+                slCardMainStart = 400;
+            } else {
+                slCardMainStart = 200;
+            }
+
+
         const cards = gsap.utils.toArray(".sl-card-scroll");
-        const spacer = 20;
+        const spacer = 4;
 
         cards.forEach((card, index) => {
         ScrollTrigger.create({
             trigger: card,
             start: `top-=${index * spacer} top+=400px`,
             endTrigger: ".pin-panel",
-            end: `bottom top+=${200 + cards.length * spacer}`,
+            end: `bottom top+=${180 + cards.length * spacer}`,
             pin: true,
             pinSpacing: false,
             markers: true,
@@ -124,13 +113,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         ScrollTrigger.create({
         trigger: ".sl-card-main",
-        start: "top 400",
+        start: `top ${slCardMainStart}px` ,
         end: (self) => self.previous().end,
         pin: true,
         markers: false
         });
-        
-
    });
   
 
