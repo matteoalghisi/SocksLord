@@ -1,44 +1,101 @@
 /* Dropdown Button */
+.btn-group button{
+  margin-right: 1.125rem;
+}
 .dropbtn {
-    background-color: var(--white-avocado);
-    padding: 12px 20px;
-    border-radius: 25px;
-    cursor: pointer;
+  background-color: var(--white-avocado);
+  padding: 12px 20px;
+  border-radius: 25px !important;
+}
+.dropbtn:hover {
+  box-shadow: 4px 4px 0px 0px var(--black-banana);
+  transform: translateX(4px);
+  transform: translatey(-4px);
+  transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
+  border: 2px solid var(--black-banana);
+}
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  margin-top: -7px;
+  background-color: var(--gray-fig);
+  min-width: 200px;
+  border: 2px solid var(--black-banana);
+  border-radius: 0px 12px 12px 12px;
+  padding: 16px 12px;
+}
+.dropdown-item:hover {
+  color: var(--orange-kiwi);
+  background-color: var(--gray-fig);
+} 
+.dropbtn.selected {
+  box-shadow: 2px 2px 0px 0px var(--black-banana);
+  transform: translateX(4px);
+  transform: translatey(-4px);
+  background-color: var(--gray-fig);
+  padding: 12px 20px;
+  border-radius: 25px 25px 0px 0px;
+}
+  
+/* filtro colore */
+.dropcolor {
+  width: 264px;
+}
+.color-filter {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 12px;
+  border: 1px solid var(--black-banana);
+}
+.sl-cf-arancino {
+  background-color: #FF9726;
+}
+.sl-cf-rosino {
+  background-color: #FFA4F7;
+}
+.sl-cf-verde {
+  background-color: #03964A;
+}
+.sl-cf-viola {
+  background-color: #ABA5F7;
+}
+.sl-cf-giallo {
+  background-color: #FFED35;
+}
+.sl-cf-rosa {
+  background-color: #9F498B;
+}
+.sl-cf-violetto {
+  background-color: #AD9BCB;
+}
+.sl-cf-arancio {
+  background-color: #F67231;
 }
 
-.dropbtn:hover, .dropbtn:focus {
-    box-shadow: 4px 4px 0px 0px var(--black-banana);
-    transform: translateX(4px);
-    transform: translatey(-4px);
-    transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
-}
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f6f6f6;
-    min-width: 230px;
-    border: 1px solid #ddd;
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #f1f1f1}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
+/* Bottoni annulla e applica nei filtri */
+.btn-filtri {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.sl-btn-applica {
+  padding: 10px 16px 10px 16px;
+  display: flex;
+  margin: 0 0;
+  border: 1px solid var(--black-banana);
+  border-radius: 12px;
+  position: relative;
+  width: fit-content;
+  text-decoration: none;
+}
+.btn-filtri a{
+  text-decoration: none;
+}
+.btn-filtri a:hover {
+  color: var(--black-strawberry);
+  background-color: var(--orange-kiwi);
+}

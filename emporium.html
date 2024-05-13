@@ -21,12 +21,14 @@
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <!--jquery-->
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <!--gsap-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
-
+        <!--JS-->
         <script type="text/javascript" src="script.js"></script>
+        <script src="bootstrap.bundle.min.js / bootstrap.bundle.js"></script>></script>
     </head>
 
     <body class="sl-bg-avocado">
@@ -68,30 +70,30 @@
             <!--mobile-->
             <div class="d-xl-none ">
                 <div class="sl-collapse-mobile collapse navbar-collapse d-xl-none flex-row-reverse border-start border-end border-bottom sl-bg-avocado effect-style-default-shadow" id="navbarSupportedContent" aria-e>
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link px-3 py-4" href="product.html">Product</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3 py-4 active" aria-current="page" href="emporium.html">Emporium</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3 py-4" href="sockslab.html">SocksLab</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3 py-4" href="aboutus.html">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3 py-4" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link px-3 py-4" href="product.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3 py-4 active" aria-current="page" href="emporium.html">Emporium</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3 py-4" href="sockslab.html">SocksLab</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3 py-4" href="aboutus.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3 py-4" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
 
         <!-- section socky emporium -->
         <section class="section-emporium-first sl-bg-strawberry position-relative">
-            <div class="sl-pt-first-div top-0 sl-bg-strawberry w-100 "></div>
+            <div class="sl-pt-first-div top-0 sl-bg-strawberry w-100"></div>
             <div class="row justify-content-center justify-content-lg-start mx-3">
                 <div class="col-sm-3 col-lg-7 pb-5 pb-lg-5">
                     <h1 class="text-style-bw-h2 sl-color-avocado">
@@ -119,39 +121,112 @@
 
         <!-- section calze con filtri -->
         <section>
-            <div class="dropdown">
-                <button onclick="funzioneCollab()" class="dropbtn text-style-button border-2">
-                    <span>Collabs</span>
-                    <span class="sl-btn-icon"><img src="img/icon/arrow-bottom-desktop.svg" alt=""></span>
-                </button>
-                <div id="dropdownCollab" class=" myDropdown dropdown-content">
-                    <a href="#collab1">Lux x SocksLord</a>
-                    <a href="#collab2">collab2</a>
-                    <a href="#collab3">collab3</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button onclick="funzioneColore()" class="dropbtn text-style-button border-2">
-                    <span>Collabs</span>
-                    <span class="sl-btn-icon"><img src="img/icon/arrow-bottom-desktop.svg" alt=""></span>
-                </button>
-                <div id="dropdownColor" class="dropdown-content">
-                    <a href="#colore1">colore</a>
-                    <a href="#colore2">colore2</a>
-                    <a href="#colore3">colore3</a>
+            <div class="dropdown mt-3">
+                <div class="btn-group">
+                    <!-- filtro collab -->
+                    <button class="btn border-2 dropbtn text-style-button" type="button" id="collab-dropdown" data-bs-toggle="dropdown">
+                        Collab
+                        <span class="sl-btn-icon"><img src="img/icon/arrow-bottom-desktop.svg" alt="freccia in basso"></span>
+                    </button>
+                    <div class="dropdown-menu dropdown-content" aria-labelledby="collab-dropdown">
+                        <li><a href="#" class="dropdown-item">Lux x SocksLord</a></li>
+                        <li><a href="#" class="dropdown-item">Collab 2</a></li>
+                        <li><a href="#" class="dropdown-item">Collab 3</a></li>
+                        <div class="btn-filtri pt-4">
+                            <a href="" class="sl-btn-applica text-style-button">Annulla</a>
+                            <a href="" class="sl-btn-applica text-style-button">Applica</a>
+                        </div>
+                    </div>
+                    <!-- filtro colore -->
+                    <button class="btn border-2 dropbtn text-style-button" type="button" id="color-dropdown" data-bs-toggle="dropdown">
+                        Colore
+                        <span class="sl-btn-icon"><img src="img/icon/arrow-bottom-desktop.svg" alt="freccia in basso"></span>
+                    </button>
+                    <div class="dropdown-menu dropdown-content dropcolor" aria-labelledby="color-dropdown">
+                        <li><a href="#" class="dropdown-item">
+                            <div class="color-filter sl-cf-arancino"></div>
+                        </a></li>
+                        <li><a href="#" class="dropdown-item">
+                            <div class="color-filter sl-cf-rosino"></div>
+                        </a></li>
+                        <li><a href="#" class="dropdown-item">
+                            <div class="color-filter sl-cf-verde"></div>
+                        </a></li>
+                        <li><a href="#" class="dropdown-item">
+                            <div class="color-filter sl-cf-viola"></div>
+                        </a></li>
+                        <li><a href="#" class="dropdown-item">
+                            <div class="color-filter sl-cf-giallo"></div>
+                        </a></li>
+                        <li><a href="#" class="dropdown-item">
+                            <div class="color-filter sl-cf-rosa"></div>
+                        </a></li>
+                        <li><a href="#" class="dropdown-item">
+                            <div class="color-filter sl-cf-violetto"></div>
+                        </a></li>
+                        <li><a href="#" class="dropdown-item">
+                            <div class="color-filter sl-cf-arancio"></div>
+                        </a></li>
+                        <div class="btn-filtri pt-4">
+                            <a href="" class="sl-btn-applica text-style-button">Annulla</a>
+                            <a href="" class="sl-btn-applica text-style-button">Applica</a>
+                        </div>
+                    </div>
+                    <!-- filtro funzionalità -->
+                    <button class="btn border-2 dropbtn text-style-button" type="button" id="funzione-dropdown" data-bs-toggle="dropdown">
+                        Funzionalità
+                        <span class="sl-btn-icon"><img src="img/icon/arrow-bottom-desktop.svg" alt="freccia in basso"></span>
+                    </button>
+                    <div class="dropdown-menu dropdown-content" aria-labelledby="funzione-dropdown">
+                        <li><a href="#" class="dropdown-item">Funzione 1</a></li>
+                        <li><a href="#" class="dropdown-item">Funzione 2</a></li>
+                        <li><a href="#" class="dropdown-item">Funzione 3</a></li>
+                        <div class="btn-filtri pt-4">
+                            <a href="" class="sl-btn-applica text-style-button">Annulla</a>
+                            <a href="" class="sl-btn-applica text-style-button">Applica</a>
+                        </div>
+                    </div>
+                    <!-- filtro piede -->
+                    <button class="btn border-2 dropbtn text-style-button" type="button" id="piede-dropdown" data-bs-toggle="dropdown">
+                        Piede
+                        <span class="sl-btn-icon"><img src="img/icon/arrow-bottom-desktop.svg" alt="freccia in basso"></span>
+                    </button>
+                    <div class="dropdown-menu dropdown-content" aria-labelledby="piede-dropdown">
+                        <li><a href="#" class="dropdown-item">Piede 1</a></li>
+                        <li><a href="#" class="dropdown-item">Piede 2</a></li>
+                        <li><a href="#" class="dropdown-item">Piede 3</a></li>
+                        <div class="btn-filtri pt-4">
+                            <a href="" class="sl-btn-applica text-style-button">Annulla</a>
+                            <a href="" class="sl-btn-applica text-style-button">Applica</a>
+                        </div>
+                    </div>
+                    <!-- filtro materiali -->
+                    <button class="btn border-2 dropbtn text-style-button" type="button" id="materiali-dropdown" data-bs-toggle="dropdown">
+                        Materiali
+                        <span class="sl-btn-icon"><img src="img/icon/arrow-bottom-desktop.svg" alt="freccia in basso"></span>
+                    </button>
+                    <div class="dropdown-menu dropdown-content" aria-labelledby="materiali-dropdown">
+                        <li><a href="#" class="dropdown-item">Materiale 1</a></li>
+                        <li><a href="#" class="dropdown-item">Materiale 2</a></li>
+                        <li><a href="#" class="dropdown-item">Materiale 3</a></li>
+                        <div class="btn-filtri pt-4">
+                            <a href="" class="sl-btn-applica text-style-button">Annulla</a>
+                            <a href="" class="sl-btn-applica text-style-button">Applica</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-      
+
+     
     
         <script>
-            /* Script per far funzionare il dropdown dei filtri */
-            function funzioneCollab() {
-                document.getElementById("dropdownCollab").classList.toggle("show");
-            } 
-            function funzioneColore() {
-                document.getElementById("dropdownColor").classList.toggle("show");
-            } 
+            /* Script per il dropdown dei filtri */
+            $('.dropbtn').on('click', function(){
+                $('.dropbtn').removeClass('selected');
+               $(this).addClass('selected');
+            });
+
         </script>
     </body>
 </html>
