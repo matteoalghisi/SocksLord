@@ -124,94 +124,210 @@
             <div class="dropdown mt-3">
                 <div class="btn-group">
                     <!-- filtro collab -->
-                    <button class="btn border-2 dropbtn text-style-button" data-toggle="dropdown"  type="button" id="collab-dropdown" data-bs-toggle="dropdown">
-                        Collab
-                        <span class="sl-btn-icon"><img src="img/icon/arrow-bottom-desktop.svg" alt="freccia in basso"></span>
-                    </button>
-                    <div class="dropdown-menu dropdown-content" data-bs-flip="false" aria-labelledby="collab-dropdown">
-                        <li><a href="#" class="dropdown-item">Lux x SocksLord</a></li>
-                        <li><a href="#" class="dropdown-item">Collab 2</a></li>
-                        <li><a href="#" class="dropdown-item">Collab 3</a></li>
-                        <div class="btn-filtri pt-4">
-                            <a href="" class="sl-btn-applica text-style-button">Annulla</a>
-                            <a href="" class="sl-btn-applica text-style-button">Applica</a>
+                    <div class="btn-group">
+                        <button class="btn border-2 dropbtn text-style-button" type="button" id="collab-dropdown" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                            Collab
+                            <span class="sl-btn-icon"><img src="img/icon/arrow-bottom-desktop.svg" alt="freccia in basso"></span>
+                        </button>
+                        <div class="dropdown-menu dropdown-content dropdown-menu-start" aria-labelledby="collab-dropdown">
+                            <li><a href="#" class="dropdown-item">Lux x SocksLord</a></li>
+                            <li><a href="#" class="dropdown-item">Collab 2</a></li>
+                            <li><a href="#" class="dropdown-item">Collab 3</a></li>
+                            <div class="btn-filtri pt-4">
+                                <a href="" class="sl-btn-applica text-style-button">Annulla</a>
+                                <a href="" class="sl-btn-applica text-style-button">Applica</a>
+                            </div>
                         </div>
                     </div>
                     <!-- filtro colore -->
-                    <button class="btn border-2 dropbtn text-style-button" type="button" id="color-dropdown" data-bs-toggle="dropdown">
-                        Colore
-                        <span class="sl-btn-icon"><img src="img/icon/arrow-bottom-desktop.svg" alt="freccia in basso"></span>
-                    </button>
-                    <div class="dropdown-menu dropdown-content dropcolor" aria-labelledby="color-dropdown">
-                        <li><a href="#" class="dropdown-item">
-                            <div class="color-filter sl-cf-arancino"></div>
-                        </a></li>
-                        <li><a href="#" class="dropdown-item">
-                            <div class="color-filter sl-cf-rosino"></div>
-                        </a></li>
-                        <li><a href="#" class="dropdown-item">
-                            <div class="color-filter sl-cf-verde"></div>
-                        </a></li>
-                        <li><a href="#" class="dropdown-item">
-                            <div class="color-filter sl-cf-viola"></div>
-                        </a></li>
-                        <li><a href="#" class="dropdown-item">
-                            <div class="color-filter sl-cf-giallo"></div>
-                        </a></li>
-                        <li><a href="#" class="dropdown-item">
-                            <div class="color-filter sl-cf-rosa"></div>
-                        </a></li>
-                        <li><a href="#" class="dropdown-item">
-                            <div class="color-filter sl-cf-violetto"></div>
-                        </a></li>
-                        <li><a href="#" class="dropdown-item">
-                            <div class="color-filter sl-cf-arancio"></div>
-                        </a></li>
-                        <div class="btn-filtri pt-4">
-                            <a href="" class="sl-btn-applica text-style-button">Annulla</a>
-                            <a href="" class="sl-btn-applica text-style-button">Applica</a>
+                    <div class="btn-group">
+                        <button class="btn border-2 dropbtn text-style-button" type="button" id="color-dropdown" data-bs-toggle="dropdown" data-bs-display="static">
+                            Colore
+                            <span class="sl-btn-icon"><img src="img/icon/arrow-bottom-desktop.svg" alt="freccia in basso"></span>
+                        </button>
+                        <div class="dropdown-menu dropdown-content dropcolor dropdown-menu-start" aria-labelledby="color-dropdown">
+                            <li><a href="#" class="dropdown-item">
+                                <div class="color-filter sl-cf-arancino"></div>
+                            </a></li>
+                            <li><a href="#" class="dropdown-item">
+                                <div class="color-filter sl-cf-rosino"></div>
+                            </a></li>
+                            <li><a href="#" class="dropdown-item">
+                                <div class="color-filter sl-cf-verde"></div>
+                            </a></li>
+                            <li><a href="#" class="dropdown-item">
+                                <div class="color-filter sl-cf-viola"></div>
+                            </a></li>
+                            <li><a href="#" class="dropdown-item">
+                                <div class="color-filter sl-cf-giallo"></div>
+                            </a></li>
+                            <li><a href="#" class="dropdown-item">
+                                <div class="color-filter sl-cf-rosa"></div>
+                            </a></li>
+                            <li><a href="#" class="dropdown-item">
+                                <div class="color-filter sl-cf-violetto"></div>
+                            </a></li>
+                            <li><a href="#" class="dropdown-item">
+                                <div class="color-filter sl-cf-arancio"></div>
+                            </a></li>
+                            <div class="btn-filtri pt-4">
+                                <a href="" class="sl-btn-applica text-style-button">Annulla</a>
+                                <a href="" class="sl-btn-applica text-style-button">Applica</a>
+                            </div>
                         </div>
                     </div>
                     <!-- filtro funzionalità -->
-                    <button class="btn border-2 dropbtn text-style-button" type="button" id="funzione-dropdown" data-bs-toggle="dropdown">
-                        Funzionalità
-                        <span class="sl-btn-icon"><img src="img/icon/arrow-bottom-desktop.svg" alt="freccia in basso"></span>
-                    </button>
-                    <div class="dropdown-menu dropdown-content" aria-labelledby="funzione-dropdown">
-                        <li><a href="#" class="dropdown-item">Funzione 1</a></li>
-                        <li><a href="#" class="dropdown-item">Funzione 2</a></li>
-                        <li><a href="#" class="dropdown-item">Funzione 3</a></li>
-                        <div class="btn-filtri pt-4">
-                            <a href="" class="sl-btn-applica text-style-button">Annulla</a>
-                            <a href="" class="sl-btn-applica text-style-button">Applica</a>
+                    <div class="btn-group">
+                        <button class="btn border-2 dropbtn text-style-button" type="button" id="funzione-dropdown" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                            Funzionalità
+                            <span class="sl-btn-icon"><img src="img/icon/arrow-bottom-desktop.svg" alt="freccia in basso"></span>
+                        </button>
+                        <div class="dropdown-menu dropdown-content dropdown-menu-start" aria-labelledby="funzione-dropdown">
+                            <li><a href="#" class="dropdown-item">Funzione 1</a></li>
+                            <li><a href="#" class="dropdown-item">Funzione 2</a></li>
+                            <li><a href="#" class="dropdown-item">Funzione 3</a></li>
+                            <div class="btn-filtri pt-4">
+                                <a href="" class="sl-btn-applica text-style-button">Annulla</a>
+                                <a href="" class="sl-btn-applica text-style-button">Applica</a>
+                            </div>
                         </div>
                     </div>
                     <!-- filtro piede -->
-                    <button class="btn border-2 dropbtn text-style-button" type="button" id="piede-dropdown" data-bs-toggle="dropdown">
-                        Piede
-                        <span class="sl-btn-icon"><img src="img/icon/arrow-bottom-desktop.svg" alt="freccia in basso"></span>
-                    </button>
-                    <div class="dropdown-menu dropdown-content" aria-labelledby="piede-dropdown">
-                        <li><a href="#" class="dropdown-item">Piede 1</a></li>
-                        <li><a href="#" class="dropdown-item">Piede 2</a></li>
-                        <li><a href="#" class="dropdown-item">Piede 3</a></li>
-                        <div class="btn-filtri pt-4">
-                            <a href="" class="sl-btn-applica text-style-button">Annulla</a>
-                            <a href="" class="sl-btn-applica text-style-button">Applica</a>
+                    <div class="btn-group">
+                        <button class="btn border-2 dropbtn text-style-button" type="button" id="piede-dropdown" data-bs-toggle="dropdown" data-bs-display="static">
+                            Piede
+                            <span class="sl-btn-icon"><img src="img/icon/arrow-bottom-desktop.svg" alt="freccia in basso"></span>
+                        </button>
+                        <div class="dropdown-menu dropdown-content dropdown-menu-start" aria-labelledby="piede-dropdown">
+                            <li><a href="#" class="dropdown-item">Piede 1</a></li>
+                            <li><a href="#" class="dropdown-item">Piede 2</a></li>
+                            <li><a href="#" class="dropdown-item">Piede 3</a></li>
+                            <div class="btn-filtri pt-4">
+                                <a href="" class="sl-btn-applica text-style-button">Annulla</a>
+                                <a href="" class="sl-btn-applica text-style-button">Applica</a>
+                            </div>
                         </div>
                     </div>
                     <!-- filtro materiali -->
-                    <button class="btn border-2 dropbtn text-style-button" type="button" id="materiali-dropdown" data-bs-toggle="dropdown">
-                        Materiali
-                        <span class="sl-btn-icon"><img src="img/icon/arrow-bottom-desktop.svg" alt="freccia in basso"></span>
-                    </button>
-                    <div class="dropdown-menu dropdown-content" aria-labelledby="materiali-dropdown">
-                        <li><a href="#" class="dropdown-item">Materiale 1</a></li>
-                        <li><a href="#" class="dropdown-item">Materiale 2</a></li>
-                        <li><a href="#" class="dropdown-item">Materiale 3</a></li>
-                        <div class="btn-filtri pt-4">
-                            <a href="" class="sl-btn-applica text-style-button">Annulla</a>
-                            <a href="" class="sl-btn-applica text-style-button">Applica</a>
+                    <div class="btn-group">
+                        <button class="btn border-2 dropbtn text-style-button" type="button" id="materiali-dropdown" data-bs-toggle="dropdown" data-bs-display="static">
+                            Materiali
+                            <span class="sl-btn-icon"><img src="img/icon/arrow-bottom-desktop.svg" alt="freccia in basso"></span>
+                        </button>
+                        <div class="dropdown-menu dropdown-content" aria-labelledby="materiali-dropdown">
+                            <li><a href="#" class="dropdown-item">Materiale 1</a></li>
+                            <li><a href="#" class="dropdown-item">Materiale 2</a></li>
+                            <li><a href="#" class="dropdown-item">Materiale 3</a></li>
+                            <div class="btn-filtri pt-4">
+                                <a href="" class="sl-btn-applica text-style-button">Annulla</a>
+                                <a href="" class="sl-btn-applica text-style-button">Applica</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- prova -->
+            <div class="dropdown mt-3">
+                <div class="dropdown-group">
+                    <!-- filtro collab -->
+                    <div class="btn-group">
+                        <button class="btn border-2 dropbtn text-style-button" type="button" id="collab-dropdown" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                            Collab
+                            <span class="sl-btn-icon"><img src="img/icon/arrow-bottom-desktop.svg" alt="freccia in basso"></span>
+                        </button>
+                        <div class="dropdown-menu dropdown-content dropdown-menu-start" aria-labelledby="collab-dropdown">
+                            <li><a href="#" class="dropdown-item">Lux x SocksLord</a></li>
+                            <li><a href="#" class="dropdown-item">Collab 2</a></li>
+                            <li><a href="#" class="dropdown-item">Collab 3</a></li>
+                            <div class="btn-filtri pt-4">
+                                <a href="" class="sl-btn-applica text-style-button">Annulla</a>
+                                <a href="" class="sl-btn-applica text-style-button">Applica</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- filtro colore -->
+                    <div class="btn-group">
+                        <button class="btn border-2 dropbtn text-style-button" type="button" id="color-dropdown" data-bs-toggle="dropdown" data-bs-display="static">
+                            Colore
+                            <span class="sl-btn-icon"><img src="img/icon/arrow-bottom-desktop.svg" alt="freccia in basso"></span>
+                        </button>
+                        <div class="dropdown-menu dropdown-content dropcolor dropdown-menu-start" aria-labelledby="color-dropdown">
+                            <li><a href="#" class="dropdown-item">
+                                <div class="color-filter sl-cf-arancino"></div>
+                            </a></li>
+                            <li><a href="#" class="dropdown-item">
+                                <div class="color-filter sl-cf-rosino"></div>
+                            </a></li>
+                            <li><a href="#" class="dropdown-item">
+                                <div class="color-filter sl-cf-verde"></div>
+                            </a></li>
+                            <li><a href="#" class="dropdown-item">
+                                <div class="color-filter sl-cf-viola"></div>
+                            </a></li>
+                            <li><a href="#" class="dropdown-item">
+                                <div class="color-filter sl-cf-giallo"></div>
+                            </a></li>
+                            <li><a href="#" class="dropdown-item">
+                                <div class="color-filter sl-cf-rosa"></div>
+                            </a></li>
+                            <li><a href="#" class="dropdown-item">
+                                <div class="color-filter sl-cf-violetto"></div>
+                            </a></li>
+                            <li><a href="#" class="dropdown-item">
+                                <div class="color-filter sl-cf-arancio"></div>
+                            </a></li>
+                            <div class="btn-filtri pt-4">
+                                <a href="" class="sl-btn-applica text-style-button">Annulla</a>
+                                <a href="" class="sl-btn-applica text-style-button">Applica</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- filtro funzionalità -->
+                    <div class="btn-group">
+                        <button class="btn border-2 dropbtn text-style-button" type="button" id="funzione-dropdown" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                            Funzionalità
+                            <span class="sl-btn-icon"><img src="img/icon/arrow-bottom-desktop.svg" alt="freccia in basso"></span>
+                        </button>
+                        <div class="dropdown-menu dropdown-content dropdown-menu-start" aria-labelledby="funzione-dropdown">
+                            <li><a href="#" class="dropdown-item">Funzione 1</a></li>
+                            <li><a href="#" class="dropdown-item">Funzione 2</a></li>
+                            <li><a href="#" class="dropdown-item">Funzione 3</a></li>
+                            <div class="btn-filtri pt-4">
+                                <a href="" class="sl-btn-applica text-style-button">Annulla</a>
+                                <a href="" class="sl-btn-applica text-style-button">Applica</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- filtro piede -->
+                    <div class="btn-group">
+                        <button class="btn border-2 dropbtn text-style-button" type="button" id="piede-dropdown" data-bs-toggle="dropdown" data-bs-display="static">
+                            Piede
+                            <span class="sl-btn-icon"><img src="img/icon/arrow-bottom-desktop.svg" alt="freccia in basso"></span>
+                        </button>
+                        <div class="dropdown-menu dropdown-content dropdown-menu-start" aria-labelledby="piede-dropdown">
+                            <li><a href="#" class="dropdown-item">Piede 1</a></li>
+                            <li><a href="#" class="dropdown-item">Piede 2</a></li>
+                            <li><a href="#" class="dropdown-item">Piede 3</a></li>
+                            <div class="btn-filtri pt-4">
+                                <a href="" class="sl-btn-applica text-style-button">Annulla</a>
+                                <a href="" class="sl-btn-applica text-style-button">Applica</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- filtro materiali -->
+                    <div class="btn-group">
+                        <button class="btn border-2 dropbtn text-style-button" type="button" id="materiali-dropdown" data-bs-toggle="dropdown" data-bs-display="static">
+                            Materiali
+                            <span class="sl-btn-icon"><img src="img/icon/arrow-bottom-desktop.svg" alt="freccia in basso"></span>
+                        </button>
+                        <div class="dropdown-menu dropdown-content" aria-labelledby="materiali-dropdown">
+                            <li><a href="#" class="dropdown-item">Materiale 1</a></li>
+                            <li><a href="#" class="dropdown-item">Materiale 2</a></li>
+                            <li><a href="#" class="dropdown-item">Materiale 3</a></li>
+                            <div class="btn-filtri pt-4">
+                                <a href="" class="sl-btn-applica text-style-button">Annulla</a>
+                                <a href="" class="sl-btn-applica text-style-button">Applica</a>
+                            </div>
                         </div>
                     </div>
                 </div>
