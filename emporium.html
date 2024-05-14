@@ -124,11 +124,11 @@
             <div class="dropdown mt-3">
                 <div class="btn-group">
                     <!-- filtro collab -->
-                    <button class="btn border-2 dropbtn text-style-button" type="button" id="collab-dropdown" data-bs-toggle="dropdown">
+                    <button class="btn border-2 dropbtn text-style-button" data-toggle="dropdown"  type="button" id="collab-dropdown" data-bs-toggle="dropdown">
                         Collab
                         <span class="sl-btn-icon"><img src="img/icon/arrow-bottom-desktop.svg" alt="freccia in basso"></span>
                     </button>
-                    <div class="dropdown-menu dropdown-content" aria-labelledby="collab-dropdown">
+                    <div class="dropdown-menu dropdown-content" data-bs-flip="false" aria-labelledby="collab-dropdown">
                         <li><a href="#" class="dropdown-item">Lux x SocksLord</a></li>
                         <li><a href="#" class="dropdown-item">Collab 2</a></li>
                         <li><a href="#" class="dropdown-item">Collab 3</a></li>
@@ -216,6 +216,9 @@
                     </div>
                 </div>
             </div>
+            <div class="spazio-card">
+                
+            </div>
         </section>
 
      
@@ -225,6 +228,12 @@
             $('.dropbtn').on('click', function(){
                 $('.dropbtn').removeClass('selected');
                $(this).addClass('selected');
+            });
+
+            new Popper(ref, pop, {
+                modifiers: {
+                    preventOverflow: { enabled: true },
+                },
             });
 
         </script>
