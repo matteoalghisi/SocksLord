@@ -64,15 +64,33 @@ button.dropbtn.show:hover {
   border-radius: 0px 12px 12px 12px;
   padding: 16px 12px;
 }
+.dropdown-item {
+  padding: 0;
+  margin: 0;
+} 
 .dropdown-item:hover {
   color: var(--orange-kiwi);
   background-color: var(--gray-fig);
 } 
-  
-/* filtro colore */
-.dropcolor {
-  width: 264px;
+
+/* contenitore riquadri filtri */
+.filter-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
+.filter-container-in{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* filtro colore */
 .color-filter {
   height: 3rem;
   width: 3rem;
@@ -107,9 +125,8 @@ button.dropbtn.show:hover {
 
 /* Bottoni annulla e applica nei filtri */
 .btn-filtri {
-  display: inline-flex;
+  display: flex;
   gap: 8px;
-  align-items: center;
   justify-content: center;
 }
 .sl-btn-applica {
