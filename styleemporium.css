@@ -242,23 +242,19 @@ button.dropbtn.show:hover {
 
 /* spazio card */
 .spazio-card {
-  height: 500px;
-  width: 100%;
-  background-color: red;
-}
-
-
-
-/* scroll orizzonatel filtri mobile */
-.scrolling-wrapper {
-  padding-top: 60px;
   display: flex;
-  -webkit-overflow-scrolling: touch;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-
-  .card {
-    flex: 0 0 auto;
-    width: 150px;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  align-self: center;
+}
+@media (min-width: 576px) {
+  .spazio-card {
+    gap: 1.5rem;
+    padding-top: 5rem;
   }
 }
+
+

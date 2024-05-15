@@ -802,6 +802,55 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 }
 
 
+/* Card */
+.sl-card-g{
+    display: inline;
+    width: fit-content; 
+    background-image: url('img/card/crateri_verdi_mobile.svg');
+    background-size: cover;
+    height: 204px;
+    width: 171px;
+}
+@media (min-width: 576px) {
+    .sl-card-g{
+        background-image: url('img/card/crateri_verdi_desktop.svg');
+        height: 349px;
+        width: 300px;
+    }
+}
+.sl-card-y{
+    display: inline;
+    width: fit-content; 
+    background-image: url('img/card/crateri_gialli_mobile.svg');
+    background-size: cover;
+    height: 204px;
+    width: 171px;
+}
+@media (min-width: 576px) {
+    .sl-card-y{
+        background-image: url('img/card/crateri_gialli_desktop.svg');
+        height: 349px;
+        width: 300px;
+    }
+}
+.sl-card-o{
+    display: inline;
+    width: fit-content; 
+    background-image: url('img/card/crateri_arancioni_mobile.svg');
+    background-size: cover;
+    height: 204px;
+    width: 171px;
+}
+@media (min-width: 576px) {
+    .sl-card-o{
+        background-image: url('img/card/crateri_arancioni_desktop.svg');
+        height: 349px;
+        width: 300px;
+    }
+}
+
+
+
 /*footer*/
 .footer-icon{
     width: 40px;
