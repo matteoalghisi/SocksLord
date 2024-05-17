@@ -803,6 +803,14 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 
 
 /* Card */
+@media (min-width: 576px) {
+    .sl-card-hover:hover, .sl-card-hover p:hover, .sl-card-hover h4:hover{
+        background-image: none;
+        background-color: var(--black-strawberry);
+        transform:scale(1.2);
+        color: var(--white-avocado);
+    }
+}
 .sl-card-g{
     display: inline;
     width: fit-content; 
@@ -817,6 +825,7 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
         height: 349px;
         width: 300px;
     }
+
 }
 .sl-card-y{
     display: inline;
@@ -846,6 +855,13 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
         background-image: url('img/card/crateri_arancioni_desktop.svg');
         height: 349px;
         width: 300px;
+    }
+}
+@media (min-width: 576px) {
+    .carrello-icona{
+        background-image: url('img/icon/Sacchetto-default.svg');
+        height: 54px;
+        width: 54px;
     }
 }
 

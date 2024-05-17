@@ -2,9 +2,6 @@
 .section-filters{
   display: flex;
   justify-content: flex-start;
-  white-space: nowrap;
-  overflow: auto;
-
 }
 @media (min-width: 576px) {
   .section-filters{
