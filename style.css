@@ -857,13 +857,7 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
         width: 300px;
     }
 }
-@media (min-width: 576px) {
-    .carrello-icona{
-        background-image: url('img/icon/Sacchetto-default.svg');
-        height: 54px;
-        width: 54px;
-    }
-}
+
 
 
 
