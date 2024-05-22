@@ -611,7 +611,31 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 .sl-btn-bw-black:hover  {
     color: var(--white-avocado);
 }
-
+/* button secondary */
+.loadmore{
+    margin-top: 3.5rem;
+    margin-bottom: 12.5rem;
+}
+@media (min-width: 576px) {
+    .loadmore{
+        margin-top: 5.5rem;
+        margin-bottom: 17rem;
+    }
+  }
+.sl-btn-secondary a{ 
+    width: fit-content;
+    padding: 16px 32px;
+    background-color: var(--white-avocado);
+    border-radius: 0.75rem;
+    border: 1px solid var(--black-banana);
+}
+.sl-btn-secondary a:hover{
+    transform: translateX(4px);
+    transform: translatey(-4px);
+    transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
+    box-shadow: 4px 4px 0px 0px var(--black-banana);
+    color: var(--black-strawberry);
+}
 
 
 
