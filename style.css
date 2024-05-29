@@ -508,7 +508,7 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 }
 
 
-/*button genral settings*/
+/*button general settings*/
 .sl-btn, .sl-btn-bw-white, .sl-btn-bw-dark {
     display: flex;
     gap: 8px;
