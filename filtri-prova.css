@@ -1,0 +1,294 @@
+.wrapper {
+    /*  remove overflow-x if you want the dropdowns to appear outside of the .outer element */
+    overflow-x:hidden;
+    width: 70%;
+    margin: 0 auto;
+    min-height: 100%;
+    padding-top:10vh;
+  }
+  .external-dropdown {
+    position: relative;
+  }
+  .external-dropdown .dropdown, .external-dropdown .dropup {
+    position: static;
+  }
+  .outer {
+    display: flex;
+    overflow-x: auto;
+  }
+  .side {
+    margin-right: 0;
+  }
+  .para {
+    width: 80%;
+    margin: auto;
+  }
+  
+  /* Dropdown Button */
+  /* .section-filters{
+    display: flex;
+    justify-content: flex-start;
+    overflow: visible;
+    margin-right: 0;
+  }
+  @media (min-width: 576px) {
+    .section-filters{
+      justify-content: flex-end;
+    }
+  }
+  
+  .dropdown{
+    height: 33px;
+    display: flex; 
+    align-items: flex-start;
+  }
+  @media (min-width: 576px) {
+    .dropdown-group{
+      height: 38px;
+    }
+  }
+  .btn-group button{
+    margin-right: 0.75rem;
+    display: inline-flex;
+  }
+  @media (min-width: 576px) {
+    .btn-group button{
+      margin-right: 0;
+      margin-left: 1.125rem;
+    }
+  }
+  .dropbtn {
+    background-color: var(--white-avocado);
+    padding: 8px 16px;
+    border-radius: 19px !important;
+    position: relative;
+    z-index: 5 !important;
+    display: inline-block;
+  }
+  @media (min-width: 576px) {
+    .dropbtn {
+      padding: 12px 20px;
+      border-radius: 25px !important;
+    }
+  }
+  @media (min-width: 576px) {
+    .dropbtn:hover {
+    box-shadow: 4px 4px 0px 0px var(--black-banana);
+    transform: translateX(4px);
+    transform: translatey(-4px);
+    transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
+    border: 2px solid var(--black-banana);
+  }
+  }
+  button.dropbtn.show {
+    box-shadow: 2px 2px 0px 0px var(--black-banana);
+    transform: translateX(4px);
+    transform: translatey(-4px);
+    background-color: var(--gray-fig);
+    border-radius: 25px 25px 0px 0px !important;
+    border-bottom: 0px; 
+  }
+  @media (min-width: 576px){
+    button.dropbtn.show:hover {
+      box-shadow: none;
+      transform: translateX(4px);
+      transform: translatey(-4px);
+    }
+  }
+  .sl-btn-pl {
+    padding-left: 10px;
+  }
+  @media (min-width: 576px) {
+    .sl-btn-pl {
+      padding-left: 16px;
+    }
+  }
+  #collab-dropdown.show{
+    padding-bottom: 20px;
+  }
+  #color-dropdown.show{
+    padding-bottom: 20px;
+  }
+  #funzione-dropdown.show{
+    padding-bottom: 20px;
+  }
+  #piede-dropdown.show{
+    padding-bottom: 20px;
+  }
+  #materiali-dropdown.show{
+    padding-bottom: 20px;
+  }
+  @media (min-width: 576px) {
+    #collab-dropdown.show{
+      padding-bottom: 24px;
+    }
+    #color-dropdown.show{
+      padding-bottom: 24px;
+    }
+    #funzione-dropdown.show{
+      padding-bottom: 24px;
+    }
+    #piede-dropdown.show{
+      padding-bottom: 24px;
+    }
+    #materiali-dropdown.show{
+      padding-bottom: 24px;
+    }
+  }
+  .dropdown{
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-menu.show {
+    z-index: 0;
+  }
+  .dropdown-content {
+    margin-top: -6px !important;
+    background-color: var(--gray-fig);
+    min-width: 200px;
+    border: 2px solid var(--black-banana);
+    border-radius: 0px 12px 12px 12px;
+    padding: 16px 12px;
+  }
+  @media (min-width: 576px) {
+    .dropdown-content {
+      border-radius: 12px 0px 12px 12px;
+      padding: 16px 12px;
+    }
+  }
+  .dropdown-item {
+    padding: 0;
+    margin: 0;
+  } 
+  @media (min-width: 576px){
+    .dropdown-item:hover {
+      background-color: var(--gray-fig);
+    } 
+  } */
+  
+  /* contenitore riquadri filtri */
+  /* .filter-container{
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (min-width: 576px) {
+    .filter-container{
+      gap: 1rem;
+    }
+  }
+  .filter-container-in{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (min-width: 576px) {
+    .filter-container-in{
+      gap: .75rem;
+    }
+  }
+  .filter-square {
+    height: 2.25rem;
+    width: 2.25rem;
+    border-radius: 6px;
+    border: 1px solid var(--black-banana);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-avocado);
+  }
+  @media (min-width: 576px) {
+    .filter-square {
+      height: 3rem;
+      width: 3rem;
+      border-radius: 12px;
+    }
+  }
+  .filter-square img{
+    height: 34px;
+    width: 34px;
+  }
+  @media (min-width: 576px) {
+    .filter-square img{
+      height: 44px;
+      width: 44px;
+    }
+  }
+  @media (min-width: 576px) {
+    .filter-square:hover{
+      box-sizing: border-box;
+      border: 3px solid var(--black-banana);
+    }
+  } */
+  /* filtro colore */
+  /* .sl-cf-arancino {
+    background-color: #FF9726;
+  }
+  .sl-cf-rosino {
+    background-color: #FFA4F7;
+  }
+  .sl-cf-verde {
+    background-color: #03964A;
+  }
+  .sl-cf-viola {
+    background-color: #ABA5F7;
+  }
+  .sl-cf-giallo {
+    background-color: #FFED35;
+  }
+  .sl-cf-rosa {
+    background-color: #9F498B;
+  }
+  .sl-cf-violetto {
+    background-color: #AD9BCB;
+  }
+  .sl-cf-arancio {
+    background-color: #F67231;
+  } */
+  
+  
+  /* Bottoni annulla e applica nei filtri */
+  /* .btn-filtri {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+  }
+  .sl-btn-applica {
+    padding: 10px 16px 10px 16px;
+    display: flex;
+    margin: 0 0;
+    border: 1px solid var(--black-banana);
+    border-radius: 12px;
+    position: relative;
+    width: fit-content;
+    text-decoration: none;
+  }
+  .btn-filtri a{
+    text-decoration: none;
+  }
+  @media (min-width: 576px){
+    .btn-filtri a:hover {
+    color: var(--black-strawberry);
+    background-color: var(--orange-kiwi);
+    }
+  } */
+  
+  /* spazio card */
+  .spazio-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (min-width: 576px) {
+    .spazio-card {
+      gap: 1.5rem;
+      padding-top: 5rem;
+    }
+  }
+  
