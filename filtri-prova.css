@@ -1,29 +1,102 @@
 .wrapper {
     /*  remove overflow-x if you want the dropdowns to appear outside of the .outer element */
     overflow-x:hidden;
-    width: 70%;
     margin: 0 auto;
     min-height: 100%;
-    padding-top:10vh;
+    padding-top: 30px;
+    background-color:bisque;
   }
-  .external-dropdown {
-    position: relative;
-  }
-  .external-dropdown .dropdown, .external-dropdown .dropup {
-    position: static;
-  }
-  .outer {
-    display: flex;
-    overflow-x: auto;
-  }
-  .side {
+.external-dropdown {
+  position: relative;
+}
+.external-dropdown .dropdown, .external-dropdown .dropup {
+  position: static;
+  padding-top: 4px;
+
+}
+.outer {
+  overflow-x: auto;
+}
+  
+.side {
+  margin-right: 12px;
+}
+@media (min-width: 576px) {
+  .side{
+    margin-left: 18px;
     margin-right: 0;
   }
-  .para {
+}
+@media (min-width: 576px) {
+  #materiali-dropdown{
+      margin-right: 4px;
+  }
+}
+
+.para {
     width: 80%;
     margin: auto;
   }
-  
+.dropdown-toggle::after {
+    vertical-align: middle;
+    border: none;
+    content: url('img/icon/arrow-bottom-mobile.svg');
+}
+@media (min-width: 576px) {
+  .dropdown-toggle::after{
+    content: url('img/icon/arrow-bottom-desktop.svg');
+  }
+}
+ 
+.filter-button {
+  border-radius: 19px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+}
+@media (min-width: 576px) {
+  .filter-button{
+    border-radius: 25px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+  }
+  .filter-button:hover{
+    box-shadow: 4px 4px 0px 0px var(--black-banana);
+    border: 2px solid var(--black-banana);
+    transform: translateX(4px);
+    transform: translatey(-4px);
+    transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
+  }
+}
+button.btn.show:active,
+button.btn.show:focus {
+  transform: translateX(4px);
+  transform: translatey(-4px);
+  background-color: var(--gray-fig);
+  border-radius: 25px 25px 0px 0px !important;
+  border-bottom: 0px; 
+  padding-bottom: 24px;
+  box-shadow: none;
+}
+#popper[data-popper-reference-hidden] {
+  visibility: hidden;
+  pointer-events: none;
+}
+.dropdown-menu {
+  margin-top: 0 !important;
+  background-color: var(--gray-fig);
+  min-width: 200px;
+  border: 2px solid var(--black-banana);
+  border-radius: 0px 12px 12px 12px;
+  padding: 16px 12px;
+  transform: none;
+  /* style="inset: 0px 0px auto auto; position: absolute; margin: 0px; transform: translate3d(-415.333px, 44.6667px, 0px);" */
+}
+@media (min-width: 576px) {
+  .dropdown-menu {
+    border-radius: 12px 0px 12px 12px;
+    padding: 16px 12px;
+  }
+}
   /* Dropdown Button */
   /* .section-filters{
     display: flex;
