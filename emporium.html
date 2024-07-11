@@ -381,6 +381,15 @@
             </div>
         </section>
 
+        <div class="card">
+            <img src="img/card/calza_verde_desktop.svg" alt="" class="card-img">
+            <div class="card-body">
+                <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">Calzino</h4>
+                <p class="text-style-body-copy-small mb-2 mb-lg-3">₹ 1350</p>
+                <button class="card-btn">carrello-icona</button>
+            </div>
+        </div>
+
         <!-- Footer -->
         <footer  class="footer container-fluid px-3 px-sm-4 sl-bg-avocado">
         
@@ -421,7 +430,22 @@
     
         <script>
             /* Script per il dropdown dei filtri */
-            
+            $(".dropdown").on("show.bs.dropdown", function(event){
+            // get offset position of selected button and subtract scroll .outer scroll position
+            var buttonPos = parseInt(event.currentTarget.offsetLeft) - parseInt($(".outer").scrollLeft());
+            // Apply button position to dropdown
+            $(this).find(".dropdown-menu").css("left", buttonPos);
+            // Store buttons offset position to be used to calculate the dropdowns position when .outer is scrolled
+            $(this).find(".dropdown-menu").attr("data-leftPos", event.currentTarget.offsetLeft);
+            });
+            // Detect when .outer is scrolled
+            $(".outer").on("scroll", function() {
+            var activeDropdown = $('.dropdown.open').find('.dropdown-menu');
+            // subtract scroll position from buttons offset position
+            var pos = parseInt(activeDropdown.attr('data-leftPos')) - parseInt($(this).scrollLeft());
+            // appply updated position to dropdown
+            activeDropdown.css("left", pos);
+            });
 
            
 
