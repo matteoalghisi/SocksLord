@@ -1,0 +1,71 @@
+.box-nero{
+    gap: 7.25rem;
+    width: 50%;
+}
+.stepper{
+    height: 139px;
+    width: 19px;
+    background-color: brown;
+}
+.box-nero img{
+    height: 504px;
+    width: 359px;
+}
+
+
+
+
+.box-bianco{
+    width: 50%;
+    padding-left: 82px;
+    padding-right: 82px;
+}
+
+.sl-btn-group{
+    width: 100%;
+    padding-top: 40px;
+}
+.tipo-piede{
+    width: 50%;
+    background-color: aquamarine;
+    border-radius: 12px 0px 0px 12px;
+    border: 1px solid var(--black-banana);
+}
+.numero-piedi{
+    width: 50%;
+    background-color:aqua;
+    border-radius: 0px 12px 12px 0px;
+    border-top: 1px solid var(--black-banana);
+    border-right: 1px solid var(--black-banana);
+    border-bottom: 1px solid var(--black-banana);
+}
+.btn-single{
+    width: 100%;
+    justify-content: space-between;
+}
+.btn{
+    padding: 12px 24px !important;
+    border: none !important;
+}
+.btn:hover, .btn:focus{
+    border: none !important;
+    padding: 12px 24px !important;
+}
+.dropdown-toggle::after {
+    vertical-align: middle;
+    border: none;
+    content: url('img/icon/arrow-bottom-mobile.svg');
+  }
+  @media (min-width: 576px) {
+  .dropdown-toggle::after{
+    content: url('img/icon/arrow-bottom-desktop.svg');
+  }
+}
+.sl-btn-carrello{
+    width: 100%;
+    padding: 16px 32px 16px 32px;
+    border: 1px solid var(--black-banana);
+    border-radius: 12px;
+    text-decoration: none;
+    background-color: var(--orange-kiwi);
+}
