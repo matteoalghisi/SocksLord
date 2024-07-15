@@ -198,7 +198,6 @@ padding: 16px 12px;
 }
 .sl-btn-applica {
   padding: 10px 16px 10px 16px;
-
   border: 1px solid var(--black-banana);
   border-radius: 12px;
   position: relative;
@@ -227,33 +226,35 @@ padding: 16px 12px;
   }
 }
 .card{
+  background-color: var(--white-avocado) !important;
+  border: 1px solid var(--black-banana) !important;
+}
+.card-emporium{
   width: 300px;
   height: 349px;
-  border-radius: 12px;
-  border: 1px solid var(--black-banana);
-  overflow: hidden;
-  position: relative;
 }
-.card:hover .card-body{
-  right: 0;
+@media (min-width: 576px) {
+  .card-emporium:hover {
+      background-image: none;
+      background-color: var(--black-strawberry) !important;
+      transform:scale(1.2);
+      color: var(--white-avocado);
+      z-index: 2;
+  }
 }
+
 .card-img{
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: 173px;
 }
-.card-body{
+.card-button{
   width: 100%;
-  height: 100%;
-  top: 0;
-  right: -100%;
-  position: absolute;
-  background: #ABA5F7;
-  border-radius: 12px;
+  padding: 0 25px;
 }
 .card-btn {
-  color: var(--black-banana);
-  background: #F67231;
-  padding: 10px 12px;
-  border-radius: 12px;
+  height: 54px;
+  width: 54px;
+  border-radius: 6px;
   border: 1px solid var(--black-banana);
+  background-color: var(--yellow-grape);
 }
