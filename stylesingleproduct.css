@@ -44,12 +44,12 @@
     justify-content: space-between;
 }
 .btn{
-    padding: 12px 24px !important;
+    padding: 16px 24px !important;
     border: none !important;
 }
 .btn:hover, .btn:focus{
     border: none !important;
-    padding: 12px 24px !important;
+    padding: 16px 24px !important;
 }
 .dropdown-toggle::after {
     vertical-align: middle;
