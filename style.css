@@ -636,7 +636,10 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
     box-shadow: 4px 4px 0px 0px var(--black-banana);
     color: var(--black-strawberry);
 }
-
+/* Button tertiary */
+.sl-btn-tertiary{
+    padding: 1rem 2rem;
+}
 
 
 /*navbar*/
