@@ -12,7 +12,6 @@ position: relative;
 .external-dropdown .dropdown, .external-dropdown .dropup {
 position: static;
 padding-top: 4px;
-
 }
 .outer {
 overflow-x: auto;
@@ -100,8 +99,6 @@ padding: 16px 12px;
 /* contenitore riquadri filtri */
 .filter-container{
   gap: .75rem;
-  /* justify-content: center;
-  align-items: center; */
 }
 @media (min-width: 576px) {
   .filter-container{

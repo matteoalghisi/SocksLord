@@ -93,7 +93,7 @@
         </nav>
 
         <!-- section prodotto singolo -->
-        <section class="container-fluid sl-mt-first-div pt-5 d-flex flex-row justify-content-center">
+        <section class="container-fluid d-flex flex-row justify-content-center">
 
             <!-- Slider calza con sfondo strawberry -->
             <div class="box-nero sl-bg-strawberry d-flex flex-row justify-content-center align-items-center">
@@ -112,22 +112,48 @@
                 <div class="sl-btn-group d-flex flex-row pb-4">
                     <!-- Dropdown tipologia piede -->
                     <div class="tipo-piede">
-                        <button type="button" class="btn text-style-button dropdown-toggle d-flex btn-single align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button type="button" class="btn text-style-button dropdown-toggle d-flex btn-single align-items-center" data-bs-toggle="dropdown" id="tipo-piede">
                           Piede
                         </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Piede</a></li>
-                          <li><a class="dropdown-item" href="#">Boh</a></li>
-                        </ul>
+                        <div class="dropdown-menu dropdown-menu-start flex-column" aria-labelledby="tipo-piede">
+                            <div class="filter d-flex flex-row justify-content-center align-items-center">
+                                <li><a class="dropdown-item" href="#">
+                                <div class="filter-square d-flex justify-content-center align-items-center filter-img">
+                                    <img src="img/icon/piede1.svg" alt="">
+                                </div>
+                                </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                    <div class="filter-square d-flex justify-content-center align-items-center filter-img">
+                                        <img src="img/icon/piede2.svg" alt="">
+                                    </div>
+                                </a></li>
+                            </div>
+                            <div class="filter d-flex flex-row justify-content-center align-items-center">
+                                <li><a class="dropdown-item" href="#">
+                                    <div class="filter-square d-flex justify-content-center align-items-center filter-img">
+                                        <img src="img/icon/piede3.svg" alt="">
+                                    </div>
+                                </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                    <div class="filter-square d-flex justify-content-center align-items-center filter-img">
+                                        <img src="img/icon/piede4.svg" alt="">
+                                    </div>
+                                </a></li>
+                            </div>
+                        </div>
                     </div>
                     <!-- Cosino per aumentare il numero di calze da comprare -->
-                    <div class="numero-piedi">
-                    
+                    <div class="quantity d-flex">
+                        <button class="minus text-style-button" aria-label="Decrease">&minus;</button>
+                        <input type="number" class="input-box text-style-button" value="1" min="1" max="10">
+                        <button class="plus text-style-button" aria-label="Increase">&plus;</button>
                     </div>
                 </div>
                 <div class="btn-filtri d-flex justify-content-center flex-column align-items-center pb-6">
-                    <a href="" class="sl-btn-carrello text-style-button d-flex align-items-center justify-content-center m-0">Aggiungi al carrello</a>
-                    <a href="" class="text-style-button d-flex align-items-center justify-content-center m-0 sl-btn-tertiary">Personalizza</a>
+                    <div class="sl-btn-tertiary">
+                        <a href="" class="text-style-button d-flex align-items-center justify-content-center m-0">Aggiungi al carrello</a>
+                    </div>
+                    <a href="sockslab.html" class="text-style-button d-flex align-items-center justify-content-center m-0 sl-btn-quarto">Personalizza</a>
                 </div>
 
                 <!-- Accordion descrizione calza -->
@@ -243,8 +269,60 @@
             </div>
         </footer>
         
-  
-      
+        
+        <!-- Script -->
+        <script>
+            (function () {
+                const quantityContainer = document.querySelector(".quantity");
+                const minusBtn = quantityContainer.querySelector(".minus");
+                const plusBtn = quantityContainer.querySelector(".plus");
+                const inputBox = quantityContainer.querySelector(".input-box");
+
+                updateButtonStates();
+
+                quantityContainer.addEventListener("click", handleButtonClick);
+                inputBox.addEventListener("input", handleQuantityChange);
+
+                function updateButtonStates() {
+                    const value = parseInt(inputBox.value);
+                    minusBtn.disabled = value <= 1;
+                    plusBtn.disabled = value >= parseInt(inputBox.max);
+                }
+
+                function handleButtonClick(event) {
+                    if (event.target.classList.contains("minus")) {
+                    decreaseValue();
+                    } else if (event.target.classList.contains("plus")) {
+                    increaseValue();
+                    }
+                }
+
+                function decreaseValue() {
+                    let value = parseInt(inputBox.value);
+                    value = isNaN(value) ? 1 : Math.max(value - 1, 1);
+                    inputBox.value = value;
+                    updateButtonStates();
+                    handleQuantityChange();
+                }
+
+                function increaseValue() {
+                    let value = parseInt(inputBox.value);
+                    value = isNaN(value) ? 1 : Math.min(value + 1, parseInt(inputBox.max));
+                    inputBox.value = value;
+                    updateButtonStates();
+                    handleQuantityChange();
+                }
+
+                function handleQuantityChange() {
+                    let value = parseInt(inputBox.value);
+                    value = isNaN(value) ? 1 : value;
+
+                    // Execute your code here based on the updated quantity value
+                    console.log("Quantity changed:", value);
+                }
+                })();
+
+        </script>
       
   
     </body>

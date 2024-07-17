@@ -1,6 +1,7 @@
 .box-nero{
     gap: 7.25rem;
     width: 50%;
+    padding-top: 160px;
 }
 .stepper{
     height: 139px;
@@ -11,14 +12,11 @@
     height: 504px;
     width: 359px;
 }
-
-
-
-
 .box-bianco{
     width: 50%;
     padding-left: 82px;
     padding-right: 82px;
+    padding-top: 184px;
 }
 
 .sl-btn-group{
@@ -27,17 +25,10 @@
 }
 .tipo-piede{
     width: 50%;
-    background-color: aquamarine;
+    background-color: var(--white-avocado);
     border-radius: 12px 0px 0px 12px;
     border: 1px solid var(--black-banana);
-}
-.numero-piedi{
-    width: 50%;
-    background-color:aqua;
-    border-radius: 0px 12px 12px 0px;
-    border-top: 1px solid var(--black-banana);
-    border-right: 1px solid var(--black-banana);
-    border-bottom: 1px solid var(--black-banana);
+    position: relative;
 }
 .btn-single{
     width: 100%;
@@ -51,6 +42,49 @@
     border: none !important;
     padding: 16px 24px !important;
 }
+.dropdown-menu{
+    background-color: var(--white-avocado);
+    width: 100%;
+    border: 1px solid var(--black-banana);
+    border-radius: 0px 0px 12px 12px;
+    padding: 16px 12px;
+    
+}
+.filter{
+    gap: .75rem;
+}
+@media (min-width: 576px) {
+    .filter-container{
+        gap: 16px;
+    }
+}
+.dropdown-item{
+    padding: 0px 0px 16px 0px;
+  }
+.filter-square {
+    height: 36px;
+    width: 36px;
+    border-radius: 6px;
+    border: 1px solid var(--black-banana);
+    background-color: var(--white-avocado);
+  }
+  @media (min-width: 576px) {
+    .filter-square {
+      height: 48px;
+      width: 48px;
+      border-radius: 12px;
+    }
+  }
+  @media (min-width: 576px) {
+    .filter-square:hover{
+      box-sizing: border-box;
+      border: 3px solid var(--black-banana);
+    }
+    .filter-square img{
+      height: 44px;
+      width: 44px;
+    }
+  }
 .dropdown-toggle::after {
     vertical-align: middle;
     border: none;
@@ -61,11 +95,66 @@
     content: url('img/icon/arrow-bottom-desktop.svg');
   }
 }
-.sl-btn-carrello{
-    width: 100%;
-    padding: 16px 32px 16px 32px;
-    border: 1px solid var(--black-banana);
-    border-radius: 12px;
-    text-decoration: none;
-    background-color: var(--orange-kiwi);
+
+
+/* Quantity selector */
+.quantity{
+    width: 50%;
+    background-color: var(--white-avocado);
+    border-radius: 0px 0px 8px 8px;
+    border-top: 1px solid var(--black-banana);
+    border-right: 1px solid var(--black-banana);
+    border-bottom: 1px solid var(--black-banana);
+    justify-content: space-between;
+    padding-right: 24px;
+    padding-left: 24px;
+    overflow: hidden;
+}  
+@media (min-width: 576px) {
+    .quantity{
+        border-radius: 0px 12px 12px 0px;
+    }
+}
+.quantity button {
+    background-color: transparent;
+    color: var(--black-strawberry);
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: auto;
+    text-align: center;
+}  
+.input-box {
+    width: 40px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+/* Hide the number input spin buttons */
+.input-box::-webkit-inner-spin-button,
+.input-box::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-box[type="number"] {
+    -moz-appearance: textfield;
+}
+  
+
+/* Accordion */
+.accordion {
+    --bs-accordion-bg: var(--liliac-tangerine) !important;
+    --bs-accordion-color: var(--black-strawberry) !important;
+    --bs-accordion-active-color: var(--black-strawberry) !important;
+    --bs-accordion-btn-color: var(--black-strawberry) !important;
+    --bs-accordion-active-bg: var(--liliac-tangerine) !important;
+    --bs-accordion-btn-active-bg: var(--liliac-tangerine) !important;
+    --bs-accordion-btn-bg: var(--white-avocado) !important;
+    --bs-accordion-btn-focus-box-shadow: none !important;
+    --bs-accordion-border-color: var(--black-banana) !important;
+    --bs-accordion-border-width: 1px solid var(--black-banana) !important;
+    --bs-accordion-border-radius: 8px !important;
 }
