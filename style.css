@@ -96,7 +96,11 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
 .pb-9{
     padding-bottom: 2rem !important;  /* 32px */
 }
-
+@media (min-width: 576px) {
+    .pb-32px-dekstop{
+        padding-bottom: 2rem !important;  /* 32px */
+    }
+}
 .pt-9{
     padding-top: 2rem !important;  /* 32px */
 }

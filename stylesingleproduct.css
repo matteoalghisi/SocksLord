@@ -1,7 +1,27 @@
+.box-nero-esterno{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: var(--black-strawberry);
+    z-index: 0;
+}
 .box-nero{
     gap: 7.25rem;
-    width: 50%;
-    padding-top: 160px;
+    width: 100%;
+    padding-top: 106px;
+    padding-bottom: 73px;
+}
+@media (min-width: 576px) {
+    .box-nero{
+        width: 50%;
+        padding-top: 160px;
+        z-index: 1;
+    }
+}
+.container{
+    --bs-gutter-x: 0;
 }
 .stepper{
     height: 139px;
@@ -9,38 +29,68 @@
     background-color: brown;
 }
 .box-nero img{
-    height: 504px;
-    width: 359px;
+    height: 284px;
+    width: 202px;
+}
+@media (min-width: 576px) {
+    .box-nero img{
+        height: 504px;
+        width: 359px;
+    }
 }
 .box-bianco{
-    width: 50%;
-    padding-left: 82px;
-    padding-right: 82px;
-    padding-top: 184px;
+    width: 100%;
+    padding: 40px 16px 184px 16px;
 }
-
+@media (min-width: 576px) {
+    .box-bianco{
+        width: 50%;
+        padding: 184px 82px;
+    }
+}
 .sl-btn-group{
     width: 100%;
-    padding-top: 40px;
+    padding-top: 32px;
+}
+@media (min-width: 576px) {
+    .sl-btn-group{
+        padding-top: 40px;
+    }
 }
 .tipo-piede{
-    width: 50%;
+    width: 100%;
     background-color: var(--white-avocado);
-    border-radius: 12px 0px 0px 12px;
+    border-radius: 12px 12px 0px 0px;
     border: 1px solid var(--black-banana);
     position: relative;
+}
+@media (min-width: 576px) {
+    .tipo-piede{
+        width: 50%;
+        border-radius: 12px 0px 0px 12px;
+    }
 }
 .btn-single{
     width: 100%;
     justify-content: space-between;
 }
 .btn{
-    padding: 16px 24px !important;
+    padding: 15px 16px !important;
     border: none !important;
+}
+@media (min-width: 576px) {
+    .btn{
+        padding: 16px 24px !important;
+    }
 }
 .btn:hover, .btn:focus{
     border: none !important;
-    padding: 16px 24px !important;
+    padding: 15px 16px !important;
+}
+@media (min-width: 576px) {
+    .btn:hover, .btn:focus{
+        padding: 16px 24px !important;
+    }
 }
 .dropdown-menu{
     background-color: var(--white-avocado);
@@ -99,11 +149,13 @@
 
 /* Quantity selector */
 .quantity{
-    width: 50%;
+    width: 100%;
+    height: 48px;
     background-color: var(--white-avocado);
     border-radius: 0px 0px 8px 8px;
-    border-top: 1px solid var(--black-banana);
+    border-top: 0px;
     border-right: 1px solid var(--black-banana);
+    border-left: 1px solid var(--black-banana);
     border-bottom: 1px solid var(--black-banana);
     justify-content: space-between;
     padding-right: 24px;
@@ -112,7 +164,16 @@
 }  
 @media (min-width: 576px) {
     .quantity{
+        width: 50%;
+        height: auto;
         border-radius: 0px 12px 12px 0px;
+        border-top: 1px solid var(--black-banana);
+        border-right: 1px solid var(--black-banana);
+        border-left: 0px;
+        border-bottom: 1px solid var(--black-banana);
+        justify-content: space-between;
+        padding-right: 16px;
+        padding-left: 16px;
     }
 }
 .quantity button {
@@ -146,15 +207,46 @@
 
 /* Accordion */
 .accordion {
-    --bs-accordion-bg: var(--liliac-tangerine) !important;
-    --bs-accordion-color: var(--black-strawberry) !important;
-    --bs-accordion-active-color: var(--black-strawberry) !important;
-    --bs-accordion-btn-color: var(--black-strawberry) !important;
-    --bs-accordion-active-bg: var(--liliac-tangerine) !important;
-    --bs-accordion-btn-active-bg: var(--liliac-tangerine) !important;
-    --bs-accordion-btn-bg: var(--white-avocado) !important;
-    --bs-accordion-btn-focus-box-shadow: none !important;
-    --bs-accordion-border-color: var(--black-banana) !important;
-    --bs-accordion-border-width: 1px solid var(--black-banana) !important;
-    --bs-accordion-border-radius: 8px !important;
+    --bs-accordion-bg: var(--liliac-tangerine);
+    --bs-accordion-color: var(--black-strawberry);
+    --bs-accordion-active-color: var(--black-strawberry);
+    --bs-accordion-btn-color: var(--black-strawberry);
+    --bs-accordion-active-bg: var(--liliac-tangerine);
+    --bs-accordion-btn-active-bg: var(--liliac-tangerine);
+    --bs-accordion-btn-bg: var(--white-avocado);
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-border-color: var(--black-banana);
+    --bs-accordion-border-width: 1px;
+    --bs-accordion-border-radius: 8px;
+    --bs-accordion-inner-border-radius: 8px ;
+    --bs-accordion-btn-padding-x: 16px;
+    --bs-accordion-btn-padding-y: 12px;
+    --bs-accordion-body-padding-x: 16px;
+    --bs-accordion-body-padding-y: 8px 20px;
+}
+@media (min-width: 576px) {
+    .accordion{
+        --bs-accordion-btn-padding-x: 24px;
+        --bs-accordion-btn-padding-y: 12px;
+        --bs-accordion-body-padding-x: 24px;
+        --bs-accordion-body-padding-y: 12px 28px;
+    }
+}
+.accordion-button{
+    font-size: 1.125rem;
+}
+@media (min-width: 576px) {
+    .accordion-button{
+        font-size: 1.25rem;
+    }
+}
+.discover-also{
+    position: relative;
+    z-index: 2;
+}
+
+
+.z-index-prodotto-singolo{
+    z-index: 6;
+    position: relative;
 }
