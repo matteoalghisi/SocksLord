@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             }
         })
         tlSm.to('.aircraft-sm', {
-            y: 380,
+            y: 300,
             x: 130,
             rotation: 45
         })
@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         .to('.aircraft-btn-text-sm', {
             color: "#000000"
         }, "<" )
-
         
         
         let tlMd = gsap.timeline({

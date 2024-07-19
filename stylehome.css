@@ -1,4 +1,7 @@
 /* sfondo stelle hero */
+.section-hero{
+    overflow: hidden;
+}
 .sx-stars{
     background-image: url('img/home/Stars/sx-stars-hero-mobile.png');
     background-size: contain;
@@ -235,6 +238,7 @@ END SECTION OUR SOCKS
 .section-create{
     padding-top: 6rem;
     padding-bottom: 6rem;
+    overflow: hidden;
     
 }
 .sl-create-nav-tab{
@@ -383,6 +387,7 @@ END SECTION OUR SOCKS
     background-image: url(img/home/wave-home-2-mobile.png);
     background-position: top;
     background-size: cover;
+    z-index: -1;
 }
 @media (min-width: 576px) {
     .section-resocks .row{
