@@ -42,24 +42,77 @@
     width: 100%;
     padding-top: 100%;
 }
+
+
 #sl-tc1{
-    
     margin-left: 10%;
     
-}
+} 
+
 #sl-tc2{
-    margin-left: 6%;
-    margin-right: 0%;
-    margin-bottom: 4%;
+    margin-left: 6vh;
+    margin-right: 0vh;
+    margin-bottom: 4vh;
+}
+#sl-tc2 .card-body{
+    margin-bottom: 4vh;
 }
 #sl-tc3{
-    
-    margin-right: 7%;
-    margin-bottom: 2%;
+    margin-right: 7vh;
+    margin-bottom: 2vh;
 }
+#sl-tc3 .card-body{
+    margin-bottom: 2vh;
+}
+
+
+
+
+
+.sl-island-row{
+    margin: 512px 256px 512px 256px;
+}
+.sl-island-row:nth-child(even){
+    justify-content: end;
+}
+
+
+.sl-island-card{
+    width: 342px;
+    
+}
+.sl-islands{
+    left: 50%;
+    top: 50%;  
+}
+.sl-island{
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-43%);
+}
+
+.sl-islands .sl-island:nth-child(1){
+    z-index: -4;
+}
+.sl-islands .sl-island:nth-child(2){
+    z-index: -3;
+}
+.sl-islands .sl-island:nth-child(3){
+    z-index: -2;
+}
+.sl-islands .sl-island:nth-child(4){
+    z-index: -1;
+}
+
+
+
+
+
 
 .spazio{
     width: 100%;
     height: 400px;
 }
+
+
 
