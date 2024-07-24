@@ -34,7 +34,7 @@
     </head>
 
     <body class="sl-bg-avocado">
-        <div class="box-nero-esterno d-none d-lg-block"></div>
+        <div class="external-black-box d-none d-lg-block"></div>
         <!-- navbar -->
         <nav class="navbar navbar-expand-xl fixed-top mt-1 mx-1 mt-sm-3 mx-sm-3 ">
             <div class="sl-not-collapsed container-fluid d-flex justify-content-between px-3 sl-bg-avocado border p-2 p-sm-3 effect-style-default-shadow">
@@ -94,137 +94,138 @@
         </nav>
 
         <!-- section prodotto singolo -->
-        <section class="container d-flex flex-lg-row flex-column justify-content-center">
+        <section class="container-fluid d-flex flex-lg-row flex-column justify-content-center ">
+            <div class="row">
+                <!-- Slider calza con sfondo strawberry -->
+                <div class="black-box sl-bg-strawberry d-flex flex-row justify-content-center align-items-center col-lg-6">
+                    <div class="stepper justify-content-center d-flex d-none d-lg-block">
+                    </div> 
+                    <img src="img/singleproduct/calza-desktop.svg" alt="" class="d-none d-lg-block">
+                    <img src="img/singleproduct/calza-mobile.svg" alt="" class="d-block d-lg-none">
+                </div>
 
-            <!-- Slider calza con sfondo strawberry -->
-            <div class="box-nero sl-bg-strawberry d-flex flex-row justify-content-center align-items-center">
-                <div class="stepper justify-content-center d-flex d-none d-lg-block">
-                </div> 
-                <img src="img/singleproduct/calza-desktop.svg" alt="" class="d-none d-lg-block">
-                <img src="img/singleproduct/calza-mobile.svg" alt="" class="d-block d-lg-none">
-            </div>
+                <!-- Opzioni calza con sfondo avocado -->
+                <div class="white-box sl-bg-avocado justify-content-center col-lg-6">
+                    <h1 class="text-style-h1 pb-4 pb-32px-dekstop">Luminares</h1>
+                    <h4 class="text-style-h4 pb-3">₹ 433,999 </h4>
+                    <p class="text-style-body-copy">Luminares è un compagno luminoso pronto ad aiutarti nelle situazioni più oscure. Dotata di una lampada LED, questa calza è la risposta all'illuminazione portatile.</p>
 
-            <!-- Opzioni calza con sfondo avocado -->
-            <div class="box-bianco sl-bg-avocado">
-                <h1 class="text-style-h1 pb-4 pb-32px-dekstop">Luminares</h1>
-                <h4 class="text-style-h4 pb-3">₹ 433,999 </h4>
-                <p class="text-style-body-copy">Luminares è un compagno luminoso pronto ad aiutarti nelle situazioni più oscure. Dotata di una lampada LED, questa calza è la risposta all'illuminazione portatile.</p>
-
-                <!-- Bottoni -->
-                <div class="sl-btn-group d-flex flex-lg-row flex-column pb-lg-4 pb-3">
-                    <!-- Dropdown tipologia piede -->
-                    <div class="tipo-piede">
-                        <button type="button" class="btn text-style-button dropdown-toggle d-flex btn-single align-items-center" data-bs-toggle="dropdown" id="tipo-piede">
-                          Piede
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-start flex-column" aria-labelledby="tipo-piede">
-                            <div class="filter d-flex flex-row justify-content-center align-items-center">
-                                <li><a class="dropdown-item" href="#">
-                                <div class="filter-square d-flex justify-content-center align-items-center filter-img">
-                                    <img src="img/icon/piede1.svg" alt="">
+                    <!-- Bottoni -->
+                    <div class="sl-btn-group d-flex flex-lg-row flex-column pb-lg-4 pb-3">
+                        <!-- Dropdown tipologia piede -->
+                        <div class="foot-type">
+                            <button type="button" class="btn text-style-button dropdown-toggle d-flex btn-single align-items-center" data-bs-toggle="dropdown" id="f-type">
+                            Piede
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-start flex-column" aria-labelledby="f-type">
+                                <div class="filter d-flex flex-row justify-content-center align-items-center">
+                                    <li><a class="dropdown-item" href="#">
+                                    <div class="filter-square d-flex justify-content-center align-items-center filter-img">
+                                        <img src="img/icon/piede1.svg" alt="">
+                                    </div>
+                                    </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                        <div class="filter-square d-flex justify-content-center align-items-center filter-img">
+                                            <img src="img/icon/piede2.svg" alt="">
+                                        </div>
+                                    </a></li>
                                 </div>
-                                </a></li>
-                                <li><a class="dropdown-item" href="#">
-                                    <div class="filter-square d-flex justify-content-center align-items-center filter-img">
-                                        <img src="img/icon/piede2.svg" alt="">
-                                    </div>
-                                </a></li>
-                            </div>
-                            <div class="filter d-flex flex-row justify-content-center align-items-center">
-                                <li><a class="dropdown-item" href="#">
-                                    <div class="filter-square d-flex justify-content-center align-items-center filter-img">
-                                        <img src="img/icon/piede3.svg" alt="">
-                                    </div>
-                                </a></li>
-                                <li><a class="dropdown-item" href="#">
-                                    <div class="filter-square d-flex justify-content-center align-items-center filter-img">
-                                        <img src="img/icon/piede4.svg" alt="">
-                                    </div>
-                                </a></li>
+                                <div class="filter d-flex flex-row justify-content-center align-items-center">
+                                    <li><a class="dropdown-item" href="#">
+                                        <div class="filter-square d-flex justify-content-center align-items-center filter-img">
+                                            <img src="img/icon/piede3.svg" alt="">
+                                        </div>
+                                    </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                        <div class="filter-square d-flex justify-content-center align-items-center filter-img">
+                                            <img src="img/icon/piede4.svg" alt="">
+                                        </div>
+                                    </a></li>
+                                </div>
                             </div>
                         </div>
+                        <!-- Cosino per aumentare il numero di calze da comprare -->
+                        <div class="quantity d-flex">
+                            <button class="minus text-style-button" aria-label="Decrease">&minus;</button>
+                            <input type="number" class="input-box text-style-button" value="1" min="1" max="10">
+                            <button class="plus text-style-button" aria-label="Increase">&plus;</button>
+                        </div>
                     </div>
-                    <!-- Cosino per aumentare il numero di calze da comprare -->
-                    <div class="quantity d-flex">
-                        <button class="minus text-style-button" aria-label="Decrease">&minus;</button>
-                        <input type="number" class="input-box text-style-button" value="1" min="1" max="10">
-                        <button class="plus text-style-button" aria-label="Increase">&plus;</button>
+                    <div class="btn-filtri d-flex justify-content-center flex-column align-items-center pb-6">
+                        <div class="sl-btn-tertiary">
+                            <a href="" class="text-style-button d-flex align-items-center justify-content-center m-0">Aggiungi al carrello</a>
+                        </div>
+                        <a href="sockslab.html" class="text-style-button d-flex align-items-center justify-content-center m-0 sl-btn-quarto">Personalizza</a>
                     </div>
-                </div>
-                <div class="btn-filtri d-flex justify-content-center flex-column align-items-center pb-6">
-                    <div class="sl-btn-tertiary">
-                        <a href="" class="text-style-button d-flex align-items-center justify-content-center m-0">Aggiungi al carrello</a>
-                    </div>
-                    <a href="sockslab.html" class="text-style-button d-flex align-items-center justify-content-center m-0 sl-btn-quarto">Personalizza</a>
-                </div>
 
-                <!-- Accordion descrizione calza -->
-                <div class="accordion" id="accordion-single">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header text-style-desktop-titolo-tendina">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Funzionalità
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion-single">
-                            <div class="accordion-body text-style-body-copy">
-                                La lampada a LED ad alta efficienza energetica è integrata nell'elasticità del tessuto. Emette una luce morbida e diffusa senza abbagliamenti, offrendo una visione chiara dell'ambiente circostante. La calza è dotata di regolazione della luminosità e di più modalità di luce intermittente, che possono essere attivate per segnalare o creare effetti visivi.  La lampada a LED utilizza una tecnologia energetica avanzata, che garantisce una lunga durata della batteria.
+                    <!-- Accordion descrizione calza -->
+                    <div class="accordion" id="accordion-single">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header text-style-desktop-titolo-tendina">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Funzionalità
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion-single">
+                                <div class="accordion-body text-style-body-copy">
+                                    La lampada a LED ad alta efficienza energetica è integrata nell'elasticità del tessuto. Emette una luce morbida e diffusa senza abbagliamenti, offrendo una visione chiara dell'ambiente circostante. La calza è dotata di regolazione della luminosità e di più modalità di luce intermittente, che possono essere attivate per segnalare o creare effetti visivi.  La lampada a LED utilizza una tecnologia energetica avanzata, che garantisce una lunga durata della batteria.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header text-style-desktop-titolo-tendina">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Materiali
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-single">
-                            <div class="accordion-body text-style-body-copy">
-                                <ul>
-                                    <li><span class="text-style-h5">Lumifibra</span>: è una fibra luminescente molto resistente, flessibile e in grado di mantenere la sua luminosità per lunghi periodi di tempo senza perdita di efficienza.
-                                    </li>
-                                    <li><span class="text-style-h5">Tessuto di origine vegetale</span>: viene intrecciato con la Lumifibra per adattarsi perfettamente alla forma del piede e mantenere una sensazione di freschezza.
-                                    </li>
-                                    <li><span class="text-style-h5">Componenti elettronici innovativi</span>: circuiti, batterie compatte e connettori, progettati per alimentare la lampada a LED.
-                                    </li>
-                                    <li><span class="text-style-h5">Filamenti conduttori</span>: nascosti all'interno del tessuto, collegano la lampada LED ai componenti elettronici, consentendo il flusso di energia per l'illuminazione.
-                                    </li>
-                                    <li><span class="text-style-h5">Dettagli ergonomici e di design</span>: cuciture senza cuciture, rinforzi nelle zone di maggiore usura e sottili inserti elastici per garantire un adattamento perfetto al piede.
-                                    </li>
-                                </ul>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header text-style-desktop-titolo-tendina">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Materiali
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-single">
+                                <div class="accordion-body text-style-body-copy">
+                                    <ul>
+                                        <li><span class="text-style-h5">Lumifibra</span>: è una fibra luminescente molto resistente, flessibile e in grado di mantenere la sua luminosità per lunghi periodi di tempo senza perdita di efficienza.
+                                        </li>
+                                        <li><span class="text-style-h5">Tessuto di origine vegetale</span>: viene intrecciato con la Lumifibra per adattarsi perfettamente alla forma del piede e mantenere una sensazione di freschezza.
+                                        </li>
+                                        <li><span class="text-style-h5">Componenti elettronici innovativi</span>: circuiti, batterie compatte e connettori, progettati per alimentare la lampada a LED.
+                                        </li>
+                                        <li><span class="text-style-h5">Filamenti conduttori</span>: nascosti all'interno del tessuto, collegano la lampada LED ai componenti elettronici, consentendo il flusso di energia per l'illuminazione.
+                                        </li>
+                                        <li><span class="text-style-h5">Dettagli ergonomici e di design</span>: cuciture senza cuciture, rinforzi nelle zone di maggiore usura e sottili inserti elastici per garantire un adattamento perfetto al piede.
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header text-style-desktop-titolo-tendina">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Lavorazione
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion-single">
-                            <div class="accordion-body text-style-body-copy">
-                                Il processo di creazione incomincia con l'estrazione di una materia prima unica, una fibra luminosa chiamata “Lumifibra". Questa sostanza è ottenuta da minerali speciali rinvenuti solo nelle profondità dei ghiacci cristallini. La Lumifibra è poi lavorata attraverso un procedimento bio-tecnologico, che coinvolge sofisticate tecniche di manipolazioni molecolari.
+                        <div class="accordion-item">
+                            <h2 class="accordion-header text-style-desktop-titolo-tendina">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Lavorazione
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion-single">
+                                <div class="accordion-body text-style-body-copy">
+                                    Il processo di creazione incomincia con l'estrazione di una materia prima unica, una fibra luminosa chiamata “Lumifibra". Questa sostanza è ottenuta da minerali speciali rinvenuti solo nelle profondità dei ghiacci cristallini. La Lumifibra è poi lavorata attraverso un procedimento bio-tecnologico, che coinvolge sofisticate tecniche di manipolazioni molecolari.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header text-style-desktop-titolo-tendina">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Riciclaggio
-                            </button>
-                        </h2>
-                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordion-single">
-                            <div class="accordion-body text-style-body-copy">
-                                <ol>
-                                    <li><span class="text-style-h5">Separazione dei Materiali</span>: avviene attraverso un sistema di scansione molecolare che distingue la Lumifibra da altri tessuti e componenti elettronici.
-                                    </li>
-                                    <li><span class="text-style-h5">Smantellamento dei Componenti Elettronici</span>: macchine specializzate separano i materiali elettronici per essere riciclati in processi specifici.
-                                    </li>
-                                    <li><span class="text-style-h5">Ritorno alla Lumifibra</span>: essendo un materiale prezioso, viene trattata attraverso un processo di purificazione per ripristinare le sue proprietà luminose. 
-                                    </li>
-                                    <li><span class="text-style-h5">Processo sostenibile</span>: i processi di riciclaggio sono alimentati da fonti energetiche avanzate e rinnovabili.
-                                    </li>
-                                </ol>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header text-style-desktop-titolo-tendina">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Riciclaggio
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordion-single">
+                                <div class="accordion-body text-style-body-copy">
+                                    <ol>
+                                        <li><span class="text-style-h5">Separazione dei Materiali</span>: avviene attraverso un sistema di scansione molecolare che distingue la Lumifibra da altri tessuti e componenti elettronici.
+                                        </li>
+                                        <li><span class="text-style-h5">Smantellamento dei Componenti Elettronici</span>: macchine specializzate separano i materiali elettronici per essere riciclati in processi specifici.
+                                        </li>
+                                        <li><span class="text-style-h5">Ritorno alla Lumifibra</span>: essendo un materiale prezioso, viene trattata attraverso un processo di purificazione per ripristinare le sue proprietà luminose. 
+                                        </li>
+                                        <li><span class="text-style-h5">Processo sostenibile</span>: i processi di riciclaggio sono alimentati da fonti energetiche avanzate e rinnovabili.
+                                        </li>
+                                    </ol>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -242,7 +243,7 @@
 
 
         <!-- Footer -->
-        <footer  class="footer container-fluid px-3 px-sm-4 sl-bg-avocado z-index-prodotto-singolo">
+        <footer  class="footer container-fluid px-3 px-sm-4 sl-bg-avocado z-index-single-product">
         
             <div class="pb-5 py-4 mb-5">
             <img class="py-4" src="img/logo/Logo-sockslord.png" width="100%" alt="sockslord's logo"/>
