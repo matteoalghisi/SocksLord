@@ -1,69 +1,44 @@
-.section-aboutus-1{
+.section-aboutus-1 .row{
     background-image: url(img/aboutus/wave-aboutus-top-mobile.png);
-    background-position-y: bottom;
+    background-position-y: top;
     background-position-x: center;
     background-size: cover;
     height: 900px;
 }
 @media (min-width: 576px) {
-    .section-aboutus-1{
+    .section-aboutus-1 .row{
         height: 1000px;
     }
 }
 @media (min-width: 768px) {
-    .section-aboutus-1{
+    .section-aboutus-1 .row{
         background-image: url(img/aboutus/wave-aboutus-top-desktop.png);
-        height: 900px;
+        height: 800px;
         background-position-x: left;
     }
 }
+@media (min-width: 1400px) {
+    .section-aboutus-1 .row{
+        background-image: url(img/aboutus/wave-aboutus-top-desktop-xl.png);
+        height: 800px;
+        background-position-x: right;
+    }
+}
+
+
 
 .sl-team-container{
-    background-image: url(img/aboutus/circle.png);
+    background-image: url(img/aboutus/Team.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    max-width: 1700px;
+    height: 70vh;
+    width: 100%;
 }
   
-.sl-teamcard{
-    width: fit-content;
-    
-}
-.sl-teamcard img{
-    width: 100px;
-
-}
-.sl-teamcard .card-body{
-    height: 44px;
-    width: 200px;
-    flex-grow: 0;
-}
-.sl-teamcard .sl-teamcard-bg{
-    width: 100%;
-    padding-top: 100%;
-}
 
 
-#sl-tc1{
-    margin-left: 10%;
-    
-} 
-
-#sl-tc2{
-    margin-left: 6vh;
-    margin-right: 0vh;
-    margin-bottom: 4vh;
-}
-#sl-tc2 .card-body{
-    margin-bottom: 4vh;
-}
-#sl-tc3{
-    margin-right: 7vh;
-    margin-bottom: 2vh;
-}
-#sl-tc3 .card-body{
-    margin-bottom: 2vh;
-}
 
 
 
