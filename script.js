@@ -117,25 +117,58 @@ document.addEventListener("DOMContentLoaded", (event) => {
         pin: true,
         markers: false
         });
+
+        
+
+
+
+        let rotateTo = gsap.quickTo(".sl-about-aircraft", "rotation"),
+        prevDirection = 0;
+        
+        //animation for aircraft through islands in about us page
+        const main = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".path",
+                scrub: true,
+                start: "-200 top",
+                end: "bottom",
+                once: true
+                
+              
+
+                  
+
+
+            }
+        })
+        .to(".sl-about-aircraft", {
+            duration: 10,
+            ease: "none",
+            immediateRender: true,
+
+            motionPath: {
+                path: ".path",
+                align: ".path",
+                alignOrigin: [0.5, 0.5],
+                autoRotate: true
+            }
+        })
+
+
+
+
+
+
+
+
+
+
+
+        
    });
   
 
 
 
 
-//for smooth scroll animaions 
-/*
-const lenis = new Lenis()
 
-lenis.on('scroll', (e) => {
-  console.log(e)
-})
-
-function raf(time) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
-}
-
-requestAnimationFrame(raf)
-
-*/

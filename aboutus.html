@@ -20,10 +20,13 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <!--jquery-->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
     <!--gsap-->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
+    
 
     <script type="text/javascript" src="script.js"></script>
 
@@ -128,8 +131,16 @@
 
 
 
-   <section class="section-aboutus-islands container-fluid">
+   <section class="section-aboutus-islands container-fluid position-relative">
     
+    
+
+    <svg  class="position-absolute sl-path-svg" viewBox="0 0 1360 4130" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="path" id="path" d="M 1358.357 -0.401 C 956.1 1118.599 88.763 1329.258 88.763 1826.312 C 88.763 2323.366 647.008 2054.025 642.996 2452.27 C 638.984 2850.515 138.418 2671.957 17.038 3093.274 C -104.341 3514.592 817.542 4042.242 1268.958 4129.516" stroke-width="4" ></path>
+    </svg>
+
+    <img class="position-absolute sl-about-aircraft" src="img/aboutus/aircraft.png" alt="">
+
     <div class="row sl-island-row">
       <div class="sl-island-card position-relative">
         <div class="sl-islands position-absolute">  
@@ -210,23 +221,7 @@
 
 <div class="spazio"></div>
 
-<svg viewBox="0 0 1360 4130" xmlns="http://www.w3.org/2000/svg">
-  <defs></defs>
-  <g id="aircraft-path" transform="matrix(1, 0, 0, 1, 3.691957, -178.925552)">
-    <g id="aircraft">
-      <path id="back" d="M1405.53 130.757L1425.88 41.0648L1430.12 143.486L1301.65 111.274L1351.58 22.8075L1330.73 109.568L1330.51 110.501L1331.43 110.764L1404.28 131.498L1405.3 131.787L1405.53 130.757Z" fill="#1D1C22" stroke="black" stroke-width="2"></path>
-      <path id="body" d="M1386.53 228.714L1363.72 133.542L1363.28 131.679L1362 133.11L1297.08 206.075L1273.4 109.22L1351.2 21.0232L1321.54 96.374L1321.18 97.2756L1322.07 97.6588L1370.51 118.514L1370.66 118.58L1370.83 118.593L1419.35 122.244L1420.34 122.318L1420.42 121.327L1427.05 39.868L1455.92 161.087L1386.53 228.714Z" fill="#C5C4CB" stroke="black" stroke-width="2"></path>
-      <path id="reactors" d="M1291.31 184.249L1284.91 158.377L1296.88 154.349L1303.97 168.8L1291.31 184.249ZM1401.3 192.509L1414.98 184.022L1422.99 193.792L1403.83 212.321L1401.3 192.509Z" fill="#1D1C22" stroke="#2E2D33" stroke-width="2"></path>
-      <g id="cockpit">
-        <path d="M1297.22 205.291L1363.35 132.601L1386.23 228.552L1307.27 351.546L1297.22 205.291Z" fill="#6C6A78"></path>
-        <path d="M1316.6 240.451L1343.78 207.999L1351.94 251.739L1316.17 315.97L1316.6 240.451Z" fill="#DCDCE0"></path>
-        <path d="M1297.22 205.291L1363.35 132.601L1386.23 228.552L1307.27 351.546L1297.22 205.291Z" stroke="black" stroke-width="2"></path>
-        <path d="M1316.6 240.451L1343.78 207.999L1351.94 251.739L1316.17 315.97L1316.6 240.451Z" stroke-width="2" stroke="black"></path>
-      </g>
-    </g>
-    <path id="path" d="M1350 194.5C949 1310 84.3761 1520 84.3761 2015.5C84.3761 2511 640.876 2242.5 636.876 2639.5C632.876 3036.5 133.876 2858.5 12.8761 3278.5C-108.124 3698.5 810.876 4224.5 1260.88 4311.5" stroke-width="4" style="fill: none; stroke: rgb(187, 11, 11);"></path>
-  </g>
-</svg>
+
 
 
 
