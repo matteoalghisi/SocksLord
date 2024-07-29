@@ -491,16 +491,132 @@
             
             <!-- Modal -->
             <div class="modal fade modal-fullscreen" id="filter" tabindex="-1" aria-labelledby="filter" aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header">
                     <h3 class="modal-title text-style-h3" id="filter">Filtri</h3>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body d-flex justify-content-center flex-column gap-5">
-                        <div class="container-filter">
-                            <h4>Collabs</h4>
-                            <div class="filter"></div>
+                        <!-- Collabs -->
+                        <div class="d-flex flex-column">
+                            <h4 class="text-style-h4">Collabs</h4>
+                            <div class="filter-container d-flex flex-row g-3 flex-wrap">
+                                <button class="filter-modal d-flex justify-content-center align-items-center text-style-button">Lux</button>
+                                <button class="filter-modal d-flex justify-content-center align-items-center text-style-button">Lux</button>
+                            </div>
+                        </div>
+                        <!-- Colors -->
+                        <div class="d-flex flex-column">
+                            <h4 class="text-style-h4">Colore</h4>
+                            <div class="filter-container d-flex flex-row g-3 flex-wrap">
+                                <button class="filter-modal d-flex justify-content-center align-items-center">
+                                    <span class="circle-filter"></span>
+                                    <span class="text-style-button">Rosso</span>
+                                </button>
+                                <button class="filter-modal d-flex justify-content-center align-items-center">
+                                    <span class="circle-filter"></span>
+                                    <span class="text-style-button">Rosso</span>
+                                </button><button class="filter-modal d-flex justify-content-center align-items-center">
+                                    <span class="circle-filter"></span>
+                                    <span class="text-style-button">Rosso</span>
+                                </button><button class="filter-modal d-flex justify-content-center align-items-center">
+                                    <span class="circle-filter"></span>
+                                    <span class="text-style-button">Rosso</span>
+                                </button><button class="filter-modal d-flex justify-content-center align-items-center">
+                                    <span class="circle-filter"></span>
+                                    <span class="text-style-button">Rosso</span>
+                                </button><button class="filter-modal d-flex justify-content-center align-items-center">
+                                    <span class="circle-filter"></span>
+                                    <span class="text-style-button">Rosso</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Functions -->
+                        <div class="d-flex flex-column">
+                            <h4 class="text-style-h4">Funzione</h4>
+                            <div class="filter-container d-flex flex-row g-3 flex-wrap">
+                                <button class="filter-modal d-flex justify-content-center align-items-center">
+                                    <img src="img/icon/Propeller.svg" alt="" class="icon-filter">
+                                    <span class="text-style-button">Elica</span>
+                                </button>
+                                <button class="filter-modal d-flex justify-content-center align-items-center">
+                                    <img src="img/icon/Propeller.svg" alt="" class="icon-filter">
+                                    <span class="text-style-button">Elica</span>
+                                </button>
+                                <button class="filter-modal d-flex justify-content-center align-items-center">
+                                    <img src="img/icon/Propeller.svg" alt="" class="icon-filter">
+                                    <span class="text-style-button">Elica</span>
+                                </button>
+                                <button class="filter-modal d-flex justify-content-center align-items-center">
+                                    <img src="img/icon/Propeller.svg" alt="" class="icon-filter">
+                                    <span class="text-style-button">Elica</span>
+                                </button>
+                                <button class="filter-modal d-flex justify-content-center align-items-center">
+                                    <img src="img/icon/Propeller.svg" alt="" class="icon-filter">
+                                    <span class="text-style-button">Elica</span>
+                                </button>
+                                <button class="filter-modal d-flex justify-content-center align-items-center">
+                                    <img src="img/icon/Propeller.svg" alt="" class="icon-filter">
+                                    <span class="text-style-button">Elica</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Feet -->
+                        <div class="d-flex flex-column">
+                            <h4 class="text-style-h4">Piede</h4>
+                            <div class="filter-container d-flex flex-row g-3 flex-wrap">
+                                <button class="filter-modal d-flex justify-content-center align-items-center">
+                                    <img src="img/icon/piede1.svg" alt="" class="icon-filter">
+                                    <span class="text-style-button">Piede</span>
+                                </button>
+                                <button class="filter-modal d-flex justify-content-center align-items-center">
+                                    <img src="img/icon/piede2.svg" alt="" class="icon-filter">
+                                    <span class="text-style-button">Piede</span>
+                                </button>
+                                <button class="filter-modal d-flex justify-content-center align-items-center">
+                                    <img src="img/icon/piede3.svg" alt="" class="icon-filter">
+                                    <span class="text-style-button">Piede</span>
+                                </button>
+                                <button class="filter-modal d-flex justify-content-center align-items-center">
+                                    <img src="img/icon/piede4.svg" alt="" class="icon-filter">
+                                    <span class="text-style-button">Piede</span>
+                                </button>
+                                <button class="filter-modal d-flex justify-content-center align-items-center">
+                                    <img src="img/icon/Propeller.svg" alt="" class="icon-filter">
+                                    <span class="text-style-button">Elica</span>
+                                </button>
+                                <button class="filter-modal d-flex justify-content-center align-items-center">
+                                    <img src="img/icon/Propeller.svg" alt="" class="icon-filter">
+                                    <span class="text-style-button">Elica</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Materials -->
+                        <div class="d-flex flex-column">
+                            <h4 class="text-style-h4">Materiale</h4>
+                            <div class="filter-container d-flex flex-row g-3 flex-wrap">
+                                <button class="filter-modal d-flex justify-content-center align-items-center">
+                                    <img src="img/icon/tessuto.svg" class="circle-filter">
+                                    <span class="text-style-button">Tessuto</span>
+                                </button>
+                                <button class="filter-modal d-flex justify-content-center align-items-center">
+                                    <img src="img/icon/tessuto.svg" class="circle-filter">
+                                    <span class="text-style-button">Tessuto</span>
+                                </button><button class="filter-modal d-flex justify-content-center align-items-center">
+                                    <img src="img/icon/tessuto.svg" class="circle-filter">
+                                    <span class="text-style-button">Tessuto</span>
+                                </button><button class="filter-modal d-flex justify-content-center align-items-center">
+                                    <img src="img/icon/tessuto.svg" class="circle-filter">
+                                    <span class="text-style-button">Tessuto</span>
+                                </button><button class="filter-modal d-flex justify-content-center align-items-center">
+                                    <img src="img/icon/tessuto.svg" class="circle-filter">
+                                    <span class="text-style-button">Tessuto</span>
+                                </button><button class="filter-modal d-flex justify-content-center align-items-center">
+                                    <img src="img/icon/tessuto.svg" class="circle-filter">
+                                    <span class="text-style-button">Tessuto</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div class="modal-footer">

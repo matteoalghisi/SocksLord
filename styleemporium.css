@@ -278,11 +278,11 @@ padding: 16px 12px;
 }
 .modal{
   --bs-modal-header-padding: 48px;
-  --bs-modal-width: 520px;
+  --bs-modal-width: 560px;
   --bs-modal-header-border-color: none;
   --bs-modal-header-border-width: none;
   --bs-modal-title-line-height: 100%;
-  --bs-modal-padding: 40px 48px 40px 48px;
+  --bs-modal-padding: 0px 48px 40px 48px;
   --bs-modal-color: var(--black-strawberry);
   --bs-modal-bg: var(--white-avocado);
   --bs-modal-border-color: var(--black-banana);
@@ -290,6 +290,48 @@ padding: 16px 12px;
   --bs-modal-border-radius: 12px;
   /* --bs-modal-box-shadow: #{$modal-content-box-shadow-xs}; */
   --bs-modal-inner-border-radius: 12px;
+}
+.modal-backdrop{
+  --bs-backdrop-bg: var(--black-strawberry);
+  --bs-backdrop-opacity: 20%;
+}
 
-
+.filter-modal{
+  height: 44px;
+  width: 140px;
+  border: 1px solid var(--black-banana);
+  border-radius: 12px;
+  color: var(--black-strawberry);
+  background-color: var(--white-avocado);
+  box-sizing: border-box;
+}
+@media (min-width: 576px) {
+  .filter-modal{
+    height: 48px;
+  }
+  .filter-modal:hover{
+    border: 2px solid var(--black-banana);
+  }
+}
+.filter-modal.focus{
+  color: var(--white-avocado);
+  background-color: var(--black-banana);
+}
+.circle-filter{
+  height: 24px;
+  width: 24px;
+  border-radius: 200%;
+  border: 1px solid var(--black-banana);
+  box-sizing: border-box;
+  background-color: #9F498B; 
+  /* cambiare poi per ogni singolo colore l'id */
+  margin-right: 10px;
+}
+.circle-filter.focus, .circle-filter::after{
+  border: 1px solid var(--white-avocado);
+}
+.icon-filter{
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
 }
