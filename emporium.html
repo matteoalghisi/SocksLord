@@ -482,7 +482,37 @@
                     </div>
                 </div> 
             </div>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn border-2 text-style-button sl-btn-filter" data-bs-toggle="modal" data-bs-target="#filter">
+                <span class="sl-btn-text text-style-button pe-lg-3 pe-2">Filtri</span>
+                <span class="sl-btn-icon"><img src="img/icon/filter.jpg" alt=""></span>
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade modal-fullscreen" id="filter" tabindex="-1" aria-labelledby="filter" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h3 class="modal-title text-style-h3" id="filter">Filtri</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center flex-column gap-5">
+                        <div class="container-filter">
+                            <h4>Collabs</h4>
+                            <div class="filter"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+                </div>
+            </div>
         </section>
+
+
 
         <!-- Footer -->
         <footer  class="footer container-fluid px-3 px-sm-4 sl-bg-avocado">

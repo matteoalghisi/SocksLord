@@ -255,3 +255,41 @@ padding: 16px 12px;
   border: 1px solid var(--black-banana);
   background-color: var(--yellow-grape);
 }
+
+/* Modal CSS */
+.sl-btn-filter{
+  height: auto;
+  border-radius: 19px;
+  padding: 10px 16px;
+  box-sizing: border-box;
+}
+  @media (min-width: 576px) {
+  .sl-btn-filter{
+    border-radius: 24px;
+    padding: 12px 20px;
+  }
+  .sl-btn-filter:hover{
+    box-shadow: 4px 4px 0px 0px var(--black-banana);
+    border: 2px solid var(--black-banana);
+    transform: translateX(4px);
+    transform: translatey(-4px);
+    transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
+  }
+}
+.modal{
+  --bs-modal-header-padding: 48px;
+  --bs-modal-width: 520px;
+  --bs-modal-header-border-color: none;
+  --bs-modal-header-border-width: none;
+  --bs-modal-title-line-height: 100%;
+  --bs-modal-padding: 40px 48px 40px 48px;
+  --bs-modal-color: var(--black-strawberry);
+  --bs-modal-bg: var(--white-avocado);
+  --bs-modal-border-color: var(--black-banana);
+  --bs-modal-border-width: 2px;
+  --bs-modal-border-radius: 12px;
+  /* --bs-modal-box-shadow: #{$modal-content-box-shadow-xs}; */
+  --bs-modal-inner-border-radius: 12px;
+
+
+}
