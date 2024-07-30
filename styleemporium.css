@@ -123,12 +123,14 @@
 
 /* card-space */
 .card-space {
-  gap: 1rem;
+  /* gap: 1rem; */
   padding-top: 3.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 576px) {
   .card-space {
-    gap: 1.5rem;
+    /* gap: 1.5rem; */
     padding-top: 5rem;
   }
 }
@@ -139,12 +141,12 @@
   --bs-card-border-radius: 12px;
 }
 .card-emporium{
-  width: 171px;
+  /* width: 171px; */
   height: 204px;
 }
 @media (min-width: 576px) {
   .card-emporium{
-    width: 300px;
+    /* width: 300px; */
     height: 349px;
   }
   .card-emporium:hover {
@@ -166,6 +168,7 @@
   .card-button{
     width: 100%;
     padding: 0 25px;
+    justify-content: end !important;
   }
   .card-btn {
     height: 54px;
