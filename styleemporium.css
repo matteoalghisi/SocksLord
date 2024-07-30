@@ -279,17 +279,16 @@ padding: 16px 12px;
 .modal{
   --bs-modal-header-padding: 48px 48px 24px 48px;
   --bs-modal-width: 560px;
-  --bs-modal-margin: 0px;
+  --bs-modal-margin: 0px 0px 100px 0px;
   --bs-modal-header-border-color: none;
   --bs-modal-header-border-width: none;
   --bs-modal-title-line-height: 100%;
-  --bs-modal-padding: 24px 48px 40px 48px;
+  --bs-modal-padding: 144px 48px 40px 48px;
   --bs-modal-color: var(--black-strawberry);
   --bs-modal-bg: var(--white-avocado);
   --bs-modal-border-color: var(--black-banana);
   --bs-modal-border-width: 2px;
   --bs-modal-border-radius: 12px;
-  /* --bs-modal-box-shadow: #{$modal-content-box-shadow-xs}; */
   --bs-modal-inner-border-radius: 12px;
   --bs-modal-footer-gap: 8px;
   --bs-modal-footer-bg: var(--white-avocado);
@@ -300,6 +299,7 @@ padding: 16px 12px;
   position: fixed;
   top: 1rem;
   right: 1rem;
+  height: 96vh !important;
 }
 .modal-fullscreen .modal-content{
   border-radius: 12px;
