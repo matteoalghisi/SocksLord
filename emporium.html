@@ -35,14 +35,14 @@
 
     <body class="sl-bg-avocado">
         <!-- navbar -->
-        <nav class="navbar navbar-expand-xl fixed-top mt-1 mx-1 mt-sm-3 mx-sm-3 p-0 ">
+        <nav class="navbar navbar-expand-xl fixed-top  mt-1 mx-1 mt-sm-3 mx-sm-3 p-0 ">
             <div class="sl-not-collapsed container-fluid d-flex justify-content-between px-3 sl-bg-avocado border p-2 p-sm-3 effect-style-default-shadow">
-              <button id="navbar-toggler" class="navbar-toggler border-0 px-0 px-sm-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="toggler-icon top-bar"></span>
-                <span class="toggler-icon middle-bar"></span>
-                <span class="toggler-icon bottom-bar"></span>
-              </button>
-              <a class="navbar-brand d-flex align-items-center px-0 px-sm-3 m-0" href="index.html"><img src="img/logo/Logo-sockslord.png" alt="sockslord's logo"/></a>
+                <button id="navbar-toggler" class="navbar-toggler border-0 px-0 px-sm-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
+                <a class="navbar-brand d-flex align-items-center px-0 px-sm-3 m-0" href="index.html"><img src="img/logo/Logo-sockslord.png" alt="sockslord's logo"/></a>
               
               <!--desktop-->
               <div class="d-none d-xl-inline collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
@@ -51,13 +51,13 @@
                     <a class="nav-link px-3" href="product.html">Product</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link px-3 active" aria-current="page" href="emporium.html">Emporium</a>
+                    <a class="nav-link px-3" href="emporium.html">Emporium</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link px-3" href="sockslab.html">SocksLab</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link px-3" href="aboutus.html">About us</a>
+                    <a class="nav-link px-3" aria-current="page" href="aboutus.html">About us</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link px-3" href="contact.html">Contact</a>
@@ -70,27 +70,28 @@
       
             <!--mobile-->
             <div class="d-xl-none ">
-                <div class="sl-collapse-mobile collapse navbar-collapse d-xl-none flex-row-reverse border-start border-end border-bottom sl-bg-avocado effect-style-default-shadow" id="navbarSupportedContent" aria-e>
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link px-3 py-4" href="product.html">Product</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3 py-4 active" aria-current="page" href="emporium.html">Emporium</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3 py-4" href="sockslab.html">SocksLab</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3 py-4" href="aboutus.html">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3 py-4" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="sl-collapse-mobile collapse navbar-collapse d-xl-none flex-row-reverse border-start border-end border-bottom sl-bg-avocado effect-style-default-shadow" id="navbarSupportedContent" aria-e>
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link px-3 py-4" href="product.html">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-3 py-4" href="emporium.html">Emporium</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-3 py-4" href="sockslab.html">SocksLab</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-3 py-4" aria-current="page" href="aboutus.html">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-3 py-4" href="contact.html">Contact</a>
+                </li>
+              </ul>
             </div>
-        </nav>
+            </div>
+      
+          </nav>
 
         <!-- section socky emporium -->
         <section class="section-emporium-first sl-bg-strawberry position-relative">
@@ -123,515 +124,316 @@
         </section>
 
         <!-- section calze con filtri -->
-        <section class="mt-3 mx-3 mt-sm-3 mx-sm-3">
-            <div class="container">
-                <div class="wrapper">
-                    <div class="external-dropdown">
-                        <div class="outer d-flex justify-content-lg-end">
-                            
-                            <!-- Filtro collab -->
-                            <div class="side">
-                                <div class="dropdown">
-                                    <button class="btn border-2 text-style-button dropdown-toggle filter-button" data-bs-display="static" aria-expanded="false" type="button" id="collab-dropdown" data-bs-toggle="dropdown">
-                                        Collab
-                                        <!-- <span class="sl-btn-icon sl-btn-pl"><img src="img/icon/arrow-bottom-desktop.svg" alt="freccia in basso"></span> -->
-                                    </button>
-                                    <div class="dropdown-menu dropdown-menu-lg-end dropdown-menu-start" aria-labelledby="collab-dropdown">
-                                        <div class="filter-container d-flex flex-row justify-content-center align-items-center">
-                                            <li><a href="#" class="dropdown-item">
-                                                <div class="filter-square d-flex justify-content-center align-items-center filter-img">
-                                                    <img src="img/icon/torchlight.svg" alt="">
-                                                </div>
-                                            </a></li>
-                                            <li><a href="#" class="dropdown-item">
-                                                <div class="filter-square d-flex justify-content-center align-items-center filter-img">
-                                                    <img src="img/icon/Propeller.svg" alt="">
-                                                </div>
-                                            </a></li>
-                                            <li><a href="#" class="dropdown-item">
-                                                <div class="filter-square d-flex justify-content-center align-items-center filter-img">
-                                                    <img src="img/icon/Wing.svg" alt="">
-                                                </div>
-                                            </a></li>
-                                            <li><a href="#" class="dropdown-item">
-                                                <div class="filter-square d-flex justify-content-center align-items-center filter-img">
-                                                    <img src="img/icon/torchlight.svg" alt="">
-                                                </div>
-                                            </a></li>
-                                        </div>
-                                        <div class="btn-filtri d-flex justify-content-center">
-                                            <a href="" class="sl-btn-applica text-style-button d-flex m-0">Annulla</a>
-                                            <a href="" class="sl-btn-applica text-style-button d-flex m-0">Applica</a>
-                                        </div>
-                                    </div>
+        <section class="container sl-bg-avocado mt-3 mt-sm-3">
+            <!-- Button trigger modal -->
+            <div class="d-flex justify-content-lg-end justify-content-start mt-lg-5">
+                <button type="button" class="btn border-2 text-style-button sl-btn-filter" data-bs-toggle="modal" data-bs-target="#filter">
+                <span class="sl-btn-text text-style-button pe-lg-3 pe-2">Filtri</span>
+                <span class="sl-btn-icon"><img src="img/icon/icon_filter.svg" alt=""></span>
+                </button>
+        
+                <!-- Modal -->
+                <div class="modal fade modal-fullscreen" id="filter" tabindex="-1" aria-labelledby="filter" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content effect-style-default-shadow">
+                        <div class="modal-header">
+                        <h3 class="modal-title text-style-h3" id="filter">Filtri</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex justify-content-start flex-column gap-5 pt-4 ">
+                            <!-- Collabs -->
+                            <div class="d-flex flex-column">
+                                <h4 class="text-style-h4">Collabs</h4>
+                                <div class="filter-container d-flex flex-row gap-3 flex-wrap">
+                                    <button class="filter-modal d-flex justify-content-center align-items-center text-style-button">Lux</button>
+                                    <button class="filter-modal d-flex justify-content-center align-items-center text-style-button">Lux</button>
                                 </div>
                             </div>
-
-                            <!-- Filtro colore -->
-                            <div class="side">
-                                <div class="dropdown">
-                                    <button class="btn border-2 text-style-button dropdown-toggle filter-button show" type="button" id="color-dropdown" data-bs-toggle="dropdown">
-                                        Colore
-                                        <!-- <span class="sl-btn-icon sl-btn-pl"><img src="img/icon/arrow-bottom-desktop.svg" alt="freccia in basso"></span> -->
+                            <!-- Colors -->
+                            <div class="d-flex flex-column">
+                                <h4 class="text-style-h4">Colore</h4>
+                                <div class="filter-container d-flex flex-row gap-3 flex-wrap">
+                                    <button class="filter-modal d-flex justify-content-center align-items-center">
+                                        <span id="sl-cf-1" class="circle-filter"></span>
+                                        <span class="text-style-button">Rosso</span>
                                     </button>
-                                    <div class="dropdown-menu dropdown-menu-lg-end dropdown-menu-start">
-                                        <div class="filter-container d-flex flex-row p-filter justify-content-center align-items-center">
-                                            <li><a href="#" class="dropdown-item">
-                                                <div class="filter-square sl-cf-arancino d-flex justify-content-center align-items-center"></div>
-                                            </a></li>
-                                            <li><a href="#" class="dropdown-item">
-                                                <div class="filter-square sl-cf-rosino d-flex justify-content-center align-items-center"></div>
-                                            </a></li>
-                                            <li><a href="#" class="dropdown-item">
-                                                <div class="filter-square sl-cf-verde d-flex justify-content-center align-items-center"></div>
-                                            </a></li>
-                                            <li><a href="#" class="dropdown-item">
-                                                <div class="filter-square sl-cf-viola d-flex justify-content-center align-items-center"></div>
-                                            </a></li>
-                                        </div>
-                                        <div class="filter-container d-flex flex-row justify-content-center align-items-center">
-                                            <li><a href="#" class="dropdown-item">
-                                                <div class="filter-square sl-cf-giallo d-flex justify-content-center align-items-center"></div>
-                                            </a></li>
-                                            <li><a href="#" class="dropdown-item">
-                                                <div class="filter-square sl-cf-rosa d-flex justify-content-center align-items-center"></div>
-                                            </a></li>
-                                            <li><a href="#" class="dropdown-item">
-                                                <div class="filter-square sl-cf-violetto d-flex justify-content-center align-items-center"></div>
-                                            </a></li>
-                                            <li><a href="#" class="dropdown-item">
-                                                <div class="filter-square sl-cf-arancio d-flex justify-content-center align-items-center"></div>
-                                            </a></li>
-                                        </div>
-                                        <div class="btn-filtri d-flex justify-content-center">
-                                        <a href="" class="sl-btn-applica text-style-button d-flex m-0">Annulla</a>
-                                        <a href="" class="sl-btn-applica text-style-button d-flex m-0">Applica</a>
-                                        </div>
-                                    </div>
-                                    
+                                    <button class="filter-modal d-flex justify-content-center align-items-center">
+                                        <span id="sl-cf-2" class="circle-filter"></span>
+                                        <span class="text-style-button">Rosso</span>
+                                    </button>
+                                    <button class="filter-modal d-flex justify-content-center align-items-center">
+                                        <span id="sl-cf-3" class="circle-filter"></span>
+                                        <span class="text-style-button">Rosso</span>
+                                    </button>
+                                    <button class="filter-modal d-flex justify-content-center align-items-center">
+                                        <span id="sl-cf-4" class="circle-filter"></span>
+                                        <span class="text-style-button">Rosso</span>
+                                    </button>
+                                    <button class="filter-modal d-flex justify-content-center align-items-center">
+                                        <span id="sl-cf-5" class="circle-filter"></span>
+                                        <span class="text-style-button">Rosso</span>
+                                    </button>
+                                    <button class="filter-modal d-flex justify-content-center align-items-center">
+                                        <span id="sl-cf-6" class="circle-filter"></span>
+                                        <span class="text-style-button">Rosso</span>
+                                    </button>
                                 </div>
                             </div>
-
-                            <!-- Filtro funzionalità -->
-                            <div class="side">
-                                <div class="dropdown">
-                                    <button class="btn border-2 text-style-button dropdown-toggle filter-button show" type="button" id="funzione-dropdown" data-bs-toggle="dropdown">
-                                        Funzionalità
-                                        <!-- <span class="sl-btn-icon sl-btn-pl"><img src="img/icon/arrow-bottom-desktop.svg" alt="freccia in basso"></span> -->
+                            <!-- Functions -->
+                            <div class="d-flex flex-column">
+                                <h4 class="text-style-h4">Funzione</h4>
+                                <div class="filter-container d-flex flex-row gap-3 flex-wrap">
+                                    <button class="filter-modal d-flex justify-content-center align-items-center">
+                                        <img src="img/icon/Propeller.svg" alt="" class="icon-filter">
+                                        <span class="text-style-button">Elica</span>
                                     </button>
-                                    <div class="dropdown-menu dropdown-menu-lg-end dropdown-menu-start">
-                                        <div class="filter-container d-flex flex-row justify-content-center align-items-center">
-                                            <li><a href="#" class="dropdown-item">
-                                                <div class="filter-square d-flex justify-content-center align-items-center filter-img">
-                                                    <img src="img/icon/torchlight.svg" alt="">
-                                                </div>
-                                            </a></li>
-                                            <li><a href="#" class="dropdown-item">
-                                                <div class="filter-square d-flex justify-content-center align-items-center filter-img">
-                                                    <img src="img/icon/Propeller.svg" alt="">
-                                                </div>
-                                            </a></li>
-                                            <li><a href="#" class="dropdown-item">
-                                                <div class="filter-square d-flex justify-content-center align-items-center filter-img">
-                                                    <img src="img/icon/Wing.svg" alt="">
-                                                </div>
-                                            </a></li>
-                                            <li><a href="#" class="dropdown-item">
-                                                <div class="filter-square d-flex justify-content-center align-items-center filter-img">
-                                                    <img src="img/icon/torchlight.svg" alt="">
-                                                </div>
-                                            </a></li>
-                                        </div>
-                                        <div class="btn-filtri d-flex justify-content-center">
-                                            <a href="" class="sl-btn-applica text-style-button d-flex m-0">Annulla</a>
-                                            <a href="" class="sl-btn-applica text-style-button d-flex m-0">Applica</a>
-                                        </div>
-                                    </div>
+                                    <button class="filter-modal d-flex justify-content-center align-items-center">
+                                        <img src="img/icon/Propeller.svg" alt="" class="icon-filter">
+                                        <span class="text-style-button">Elica</span>
+                                    </button>
+                                    <button class="filter-modal d-flex justify-content-center align-items-center">
+                                        <img src="img/icon/Propeller.svg" alt="" class="icon-filter">
+                                        <span class="text-style-button">Elica</span>
+                                    </button>
+                                    <button class="filter-modal d-flex justify-content-center align-items-center">
+                                        <img src="img/icon/Propeller.svg" alt="" class="icon-filter">
+                                        <span class="text-style-button">Elica</span>
+                                    </button>
+                                    <button class="filter-modal d-flex justify-content-center align-items-center">
+                                        <img src="img/icon/Propeller.svg" alt="" class="icon-filter">
+                                        <span class="text-style-button">Elica</span>
+                                    </button>
+                                    <button class="filter-modal d-flex justify-content-center align-items-center">
+                                        <img src="img/icon/Propeller.svg" alt="" class="icon-filter">
+                                        <span class="text-style-button">Elica</span>
+                                    </button>
                                 </div>
                             </div>
-
-                            <!-- Filtro piede -->
-                            <div class="side">
-                                <div class="dropdown">
-                                    <button class="btn border-2 text-style-button dropdown-toggle filter-button show" type="button" id="piede-dropdown" data-bs-toggle="dropdown">
-                                        Piede
-                                        <!-- <span class="sl-btn-icon sl-btn-pl"><img src="img/icon/arrow-bottom-desktop.svg" alt="freccia in basso"></span> -->
+                            <!-- Feet -->
+                            <div class="d-flex flex-column">
+                                <h4 class="text-style-h4">Piede</h4>
+                                <div class="filter-container d-flex flex-row gap-3 flex-wrap">
+                                    <button class="filter-modal d-flex justify-content-center align-items-center">
+                                        <img src="img/icon/piede1.svg" alt="" class="icon-filter">
+                                        <span class="text-style-button">Piede</span>
                                     </button>
-                                    <div class="dropdown-menu dropdown-menu-lg-end dropdown-menu-start">
-                                        <div class="filter-container d-flex flex-row justify-content-center align-items-center">
-                                            <li><a href="#" class="dropdown-item"> 
-                                                <div class="filter-square d-flex justify-content-center align-items-center filter-img">
-                                                    <img src="img/icon/piede1.svg" alt="">
-                                                </div>
-                                            </a></li>
-                                            <li><a href="#" class="dropdown-item">
-                                                <div class="filter-square d-flex justify-content-center align-items-center filter-img">
-                                                    <img src="img/icon/piede2.svg" alt="">
-                                                </div>
-                                            </a></li>
-                                            <li><a href="#" class="dropdown-item">
-                                                <div class="filter-square d-flex justify-content-center align-items-center filter-img">
-                                                    <img src="img/icon/piede3.svg" alt="">
-                                                </div>
-                                            </a></li>
-                                            <li><a href="#" class="dropdown-item">
-                                                <div class="filter-square d-flex justify-content-center align-items-center filter-img">
-                                                    <img src="img/icon/piede4.svg" alt="">
-                                                </div>
-                                            </a></li>
-                                        </div>
-                                        <div class="btn-filtri d-flex justify-content-center">
-                                            <a href="" class="sl-btn-applica text-style-button d-flex m-0">Annulla</a>
-                                            <a href="" class="sl-btn-applica text-style-button d-flex m-0">Applica</a>
-                                        </div>
-                                    </div>
+                                    <button class="filter-modal d-flex justify-content-center align-items-center">
+                                        <img src="img/icon/piede2.svg" alt="" class="icon-filter">
+                                        <span class="text-style-button">Piede</span>
+                                    </button>
+                                    <button class="filter-modal d-flex justify-content-center align-items-center">
+                                        <img src="img/icon/piede3.svg" alt="" class="icon-filter">
+                                        <span class="text-style-button">Piede</span>
+                                    </button>
+                                    <button class="filter-modal d-flex justify-content-center align-items-center">
+                                        <img src="img/icon/piede4.svg" alt="" class="icon-filter">
+                                        <span class="text-style-button">Piede</span>
+                                    </button>
+                                    <button class="filter-modal d-flex justify-content-center align-items-center">
+                                        <img src="img/icon/Propeller.svg" alt="" class="icon-filter">
+                                        <span class="text-style-button">Elica</span>
+                                    </button>
+                                    <button class="filter-modal d-flex justify-content-center align-items-center">
+                                        <img src="img/icon/Propeller.svg" alt="" class="icon-filter">
+                                        <span class="text-style-button">Elica</span>
+                                    </button>
                                 </div>
                             </div>
-
-                            <!-- Filtro materiali -->
-                            <div class="side">
-                                <div class="dropdown">
-                                    <button class="btn border-2 text-style-button dropdown-toggle filter-button show" type="button" id="materiali-dropdown" data-bs-toggle="dropdown">
-                                        Materiali
-                                        <!-- <span class="sl-btn-icon sl-btn-pl"><img src="img/icon/arrow-bottom-desktop.svg" alt="freccia in basso"></span> -->
+                            <!-- Materials -->
+                            <div class="d-flex flex-column">
+                                <h4 class="text-style-h4">Materiale</h4>
+                                <div class="filter-container d-flex flex-row gap-3 flex-wrap">
+                                    <button class="filter-modal d-flex justify-content-center align-items-center">
+                                        <img src="img/icon/tessuto.svg" class="circle-filter">
+                                        <span class="text-style-button">Tessuto</span>
                                     </button>
-                                    <div class="dropdown-menu dropdown-menu-lg-end dropdown-menu-start">
-                                        <div class="filter-container d-flex flex-row justify-content-center align-items-center">
-                                            <li><a href="#" class="dropdown-item">
-                                                <div class="filter-square d-flex justify-content-center align-items-center">
-                                                    <img src="img/icon/vetro.svg" alt="">
-                                                </div>
-                                            </a></li>
-                                            <li><a href="#" class="dropdown-item">
-                                                <div class="filter-square d-flex justify-content-center align-items-center">
-                                                    <img src="img/icon/tessuto.svg" alt="">
-                                                </div>
-                                            </a></li>
-                                            <li><a href="#" class="dropdown-item">
-                                                <div class="filter-square d-flex justify-content-center align-items-center">
-                                                    <img src="img/icon/vetro.svg" alt="">
-                                                </div>
-                                            </a></li>
-                                            <li><a href="#" class="dropdown-item">
-                                                <div class="filter-square d-flex justify-content-center align-items-center">
-                                                    <img src="img/icon/tessuto.svg" alt="">
-                                                </div>
-                                            </a></li>
-                                        </div>
-                                        <div class="btn-filtri d-flex justify-content-center">
-                                            <a href="" class="sl-btn-applica text-style-button d-flex m-0">Annulla</a>
-                                            <a href="" class="sl-btn-applica text-style-button d-flex m-0">Applica</a>
-                                        </div>
-                                    </div>
+                                    <button class="filter-modal d-flex justify-content-center align-items-center">
+                                        <img src="img/icon/tessuto.svg" class="circle-filter">
+                                        <span class="text-style-button">Tessuto</span>
+                                    </button><button class="filter-modal d-flex justify-content-center align-items-center">
+                                        <img src="img/icon/tessuto.svg" class="circle-filter">
+                                        <span class="text-style-button">Tessuto</span>
+                                    </button><button class="filter-modal d-flex justify-content-center align-items-center">
+                                        <img src="img/icon/tessuto.svg" class="circle-filter">
+                                        <span class="text-style-button">Tessuto</span>
+                                    </button><button class="filter-modal d-flex justify-content-center align-items-center">
+                                        <img src="img/icon/tessuto.svg" class="circle-filter">
+                                        <span class="text-style-button">Tessuto</span>
+                                    </button><button class="filter-modal d-flex justify-content-center align-items-center">
+                                        <img src="img/icon/tessuto.svg" class="circle-filter">
+                                        <span class="text-style-button">Tessuto</span>
+                                    </button>
                                 </div>
                             </div>
-    
+                        </div>
+                        <div class="modal-footer mb-4 mt-4 mx-5 d-flex flex-column">
+                            <div class="sl-btn-tertiary">
+                                <a href="" class="text-style-button d-flex align-items-center justify-content-center m-0">Ok</a>
+                            </div>
+                            <a href="sockslab.html" data-bs-dismiss="modal" class="text-style-button d-flex align-items-center justify-content-center m-0 sl-btn-quarto">Clear all filters</a>
+                            <!-- <button type="button" class="btn btn-primary">Ok</button>
+                            <button type="button" class="btn btn-secondary" >Clear filter</button> -->
                         </div>
                     </div>
-                    <!-- ricominciano le card -->
-                    <div class="spazio-card mt-5 d-flex flex-wrap justify-content-center align-items-center">
-                        <div class="card-emporium d-flex card justify-content-center align-items-center border-2 rounded-3 rounded-sm-2 effect-style-default-shadow sl-card-g">            
-                            <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">Calzino</h4>
-                            <p class="text-style-body-copy-small mb-2 mb-lg-3">₹ 1350</p>
-                            <img src="img/card/calza_verde_desktop.svg" alt="" class="card-img">
-                            <div class=" card-button d-flex justify-content-end">
-                                <a href="" onClick="updateData()">
-                                    <div class="card-btn d-none justify-content-center align-items-center d-flex">
-                                        <img src="img/icon/Sachetto-active.svg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-emporium d-flex card justify-content-center align-items-center border-2 rounded-3 rounded-sm-2 effect-style-default-shadow sl-card-o">            
-                            <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">Calzino</h4>
-                            <p class="text-style-body-copy-small mb-2 mb-lg-3">₹ 1350</p>
-                            <img src="img/card/calza_verde_desktop.svg" alt="" class="card-img">
-                            <div class=" card-button d-flex justify-content-end">
-                                <a href="" onClick="updateData()">
-                                    <div class="card-btn d-none justify-content-center align-items-center d-flex">
-                                        <img src="img/icon/Sachetto-active.svg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-emporium d-flex card justify-content-center align-items-center border-2 rounded-3 rounded-sm-2 effect-style-default-shadow sl-card-y">            
-                            <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">Calzino</h4>
-                            <p class="text-style-body-copy-small mb-2 mb-lg-3">₹ 1350</p>
-                            <img src="img/card/calza_verde_desktop.svg" alt="" class="card-img">
-                            <div class=" card-button d-flex justify-content-end">
-                                <a href="" onClick="updateData()">
-                                    <div class="card-btn d-none justify-content-center align-items-center d-flex">
-                                        <img src="img/icon/Sachetto-active.svg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-emporium d-flex card justify-content-center align-items-center border-2 rounded-3 rounded-sm-2 effect-style-default-shadow sl-card-g">            
-                            <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">Calzino</h4>
-                            <p class="text-style-body-copy-small mb-2 mb-lg-3">₹ 1350</p>
-                            <img src="img/card/calza_verde_desktop.svg" alt="" class="card-img">
-                            <div class=" card-button d-flex justify-content-end">
-                                <a href="" onClick="updateData()">
-                                    <div class="card-btn d-none justify-content-center align-items-center d-flex">
-                                        <img src="img/icon/Sachetto-active.svg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-emporium d-flex card justify-content-center align-items-center border-2 rounded-3 rounded-sm-2 effect-style-default-shadow sl-card-o">            
-                            <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">Calzino</h4>
-                            <p class="text-style-body-copy-small mb-2 mb-lg-3">₹ 1350</p>
-                            <img src="img/card/calza_verde_desktop.svg" alt="" class="card-img">
-                            <div class=" card-button d-flex justify-content-end">
-                                <a href="" onClick="updateData()">
-                                    <div class="card-btn d-none justify-content-center align-items-center d-flex">
-                                        <img src="img/icon/Sachetto-active.svg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-emporium d-flex card justify-content-center align-items-center border-2 rounded-3 rounded-sm-2 effect-style-default-shadow sl-card-y">            
-                            <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">Calzino</h4>
-                            <p class="text-style-body-copy-small mb-2 mb-lg-3">₹ 1350</p>
-                            <img src="img/card/calza_verde_desktop.svg" alt="" class="card-img">
-                            <div class=" card-button d-flex justify-content-end">
-                                <a href="" onClick="updateData()">
-                                    <div class="card-btn d-none justify-content-center align-items-center d-flex">
-                                        <img src="img/icon/Sachetto-active.svg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-emporium d-flex card justify-content-center align-items-center border-2 rounded-3 rounded-sm-2 effect-style-default-shadow sl-card-g">            
-                            <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">Calzino</h4>
-                            <p class="text-style-body-copy-small mb-2 mb-lg-3">₹ 1350</p>
-                            <img src="img/card/calza_verde_desktop.svg" alt="" class="card-img">
-                            <div class=" card-button d-flex justify-content-end">
-                                <a href="" onClick="updateData()">
-                                    <div class="card-btn d-none justify-content-center align-items-center d-flex">
-                                        <img src="img/icon/Sachetto-active.svg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-emporium d-flex card justify-content-center align-items-center border-2 rounded-3 rounded-sm-2 effect-style-default-shadow sl-card-o">            
-                            <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">Calzino</h4>
-                            <p class="text-style-body-copy-small mb-2 mb-lg-3">₹ 1350</p>
-                            <img src="img/card/calza_verde_desktop.svg" alt="" class="card-img">
-                            <div class=" card-button d-flex justify-content-end">
-                                <a href="" onClick="updateData()">
-                                    <div class="card-btn d-none justify-content-center align-items-center d-flex">
-                                        <img src="img/icon/Sachetto-active.svg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-emporium d-flex card justify-content-center align-items-center border-2 rounded-3 rounded-sm-2 effect-style-default-shadow sl-card-y">            
-                            <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">Calzino</h4>
-                            <p class="text-style-body-copy-small mb-2 mb-lg-3">₹ 1350</p>
-                            <img src="img/card/calza_verde_desktop.svg" alt="" class="card-img">
-                            <div class=" card-button d-flex justify-content-end">
-                                <a href="" onClick="updateData()">
-                                    <div class="card-btn d-none justify-content-center align-items-center d-flex">
-                                        <img src="img/icon/Sachetto-active.svg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-emporium d-flex card justify-content-center align-items-center border-2 rounded-3 rounded-sm-2 effect-style-default-shadow sl-card-g">            
-                            <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">Calzino</h4>
-                            <p class="text-style-body-copy-small mb-2 mb-lg-3">₹ 1350</p>
-                            <img src="img/card/calza_verde_desktop.svg" alt="" class="card-img">
-                            <div class=" card-button d-flex justify-content-end">
-                                <a href="" onClick="updateData()">
-                                    <div class="card-btn d-none justify-content-center align-items-center d-flex">
-                                        <img src="img/icon/Sachetto-active.svg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-emporium d-flex card justify-content-center align-items-center border-2 rounded-3 rounded-sm-2 effect-style-default-shadow sl-card-o">            
-                            <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">Calzino</h4>
-                            <p class="text-style-body-copy-small mb-2 mb-lg-3">₹ 1350</p>
-                            <img src="img/card/calza_verde_desktop.svg" alt="" class="card-img">
-                            <div class=" card-button d-flex justify-content-end">
-                                <a href="" onClick="updateData()">
-                                    <div class="card-btn d-none justify-content-center align-items-center d-flex">
-                                        <img src="img/icon/Sachetto-active.svg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-emporium d-flex card justify-content-center align-items-center border-2 rounded-3 rounded-sm-2 effect-style-default-shadow sl-card-y">            
-                            <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">Calzino</h4>
-                            <p class="text-style-body-copy-small mb-2 mb-lg-3">₹ 1350</p>
-                            <img src="img/card/calza_verde_desktop.svg" alt="" class="card-img">
-                            <div class=" card-button d-flex justify-content-end">
-                                <a href="" onClick="updateData()">
-                                    <div class="card-btn d-none justify-content-center align-items-center d-flex">
-                                        <img src="img/icon/Sachetto-active.svg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="loadmore d-flex justify-content-center align-items-center">
-                        <div class="sl-btn-secondary pt-4">
-                            <a href="" class="sl-btn-applica text-style-button">Carica di più</a>
-                        </div>
                     </div>
                 </div> 
             </div>
 
-            <!-- Button trigger modal -->
-            <button type="button" class="btn border-2 text-style-button sl-btn-filter" data-bs-toggle="modal" data-bs-target="#filter">
-                <span class="sl-btn-text text-style-button pe-lg-3 pe-2">Filtri</span>
-                <span class="sl-btn-icon"><img src="img/icon/icon_filter.svg" alt=""></span>
-            </button>
-            
-            <!-- Modal -->
-            <div class="modal fade modal-fullscreen" id="filter" tabindex="-1" aria-labelledby="filter" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content effect-style-default-shadow">
-                    <div class="modal-header">
-                    <h3 class="modal-title text-style-h3" id="filter">Filtri</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex justify-content-start flex-column gap-5 pt-4 ">
-                        <!-- Collabs -->
-                        <div class="d-flex flex-column">
-                            <h4 class="text-style-h4">Collabs</h4>
-                            <div class="filter-container d-flex flex-row g-3 flex-wrap">
-                                <button class="filter-modal d-flex justify-content-center align-items-center text-style-button">Lux</button>
-                                <button class="filter-modal d-flex justify-content-center align-items-center text-style-button">Lux</button>
+            <!-- card -->
+            <div class="card-space d-flex flex-wrap justify-content-start justify-content-lg-center align-items-center">
+                <div class="card-emporium d-flex card justify-content-center align-items-center effect-style-default-shadow sl-card-g">            
+                    <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">Calzino</h4>
+                    <p class="text-style-body-copy-small mb-2 mb-lg-3">₹ 1350</p>
+                    <img src="img/card/calza_verde_desktop.svg" alt="" class="card-img">
+                    <div class="d-none d-lg-block card-button d-flex justify-content-end">
+                        <a href="" onClick="updateData()">
+                            <div class="card-btn d-none justify-content-center align-items-center d-flex">
+                                <img src="img/icon/Sachetto-active.svg" alt="">
                             </div>
-                        </div>
-                        <!-- Colors -->
-                        <div class="d-flex flex-column">
-                            <h4 class="text-style-h4">Colore</h4>
-                            <div class="filter-container d-flex flex-row g-3 flex-wrap">
-                                <button class="filter-modal d-flex justify-content-center align-items-center">
-                                    <span class="circle-filter"></span>
-                                    <span class="text-style-button">Rosso</span>
-                                </button>
-                                <button class="filter-modal d-flex justify-content-center align-items-center">
-                                    <span class="circle-filter"></span>
-                                    <span class="text-style-button">Rosso</span>
-                                </button><button class="filter-modal d-flex justify-content-center align-items-center">
-                                    <span class="circle-filter"></span>
-                                    <span class="text-style-button">Rosso</span>
-                                </button><button class="filter-modal d-flex justify-content-center align-items-center">
-                                    <span class="circle-filter"></span>
-                                    <span class="text-style-button">Rosso</span>
-                                </button><button class="filter-modal d-flex justify-content-center align-items-center">
-                                    <span class="circle-filter"></span>
-                                    <span class="text-style-button">Rosso</span>
-                                </button><button class="filter-modal d-flex justify-content-center align-items-center">
-                                    <span class="circle-filter"></span>
-                                    <span class="text-style-button">Rosso</span>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- Functions -->
-                        <div class="d-flex flex-column">
-                            <h4 class="text-style-h4">Funzione</h4>
-                            <div class="filter-container d-flex flex-row g-3 flex-wrap">
-                                <button class="filter-modal d-flex justify-content-center align-items-center">
-                                    <img src="img/icon/Propeller.svg" alt="" class="icon-filter">
-                                    <span class="text-style-button">Elica</span>
-                                </button>
-                                <button class="filter-modal d-flex justify-content-center align-items-center">
-                                    <img src="img/icon/Propeller.svg" alt="" class="icon-filter">
-                                    <span class="text-style-button">Elica</span>
-                                </button>
-                                <button class="filter-modal d-flex justify-content-center align-items-center">
-                                    <img src="img/icon/Propeller.svg" alt="" class="icon-filter">
-                                    <span class="text-style-button">Elica</span>
-                                </button>
-                                <button class="filter-modal d-flex justify-content-center align-items-center">
-                                    <img src="img/icon/Propeller.svg" alt="" class="icon-filter">
-                                    <span class="text-style-button">Elica</span>
-                                </button>
-                                <button class="filter-modal d-flex justify-content-center align-items-center">
-                                    <img src="img/icon/Propeller.svg" alt="" class="icon-filter">
-                                    <span class="text-style-button">Elica</span>
-                                </button>
-                                <button class="filter-modal d-flex justify-content-center align-items-center">
-                                    <img src="img/icon/Propeller.svg" alt="" class="icon-filter">
-                                    <span class="text-style-button">Elica</span>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- Feet -->
-                        <div class="d-flex flex-column">
-                            <h4 class="text-style-h4">Piede</h4>
-                            <div class="filter-container d-flex flex-row g-3 flex-wrap">
-                                <button class="filter-modal d-flex justify-content-center align-items-center">
-                                    <img src="img/icon/piede1.svg" alt="" class="icon-filter">
-                                    <span class="text-style-button">Piede</span>
-                                </button>
-                                <button class="filter-modal d-flex justify-content-center align-items-center">
-                                    <img src="img/icon/piede2.svg" alt="" class="icon-filter">
-                                    <span class="text-style-button">Piede</span>
-                                </button>
-                                <button class="filter-modal d-flex justify-content-center align-items-center">
-                                    <img src="img/icon/piede3.svg" alt="" class="icon-filter">
-                                    <span class="text-style-button">Piede</span>
-                                </button>
-                                <button class="filter-modal d-flex justify-content-center align-items-center">
-                                    <img src="img/icon/piede4.svg" alt="" class="icon-filter">
-                                    <span class="text-style-button">Piede</span>
-                                </button>
-                                <button class="filter-modal d-flex justify-content-center align-items-center">
-                                    <img src="img/icon/Propeller.svg" alt="" class="icon-filter">
-                                    <span class="text-style-button">Elica</span>
-                                </button>
-                                <button class="filter-modal d-flex justify-content-center align-items-center">
-                                    <img src="img/icon/Propeller.svg" alt="" class="icon-filter">
-                                    <span class="text-style-button">Elica</span>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- Materials -->
-                        <div class="d-flex flex-column">
-                            <h4 class="text-style-h4">Materiale</h4>
-                            <div class="filter-container d-flex flex-row g-3 flex-wrap">
-                                <button class="filter-modal d-flex justify-content-center align-items-center">
-                                    <img src="img/icon/tessuto.svg" class="circle-filter">
-                                    <span class="text-style-button">Tessuto</span>
-                                </button>
-                                <button class="filter-modal d-flex justify-content-center align-items-center">
-                                    <img src="img/icon/tessuto.svg" class="circle-filter">
-                                    <span class="text-style-button">Tessuto</span>
-                                </button><button class="filter-modal d-flex justify-content-center align-items-center">
-                                    <img src="img/icon/tessuto.svg" class="circle-filter">
-                                    <span class="text-style-button">Tessuto</span>
-                                </button><button class="filter-modal d-flex justify-content-center align-items-center">
-                                    <img src="img/icon/tessuto.svg" class="circle-filter">
-                                    <span class="text-style-button">Tessuto</span>
-                                </button><button class="filter-modal d-flex justify-content-center align-items-center">
-                                    <img src="img/icon/tessuto.svg" class="circle-filter">
-                                    <span class="text-style-button">Tessuto</span>
-                                </button><button class="filter-modal d-flex justify-content-center align-items-center">
-                                    <img src="img/icon/tessuto.svg" class="circle-filter">
-                                    <span class="text-style-button">Tessuto</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer mb-4 mt-4 mx-5 d-flex flex-column">
-                        <div class="sl-btn-tertiary">
-                            <a href="" class="text-style-button d-flex align-items-center justify-content-center m-0">Ok</a>
-                        </div>
-                        <a href="sockslab.html" data-bs-dismiss="modal" class="text-style-button d-flex align-items-center justify-content-center m-0 sl-btn-quarto">Clear all filters</a>
-                        <!-- <button type="button" class="btn btn-primary">Ok</button>
-                        <button type="button" class="btn btn-secondary" >Clear filter</button> -->
+                        </a>
                     </div>
                 </div>
+                <div class="card-emporium d-flex card justify-content-center align-items-center effect-style-default-shadow sl-card-o">            
+                    <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">Calzino</h4>
+                    <p class="text-style-body-copy-small mb-2 mb-lg-3">₹ 1350</p>
+                    <img src="img/card/calza_verde_desktop.svg" alt="" class="card-img">
+                    <div class="d-none d-lg-block card-button d-flex justify-content-end">
+                        <a href="" onClick="updateData()">
+                            <div class="card-btn d-none justify-content-center align-items-center d-flex">
+                                <img src="img/icon/Sachetto-active.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-emporium d-flex card justify-content-center align-items-center effect-style-default-shadow sl-card-y">            
+                    <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">Calzino</h4>
+                    <p class="text-style-body-copy-small mb-2 mb-lg-3">₹ 1350</p>
+                    <img src="img/card/calza_verde_desktop.svg" alt="" class="card-img">
+                    <div class="d-none d-lg-block card-button d-flex justify-content-end">
+                        <a href="" onClick="updateData()">
+                            <div class="card-btn d-none justify-content-center align-items-center d-flex">
+                                <img src="img/icon/Sachetto-active.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-emporium d-flex card justify-content-center align-items-center effect-style-default-shadow sl-card-g">            
+                    <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">Calzino</h4>
+                    <p class="text-style-body-copy-small mb-2 mb-lg-3">₹ 1350</p>
+                    <img src="img/card/calza_verde_desktop.svg" alt="" class="card-img">
+                    <div class="d-none d-lg-block card-button d-flex justify-content-end">
+                        <a href="" onClick="updateData()">
+                            <div class="card-btn d-none justify-content-center align-items-center d-flex">
+                                <img src="img/icon/Sachetto-active.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-emporium d-flex card justify-content-center align-items-center effect-style-default-shadow sl-card-o">            
+                    <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">Calzino</h4>
+                    <p class="text-style-body-copy-small mb-2 mb-lg-3">₹ 1350</p>
+                    <img src="img/card/calza_verde_desktop.svg" alt="" class="card-img">
+                    <div class="d-none d-lg-block card-button d-flex justify-content-end">
+                        <a href="" onClick="updateData()">
+                            <div class="card-btn d-none justify-content-center align-items-center d-flex">
+                                <img src="img/icon/Sachetto-active.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-emporium d-flex card justify-content-center align-items-center effect-style-default-shadow sl-card-y">            
+                    <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">Calzino</h4>
+                    <p class="text-style-body-copy-small mb-2 mb-lg-3">₹ 1350</p>
+                    <img src="img/card/calza_verde_desktop.svg" alt="" class="card-img">
+                    <div class="d-none d-lg-block card-button d-flex justify-content-end">
+                        <a href="" onClick="updateData()">
+                            <div class="card-btn d-none justify-content-center align-items-center d-flex">
+                                <img src="img/icon/Sachetto-active.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-emporium d-flex card justify-content-center align-items-center effect-style-default-shadow sl-card-g">            
+                    <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">Calzino</h4>
+                    <p class="text-style-body-copy-small mb-2 mb-lg-3">₹ 1350</p>
+                    <img src="img/card/calza_verde_desktop.svg" alt="" class="card-img">
+                    <div class="d-none d-lg-block card-button d-flex justify-content-end">
+                        <a href="" onClick="updateData()">
+                            <div class="card-btn d-none justify-content-center align-items-center d-flex">
+                                <img src="img/icon/Sachetto-active.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-emporium d-flex card justify-content-center align-items-center effect-style-default-shadow sl-card-o">            
+                    <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">Calzino</h4>
+                    <p class="text-style-body-copy-small mb-2 mb-lg-3">₹ 1350</p>
+                    <img src="img/card/calza_verde_desktop.svg" alt="" class="card-img">
+                    <div class="d-none d-lg-block card-button d-flex justify-content-end">
+                        <a href="" onClick="updateData()">
+                            <div class="card-btn d-none justify-content-center align-items-center d-flex">
+                                <img src="img/icon/Sachetto-active.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-emporium d-flex card justify-content-center align-items-center effect-style-default-shadow sl-card-y">            
+                    <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">Calzino</h4>
+                    <p class="text-style-body-copy-small mb-2 mb-lg-3">₹ 1350</p>
+                    <img src="img/card/calza_verde_desktop.svg" alt="" class="card-img">
+                    <div class="d-none d-lg-block card-button d-flex justify-content-end">
+                        <a href="" onClick="updateData()">
+                            <div class="card-btn d-none justify-content-center align-items-center d-flex">
+                                <img src="img/icon/Sachetto-active.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-emporium d-flex card justify-content-center align-items-center effect-style-default-shadow sl-card-g">            
+                    <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">Calzino</h4>
+                    <p class="text-style-body-copy-small mb-2 mb-lg-3">₹ 1350</p>
+                    <img src="img/card/calza_verde_desktop.svg" alt="" class="card-img">
+                    <div class="d-none d-lg-block card-button d-flex justify-content-end">
+                        <a href="" onClick="updateData()">
+                            <div class="card-btn d-none justify-content-center align-items-center d-flex">
+                                <img src="img/icon/Sachetto-active.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-emporium d-flex card justify-content-center align-items-center effect-style-default-shadow sl-card-o">            
+                    <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">Calzino</h4>
+                    <p class="text-style-body-copy-small mb-2 mb-lg-3">₹ 1350</p>
+                    <img src="img/card/calza_verde_desktop.svg" alt="" class="card-img">
+                    <div class="d-none d-lg-block card-button d-flex justify-content-end">
+                        <a href="" onClick="updateData()">
+                            <div class="card-btn d-none justify-content-center align-items-center d-flex">
+                                <img src="img/icon/Sachetto-active.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-emporium d-flex card justify-content-center align-items-center effect-style-default-shadow sl-card-y">            
+                    <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">Calzino</h4>
+                    <p class="text-style-body-copy-small mb-2 mb-lg-3">₹ 1350</p>
+                    <img src="img/card/calza_verde_desktop.svg" alt="" class="card-img">
+                    <div class="d-none d-lg-block card-button d-flex justify-content-end">
+                        <a href="" onClick="updateData()">
+                            <div class="card-btn d-none justify-content-center align-items-center d-flex">
+                                <img src="img/icon/Sachetto-active.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
+            <div class="loadmore d-flex justify-content-center align-items-center">
+                <div class="sl-btn-secondary pt-4">
+                    <a href="" class="sl-btn-applica text-style-button">Carica di più</a>
+                </div>
+            </div> 
         </section>
 
+        
 
 
         <!-- Footer -->
