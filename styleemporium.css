@@ -298,8 +298,8 @@ padding: 16px 12px;
 }
 .modal-dialog{
   position: fixed;
-  top: 16px;
-  right: 16px;
+  top: 1rem;
+  right: 1rem;
 }
 .modal-fullscreen .modal-content{
   border-radius: 12px;
