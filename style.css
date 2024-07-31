@@ -1,4 +1,4 @@
-/*per cose generali che sono valide su tutte le pagine*/
+/* Features generali che sono valide su tutte le pagine */
 
 :root {
     /* Color styles */
@@ -18,13 +18,7 @@
     --bs-body-color: var(--black-strawberry) !important;
     --bs-link-color-rgb: var(--black-strawberry) !important;
     --bs-nav-tabs-link-active-border-color: var(--black-banana) !important;
-
-    
-
-    /*border*/
-    /*--sl-border-radius-075: 0.75rem;*/
 }
-
 
 /* Color classes */
 .sl-color-fig{
@@ -49,13 +43,13 @@
     color: var(--yellow-grape);
 }
 
-
-/* Background colors */
+/* Background colors */ 
+/* !!! CONTROLLARE QUELLI CHE NON SERVONO ED ELIMINARLI !!! */
 .sl-bg-avocado{
     background-color: var(--white-avocado);
 }
 .sl-bg-strawberry {
-    background-color: var(--black-strawberry);
+    background-color: var(--black-strawberry); /*usato*/
 }
 .sl-bg-tangerine {
     background-color: var(--liliac-tangerine);
@@ -72,7 +66,6 @@
 .sl-bg-lemon {
     background-color: var(--gray-lemon);
 }
-
 
 /* Sizes customized */
 .pb-6 {
@@ -109,18 +102,6 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
 .pl-10{
     padding-left: 5.125rem !important;  /* 82px */
 }
-
-/*questo rounded sarebbe slo per il border radius, per il bordo dovremmo usare border già di bootstrap e farne uno tipo border-2 per 2 px
-Dobbiamo rivalutare il fatto di non creare misure ad hoc, ma sistemare piuttosto figma
-Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
-/*.rounded-075-1{
-    border-radius: var(--sl-border-radius-075) !important;
-    border: 1px solid var(--black-banana) !important;
-}
-.rounded-075-2{
-    border-radius: var(--sl-border-radius-075) !important;
-    border: 2px solid var(--black-banana) !important;
-}*/
 
 .border-2 {
     border: 2px solid var(--black-banana);
@@ -508,7 +489,7 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 
 /*ombre*/
 .effect-style-default-shadow {
-    box-shadow: 4px 4px 0px 0px var(--black-banana);
+    box-shadow: 4px 4px 0px 0px var(--black-banana);  /*usata*/
 }
 .effect-style-text-shadow {
     text-shadow: 4px 4px var(--black-banana);
@@ -741,10 +722,8 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 .active{
     color: var(--orange-kiwi) !important;
 }
+
 /*navbar toggler icon hamburger animation*/
-.navbar-toggler{
-    border: 0;
-}
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus{
