@@ -658,12 +658,17 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
     border: 1px solid var(--black-banana);
 }
 .sl-btn-secondary a:hover, .sl-btn-tertiary a:hover{
-    transform: translateX(4px);
-    transform: translatey(-4px);
-    transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
-    box-shadow: 4px 4px 0px 0px var(--black-banana);
     color: var(--black-strawberry);
 }
+@media (min-width: 576px) {
+    .sl-btn-secondary a:hover, .sl-btn-tertiary a:hover{
+        transform: translateX(4px);
+        transform: translatey(-4px);
+        transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
+        box-shadow: 4px 4px 0px 0px var(--black-banana);
+    }
+}
+
 /* Button tertiary */
 .sl-btn-tertiary a{
     width: 100%;
@@ -672,6 +677,16 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
     border-radius: 12px;
     text-decoration: none;
     background-color: var(--orange-kiwi);
+}
+@media (min-width: 576px) {
+    .sl-btn-tertiary a{
+        width: 100%;
+        padding: 16px 32px 16px 32px;
+        border: 1px solid var(--black-banana);
+        border-radius: 12px;
+        text-decoration: none;
+        background-color: var(--orange-kiwi);
+    }
 }
 .sl-btn-tertiary{
     width: 100%;
@@ -684,13 +699,19 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
     color: var(--black-strawberry);
 }
 
-/* Button quarto */
-.sl-btn-quarto{
+/* Button quaternary */
+.sl-btn-quaternary{
     padding: 1rem 2rem;
 }
-.sl-btn-quarto:hover{
-    color: var(--orange-kiwi);
+.sl-btn-quaternary:hover{
+    color: var(--black-strawberry);
 }
+@media (min-width: 576px) {
+    .sl-btn-quaternary:hover{
+        color: var(--orange-kiwi);
+    }
+}
+
 
 /*navbar*/
 .navbar .container-fluid{
