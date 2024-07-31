@@ -651,7 +651,7 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
 }
 
 /* Button tertiary */
-.sl-btn-tertiary a{
+.sl-btn-tertiary{
     width: 100%;
     padding: 16px 32px 16px 32px;
     border: 1px solid var(--black-banana);
@@ -660,7 +660,7 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     background-color: var(--orange-kiwi);
 }
 @media (min-width: 576px) {
-    .sl-btn-tertiary a{
+    .sl-btn-tertiary{
         width: 100%;
         padding: 16px 32px 16px 32px;
         border: 1px solid var(--black-banana);
@@ -672,7 +672,7 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
 .sl-btn-tertiary{
     width: 100%;
 }
-.sl-btn-tertiary a:focus{
+.sl-btn-tertiary:focus{
     transform: translateX(2px);
     transform: translatey(-2px);
     transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
