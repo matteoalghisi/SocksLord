@@ -158,6 +158,7 @@
 @media (min-width: 576px) {
   .card-space {
     padding-top: 5rem;
+    gap: 42px;
   }
 }
 .card{

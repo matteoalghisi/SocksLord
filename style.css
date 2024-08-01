@@ -638,11 +638,11 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     border-radius: 0.75rem;
     border: 1px solid var(--black-banana);
 }
-.sl-btn-secondary a:hover, .sl-btn-tertiary a:hover{
+.sl-btn-secondary a:hover{
     color: var(--black-strawberry);
 }
 @media (min-width: 576px) {
-    .sl-btn-secondary a:hover, .sl-btn-tertiary a:hover{
+    .sl-btn-secondary a:hover{
         transform: translateX(4px);
         transform: translatey(-4px);
         transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
@@ -668,6 +668,13 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
         text-decoration: none;
         background-color: var(--orange-kiwi);
     }
+    .sl-btn-tertiary:hover{
+        color: var(--black-strawberry);
+        transform: translateX(4px);
+        transform: translatey(-4px);
+        transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
+        box-shadow: 4px 4px 0px 0px var(--black-banana);
+    }
 }
 .sl-btn-tertiary{
     width: 100%;
@@ -683,6 +690,7 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
 /* Button quaternary */
 .sl-btn-quaternary{
     padding: 1rem 2rem;
+    background-color: none;
 }
 .sl-btn-quaternary:hover{
     color: var(--black-strawberry);
@@ -880,52 +888,21 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
 
 
 /* Card */
-.sl-card-g{
+.sl-card-c{
     display: inline;
     width: fit-content; 
-    background-image: url('img/card/crateri_verdi_mobile.svg');
+    background-image: url('img/card/crateri_mobile.svg');
     background-size: cover;
     height: 204px;
     width: 171px;
 }
 @media (min-width: 576px) {
-    .sl-card-g{
-        background-image: url('img/card/crateri_verdi_desktop.svg');
+    .sl-card-c{
+        background-image: url('img/card/crateri_desktop.svg');
         height: 349px;
         width: 300px;
     }
 }
-.sl-card-y{
-    display: inline;
-    width: fit-content; 
-    background-image: url('img/card/crateri_gialli_mobile.svg');
-    background-size: cover;
-    height: 204px;
-    width: 171px;
-}
-@media (min-width: 576px) {
-    .sl-card-y{
-        background-image: url('img/card/crateri_gialli_desktop.svg');
-        height: 349px;
-        width: 300px;
-    }
-}
-.sl-card-o{
-    display: inline;
-    width: fit-content; 
-    background-image: url('img/card/crateri_arancioni_mobile.svg');
-    background-size: cover;
-    height: 204px;
-    width: 171px;
-}
-@media (min-width: 576px) {
-    .sl-card-o{
-        background-image: url('img/card/crateri_arancioni_desktop.svg');
-        height: 349px;
-        width: 300px;
-    }
-}
-
 
 
 

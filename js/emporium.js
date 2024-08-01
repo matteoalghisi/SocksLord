@@ -157,7 +157,7 @@ const addProducts = (products) => {
     productsContainer.empty();
     products.forEach((product, index) => {
         productsContainer.append(`
-            <div class="col-2 col-lg-3 card-emporium d-flex card justify-content-center align-items-center effect-style-default-shadow sl-card-o">            
+            <div class="col-2 col-lg-3 card-emporium d-flex card justify-content-center align-items-center effect-style-default-shadow sl-card-c">            
                 <h4 class="text-style-h4">${product.name}</h4>
                 <p class="text-style-body-copy-small mb-2 mb-lg-3">${product.price}</p>
                 <img src="${product.imagePath}" alt="" class="card-img">
