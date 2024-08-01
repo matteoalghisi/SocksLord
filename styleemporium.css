@@ -52,7 +52,7 @@
 @media (min-width: 576px) {
   .modal{
     --bs-modal-header-padding: 48px 48px 24px 48px;
-    --bs-modal-width: 560px;
+    --bs-modal-width: 612px;
     --bs-modal-padding: 24px 48px 0px 48px;
     --bs-modal-border-width: 2px;
     --bs-modal-border-radius: 12px;
@@ -91,7 +91,7 @@
 }
 .filter-modal{
   height: 44px;
-  width: 140px;
+  width: 160px;
   border: 1px solid var(--black-banana);
   border-radius: 12px;
   color: var(--black-strawberry);

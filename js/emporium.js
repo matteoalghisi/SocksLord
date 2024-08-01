@@ -7,17 +7,28 @@ const filters = {
 };
 
 const products = [
-    { id: 1, name: "sock1", price: 20, imagePath: "img/card/calza_verde_desktop.svg", collabId: 1, colorId: 1, functionId: 1, footId: 1, materialId: 1 },
-    { id: 2, name: "sock2", price: 20, imagePath: "img/card/calza_verde_desktop.svg", collabId: null, colorId: 2, functionId: 1, footId: 2, materialId: 1 },
-    { id: 3, name: "sock3", price: 20, imagePath: "img/card/calza_verde_desktop.svg", collabId: null, colorId: 3, functionId: 2, footId: 1, materialId: 1 },
-    { id: 4, name: "sock1", price: 20, imagePath: "img/card/calza_verde_desktop.svg", collabId: 1, colorId: 1, functionId: 1, footId: 2, materialId: 1 },
-    { id: 5, name: "sock1", price: 20, imagePath: "img/card/calza_verde_desktop.svg", collabId: 1, colorId: 3, functionId: null, footId: null, materialId: 1 },
+    { id: 1, name: "HelixSock 3.4", price: "₹ 1350", imagePath: "img/card/calza_verde_desktop.svg", collabId: 1, colorId: 1, functionId: 1, footId: 1, materialId: 1 },
+    { id: 2, name: "MystiPockets Sock", price: "₹ 2820", imagePath: "img/card/calza_verde_desktop.svg", collabId: null, colorId: 2, functionId: 1, footId: 2, materialId: 1 },
+    { id: 3, name: "Luminares", price: "₹ 433,999", imagePath: "img/card/calza_verde_desktop.svg", collabId: null, colorId: 3, functionId: 2, footId: 1, materialId: 1 },
+    { id: 4, name: "RouteSocks", price: "₹ 1489,495", imagePath: "img/card/calza_verde_desktop.svg", collabId: 1, colorId: 1, functionId: 1, footId: 2, materialId: 1 },
+    { id: 5, name: "Lux x SocksLord", price: "₹ 7380,257", imagePath: "img/card/calza_verde_desktop.svg", collabId: 1, colorId: 3, functionId: null, footId: null, materialId: 1 },
+    { id: 6, name: "s", price: "₹ ", imagePath: "img/card/calza_verde_desktop.svg", collabId: 1, colorId: 3, functionId: null, footId: null, materialId: 1 },
+    { id: 7, name: "s", price: "₹ ", imagePath: "img/card/calza_verde_desktop.svg", collabId: 1, colorId: 3, functionId: null, footId: null, materialId: 1 },
+    { id: 8, name: "s", price: "₹ ", imagePath: "img/card/calza_verde_desktop.svg", collabId: 1, colorId: 3, functionId: null, footId: null, materialId: 1 },
+    { id: 9, name: "s", price: "₹ ", imagePath: "img/card/calza_verde_desktop.svg", collabId: 1, colorId: 3, functionId: null, footId: null, materialId: 1 },
+    { id: 10, name: "s", price: "₹ ", imagePath: "img/card/calza_verde_desktop.svg", collabId: 1, colorId: 3, functionId: null, footId: null, materialId: 1 },
+    { id: 11, name: "s", price: "₹ ", imagePath: "img/card/calza_verde_desktop.svg", collabId: 1, colorId: 3, functionId: null, footId: null, materialId: 1 },
+    { id: 12, name: "s", price: "₹ ", imagePath: "img/card/calza_verde_desktop.svg", collabId: 1, colorId: 3, functionId: null, footId: null, materialId: 1 },
+    { id: 13, name: "s", price: "₹ ", imagePath: "img/card/calza_verde_desktop.svg", collabId: 1, colorId: 3, functionId: null, footId: null, materialId: 1 },
+    { id: 14, name: "s", price: "₹ ", imagePath: "img/card/calza_verde_desktop.svg", collabId: 1, colorId: 3, functionId: null, footId: null, materialId: 1 },
+    { id: 15, name: "s", price: "₹ ", imagePath: "img/card/calza_verde_desktop.svg", collabId: 1, colorId: 3, functionId: null, footId: null, materialId: 1 },
+    { id: 16, name: "s", price: "₹ ", imagePath: "img/card/calza_verde_desktop.svg", collabId: 1, colorId: 3, functionId: null, footId: null, materialId: 1 },
 ];
-const collabs = [{ id: 1, name: "Lux" }];
-const colors = [{ id: 1, name: "Red" }, { id: 2, name: "RBlueed" }, { id: 3, name: "Green" }];
-const functions = [{ id: 1, name: "Elica" }, { id: 2, name: "GPS" }];
-const feet = [{ id: 1, name: "One" }, { id: 2, name: "Two" }];
-const materials = [{ id: 1, name: "Tessuto" }];
+const collabs = [{ id: 1, name: "Lux" }, { id: 2, name: "Zlatanox" }];
+const colors = [{ id: 1, name: "Arancio" }, { id: 2, name: "Giallo" }, { id: 3, name: "Verde" }];
+const functions = [{ id: 1, name: "GPS" }, { id: 2, name: "Tasca" }, { id: 3, name: "Led" }, { id: 4, name: "Ali" }];
+const feet = [{ id: 1, name: "Tentacolo" }, { id: 2, name: "Tre dita" }, { id: 3, name: "Normale" }];
+const materials = [{ id: 1, name: "Sustainsilk" }, { id: 2, name: "Cristalium" }, { id: 3, name: "Drakolith" }, { id: 4, name: "Lumifibra" }, { id: 5, name: "Liquidite" }];
 
 let productsContainer;
 let buttonsCollabs;
@@ -147,7 +158,7 @@ const addProducts = (products) => {
     products.forEach((product, index) => {
         productsContainer.append(`
             <div class="col-2 col-lg-3 card-emporium d-flex card justify-content-center align-items-center effect-style-default-shadow sl-card-o">            
-                <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">${product.name}</h4>
+                <h4 class="text-style-h4">${product.name}</h4>
                 <p class="text-style-body-copy-small mb-2 mb-lg-3">${product.price}</p>
                 <img src="${product.imagePath}" alt="" class="card-img">
                 <div class="d-none d-lg-flex card-button justify-content-end">
