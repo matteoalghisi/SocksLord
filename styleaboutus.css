@@ -25,23 +25,43 @@
     }
 }
 
-
-
-.sl-team-container{
-    background-image: url(img/aboutus/Team.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    max-width: 1700px;
-    height: 70vh;
-    width: 100%;
+/* start team section*/
+@media (min-width: 576px) {
+    .sl-team-container{
+        background-image: url(img/aboutus/Team.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 70vh;
+        width: 100%;
+    }
 }
-  
+
+.sl-teamcard{
+    width: fit-content;
+}
+.sl-teamcard img{
+    width: 100px;
+
+}
+.sl-teamcard .card-body{
+    height: 44px;
+    width: 200px;
+    flex-grow: 0;
+}
+.sl-teamcard .sl-teamcard-bg{
+    width: 100%;
+    margin-top: 10%;
+    padding-top: 90%;
+}
 
 
 
 
 
+
+
+/* end team section*/
 
 
 .sl-island-row{
