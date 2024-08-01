@@ -6,7 +6,6 @@ const filters = {
     materials: [],
 };
 
-let filteredProducts = [];
 const products = [
     { id: 1, name: "sock1", price: 20, imagePath: "img/card/calza_verde_desktop.svg", collabId: 1, colorId: 1, functionId: 1, footId: 1, materialId: 1 },
     { id: 2, name: "sock2", price: 20, imagePath: "img/card/calza_verde_desktop.svg", collabId: null, colorId: 2, functionId: 1, footId: 2, materialId: 1 },
@@ -35,23 +34,7 @@ $(() => {
     buttonsFeet = $("#buttons-feet");
     buttonsMaterials = $("#buttons-materials");
     
-    products.forEach((product, index) => {
-        productsContainer.append(`
-            <div class="col-2 col-lg-3 card-emporium d-flex card justify-content-center align-items-center effect-style-default-shadow sl-card-o">            
-                <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">${product.name}</h4>
-                <p class="text-style-body-copy-small mb-2 mb-lg-3">${product.price}</p>
-                <img src="${product.imagePath}" alt="" class="card-img">
-                <div class="d-none d-lg-flex card-button justify-content-end">
-                    <a href="">
-                        <div class="card-btn d-none justify-content-center align-items-center d-flex">
-                            <img src="img/icon/Sachetto-active.svg" alt="">
-                        </div>
-                    </a>
-                </div>
-            </div>
-        `)
-    });
-
+    addProducts(products);
     addFilters();   
     
     $(".filter-modal").on("click", (e) => {
@@ -79,7 +62,7 @@ $(() => {
     })
 
     $('[data-toggle="filter"]').on("click", (e) => {
-        filteredProducts = products.filter(product => {
+        const filteredProducts = products.filter(product => {
             if (filters.collabs.length && !filters.collabs.includes(product.collabId)) return false;
             if (filters.colors.length && !filters.colors.includes(product.colorId)) return false;
             if (filters.functions.length && !filters.functions.includes(product.functionId)) return false;
@@ -88,9 +71,30 @@ $(() => {
 
             return true;
         });
-       
-    console.log(filteredProducts);
+        addProducts(filteredProducts);
     })
+
+    $('[data-toggle="reset-filter"]').on("click", (e) => {
+        const filtersButtons = $("#modal-filter").find(".filter-modal").removeClass("filter-modal-active");
+        filtersButtons.each((button) => {
+            $(button).find("span").removeClass("circle-filter-active icon-filter-active");
+        });
+        filters.collabs = [];
+        filters.colors = [];
+        filters.functions = [];
+        filters.feet = [];
+        filters.materials = [];
+
+        addProducts(products);
+    })
+});
+
+//Button on card
+$(document).on("mouseenter", ".card-emporium", function() {
+    $(this).find(".card-btn").removeClass("d-none");
+});
+$(document).on("mouseleave", ".card-emporium", function() {
+    $(this).find(".card-btn").addClass("d-none");
 });
 
 // Add filters to DOM
@@ -135,4 +139,25 @@ const addFilters = () => {
             </button>
        `)
     })
+}
+
+// Add products to DOM
+const addProducts = (products) => {
+    productsContainer.empty();
+    products.forEach((product, index) => {
+        productsContainer.append(`
+            <div class="col-2 col-lg-3 card-emporium d-flex card justify-content-center align-items-center effect-style-default-shadow sl-card-o">            
+                <h4 class="text-style-h4 mb-2 mb-lg-3 text-uppercase">${product.name}</h4>
+                <p class="text-style-body-copy-small mb-2 mb-lg-3">${product.price}</p>
+                <img src="${product.imagePath}" alt="" class="card-img">
+                <div class="d-none d-lg-flex card-button justify-content-end">
+                    <a href="">
+                        <div class="card-btn d-none justify-content-center align-items-center d-flex">
+                            <img src="img/icon/Sachetto-active.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        `)
+    });
 }

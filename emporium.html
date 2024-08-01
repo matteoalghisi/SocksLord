@@ -31,7 +31,7 @@
         <!--JS-->
         <script type="text/javascript" src="script.js"></script>
         <script src="bootstrap.bundle.min.js / bootstrap.bundle.js"></script>
-        <script src="js/products.js"></script>
+        <script src="js/emporium.js"></script>
     </head>
 
     <body class="sl-bg-avocado">
@@ -129,13 +129,13 @@
             <div class="row">
                 <!-- Button trigger modal -->
                 <div class="col d-flex justify-content-lg-end justify-content-start mt-lg-5">
-                    <button type="button" class="sl-bg-avocado text-style-button sl-btn-filter" data-bs-toggle="modal" data-bs-target="#filter">
+                    <button type="button" class="sl-bg-avocado text-style-button sl-btn-filter" data-bs-toggle="modal" data-bs-target="#modal-filter">
                     <span class="sl-btn-text text-style-button pe-lg-3 pe-2">Filtri</span>
                     <span class="sl-btn-icon"><img src="img/icon/icon_filter.svg" alt=""></span>
                     </button>
             
                     <!-- Modal -->
-                    <div class="modal fade modal-fullscreen" id="filter" tabindex="-1" aria-labelledby="filter" aria-hidden="true">
+                    <div class="modal fade modal-fullscreen" id="modal-filter" tabindex="-1" aria-labelledby="filter" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -248,9 +248,9 @@
                             </div>
                             <div class="modal-footer mb-2 mb-lg-4 mt-4 mx-4 mx-lg-5 d-flex flex-column">
                                 <div class="sl-btn-tertiary">
-                                    <button class="text-style-button d-flex align-items-center justify-content-center m-0" data-toggle="filter">Ok</button>
+                                    <button class="text-style-button d-flex align-items-center justify-content-center m-0" data-bs-dismiss="modal" data-toggle="filter">Ok</button>
                                 </div>
-                                <button data-toggler="reset-filter" data-bs-dismiss="modal" class="text-style-button d-flex align-items-center justify-content-center m-0 sl-btn-quaternary">Clear all filters</button>
+                                <button data-toggle="reset-filter" class="text-style-button d-flex align-items-center justify-content-center m-0 sl-btn-quaternary">Clear all filters</button>
                             </div>
                         </div>
                         </div>
@@ -451,20 +451,6 @@
             <a class="px-sm-4 px-2 py-0 text-style-body-copy-small" href="#">Privacy intergalattica</a>
             </div>
         </footer>
-     
-    
-        <script>
-            // Button on card
-            $(document).ready(function() {
-                $(".card-emporium").on("mouseenter", function() {
-                    $(this).find(".card-btn").removeClass("d-none");
-                });
-                $(".card-emporium").on("mouseleave", function() {
-                    $(this).find(".card-btn").addClass("d-none");
-                });
-            });
-        </script>
-
 
     </body>
 </html>
