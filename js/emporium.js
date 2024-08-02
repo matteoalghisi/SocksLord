@@ -7,10 +7,10 @@ const filters = {
 };
 
 const products = [
-    { id: 1, name: "Luminares", price: "₹ 433,999", imagePath:"img/card/calza_verde_desktop.svg", collabId: null, colorId: 3, functionId: 3, footId: 2, materialId: 1 },
-    { id: 2, name: "Lux x SocksLord", price: "₹ 7380,257", imagePath: "img/card/calza_verde_desktop.svg", collabId: 1, colorId: null, functionId: 3, footId: 2, materialId: 4 },
-    { id: 3, name: "Floaty Footies", price: "₹ 450,257", imagePath: "img/card/calza_verde_desktop.svg", collabId: null, colorId: 1, functionId: 4, footId: 3, materialId: 3 },
-    { id: 4, name: "MystiPockets Sock", price: "₹ 2820", imagePath: "img/card/calza_verde_desktop.svg", collabId: null, colorId: 2, functionId: 2, footId: 3, materialId: 2, },
+    { id: 1, name: "Luminares", price: "₹ 433,999", imagePath:"img/card/calza_verde_desktop.svg", collabId: null, colorId: 3, functionId: 3, footId: 2, materialId: 1, href: "singleproduct_luminares.html" },
+    { id: 2, name: "Lux x SocksLord", price: "₹ 7380,257", imagePath: "img/card/calza_verde_desktop.svg", collabId: 1, colorId: null, functionId: 3, footId: 2, materialId: 4, href: "singleproduct_luminares.html" },
+    { id: 3, name: "Floaty Footies", price: "₹ 450,257", imagePath: "img/card/calza_verde_desktop.svg", collabId: null, colorId: 1, functionId: 4, footId: 3, materialId: 3, href: "singleproduct_luminares.html" },
+    { id: 4, name: "MystiPockets Sock", price: "₹ 2820", imagePath: "img/card/calza_verde_desktop.svg", collabId: null, colorId: 2, functionId: 2, footId: 3, materialId: 2 },
     { id: 5, name: "MystiPockets Sock", price: "₹ 2820", imagePath: "img/card/calza_verde_desktop.svg", collabId: null, colorId: 1, functionId: 2, footId: 2, materialId: 1 },
     { id: 6, name: "RouteSocks", price: "₹ 1489,495", imagePath: "img/card/calza_verde_desktop.svg", collabId: null, colorId: 3, functionId: 1, footId: 2, materialId: 4 },
     { id: 7, name: "Floaty Footies", price: "₹ 450,257", imagePath: "img/card/calza_verde_desktop.svg", collabId: null, colorId: 2, functionId: 4, footId: 2, materialId: 2 }, 
@@ -184,7 +184,7 @@ const addProducts = (products) => {
                 <p class="text-style-body-copy-small mb-3 mb-lg-4">${product.price}</p>
                 <img src="${product.imagePath}" alt="" class="card-img">
                 <div class="d-none d-lg-flex card-button justify-content-end">
-                    <a href="">
+                    <a href="${product.href}">
                         <div class="card-btn d-none justify-content-center align-items-center d-flex">
                             <img src="img/icon/Sachetto-active.svg" alt="">
                         </div>
