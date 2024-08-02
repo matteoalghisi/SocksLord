@@ -10,7 +10,7 @@ const products = [
     { id: 1, name: "Luminares", price: "₹ 433,999", imagePath:"img/card/calza_verde_desktop.svg", collabId: null, colorId: 3, functionId: 3, footId: 2, materialId: 1 },
     { id: 2, name: "Lux x SocksLord", price: "₹ 7380,257", imagePath: "img/card/calza_verde_desktop.svg", collabId: 1, colorId: null, functionId: 3, footId: 2, materialId: 4 },
     { id: 3, name: "Floaty Footies", price: "₹ 450,257", imagePath: "img/card/calza_verde_desktop.svg", collabId: null, colorId: 1, functionId: 4, footId: 3, materialId: 3 },
-    { id: 4, name: "MystiPockets Sock", price: "₹ 2820", imagePath: "img/card/calza_verde_desktop.svg", collabId: null, colorId: 2, functionId: 2, footId: 3, materialId: 2 },
+    { id: 4, name: "MystiPockets Sock", price: "₹ 2820", imagePath: "img/card/calza_verde_desktop.svg", collabId: null, colorId: 2, functionId: 2, footId: 3, materialId: 2, },
     { id: 5, name: "MystiPockets Sock", price: "₹ 2820", imagePath: "img/card/calza_verde_desktop.svg", collabId: null, colorId: 1, functionId: 2, footId: 2, materialId: 1 },
     { id: 6, name: "RouteSocks", price: "₹ 1489,495", imagePath: "img/card/calza_verde_desktop.svg", collabId: null, colorId: 3, functionId: 1, footId: 2, materialId: 4 },
     { id: 7, name: "Floaty Footies", price: "₹ 450,257", imagePath: "img/card/calza_verde_desktop.svg", collabId: null, colorId: 2, functionId: 4, footId: 2, materialId: 2 }, 
@@ -50,6 +50,7 @@ const colors = [{ id: 1, name: "Arancio" }, { id: 2, name: "Giallo" }, { id: 3, 
 const functions = [{ id: 1, name: "GPS", iconPath: "img/icon/Propeller.svg" }, { id: 2, name: "Tasca", iconPath: "img/icon/Propeller.svg" }, { id: 3, name: "Led", iconPath: "img/icon/Propeller.svg" }, { id: 4, name: "Ali", iconPath: "img/icon/Propeller.svg" }];
 const feet = [{ id: 1, name: "Tentacolo", iconPath: "img/icon/Icon-footer-1.svg" }, { id: 2, name: "Tre dita", iconPath: "img/icon/Icon-footer-1.svg" }, { id: 3, name: "Normale", iconPath: "img/icon/Icon-footer-1.svg" }];
 const materials = [{ id: 1, name: "Sustainsilk", iconPath: "img/icon/icon-material-sustainsilk.svg" }, { id: 2, name: "Cristalium", iconPath: "img/icon/icon-material-cristalium.svg" }, { id: 3, name: "Drakolith", iconPath: "img/icon/icon-material-drakolith.svg" }, { id: 4, name: "Lumifibra", iconPath: "img/icon/icon-material-lumifibra.svg" }, { id: 5, name: "Liquidite", iconPath: "img/icon/icon-material-liquidite.svg" }];
+
 
 let productsContainer;
 let buttonsCollabs;
