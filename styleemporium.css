@@ -91,7 +91,7 @@
 }
 .filter-modal{
   height: 44px;
-  width: 160px;
+  width: 156px;
   border: 1px solid var(--black-banana);
   border-radius: 12px;
   color: var(--black-strawberry);
@@ -100,6 +100,7 @@
 }
 @media (min-width: 576px) {
   .filter-modal{
+    width: 160px;
     height: 48px;
   }
   .filter-modal:hover{
@@ -154,11 +155,16 @@
 /* card-space */
 .card-space {
   padding-top: 3.5rem;
+  gap: 1rem;
+  padding-left: 12px;
+  padding-left: 12px;
 }
 @media (min-width: 576px) {
   .card-space {
     padding-top: 5rem;
     gap: 42px;
+    padding-left: 0px;
+    padding-left: 0px;
   }
 }
 .card{
