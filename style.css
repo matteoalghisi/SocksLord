@@ -722,7 +722,9 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
 /* Button quaternary */
 .sl-btn-quaternary{
     padding: 1rem 2rem;
-    background-color: none;
+    background-color: var(--white-avocado);
+    border: none;
+    width: 100%;
 }
 .sl-btn-quaternary:hover{
     color: var(--black-strawberry);
