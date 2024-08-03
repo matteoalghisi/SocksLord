@@ -7,9 +7,9 @@ const filters = {
 };
 
 const products = [
-    { id: 1, name: "Luminares", price: "₹ 433,999", imagePath:"img/card/calza_verde_desktop.svg", collabId: null, colorId: 3, functionId: 3, footId: 2, materialId: 1, stock: 1 },
-    { id: 2, name: "Lux x SocksLord", price: "₹ 7380,257", imagePath: "img/card/calza_verde_desktop.svg", collabId: 1, colorId: null, functionId: 3, footId: 2, materialId: 4, stock: 1 },
-    { id: 3, name: "Floaty Footies", price: "₹ 450,257", imagePath: "img/card/calza_verde_desktop.svg", collabId: null, colorId: 1, functionId: 4, footId: 3, materialId: 3, stock: 1 },
+    { id: 1, name: "Luminares", price: "₹ 433,999", imagePath:"img/card/calza_verde_desktop.svg", collabId: null, colorId: 3, functionId: 3, footId: 2, materialId: 1, stock: 1, href: "singleproduct_luminares.html" },
+    { id: 2, name: "Lux x SocksLord", price: "₹ 7380,257", imagePath: "img/card/calza_verde_desktop.svg", collabId: 1, colorId: null, functionId: 3, footId: 2, materialId: 4, stock: 1, href: "singleproduct_lux.html" },
+    { id: 3, name: "Floaty Footies", price: "₹ 450,257", imagePath: "img/card/calza_verde_desktop.svg", collabId: null, colorId: 1, functionId: 4, footId: 3, materialId: 3, stock: 1, href: "singleproduct-floaty.html" },
     { id: 4, name: "MystiPockets Sock", price: "₹ 2820", imagePath: "img/card/calza_verde_desktop.svg", collabId: null, colorId: 2, functionId: 2, footId: 3, materialId: 2, stock: 0 },
     { id: 5, name: "MystiPockets Sock", price: "₹ 2820", imagePath: "img/card/calza_verde_desktop.svg", collabId: null, colorId: 1, functionId: 2, footId: 2, materialId: 1, stock: 0 },
     { id: 6, name: "RouteSocks", price: "₹ 1489,495", imagePath: "img/card/calza_verde_desktop.svg", collabId: null, colorId: 3, functionId: 1, footId: 2, materialId: 4, stock: 0 },
@@ -191,10 +191,12 @@ const addProducts = (products) => {
                                         </div>
                                     `: "";
         const z = product.stock > 0 ? ` card-emporium-hover `: "";
+        const w = product.stock > 0 ? ` <a href="${product.href}" class="card-link"></a> `: "";
                                     
         productsContainer.append(`
             <div class="col-2 col-lg-3 card-emporium d-flex card justify-content-center align-items-center effect-style-default-shadow sl-card-c ${z}">
                 ${y}
+                ${w}
                 <h4 class="text-style-h4 text-center">${product.name}</h4>
                 <p class="text-style-body-copy-small mb-3 mb-lg-4">${product.price}</p>
                 <img src="${product.imagePath}" alt="" class="card-img">
