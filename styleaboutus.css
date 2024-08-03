@@ -1,3 +1,7 @@
+section{
+    overflow: hidden;
+}
+
 .section-aboutus-1 .row{
     background-image: url(img/aboutus/wave-aboutus-top-mobile.png);
     background-position-y: top;
@@ -25,7 +29,13 @@
     }
 }
 
+
+
 /* start team section*/
+.section-aboutus-team h2{
+    width: fit-content;
+    
+}
 @media (min-width: 576px) {
     .sl-team-container{
         background-image: url(img/aboutus/Team.png);
@@ -37,22 +47,34 @@
     }
 }
 
+.sl-team-circle{
+    background-image: url(img/aboutus/circle.png);
+    width: 150%;
+    height: 100%;
+    background-position-y: bottom;
+    background-position-x: center;
+    margin-bottom: 250px;
+    transform: rotate(6deg);
+}
+
 .sl-teamcard{
     width: fit-content;
+    margin: 0 auto;
+    
 }
 .sl-teamcard img{
-    width: 100px;
+    width: 240px;
 
 }
 .sl-teamcard .card-body{
-    height: 44px;
-    width: 200px;
+    height: 48px;
+    width: 280px;
     flex-grow: 0;
 }
 .sl-teamcard .sl-teamcard-bg{
     width: 100%;
-    margin-top: 10%;
-    padding-top: 90%;
+    margin-top: 20%;
+    padding-top: 100%;
 }
 
 
