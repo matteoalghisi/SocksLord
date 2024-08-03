@@ -734,13 +734,17 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
 .navbar .container-fluid{
    border-radius: 0.5rem;
 }
-/*.sl-collapse-mobile{
+.sl-collapse-mobile{
     border-radius: 0 0 0.5rem 0.5rem;
-    padding-right: 80px;
-}*/
+    padding-right: 48px;
+    transform: translateY(-2px);
+}
 .navbar-brand img{
     width: 169px;
     height: 18px;
+}
+.no-radius {
+    border-radius: 0.5rem 0.5rem 0.5rem 0 !important;
 }
 
 /* start toggler animation */
@@ -806,7 +810,7 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
         transform: rotate(0) translate(0, 0);
     }
 }
-/*end toggler animation*/
+/* end toggler animation */
 
 .cart-icon {
     background-image: url("img/icon/Sacchetto-default.svg");
@@ -815,11 +819,6 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     width: 24px;
     height: 24px;
     display: flex;
- }
- @media (min-width: 1200px) {
-    .sl-nav-mobile-coll{
-        display: none !important;
-    }
  }
  @media (min-width: 768px) {
     .navbar-brand img{
@@ -831,9 +830,12 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     .navbar .container-fluid{
         border-radius: 1rem; 
     }
-    /*.sl-collapse-mobile{
+    .sl-collapse-mobile{
         border-radius: 0 0 1rem 1rem;
-    }*/
+    }
+    .no-radius {
+        border-radius: 1rem 1rem 1rem 0 !important;
+    }
     .navbar-brand img{
         width: 320px;
         height: 34px;
@@ -843,41 +845,7 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
         height: 40px;
      }
 }
-
-/*end navbar*/
-/* Icona del sacchetto */
-/* .cart-icon {
-    background-image: url("img/icon/Sacchetto-default.svg");
-    background-size: 100%;
-    background-position: center center;
-    width: 30px;
-    height: 30px;
-    display: flex;
- }
-*/
-
-/* cose per cambiare l'icona del carrello in gialla, aspetterei a fare questo perchè vediamo se riusciamo a far si che aggiungendo un item nel carrello questo diventa giallo*/
-/*
-.cart-toggle-checkbox {
-    display: none;
-}
-.cart-toggle-label {
-    cursor: pointer;
-}
-.cart-toggle-label:last-of-type img {
-    display: none;
-}
-.cart-toggle-checkbox:checked ~ .cart-toggle-label:first-of-type img {
-    display: none;
-}
-.cart-toggle-checkbox:checked ~ .cart-toggle-label:last-of-type img {
-    display: block;
-}
-*/
-
-/*end navbar*/
-
-
+/* End navbar */
 
 
 /* stepper */
