@@ -51,6 +51,9 @@
 .sl-bg-strawberry {
     background-color: var(--black-strawberry); /*usato*/
 }
+.sl-bg-banana {
+    background-color: var(--black-banana); /*usato*/
+}
 .sl-bg-tangerine {
     background-color: var(--liliac-tangerine);
 }
@@ -136,10 +139,11 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
 
 
 /*remove bootstrap default padding right left*/
-.container-fluid{
+.container-fluid, .container{
     padding-left: 0px;
     padding-right: 0px;
 }
+
 
 
 /*inserimento font Brice*/

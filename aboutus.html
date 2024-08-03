@@ -97,7 +97,7 @@
   <section class="section-aboutus-1 container-fluid">
     <div class="sl-pt-first-div sl-bg-avocado"></div>
     <div class="row justify-content-center justify-content-lg-start px-3 ">
-      <div class="sl-aboutus-text-1  col-lg-10 col-xl-8 pb-5 pb-lg-0 ">
+      <div class="sl-aboutus-text-1  col-lg-10 col-xl-8">
         <h1 class="text-style-h1 sl-color-strawberry">Sockslord is <span class="sl-color-grape">spacy</span></h1>
         <h4 class="text-style-h4 sl-color-strawberry">Benvenuti nel mondo di SocksLord, dove i calzini sono più che semplici coperture per i piedi: sono meraviglie intergalattiche!</h4>
         <p class="text-style-body-copy">Noi di SocksLord non siamo solo un'azienda: siamo un team cosmico, che garantisce ai tuoi piedi un equipaggiamento con le ultime meraviglie tecnologiche e stravaganti. </p>
@@ -115,30 +115,48 @@
 
   <!--Sezione team-->
   <section class="section-aboutus-team container-fluid d-flex align-items-center flex-column">
-    <div class="container">
-      <div class="row mx-3 w-100">
-        <h2 class="text-style-bw-h2 sl-color-avocado text-end"> OUR HOT <br> GALACTIC <br> TEAM</h2>
+    <div class="container mx-3">
+      <div class="row w-100 justify-content-end pb-3">
+        <h2 class="text-style-bw-h2 sl-color-avocado p-0"> OUR HOT <br> GALACTIC <br> TEAM</h2>
       </div>
       <div class="row sl-team-container">
         
 
 
-        <div id="carousel-all" class="carousel slide sl-carousel-home col-lg-6 d-flex flex-column justify-content-center pt-5 pt-lg-0" data-bs-ride="carousel">
+        <div id="carousel-all" class="carousel slide sl-carousel-home d-sm-none col-lg-6 d-flex flex-column justify-content-center pt-5 pt-lg-0 position-relative" data-interval="false">
          
+          <div class="sl-team-circle position-absolute z-n1"></div>
             
-          <div class="carousel-inner pb-3">
+          <div class="carousel-inner" data-interval="false">
             
+            
+            
+            
+
             <div class="carousel-item active">
-              <div class="sl-card-collab sl-bg-tangerine border-2 rounded-3 rounded-sm-2 effect-style-default-shadow d-flex flex-column justify-content-center align-items-center py-5 px-6 m-auto">
-                <h3 class="text-style-h3 pb-6">Lux x SocksLord</h3>
-                <img src="img/home/calza-collab.png" alt="">
+              <div id="sl-tc1" class="sl-teamcard d-flex flex-column align-items-center position-relative px-0">
+                <img src="img/aboutus/team/team-fede.png" class="card-img-top" alt="">
+                <div class="sl-teamcard-bg position-absolute sl-bg-avocado z-n1 border"></div>
+                <div class="card-body flex-grow-0 sl-bg-avocado d-flex justify-content-center align-items-center border">
+                  <h4 class="text-style-bw-h4 m-0">Federica1</h4>
+                </div>
               </div>
             </div>
 
             <div class="carousel-item">
               <div id="sl-tc1" class="sl-teamcard d-flex flex-column align-items-center position-relative px-0">
                 <img src="img/aboutus/team/team-fede.png" class="card-img-top" alt="">
-                
+                <div class="sl-teamcard-bg position-absolute sl-bg-avocado z-n1 border"></div>
+                <div class="card-body flex-grow-0 sl-bg-banana d-flex justify-content-center align-items-center border">
+                  <h4 class="text-style-bw-h4 m-0">Federica1</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div id="sl-tc1" class="sl-teamcard d-flex flex-column align-items-center position-relative px-0">
+                <img src="img/aboutus/team/team-fede.png" class="card-img-top" alt="">
+                <div class="sl-teamcard-bg position-absolute sl-bg-avocado z-n1 border"></div>
                 <div class="card-body flex-grow-0 sl-bg-avocado d-flex justify-content-center align-items-center border">
                   <h4 class="text-style-bw-h4 m-0">Federica1</h4>
                 </div>
@@ -162,7 +180,7 @@
 
 
 
-        
+        <!--
         <div id="sl-tc1" class="sl-teamcard d-sm-none d-flex flex-column align-items-center position-relative px-0">
           <div class="sl-teamcard-bg z-n1 sl-bg-avocado border"></div>
           <img src="img/aboutus/team/team-fede.png" class="card-img-top" alt="">
@@ -170,6 +188,8 @@
             <h4 class="text-style-bw-h4 m-0">Federica1</h4>
           </div>
         </div>
+-->
+
 
       </div>
 
@@ -323,6 +343,32 @@
         </div>
       </footer>
   
+
+
+
+<script>
+  $('.carousel').on('touchstart', function(event){
+    const xClick = event.originalEvent.touches[0].pageX;
+    $(this).one('touchmove', function(event){
+        const xMove = event.originalEvent.touches[0].pageX;
+        const sensitivityInPx = 5;
+
+        if( Math.floor(xClick - xMove) > sensitivityInPx ){
+            $(this).carousel('next');
+        }
+        else if( Math.floor(xClick - xMove) < -sensitivityInPx ){
+            $(this).carousel('prev');
+        }
+    });
+    $(this).on('touchend', function(){
+        $(this).off('touchmove');
+    });
+});
+</script>
+
+
+
+
     </body>
 </html>
   
