@@ -52,7 +52,7 @@
 @media (min-width: 576px) {
   .modal{
     --bs-modal-header-padding: 48px 48px 24px 48px;
-    --bs-modal-width: 560px;
+    --bs-modal-width: 612px;
     --bs-modal-padding: 24px 48px 0px 48px;
     --bs-modal-border-width: 2px;
     --bs-modal-border-radius: 12px;
@@ -91,7 +91,7 @@
 }
 .filter-modal{
   height: 44px;
-  width: 140px;
+  width: 156px;
   border: 1px solid var(--black-banana);
   border-radius: 12px;
   color: var(--black-strawberry);
@@ -100,6 +100,7 @@
 }
 @media (min-width: 576px) {
   .filter-modal{
+    width: 160px;
     height: 48px;
   }
   .filter-modal:hover{
@@ -154,10 +155,16 @@
 /* card-space */
 .card-space {
   padding-top: 3.5rem;
+  gap: 1rem;
+  padding-left: 12px;
+  padding-left: 12px;
 }
 @media (min-width: 576px) {
   .card-space {
     padding-top: 5rem;
+    gap: 42px;
+    padding-left: 0px;
+    padding-left: 0px;
   }
 }
 .card{
@@ -201,4 +208,6 @@
     background-color: var(--yellow-grape);
   }
 }
-
+/* .card-soldout{
+  background-color: rgba(220, 220, 224, 0.6);
+} */
