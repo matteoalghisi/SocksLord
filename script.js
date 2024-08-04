@@ -1,3 +1,33 @@
+// HOMEPAGE FILE //
+
+// Navbar animation //
+document.addEventListener("DOMContentLoaded", function() {
+  var navbarContainer = document.getElementById("navbarContainer");
+  var navbarSupportedContent = document.getElementById("navbarSupportedContent");
+
+  function updateNavbarRadius() {
+    if (window.innerWidth > 1200) {
+      navbarContainer.classList.remove("no-radius");
+    } else {
+      if (navbarSupportedContent.classList.contains('show')) {
+        navbarContainer.classList.add("no-radius");
+      }
+    }
+  }
+
+  navbarSupportedContent.addEventListener('show.bs.collapse', function() {
+    navbarContainer.classList.add("no-radius");
+  });
+
+  navbarSupportedContent.addEventListener('hidden.bs.collapse', function() {
+    setTimeout(function() {
+      navbarContainer.classList.remove("no-radius");
+    }, 10);  
+  });
+
+  window.addEventListener('resize', updateNavbarRadius);
+  updateNavbarRadius(); 
+});
 
 
 // use a script tag or an external JS file
