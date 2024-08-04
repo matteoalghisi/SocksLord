@@ -160,8 +160,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
             scrollTrigger: {
                 trigger: ".path",
                 scrub: true,
-                start: "-200 top",
-                end: "bottom",
+                start: "-850px top",
+            
                 once: true
                 
               
@@ -172,15 +172,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
             }
         })
         .to(".sl-about-aircraft", {
-            duration: 10,
+            
             ease: "none",
-            immediateRender: true,
 
             motionPath: {
                 path: ".path",
                 align: ".path",
                 alignOrigin: [0.5, 0.5],
                 autoRotate: true
+              
             }
         })
 

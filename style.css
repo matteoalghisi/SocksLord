@@ -201,10 +201,12 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     text-decoration: none;
     text-transform: none;
     margin: 0;
+    padding-bottom: 1rem;
 }
 @media (min-width: 576px) {
     .text-style-h3 {
         font-size: 2rem;
+        padding-bottom: 1.25rem;
     }
 }
 
