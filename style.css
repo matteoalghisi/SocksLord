@@ -742,7 +742,8 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
 }
 .sl-collapse-mobile{
     border-radius: 0 0 0.5rem 0.5rem;
-    padding-right: 80px;
+    padding-right: 105px;
+    padding-left: 16px;
     transform: translateY(-2px);
 }
 .navbar-brand img{
