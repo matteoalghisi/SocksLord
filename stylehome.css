@@ -94,7 +94,6 @@ section{
 }
 .sl-carousel-home{
     overflow: hidden;
-    padding-bottom: 4px;
 }
 .carousel-inner{
     pointer-events: none;
@@ -252,16 +251,19 @@ END SECTION OUR SOCKS
     height: 155px;
     transform: translateX(50%) translateY(50%);
 };
-.sl-create-nav-tab .nav{
+.sl-create-nav-tab .nav-tabs{
     width: fit-content;
     border-bottom: 1px solid var(--black-banana);
-    border-radius: 0 0 0 8px; 
+     
+}
+.sl-create-nav-tab .nav-tabs{
+    border-radius: 0 0 0 8px !important; 
 }
 .sl-create-nav-tab a{
     padding-left: 12px;
     padding-right: 12px;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
     .sl-create-nav-tab .nav{
         border-radius: 16px 16px 0 0;  
     } 
@@ -283,7 +285,7 @@ END SECTION OUR SOCKS
 .sl-create-nav-tab .nav .nav-link:last-child:hover{
     border-bottom: 0;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
     .sl-create-nav-tab .nav .nav-link{
         border-radius: 16px 16px 0 0;
         width: fit-content;
@@ -297,7 +299,7 @@ END SECTION OUR SOCKS
     color: var(--black-strawberry) !important;
     border-right: 1px solid var(--orange-kiwi); 
 } 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
     .sl-create-nav-tab .nav .active{
         border-radius: 16px 16px 0 0;
         border-bottom: solid 1px var(--orange-kiwi);
@@ -308,7 +310,7 @@ END SECTION OUR SOCKS
     width: 100%;
     flex-grow: 1;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
     .sl-create-nav-tab .nav .nav-item{
         width: fit-content;
     } 
@@ -320,7 +322,7 @@ END SECTION OUR SOCKS
     background-color: var(--orange-kiwi);
     color: var(--black-strawberry);
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
     .sl-create-nav-tab .nav .nav-link:hover{
         border-right: 1px solid var(--black-banana);
         border-bottom: 0px solid var(--orange-kiwi);
@@ -334,14 +336,14 @@ END SECTION OUR SOCKS
     border-radius: 0px 8px 8px 0px;
     z-index: 1;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
     .sl-create-nav-tab .tab-content{
         border-left: 1px solid var(--black-banana);
         border-top: 0px solid var(--black-banana);
         border-radius: 0px 0px 8px 8px;
     }
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
     .sl-create-nav-tab .tab-content{
         border-radius: 0px 0px 16px 16px;
     } 
@@ -356,7 +358,7 @@ END SECTION OUR SOCKS
     width: 48px;
     height: 80px; 
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
     .sl-create-nav-tab .tab-content img{
         width: 118px;
         height: 195px; 
@@ -366,7 +368,7 @@ END SECTION OUR SOCKS
     width: 100%;
     color: var(--black-strawberry);
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
     .sl-create-nav-tab .tab-content h4{
         width: 322px;
     }
@@ -375,7 +377,7 @@ END SECTION OUR SOCKS
     width: 100%;
     color: var(--black-strawberry);
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
     .sl-create-nav-tab .tab-content p{
         width: 322px;
     }
@@ -384,35 +386,46 @@ END SECTION OUR SOCKS
 /*end section create socks*/
 
 /* section resocks */
-.section-resocks .row{
-    padding-top: 200px;
-    padding-bottom: 100px;
-}
-.wave-home-2{
+
+.section-resocks{
     width: 100%;
-    height: 310px;
+    
     background-image: url(img/home/wave-home-2-mobile.png);
     background-position: top;
     background-size: cover;
+}
+.section-resocks .row{
+    padding-top: 200px;
+    padding-bottom: 100px;
+    
+}
+.wave-home-2{
+    
     z-index: -1;
 }
 @media (min-width: 576px) {
+    .section-resocks{
+        background-image: url(img/home/wave-home-2-lg.png);
+        background-position-y: top;
+        background-position-x: left;
+    }
     .section-resocks .row{
         padding-top: 400px;
         padding-bottom: 120px;
     }
     .wave-home-2{
         height: 340px;
-        background-image: url(img/home/wave-home-2-lg.png);
-        background-position-y: top;
-        background-position-x: left;
+        
     }
 }
 @media (min-width: 992px) {
-    .wave-home-2{
-        height: 792px;
+    .section-resocks{
         background-image: url(img/home/wave-home-2-desktop.png);
         background-position: top;
+    }
+    .wave-home-2{
+        height: 792px;
+        
     }
     .section-resocks .row{
         padding-top: 340px;
