@@ -52,11 +52,7 @@
 @media (min-width: 576px) {
   .modal{
     --bs-modal-header-padding: 48px 48px 24px 48px;
-<<<<<<< HEAD
-    --bs-modal-width: 568px;
-=======
-    --bs-modal-width: 612px;
->>>>>>> 2e85f265160e45508a66dfdb56db2e3d06c560e0
+    --bs-modal-width: 632px;
     --bs-modal-padding: 24px 48px 0px 48px;
     --bs-modal-border-width: 2px;
     --bs-modal-border-radius: 12px;
