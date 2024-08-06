@@ -1,4 +1,4 @@
-/*per cose generali che sono valide su tutte le pagine*/
+/* Features generali che sono valide su tutte le pagine */
 
 :root {
     /* Color styles */
@@ -18,13 +18,7 @@
     --bs-body-color: var(--black-strawberry) !important;
     --bs-link-color-rgb: var(--black-strawberry) !important;
     --bs-nav-tabs-link-active-border-color: var(--black-banana) !important;
-
-    
-
-    /*border*/
-    /*--sl-border-radius-075: 0.75rem;*/
 }
-
 
 /* Color classes */
 .sl-color-fig{
@@ -49,13 +43,16 @@
     color: var(--yellow-grape);
 }
 
-
-/* Background colors */
+/* Background colors */ 
+/* !!! CONTROLLARE QUELLI CHE NON SERVONO ED ELIMINARLI !!! */
 .sl-bg-avocado{
     background-color: var(--white-avocado);
 }
 .sl-bg-strawberry {
-    background-color: var(--black-strawberry);
+    background-color: var(--black-strawberry); /*usato*/
+}
+.sl-bg-banana {
+    background-color: var(--black-banana); /*usato*/
 }
 .sl-bg-tangerine {
     background-color: var(--liliac-tangerine);
@@ -73,11 +70,13 @@
     background-color: var(--gray-lemon);
 }
 
-
 /* Sizes customized */
 .pb-6 {
   padding-bottom: 2.5rem !important;  /* 40px */
 }
+.pt-6 {
+    padding-top: 2.5rem !important;  /* 40px */
+  }
 .px-6{
     padding-right: 2.5rem !important;  /* 40px */
     padding-left: 2.5rem !important;  /* 40px */
@@ -109,18 +108,6 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
 .pl-10{
     padding-left: 5.125rem !important;  /* 82px */
 }
-
-/*questo rounded sarebbe slo per il border radius, per il bordo dovremmo usare border già di bootstrap e farne uno tipo border-2 per 2 px
-Dobbiamo rivalutare il fatto di non creare misure ad hoc, ma sistemare piuttosto figma
-Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
-/*.rounded-075-1{
-    border-radius: var(--sl-border-radius-075) !important;
-    border: 1px solid var(--black-banana) !important;
-}
-.rounded-075-2{
-    border-radius: var(--sl-border-radius-075) !important;
-    border: 2px solid var(--black-banana) !important;
-}*/
 
 .border-2 {
     border: 2px solid var(--black-banana);
@@ -154,11 +141,14 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 }
 
 
-/*remove bootstrap default padding right left*/
-.container-fluid{
+/*remove bootstrap default padding right left (rimosso container*/
+.container-fluid {
+    
     padding-left: 0px;
     padding-right: 0px;
+    
 }
+
 
 
 /*inserimento font Brice*/
@@ -199,10 +189,12 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
     text-decoration: none;
     text-transform: uppercase;
     margin: 0;
+    padding-bottom: 1.5rem;
 }
 @media (min-width: 576px) {
     .text-style-h2 {
         font-size: 2.5rem;
+        padding-bottom: 2rem;
     }
 }
 
@@ -216,10 +208,12 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
     text-decoration: none;
     text-transform: none;
     margin: 0;
+    padding-bottom: 1rem;
 }
 @media (min-width: 576px) {
     .text-style-h3 {
         font-size: 2rem;
+        padding-bottom: 1.25rem;
     }
 }
 
@@ -393,7 +387,7 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 
 /*h2*/
 .text-style-bw-h2 {
-    font-size: 1.125rem;
+    font-size: 2rem;
     font-family: "Good Times";
     font-weight: 400;
     font-style: normal;
@@ -442,6 +436,34 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 @media (min-width: 576px) {
     .text-style-bw-h4 {
         font-size: 1.25rem;
+        text-transform: none;
+    }
+}
+
+.nav-link{
+    font-size: 1.125rem;
+    font-family: "Space Grotesk";
+    font-weight: 500;
+    font-style: normal;
+    line-height: 100%;
+    text-decoration: none;
+    text-transform: none;
+    color: var(--black-strawberry);
+}
+.nav-link:hover{
+    color: var(--orange-kiwi);
+}
+.nav-link.active{
+    color: var(--orange-kiwi) !important;
+}
+@media (min-width: 576px) {
+    .nav-link {
+        font-size: 1.25rem; 
+        font-family: "Space Grotesk";
+        font-weight: 500;
+        font-style: normal;
+        line-height: 100%;
+        text-decoration: none;
         text-transform: none;
     }
 }
@@ -508,7 +530,7 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 
 /*ombre*/
 .effect-style-default-shadow {
-    box-shadow: 4px 4px 0px 0px var(--black-banana);
+    box-shadow: 4px 4px 0px 0px var(--black-banana);  /*usata*/
 }
 .effect-style-text-shadow {
     text-shadow: 4px 4px var(--black-banana);
@@ -546,12 +568,13 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
     position: relative;
     width: fit-content;
     text-decoration: none;
+    transform: translateX(-14px)
 }
 .sl-btn img, .sl-btn-bw-white img, .sl-btn-bw-dark img{
     padding-top: 3px;
 }
 .sl-btn::after, .sl-btn-bw-white::after, .sl-btn-bw-dark::after {
-    transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
+    transition: all 0.3s ease-in-out;
     content: '';
     width:  40px;
     height: 40px;
@@ -577,9 +600,8 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
     z-index: 2;
 }
 .sl-btn:hover, .sl-btn-bw-white:hover, .sl-btn-bw-dark:hover{
-    transform: translateX(4px);
-    transform: translatey(-4px);
-    transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
+    transform: translateY(-4px) translateX(-14px);
+    transition: all 0.3s ease-in-out;
 }
 .sl-btn:hover::after, .sl-btn-bw-white:hover::after, .sl-btn-bw-dark:hover::after{
     box-shadow: 4px 4px 0px var(--black-banana);
@@ -588,7 +610,7 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 .sl-btn:focus, .sl-btn-bw-white:focus, .sl-btn-bw-dark:focus{
     transform: translateX(2px);
     transform: translatey(-2px);
-    transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
+    transition: all 0.3s ease-in-out;
 }
 .sl-btn:focus::after, .sl-btn-bw-white:focus::after, .sl-btn-bw-dark:focus::after {
     box-shadow: 2px 2px 0px var(--black-banana);
@@ -657,20 +679,20 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
     border-radius: 0.75rem;
     border: 1px solid var(--black-banana);
 }
-.sl-btn-secondary a:hover, .sl-btn-tertiary a:hover{
+.sl-btn-secondary a:hover{
     color: var(--black-strawberry);
 }
 @media (min-width: 576px) {
-    .sl-btn-secondary a:hover, .sl-btn-tertiary a:hover{
+    .sl-btn-secondary a:hover{
         transform: translateX(4px);
         transform: translatey(-4px);
-        transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
+        transition: all 0.3s ease-in-out;
         box-shadow: 4px 4px 0px 0px var(--black-banana);
     }
 }
 
 /* Button tertiary */
-.sl-btn-tertiary a{
+.sl-btn-tertiary{
     width: 100%;
     padding: 16px 32px 16px 32px;
     border: 1px solid var(--black-banana);
@@ -679,7 +701,7 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
     background-color: var(--orange-kiwi);
 }
 @media (min-width: 576px) {
-    .sl-btn-tertiary a{
+    .sl-btn-tertiary{
         width: 100%;
         padding: 16px 32px 16px 32px;
         border: 1px solid var(--black-banana);
@@ -687,14 +709,21 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
         text-decoration: none;
         background-color: var(--orange-kiwi);
     }
+    .sl-btn-tertiary:hover{
+        color: var(--black-strawberry);
+        transform: translateX(4px);
+        transform: translatey(-4px);
+        transition: all 0.3s ease-in-out;
+        box-shadow: 4px 4px 0px 0px var(--black-banana);
+    }
 }
 .sl-btn-tertiary{
     width: 100%;
 }
-.sl-btn-tertiary a:focus{
+.sl-btn-tertiary:focus{
     transform: translateX(2px);
     transform: translatey(-2px);
-    transition: all 0.40s cubic-bezier(.48,.47,.68,.67);
+    transition: all 0.3s ease-in-out;
     box-shadow: 2px 2px 0px 0px var(--black-banana);
     color: var(--black-strawberry);
 }
@@ -702,6 +731,9 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 /* Button quaternary */
 .sl-btn-quaternary{
     padding: 1rem 2rem;
+    background-color: var(--white-avocado);
+    border: none;
+    width: 100%;
 }
 .sl-btn-quaternary:hover{
     color: var(--black-strawberry);
@@ -713,38 +745,25 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 }
 
 
-/*navbar*/
+/* Navbar */
 .navbar .container-fluid{
-   border-radius: 0.5rem; 
+   border-radius: 0.5rem;
 }
 .sl-collapse-mobile{
     border-radius: 0 0 0.5rem 0.5rem;
-    padding-right: 80px;
+    padding-right: 105px;
+    padding-left: 16px;
+    transform: translateY(-2px);
 }
 .navbar-brand img{
     width: 197px;
     height: 21px;
 }
-.nav-link {
-    font-size: 1.125rem;
-    font-family: "Space Grotesk";
-    font-weight: 500;
-    font-style: normal;
-    line-height: 100%;
-    text-decoration: none;
-    text-transform: none;
-    color: var(--black-strawberry);
+.no-radius {
+    border-radius: 0.5rem 0.5rem 0.5rem 0 !important;
 }
-.nav-link:hover{
-    color: var(--orange-kiwi);
-}
-.active{
-    color: var(--orange-kiwi) !important;
-}
-/*navbar toggler icon hamburger animation*/
-.navbar-toggler{
-    border: 0;
-}
+
+/* start toggler animation */
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus{
@@ -753,33 +772,32 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
     border: 0;
 }
 .toggler-icon{
-    width: 30px;
+    width: 24px;
     height: 3px;
     background-color: var(--black-strawberry);
     display: block;
     transition: all 0.2s;
+    margin: 4px auto;
 }
 .middle-bar{
     margin: 5px auto;
 }
 .navbar-toggler .top-bar{
-    transform: rotate(45deg) translatey(-1px);
-    transform-origin: 10% 10%;
+    transform: rotate(45deg);
+    transform-origin: top left;
 }
 .navbar-toggler .middle-bar{
     opacity: 0;
-    filter: alpha(opacity=0);
 }
 .navbar-toggler .bottom-bar{
     transform: rotate(-45deg);
-    transform-origin: 10% 10%;
+    transform-origin: bottom left;
 }
 .navbar-toggler.collapsed .top-bar{
     transform: rotate(0);
 }
 .navbar-toggler.collapsed .middle-bar{
     opacity: 1;
-    filter: alpha(opacity=100);
 }
 .navbar-toggler.collapsed .bottom-bar{
     transform: rotate(0);
@@ -787,92 +805,63 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 .navbar-toggler.collapsed .toggler-icon{
     background-color: var(--black-strawberry);
 }
-/*end toggler icon animation*/
+@media (min-width: 576px) {
+    .toggler-icon {
+        width: 40px;
+        height: 4px;
+        margin: 6px auto;
+    }
+    .middle-bar{
+        margin: 7px auto;
+     }
+    .navbar-toggler .top-bar {
+        transform: rotate(45deg) translate(1px, -1px); 
+        transform-origin: 10% 10%;
+    }
+    .navbar-toggler .bottom-bar {
+        transform: rotate(-45deg); 
+        transform-origin: 10% 10%;
+    }
+    .navbar-toggler.collapsed .top-bar {
+        transform: rotate(0) translate(0, 0);
+    }
+}
+/* end toggler animation */
+
 .cart-icon {
     background-image: url("img/icon/Sacchetto-default.svg");
     background-size: 100%;
     background-position: center center;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     display: flex;
  }
- @media (min-width: 1200px) {
-    .sl-nav-mobile-coll{
-        display: none !important;
+ @media (min-width: 768px) {
+    .navbar-brand img{
+        width: 358px;
+        height: 38px;
     }
- }
-@media (min-width: 576px) {
+}
+ @media (min-width: 576px) {
     .navbar .container-fluid{
         border-radius: 1rem; 
     }
     .sl-collapse-mobile{
         border-radius: 0 0 1rem 1rem;
     }
+    .no-radius {
+        border-radius: 1rem 1rem 1rem 0 !important;
+    }
     .navbar-brand img{
         width: 320px;
         height: 34px;
     }
-    .nav-link {
-        font-size: 1.25rem; 
-        font-family: "Space Grotesk";
-        font-weight: 500;
-        font-style: normal;
-        line-height: 100%;
-        text-decoration: none;
-        text-transform: none;
-    }
-    .toggler-icon{
-        width: 40px;
-        height: 4px;
-     }
-     .middle-bar{
-        margin: 7px auto;
-     }
      .cart-icon{
         width: 40px;
         height: 40px;
      }
 }
-@media (min-width: 768px) {
-    .navbar-brand img{
-        width: 358px;
-        height: 38px;
-    }
-}
-/*end navbar*/
-/* Icona del sacchetto */
-/* .cart-icon {
-    background-image: url("img/icon/Sacchetto-default.svg");
-    background-size: 100%;
-    background-position: center center;
-    width: 30px;
-    height: 30px;
-    display: flex;
- }
-*/
-
-/* cose per cambiare l'icona del carrello in gialla, aspetterei a fare questo perchè vediamo se riusciamo a far si che aggiungendo un item nel carrello questo diventa giallo*/
-/*
-.cart-toggle-checkbox {
-    display: none;
-}
-.cart-toggle-label {
-    cursor: pointer;
-}
-.cart-toggle-label:last-of-type img {
-    display: none;
-}
-.cart-toggle-checkbox:checked ~ .cart-toggle-label:first-of-type img {
-    display: none;
-}
-.cart-toggle-checkbox:checked ~ .cart-toggle-label:last-of-type img {
-    display: block;
-}
-*/
-
-/*end navbar*/
-
-
+/* End navbar */
 
 
 /* stepper */
@@ -901,52 +890,21 @@ Quindi mettiamo border radius 16px per desktop, 8px per mobile*/
 
 
 /* Card */
-.sl-card-g{
+.sl-card-c{
     display: inline;
     width: fit-content; 
-    background-image: url('img/card/crateri_verdi_mobile.svg');
+    background-image: url('img/card/crateri_mobile.svg');
     background-size: cover;
     height: 204px;
     width: 171px;
 }
 @media (min-width: 576px) {
-    .sl-card-g{
-        background-image: url('img/card/crateri_verdi_desktop.svg');
+    .sl-card-c{
+        background-image: url('img/card/crateri_desktop.svg');
         height: 349px;
         width: 300px;
     }
 }
-.sl-card-y{
-    display: inline;
-    width: fit-content; 
-    background-image: url('img/card/crateri_gialli_mobile.svg');
-    background-size: cover;
-    height: 204px;
-    width: 171px;
-}
-@media (min-width: 576px) {
-    .sl-card-y{
-        background-image: url('img/card/crateri_gialli_desktop.svg');
-        height: 349px;
-        width: 300px;
-    }
-}
-.sl-card-o{
-    display: inline;
-    width: fit-content; 
-    background-image: url('img/card/crateri_arancioni_mobile.svg');
-    background-size: cover;
-    height: 204px;
-    width: 171px;
-}
-@media (min-width: 576px) {
-    .sl-card-o{
-        background-image: url('img/card/crateri_arancioni_desktop.svg');
-        height: 349px;
-        width: 300px;
-    }
-}
-
 
 
 

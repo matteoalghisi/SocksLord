@@ -52,7 +52,11 @@
 @media (min-width: 576px) {
   .modal{
     --bs-modal-header-padding: 48px 48px 24px 48px;
+<<<<<<< HEAD
     --bs-modal-width: 568px;
+=======
+    --bs-modal-width: 612px;
+>>>>>>> 2e85f265160e45508a66dfdb56db2e3d06c560e0
     --bs-modal-padding: 24px 48px 0px 48px;
     --bs-modal-border-width: 2px;
     --bs-modal-border-radius: 12px;
@@ -91,7 +95,7 @@
 }
 .filter-modal{
   height: 44px;
-  width: 140px;
+  width: 156px;
   border: 1px solid var(--black-banana);
   border-radius: 12px;
   color: var(--black-strawberry);
@@ -100,13 +104,14 @@
 }
 @media (min-width: 576px) {
   .filter-modal{
+    width: 160px;
     height: 48px;
   }
   .filter-modal:hover{
     border: 2px solid var(--black-banana);
   }
 }
-.filter-modal.active, .filter-modal::after{
+.filter-modal-active{
   color: var(--white-avocado);
   background-color: var(--black-strawberry);
 }
@@ -118,13 +123,16 @@
   box-sizing: border-box;
   margin-right: 10px;
 }
-.circle-filter.focus, .circle-filter::after{
+.circle-filter-active{
   border: 1px solid var(--white-avocado);
 }
 .icon-filter{
   height: 24px;
   width: 24px;
   margin-right: 10px;
+}
+.icon-filter-active{
+  filter: brightness(0) saturate(100%) invert(84%) sepia(90%) saturate(96%) hue-rotate(307deg) brightness(111%) contrast(96%);
 }
 
 /* color filter */
@@ -151,10 +159,16 @@
 /* card-space */
 .card-space {
   padding-top: 3.5rem;
+  gap: 1rem;
+  padding-left: 12px;
+  padding-left: 12px;
 }
 @media (min-width: 576px) {
   .card-space {
     padding-top: 5rem;
+    gap: 42px;
+    padding-left: 0px;
+    padding-left: 0px;
   }
 }
 .card{
@@ -165,12 +179,13 @@
 }
 .card-emporium{
   height: 204px;
+  position: relative;
 }
 @media (min-width: 576px) {
   .card-emporium{
     height: 349px;
   }
-  .card-emporium:hover {
+  .card-emporium-hover:hover {
     background-image: none;
     background-color: var(--black-strawberry) !important;
     transform:scale(1.2);
@@ -198,4 +213,24 @@
     background-color: var(--yellow-grape);
   }
 }
-
+.card-soldout{
+  background-color: rgba(220, 220, 224, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+.text-soldout{
+  transform: rotate(-45deg);
+  text-shadow: 2px 2px var(--black-banana);
+  color: var(--orange-kiwi);
+}
+.card-link{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

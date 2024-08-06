@@ -22,11 +22,7 @@
 .container{
     --bs-gutter-x: 0;
 }
-.stepper{
-    height: 139px;
-    width: 19px;
-    background-color: brown;
-}
+
 .black-box img{
     height: 284px;
     width: 202px;
@@ -60,6 +56,7 @@
     border-radius: 12px 12px 0px 0px;
     border: 1px solid var(--black-banana);
     position: relative;
+    padding: 15px 16px;
 }
 @media (min-width: 576px) {
     .foot-type{
@@ -67,82 +64,6 @@
         border-radius: 12px 0px 0px 12px;
     }
 }
-.btn-single{
-    width: 100%;
-    justify-content: space-between;
-}
-.btn{
-    padding: 15px 16px !important;
-    border: none !important;
-}
-@media (min-width: 576px) {
-    .btn{
-        padding: 16px 24px !important;
-    }
-}
-.btn:hover, .btn:focus{
-    border: none !important;
-    padding: 15px 16px !important;
-}
-@media (min-width: 576px) {
-    .btn:hover, .btn:focus{
-        padding: 16px 24px !important;
-    }
-}
-.dropdown-menu{
-    background-color: var(--white-avocado);
-    width: 100%;
-    border: 1px solid var(--black-banana);
-    border-radius: 0px 0px 12px 12px;
-    padding: 16px 12px;
-    
-}
-.filter{
-    gap: .75rem;
-}
-@media (min-width: 576px) {
-    .filter-container{
-        gap: 16px;
-    }
-}
-.dropdown-item{
-    padding: 0px 0px 16px 0px;
-  }
-.filter-square {
-    height: 36px;
-    width: 36px;
-    border-radius: 6px;
-    border: 1px solid var(--black-banana);
-    background-color: var(--white-avocado);
-  }
-  @media (min-width: 576px) {
-    .filter-square {
-      height: 48px;
-      width: 48px;
-      border-radius: 12px;
-    }
-  }
-  @media (min-width: 576px) {
-    .filter-square:hover{
-      box-sizing: border-box;
-      border: 3px solid var(--black-banana);
-    }
-    .filter-square img{
-      height: 44px;
-      width: 44px;
-    }
-  }
-.dropdown-toggle::after {
-    vertical-align: middle;
-    border: none;
-    content: url('img/icon/arrow-bottom-mobile.svg');
-  }
-  @media (min-width: 576px) {
-  .dropdown-toggle::after{
-    content: url('img/icon/arrow-bottom-desktop.svg');
-  }
-}
-
 
 /* Quantity selector */
 .quantity{
