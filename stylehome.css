@@ -1,3 +1,6 @@
+section{
+    overflow-x: hidden;
+}
 /* sfondo stelle hero */
 .section-hero{
     overflow: hidden;
@@ -150,8 +153,8 @@
 
 /* section our socks */
 .section-our-socks {
-    padding-top: 52px;
-    padding-bottom: 52px;
+    padding-top: 300px;
+    padding-bottom: 300px;
     background-image: url(img/home/Bacgkround-home-green-yellow.png);
     background-size: cover;
     background-position: center;
@@ -253,6 +256,10 @@ END SECTION OUR SOCKS
     width: fit-content;
     border-bottom: 1px solid var(--black-banana);
     border-radius: 0 0 0 8px; 
+}
+.sl-create-nav-tab a{
+    padding-left: 12px;
+    padding-right: 12px;
 }
 @media (min-width: 576px) {
     .sl-create-nav-tab .nav{
@@ -361,7 +368,7 @@ END SECTION OUR SOCKS
 }
 @media (min-width: 576px) {
     .sl-create-nav-tab .tab-content h4{
-        width: 362px;
+        width: 322px;
     }
 }
 .sl-create-nav-tab .tab-content p{
@@ -370,7 +377,7 @@ END SECTION OUR SOCKS
 }
 @media (min-width: 576px) {
     .sl-create-nav-tab .tab-content p{
-        width: 362px;
+        width: 322px;
     }
 }
 
