@@ -92,6 +92,20 @@ section{
 
 
 /*start section about us islands*/
+.section-aboutus-islands .container{
+    margin-top: 0 !important;
+        margin-left: 0 !important;
+        margin-bottom: 0 !important;
+        margin-right: 0 !important;
+}
+@media (min-width: 1200px) {
+    .section-aboutus-islands .container{
+        margin-top: 0 !important;
+        margin-left: auto !important;
+        margin-bottom: 0 !important;
+        margin-right: auto !important;
+    }
+}
 
 .sl-island-row{
     margin: 512px 0 512px 0;
@@ -99,7 +113,7 @@ section{
 .sl-island-row:first-of-type{
     margin-top: 384px;
 }
-.sl-island-card-sm .sl-islands{
+.sl-island-card-sm img{
     left: 50%;
     top: 50%;
     transform: translateX(-56%) translateY(-48%);
@@ -133,7 +147,7 @@ section{
 @media (min-width: 576px) {
     .sl-island-card-sm img{
         width: 470px;
-        left: -20%;
+        left: 45%;
     }
     .sl-island-card-sm{
         width: 200px;
@@ -161,6 +175,8 @@ section{
         width: 470px;
     }
 }
+
+
 @media (min-width: 1200px) {
     .sl-island-row{
         margin: 512px 256px 512px 256px;
@@ -168,32 +184,22 @@ section{
     .sl-island-row:nth-child(odd){
         justify-content: end;
     }
-    .sl-island-card-xl .sl-islands .sl-island:nth-child(1){
-        z-index: -4;
-    }
-    .sl-island-card-xl .sl-islands .sl-island:nth-child(2){
-        z-index: -3;
-    }
-    .sl-island-card-xl .sl-islands .sl-island:nth-child(3){
-        z-index: -2;
-    }
-    .sl-island-card-xl .sl-islands .sl-island:nth-child(4){
-        z-index: -1;
-    }
-}
-.sl-island-card-xl{
-    width: 360px;
-}
-.sl-island-card-xl .sl-islands{
-    left: 50%;
-    top: 50%;  
-}
-.sl-island-card-xl .sl-island{
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-43%);
-}
 
+
+
+
+    .sl-island-card-sm img{
+        width: 622px !important;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-51%) translateY(-44%) !important;
+    }
+    .sl-island-card-sm{
+        width: 360px !important;
+        
+    }
+
+}
 
 .section-aboutus-islands{
     width: 100%;
@@ -259,11 +265,19 @@ section{
 }
 @media (min-width: 1200px) {
     .sl-path-svg{   
-        height: 140%;
-        width: 130%;
-        top: -17%;
-        left: -6%;
-    }
+        height: 4300px;
+        width: 100%;
+        top: -10%;
+        left: 18%;
+    }  
+}
+@media (min-width: 1400px) {
+    .sl-path-svg{   
+        height: 160%;
+        width: 180%;
+        top: -20%;
+        left: -4%;
+    }  
 }
 /*end section about us islands*/
 
