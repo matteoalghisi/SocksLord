@@ -535,6 +535,9 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
 .effect-style-text-shadow {
     text-shadow: 4px 4px var(--black-banana);
 }
+.effect-style-text-shadow-sm {
+    text-shadow: 2px 2px var(--black-banana);
+}
 .effect-style-pressed-shadow {
     box-shadow: 2px 2px 0px 0px var(--black-banana);
 }

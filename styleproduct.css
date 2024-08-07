@@ -1,10 +1,80 @@
 .sl-product{
     overflow-x: hidden;
 }
+
+/*first section*/
+.section-aboutus-1{
+    background-image: url(img/aboutus/wave-aboutus-top-mobile.png);
+    background-position-y: bottom;
+    background-position-x: center;
+    background-size: cover;
+    height: fit-content;
+    
+}
+.section-aboutus-1 .row{
+    padding-bottom: 288px;
+}
+@media (min-width: 576px) {
+    .section-aboutus-1{
+        height: 1000px;
+    }
+    .section-aboutus-1 .row{
+        padding-bottom: 0;
+    }
+}
+@media (min-width: 768px) {
+    .section-aboutus-1{
+        background-image: url(img/aboutus/wave-aboutus-top-desktop.png);
+        height: 930px;
+        background-position-x: left;
+    }
+}
+@media (min-width: 992px) {
+    .section-aboutus-1{
+        background-image: url(img/aboutus/wave-aboutus-top-desktop-l.png);
+    }
+}
+@media (min-width: 1200px) {
+    .section-aboutus-1{
+        background-image: url(img/aboutus/wave-aboutus-top-desktop-xl.png);
+    }
+}
+@media (min-width: 1400px) {
+    .section-aboutus-1{
+        background-image: url(img/aboutus/wave-aboutus-top-desktop-xxl.png);
+        height: 900px;
+        background-position-x: center;
+    }
+}
+/*end section 1*/
+
+
+
+
+
+
+
+/*old*/
 .section-product-first {
     margin-bottom: 800px;
     height: 519px;
 }
+
+.wave-product-1{
+    width: 100%;
+    height: 902px;
+    background-image: url(img/product/wave-product-1-mobile.png);
+    background-position-y: top;
+    background-position-x: left;
+    background-size: cover;
+    z-index: -1;
+}
+
+/*end first section*/
+
+
+
+/*start second section with animation*/
 .section-product-second{
     margin-bottom: 100px;
 }
@@ -18,15 +88,7 @@
     width: 100%;
     z-index: -1;
 } 
-.wave-product-1{
-    width: 100%;
-    height: 902px;
-    background-image: url(img/product/wave-product-1-mobile.png);
-    background-position-y: top;
-    background-position-x: left;
-    background-size: cover;
-    z-index: -1;
-}
+
 .section-product-second .aircraft-sm{
     top: 810px;
     width: 240px;
@@ -152,6 +214,71 @@
     }
     
 }
+/*end second section with animation*/
+
+
+/*start key features section*/
+
+/*section our socks */
+.section-key-feature {
+    padding-top: 256px;
+    padding-bottom: 256px;   
+}
+.sl-key-feature-container{
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.sl-key-feature-slide{
+    width: fit-content;
+    display: inline-block;
+    
+    animation: 12s slide infinite linear; 
+}
+.sl-card-key-feature{
+    width: fit-content;
+    padding: 44px 60px 44px 60px ;
+    flex-shrink: 0;
+}
+.sl-card-key-feature h4{
+    text-align: center;
+}
+.sl-card-key-feature img{
+    width: 130px;
+}
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+@media (min-width: 576px) {
+    .section-key-feature {
+        padding-top: 128px;
+        padding-bottom: 128px;   
+    }
+    .sl-card-key-feature{
+        padding: 56px 76px 56px 76px ;
+    }
+    .sl-card-key-feature img{
+        width: 150px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*end key features section*/
+
+
 
 /*start product-material section*/
 .sl-product-materials{
