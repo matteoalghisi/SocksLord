@@ -909,7 +909,18 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     }
 }
 
-
+/* Toast */
+.sl-toast{
+    color: var(--black-strawberry);
+    height: auto;
+    width: auto;
+    border: 1px solid var(--black-banana);
+    border-radius: 12px;
+    padding: 16px 24px;
+    top: 112px;
+    right: 16px;
+    
+}
 
 /*footer*/
 .footer-icon{

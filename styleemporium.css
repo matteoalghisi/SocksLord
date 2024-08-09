@@ -197,9 +197,12 @@
   .card-img{
     height: 173px;
   }
-  .card-button{
+  .card-button-external{
     width: 100%;
     padding: 0 25px;
+  }
+  .card-button{
+    width: auto;
   }
   .card-btn {
     height: 54px;
