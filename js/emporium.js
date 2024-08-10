@@ -120,7 +120,8 @@ $(() => {
 
         addProducts(products);
     })
-    $(".card-button").on("click", (e) => {
+    $(".add-card-button").on("click", (e) => {
+        const cartIcon = $(".cart-icon").addClass("icon-cart-active");
         addToast();
         addCounter();
     })
@@ -183,7 +184,7 @@ const addProducts = (products) => {
     productsContainer.empty();
     products.forEach((product, index) => {
         const x = product.stock > 0 ? ` <div class="d-none d-lg-flex justify-content-end card-button-external">
-                                            <div class="d-none d-lg-flex card-button z-3">
+                                            <div class="d-none d-lg-flex card-button z-3 add-card-button">
                                                 <button class="card-btn d-none justify-content-center align-items-center d-flex">
                                                     <img src="img/icon/Sachetto-active.svg" alt="purachase">
                                                 </button>
@@ -224,6 +225,15 @@ const addToast = () => {
     newToast.delay(3500).fadeOut(500, () => {
         $().remove();
     });
-}
+};
 
 // Add counter to DOM
+const addCounter = () => {
+    const counterContainer = $("#counter-container");
+
+    counterContainer.append(`
+        <div class="counter-badge position-fixed sl-bg-kiwi d-flex justify-content-center align-items-center">
+            <p class="text-style-badge">1</p>
+        </div>
+    `);
+};

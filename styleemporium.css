@@ -233,3 +233,30 @@
   width: 100%;
   height: 100%;
 }
+
+
+/* Counter badge */
+.counter-badge{
+  border-radius: 200px;
+  border: 1px solid var(--black-banana);
+  height: 24px;
+  width: 24px;
+  top: 62px;
+  right: 48px;
+  box-shadow: 1.09px 1.09px 0px 0px var(--black-banana);
+}
+.text-style-badge {
+  font-size: 1rem;
+  font-family: "Space Grotesk";
+  font-weight: 500;
+  font-style: normal;
+  line-height: 0;
+  text-decoration: none;
+  text-transform: none;
+  margin: 0;
+  padding: 0;
+  color: var(--black-strawberry);
+}
+.icon-cart-active{
+  background-color: var(--yellow-grape);
+}
