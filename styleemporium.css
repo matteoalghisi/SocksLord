@@ -258,5 +258,5 @@
   color: var(--black-strawberry);
 }
 .icon-cart-active{
-  filter: brightness(0) saturate(100%) invert(84%) sepia(90%) saturate(96%) hue-rotate(307deg) brightness(111%) contrast(96%);
+  background-color: var(--yellow-grape);
 }

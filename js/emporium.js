@@ -121,6 +121,7 @@ $(() => {
         addProducts(products);
     })
     $(".card-button").on("click", (e) => {
+        const cartIcon = $(".cart-icon").addClass("icon-cart-active");
         addToast();
         addCounter();
     })
