@@ -224,6 +224,15 @@ const addToast = () => {
     newToast.delay(3500).fadeOut(500, () => {
         $().remove();
     });
-}
+};
 
 // Add counter to DOM
+const addCounter = () => {
+    const counterContainer = $("#counter-container");
+
+    counterContainer.append(`
+        <div class="counter-badge position-fixed sl-bg-kiwi d-flex justify-content-center align-items-center">
+            <p class="text-style-badge">1</p>
+        </div>
+    `);
+};
