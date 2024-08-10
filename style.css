@@ -13,6 +13,9 @@
     --orange-kiwi: #FD8040;
     --gray-lemon: #1D1C22;
 
+    /* b/w color styles */
+    --bw-gray-title: #DCDCE0;
+
     /* Bootstrap customized */
     --bs-border-color: var(--black-banana) !important;
     --bs-body-color: var(--black-strawberry) !important;
@@ -43,10 +46,35 @@
     color: var(--yellow-grape);
 }
 
+/* b/w color classes */
+.sl-bw-gray-title{
+    color: var(--bw-gray-title);
+}
+
+/* Color filters */
+#sl-cf-1{
+    background-color: #FF9726;
+}
+#sl-cf-2{
+    background-color: #FFA4F7;
+}
+#sl-cf-3{
+    background-color: #03964A;
+}
+#sl-cf-4{
+    background-color: #ABA5F7;
+}
+#sl-cf-5{
+    background-color: #FFED35;
+}
+#sl-cf-6{
+    background-color: #9F498B;
+}
+
 /* Background colors */ 
 /* !!! CONTROLLARE QUELLI CHE NON SERVONO ED ELIMINARLI !!! */
 .sl-bg-avocado{
-    background-color: var(--white-avocado);
+    background-color: var(--white-avocado); /*usato*/
 }
 .sl-bg-strawberry {
     background-color: var(--black-strawberry); /*usato*/
@@ -92,6 +120,9 @@
 
 .p-8 {
 padding: 5rem 11.875rem !important;  /* 80px e 190px */
+}
+.pb-8{
+    padding-bottom: 5rem !important;
 }
 
 .pb-9{
@@ -143,10 +174,8 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
 
 /*remove bootstrap default padding right left (rimosso container*/
 .container-fluid {
-    
     padding-left: 0px;
     padding-right: 0px;
-    
 }
 
 
@@ -346,7 +375,7 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     }
 }
 
-/*black and white text styles*/
+/*B/W TEXT STYLES*/
 /*h1 hero*/
 .text-style-bw-h1-hero {
     font-size: 3rem;
@@ -368,7 +397,6 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
         font-size: 6rem;
     }
 }
-
 /*h1*/
 .text-style-bw-h1 {
     font-size: 2.5rem;
@@ -384,7 +412,6 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
         font-size: 3.5rem;
     }
 }
-
 /*h2*/
 .text-style-bw-h2 {
     font-size: 2rem;
@@ -529,17 +556,17 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
 }
 
 /*ombre*/
-.effect-style-default-shadow {
+.effect-style-default-shadow{
     box-shadow: 4px 4px 0px 0px var(--black-banana);  /*usata*/
 }
-.effect-style-text-shadow {
+.effect-style-text-shadow{
     text-shadow: 4px 4px var(--black-banana);
 }
-.effect-style-text-shadow-sm {
-    text-shadow: 2px 2px var(--black-banana);
+.effect-style-text-shadow-sm{
+    text-shadow: 2px 2px var(--black-banana); /*usata*/
 }
-.effect-style-pressed-shadow {
-    box-shadow: 2px 2px 0px 0px var(--black-banana);
+.effect-style-pressed-shadow{
+    box-shadow: 2px 2px 0px 0px var(--black-banana); 
 }
 .effect-style-dug-up {
     box-shadow: -2px -10px 10px 0px var(--black-banana);
@@ -832,7 +859,7 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
 /* end toggler animation */
 
 .cart-icon {
-    background-image: url("img/icon/Sacchetto-default.svg");
+    background-image: url("img/icon/Sacchetto.svg");
     background-size: 100%;
     background-position: center center;
     width: 24px;
