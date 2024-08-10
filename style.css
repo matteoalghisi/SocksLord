@@ -859,7 +859,7 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
 /* end toggler animation */
 
 .cart-icon {
-    background-image: url("img/icon/Sacchetto.svg");
+    background-image: url("img/icon/cart-icon.svg");
     background-size: 100%;
     background-position: center center;
     width: 24px;
@@ -948,6 +948,33 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     right: 16px;
     
 }
+
+/* Counter badge */
+.counter-badge{
+    border-radius: 200px;
+    border: 1px solid var(--black-banana);
+    height: 24px;
+    width: 24px;
+    top: 60px;
+    right: 46px;
+    box-shadow: 1.09px 1.09px 0px 0px var(--black-banana);
+  }
+  .text-style-badge {
+    font-size: 1rem;
+    font-family: "Space Grotesk";
+    font-weight: 500;
+    font-style: normal;
+    line-height: 0;
+    text-decoration: none;
+    text-transform: none;
+    margin: 0;
+    padding: 0;
+    color: var(--black-strawberry);
+  }
+  .cart-icon-active{
+    background-color: var(--yellow-grape);
+  }
+
 
 /*footer*/
 .footer-icon{
