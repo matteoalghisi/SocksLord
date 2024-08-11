@@ -283,13 +283,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   
 // Quantity button Single product
+// Variabile per tenere traccia del totale degli articoli nel carrello
+let totalItems = 0;
+
+// Quantity button Single product
 $(function() {
     const $quantityContainer = $(".quantity");
     const $minusBtn = $quantityContainer.find(".minus");
     const $plusBtn = $quantityContainer.find(".plus");
     const $inputBox = $quantityContainer.find(".input-box");
-
-    // Imposta il valore iniziale dell'input box
     $inputBox.val(1);
 
     updateButtonStates();
@@ -335,31 +337,26 @@ $(function() {
     function handleQuantityChange() {
         let value = parseInt($inputBox.val());
         value = isNaN(value) ? 1 : value;
-
-        // Esegui il tuo codice qui basato sul valore aggiornato della quantità
         console.log("Quantity changed:", value);
     }
 });
 
-
 // Add to cart: toast, counter badge and icon-cart active
-const counterNumbers = [];
 $(() => {
     $(".add-cart-button").on("click", (e) => {
         const cartIcon = $(".cart-icon").addClass("cart-icon-active");
         addToast();
         addCounter();
-    })
+    });
 
     // single product
     $(".add-cart-single").on("click", () => {
-        // Ottieni il valore della quantità, predefinito a 1 se non valido
         const value = parseInt($(".input-box").val());
 
         if (!isNaN(value) && value > 0) {
-            addCounterSingle(value); // Passa il valore alla funzione solo se è valido
+            addCounterSingle(value);
         } else {
-            console.error("Invalid value:", value); // Log per la debug
+            console.error("Invalid value:", value); 
         }
     });
 });
@@ -380,34 +377,35 @@ const addToast = () => {
     });
 };
 
-// Add counter to DOM
-const addCounter = () => {
+// Funzione per aggiornare il badge del carrello
+const updateCounterBadge = () => {
     const counterContainer = $("#counter-container");
-
-    const newCounter = counterNumbers.length + 1;
-    counterNumbers.push(newCounter);
-    
-    counterContainer.append(`
-        <div class="counter-badge position-fixed sl-bg-kiwi d-flex justify-content-center align-items-center">
-            <p class="text-style-badge">${newCounter}</p>
-        </div>
-    `);
-
-};
-
-// Add counter single product to DOM
-const addCounterSingle = (value) => {
-    if (value !== undefined && value !== null) { // Verifica che il valore sia definito e non nullo
-        const counterContainer = $("#counter-container");
-
+    // Se esiste già un badge, aggiorna il testo
+    let badge = counterContainer.find(".counter-badge");
+    if (badge.length) {
+        badge.find(".text-style-badge").text(totalItems);
+    } else {
+        // Se non esiste, creane uno nuovo
         counterContainer.append(`
             <div class="counter-badge position-fixed sl-bg-kiwi d-flex justify-content-center align-items-center">
-                <p class="text-style-badge">${value}</p>
+                <p class="text-style-badge">${totalItems}</p>
             </div>
         `);
+    }
+};
+
+// Aggiungi un singolo articolo al carrello
+const addCounter = () => {
+    totalItems++; // Incrementa il totale degli articoli
+    updateCounterBadge();
+};
+
+// Aggiungi un valore specifico di articoli al carrello
+const addCounterSingle = (value) => {
+    if (value !== undefined && value !== null) {
+        totalItems += value; // Aggiungi il valore specificato al totale degli articoli
+        updateCounterBadge();
     } else {
         console.error("Undefined value passed to addCounterSingle");
     }
 };
-
-
