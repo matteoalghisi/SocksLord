@@ -57,6 +57,7 @@ let buttonsColors;
 let buttonsFunctions;
 let buttonsFeet;
 let buttonsMaterials;
+let currentIndex = 24;
 
 $(() => {
     productsContainer = $("#products-container");
@@ -66,7 +67,7 @@ $(() => {
     buttonsFeet = $("#buttons-feet");
     buttonsMaterials = $("#buttons-materials");
     
-    addProducts(products);
+    addProducts(products.slice(0, currentIndex));
     addFilters();   
     
     $(".filter-modal").on("click", (e) => {
@@ -103,7 +104,7 @@ $(() => {
 
             return true;
         });
-        addProducts(filteredProducts);
+        addProducts(filteredProducts.slice(0, currentIndex));
     })
 
     $('[data-toggle="reset-filter"]').on("click", (e) => {
@@ -117,9 +118,17 @@ $(() => {
         filters.feet = [];
         filters.materials = [];
 
-        addProducts(products);
+        addProducts(products.slice(0, currentIndex));
     })
 
+    $('.loadmore').on("click", (e) => {
+        currentIndex += 12; 
+        addProducts(products.slice(0, currentIndex)); 
+        
+        if (currentIndex >= products.length) {
+            $(".loadmore button").hide(); 
+        }
+    });
 });
 
 //Button on card
@@ -205,4 +214,3 @@ const addProducts = (products) => {
         `)
     });
 }
-
