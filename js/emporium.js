@@ -51,7 +51,6 @@ const functions = [{ id: 1, name: "GPS", iconPath: "img/icon/Propeller.svg" }, {
 const feet = [{ id: 1, name: "Tentacolo", iconPath: "img/icon/Icon-footer-1.svg" }, { id: 2, name: "Tre dita", iconPath: "img/icon/Icon-footer-1.svg" }, { id: 3, name: "Normale", iconPath: "img/icon/Icon-footer-1.svg" }];
 const materials = [{ id: 1, name: "Sustainsilk", iconPath: "img/icon/icon-material-sustainsilk.svg" }, { id: 2, name: "Cristalium", iconPath: "img/icon/icon-material-cristalium.svg" }, { id: 3, name: "Drakolith", iconPath: "img/icon/icon-material-drakolith.svg" }, { id: 4, name: "Lumifibra", iconPath: "img/icon/icon-material-lumifibra.svg" }, { id: 5, name: "Liquidite", iconPath: "img/icon/icon-material-liquidite.svg" }];
 
-
 let productsContainer;
 let buttonsCollabs;
 let buttonsColors;
@@ -186,7 +185,7 @@ const addProducts = (products) => {
         const x = product.stock > 0 ? ` <div class="d-none d-lg-flex justify-content-end card-button-external">
                                             <div class="d-none d-lg-flex card-button z-3 add-card-button">
                                                 <button class="card-btn d-none justify-content-center align-items-center d-flex">
-                                                    <img src="img/icon/Sachetto-active.svg" alt="purachase">
+                                                    <img src="img/icon/Sachetto-active.svg" alt="purchase">
                                                 </button>
                                             </div> 
                                         </div>
@@ -228,12 +227,18 @@ const addToast = () => {
 };
 
 // Add counter to DOM
+const counterNumbers = [];
+
 const addCounter = () => {
     const counterContainer = $("#counter-container");
 
+    const newCounter = counterNumbers.length + 1;
+    counterNumbers.push(newCounter);
+    
     counterContainer.append(`
         <div class="counter-badge position-fixed sl-bg-kiwi d-flex justify-content-center align-items-center">
-            <p class="text-style-badge">1</p>
+            <p class="text-style-badge">${newCounter}</p>
         </div>
     `);
+
 };
