@@ -82,9 +82,66 @@ $(document).ready(function () {
 document.addEventListener("DOMContentLoaded", (event) => {
     gsap.registerPlugin(ScrollTrigger)
 
+    
     //gsap animation for aircraft in product page
+    var minWidth576 = window.matchMedia("(min-width: 576px)");
+    var minWidth768 = window.matchMedia("(min-width: 768px)");
+    var minWidth992 = window.matchMedia("(min-width: 992px)");
+    var minWidth1200 = window.matchMedia("(min-width: 1200px)");
+    var minWidth1400 = window.matchMedia("(min-width: 1400px)");
+    let yValue;
+    let xValue;
+    let rValue;
+
+    if (minWidth1400.matches){
+        //992>
+        xValue = "-410px";
+        yValue = 725;
+        rValue = 50;
+    } else{
+        if (minWidth1200.matches){
+            //992>
+            xValue = "-370px";
+            yValue = 725;
+            rValue = 50;
+        } else{
+        if (minWidth992.matches){
+            //992>
+            xValue = "-285px";
+            yValue = 630;
+            rValue = 50;
+        } else{
+            if (minWidth768.matches){
+                //768-992
+                xValue = "-260px";
+                yValue = 395;
+                rValue = 50;
+            } else{
+                if (minWidth576.matches){
+                    xValue = "-230px";
+                    yValue = 395;
+                    rValue = 50;
+                } else{
+                    xValue = "-120px";
+                    yValue = 325;
+                    rValue = 50;
+                    }
+                }
+            }
+        }
+    }
+
+
+    
+    console.log(xValue);
+
+                
+        
+        
+ 
+
     let tlSm = gsap.timeline({
-        scrollTrigger: {
+        scrollTrigger: { 
             trigger: ".aircraft-sm",
             start: "100 center",
             end: "800 center",
@@ -94,19 +151,22 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
     })
     tlSm.to('.aircraft-sm', {
-        y: 300,
-        x: 130,
-        rotation: 45
+        y: yValue,
+        right: xValue,
+        rotation: rValue
     })
-        .from('.aircraft-light-sm', {
+        .from('.aircraft-light', {
             opacity: 0
         })
-        .to('.aircraft-text-sm', {
+        .to('.aircraft-container-text-sm .text-style-h4 ', {
             color: "#000000"
         }, "<")
-        .to('.aircraft-btn-text-sm', {
+        .to('.aircraft-container-text-sm .text-style-body-copy', {
             color: "#000000"
         }, "<")
+
+
+/*
 
     let tlMd = gsap.timeline({
         scrollTrigger: {
@@ -156,8 +216,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
             color: "#000000"
         }, "<")
 
+        */
+
     //animation for scrolling card in product page
-    var minWidth768 = window.matchMedia("(min-width: 768px)")
+    var minWidth768 = window.matchMedia("(min-width: 992px)")
     let slCardMainStart;
 
     if (minWidth768.matches) { // If media query matches
