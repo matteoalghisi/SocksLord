@@ -119,11 +119,7 @@ $(() => {
 
         addProducts(products);
     })
-    $(".add-card-button").on("click", (e) => {
-        const cartIcon = $(".cart-icon").addClass("cart-icon-active");
-        addToast();
-        addCounter();
-    })
+
 });
 
 //Button on card
@@ -183,7 +179,7 @@ const addProducts = (products) => {
     productsContainer.empty();
     products.forEach((product, index) => {
         const x = product.stock > 0 ? ` <div class="d-none d-lg-flex justify-content-end card-button-external">
-                                            <div class="d-none d-lg-flex card-button z-3 add-card-button">
+                                            <div class="d-none d-lg-flex card-button z-3 add-cart-button">
                                                 <button class="card-btn d-none justify-content-center align-items-center d-flex">
                                                     <img src="img/icon/Sachetto-active.svg" alt="purchase">
                                                 </button>
@@ -210,35 +206,3 @@ const addProducts = (products) => {
     });
 }
 
-// Add and remove toast to DOM
-const addToast = () => {
-    const toastContainer = $("#sl-toast-container");
-    toastContainer.find('.sl-toast').remove();
-
-    toastContainer.append(`
-        <div class="sl-toast sl-bg-kiwi effect-style-default-shadow position-fixed z-3">
-            <p class="text-style-body-copy">Calza aggiunta al carrello</p>
-        </div>
-    `);
-    const newToast = toastContainer.find('.sl-toast');
-    newToast.delay(3500).fadeOut(500, () => {
-        $().remove();
-    });
-};
-
-// Add counter to DOM
-const counterNumbers = [];
-
-const addCounter = () => {
-    const counterContainer = $("#counter-container");
-
-    const newCounter = counterNumbers.length + 1;
-    counterNumbers.push(newCounter);
-    
-    counterContainer.append(`
-        <div class="counter-badge position-fixed sl-bg-kiwi d-flex justify-content-center align-items-center">
-            <p class="text-style-badge">${newCounter}</p>
-        </div>
-    `);
-
-};

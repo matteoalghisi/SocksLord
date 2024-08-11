@@ -220,4 +220,132 @@ document.addEventListener("DOMContentLoaded", (event) => {
 });
 
   
+// Quantity button Single product
+$(function() {
+    const $quantityContainer = $(".quantity");
+    const $minusBtn = $quantityContainer.find(".minus");
+    const $plusBtn = $quantityContainer.find(".plus");
+    const $inputBox = $quantityContainer.find(".input-box");
+
+    // Imposta il valore iniziale dell'input box
+    $inputBox.val(1);
+
+    updateButtonStates();
+
+    $quantityContainer.on("click", handleButtonClick);
+    $inputBox.on("input", handleQuantityChange);
+
+    function updateButtonStates() {
+        const value = parseInt($inputBox.val());
+        $minusBtn.prop("disabled", value <= 1);
+        $plusBtn.prop("disabled", value >= parseInt($inputBox.attr("max")));
+    }
+
+    function handleButtonClick(event) {
+        const $target = $(event.target);
+        if ($target.hasClass("minus")) {
+            decreaseValue();
+        } else if ($target.hasClass("plus")) {
+            increaseValue();
+        }
+    }
+
+    function decreaseValue() {
+        let value = parseInt($inputBox.val());
+        value = isNaN(value) ? 1 : Math.max(value - 1, 1);
+        if (value !== parseInt($inputBox.val())) {
+            $inputBox.val(value);
+            updateButtonStates();
+            handleQuantityChange();
+        }
+    }
+
+    function increaseValue() {
+        let value = parseInt($inputBox.val());
+        value = isNaN(value) ? 1 : Math.min(value + 1, parseInt($inputBox.attr("max")));
+        if (value !== parseInt($inputBox.val())) {
+            $inputBox.val(value);
+            updateButtonStates();
+            handleQuantityChange();
+        }
+    }
+
+    function handleQuantityChange() {
+        let value = parseInt($inputBox.val());
+        value = isNaN(value) ? 1 : value;
+
+        // Esegui il tuo codice qui basato sul valore aggiornato della quantità
+        console.log("Quantity changed:", value);
+    }
+});
+
+
+// Add to cart: toast, counter badge and icon-cart active
+const counterNumbers = [];
+$(() => {
+    $(".add-cart-button").on("click", (e) => {
+        const cartIcon = $(".cart-icon").addClass("cart-icon-active");
+        addToast();
+        addCounter();
+    })
+
+    // single product
+    $(".add-cart-single").on("click", () => {
+        // Ottieni il valore della quantità, predefinito a 1 se non valido
+        const value = parseInt($(".input-box").val());
+
+        if (!isNaN(value) && value > 0) {
+            addCounterSingle(value); // Passa il valore alla funzione solo se è valido
+        } else {
+            console.error("Invalid value:", value); // Log per la debug
+        }
+    });
+});
+
+// Add and remove toast to DOM
+const addToast = () => {
+    const toastContainer = $("#sl-toast-container");
+    toastContainer.find('.sl-toast').remove();
+
+    toastContainer.append(`
+        <div class="sl-toast sl-bg-kiwi effect-style-default-shadow position-fixed z-3">
+            <p class="text-style-body-copy">Calza aggiunta al carrello</p>
+        </div>
+    `);
+    const newToast = toastContainer.find('.sl-toast');
+    newToast.delay(3500).fadeOut(500, () => {
+        $().remove();
+    });
+};
+
+// Add counter to DOM
+const addCounter = () => {
+    const counterContainer = $("#counter-container");
+
+    const newCounter = counterNumbers.length + 1;
+    counterNumbers.push(newCounter);
+    
+    counterContainer.append(`
+        <div class="counter-badge position-fixed sl-bg-kiwi d-flex justify-content-center align-items-center">
+            <p class="text-style-badge">${newCounter}</p>
+        </div>
+    `);
+
+};
+
+// Add counter single product to DOM
+const addCounterSingle = (value) => {
+    if (value !== undefined && value !== null) { // Verifica che il valore sia definito e non nullo
+        const counterContainer = $("#counter-container");
+
+        counterContainer.append(`
+            <div class="counter-badge position-fixed sl-bg-kiwi d-flex justify-content-center align-items-center">
+                <p class="text-style-badge">${value}</p>
+            </div>
+        `);
+    } else {
+        console.error("Undefined value passed to addCounterSingle");
+    }
+};
+
 
