@@ -702,18 +702,18 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
         margin-bottom: 17rem;
     }
   }
-.sl-btn-secondary a{ 
+.sl-btn-secondary{ 
     width: fit-content;
     padding: 16px 32px;
     background-color: var(--white-avocado);
     border-radius: 0.75rem;
     border: 1px solid var(--black-banana);
 }
-.sl-btn-secondary a:hover{
+.sl-btn-secondary:hover{
     color: var(--black-strawberry);
 }
 @media (min-width: 576px) {
-    .sl-btn-secondary a:hover{
+    .sl-btn-secondary:hover{
         transform: translateX(4px);
         transform: translatey(-4px);
         transition: all 0.3s ease-in-out;
