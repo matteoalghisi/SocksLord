@@ -305,12 +305,15 @@ $(function() {
         $plusBtn.prop("disabled", value >= parseInt($inputBox.attr("max")));
     }
 
+    // Funzione per gestire il click del pulsante di incremento
     function handleButtonClick(event) {
         const $target = $(event.target);
         if ($target.hasClass("minus")) {
             decreaseValue();
         } else if ($target.hasClass("plus")) {
+            let previousValue = parseInt($inputBox.val()); // Cattura il valore corrente
             increaseValue();
+            // Utilizza previousValue per le tue operazioni
         }
     }
 
@@ -403,9 +406,10 @@ const addCounter = () => {
 // Aggiungi un valore specifico di articoli al carrello
 const addCounterSingle = (value) => {
     if (value !== undefined && value !== null) {
-        totalItems += value; // Aggiungi il valore specificato al totale degli articoli
+        totalItems += value - 1; // Correggi l'incremento aggiungendo "value - 1" invece di "value"
         updateCounterBadge();
     } else {
         console.error("Undefined value passed to addCounterSingle");
     }
 };
+
