@@ -68,7 +68,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="px-sm-3" href="#"><span class="cart-icon"></span></div>
+                <button class="mx-sm-3 sl-btn-cart p-0 border-0" type="button" data-bs-toggle="modal" data-bs-target="#cart"><span class="cart-icon"></span></button>
             </div>
       
             <!--mobile-->
@@ -99,6 +99,27 @@
 
             <!-- Badge with counter for purchased products -->
             <div id="counter-container"></div>
+
+            <!-- Cart modal -->
+            <div class="modal fade modal-fullscreen" id="cart" tabindex="-1" aria-labelledby="cartLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h3 class="modal-title text-style-h3" id="cartLabel">Carrello</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex justify-content-start flex-column">
+                            <p class="text-style-body-copy">Benvenuto a bordo!</p>
+                            <p class="text-style-body-copy">Il tuo carrello intergalattico è pronto per il decollo con un carico stellare: <span class="text-style-h5 cart-text">2 paia di calze SocksLord!</span></p>
+                            <p class="text-style-body-copy">Non lasciare che queste calze da superstar ti sfuggano! Clicca su "Vai al pagamento" per vedere il riepilogo e continuare la tua avventura spaziale con il massimo della comodità. </p>
+                        </div>
+                        <div class="modal-footer mb-2 mb-lg-4 mt-4 mx-4 mx-lg-5 d-flex flex-column">
+                            <button class="text-style-button d-flex align-items-center justify-content-center m-0 sl-btn-tertiary" data-bs-dismiss="modal">Vai al pagamento</button>
+                            <button data-toggle="reset-filter" class="text-style-button d-flex align-items-center justify-content-center m-0 sl-btn-quaternary sl-bg-avocado">Svuota il carrello</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </nav>
 
