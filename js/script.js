@@ -284,80 +284,81 @@ document.addEventListener("DOMContentLoaded", (event) => {
   
 // Quantity button Single product
 // Variabile per tenere traccia del totale degli articoli nel carrello
-let totalItems = 0;
+let totalItems = parseInt(sessionStorage.getItem('totalItems')) || 0; // Recupera il valore dal sessionStorage o imposta a 0 se non esiste
 
 // Quantity button Single product
 $(function() {
-    const $quantityContainer = $(".quantity");
-    const $minusBtn = $quantityContainer.find(".minus");
-    const $plusBtn = $quantityContainer.find(".plus");
-    const $inputBox = $quantityContainer.find(".input-box");
-    $inputBox.val(1);
+    const quantityContainer = $(".quantity");
+    const minusBtn = quantityContainer.find(".minus");
+    const plusBtn = quantityContainer.find(".plus");
+    const inputBox = quantityContainer.find(".input-box");
+    inputBox.val(1);
 
     updateButtonStates();
 
-    $quantityContainer.on("click", handleButtonClick);
-    $inputBox.on("input", handleQuantityChange);
+    quantityContainer.on("click", handleButtonClick);
+    inputBox.on("input", handleQuantityChange);
 
     function updateButtonStates() {
-        const value = parseInt($inputBox.val());
-        $minusBtn.prop("disabled", value <= 1);
-        $plusBtn.prop("disabled", value >= parseInt($inputBox.attr("max")));
+        const value = parseInt(inputBox.val());
+        minusBtn.prop("disabled", value <= 1);
+        plusBtn.prop("disabled", value >= parseInt(inputBox.attr("max")));
     }
 
     // Funzione per gestire il click del pulsante di incremento
     function handleButtonClick(event) {
-        const $target = $(event.target);
-        if ($target.hasClass("minus")) {
+        const target = $(event.target);
+        if (target.hasClass("minus")) {
             decreaseValue();
-        } else if ($target.hasClass("plus")) {
-            let previousValue = parseInt($inputBox.val()); // Cattura il valore corrente
+        } else if (target.hasClass("plus")) {
+            let previousValue = parseInt(inputBox.val()); // Cattura il valore corrente
             increaseValue();
             // Utilizza previousValue per le tue operazioni
         }
     }
 
     function decreaseValue() {
-        let value = parseInt($inputBox.val());
+        let value = parseInt(inputBox.val());
         value = isNaN(value) ? 1 : Math.max(value - 1, 1);
-        if (value !== parseInt($inputBox.val())) {
-            $inputBox.val(value);
+        if (value !== parseInt(inputBox.val())) {
+            inputBox.val(value);
             updateButtonStates();
             handleQuantityChange();
         }
     }
 
     function increaseValue() {
-        let value = parseInt($inputBox.val());
-        value = isNaN(value) ? 1 : Math.min(value + 1, parseInt($inputBox.attr("max")));
-        if (value !== parseInt($inputBox.val())) {
-            $inputBox.val(value);
+        let value = parseInt(inputBox.val());
+        value = isNaN(value) ? 1 : Math.min(value + 1, parseInt(inputBox.attr("max")));
+        if (value !== parseInt(inputBox.val())) {
+            inputBox.val(value);
             updateButtonStates();
             handleQuantityChange();
         }
     }
 
     function handleQuantityChange() {
-        let value = parseInt($inputBox.val());
+        let value = parseInt(inputBox.val());
         value = isNaN(value) ? 1 : value;
         console.log("Quantity changed:", value);
     }
 });
 
-// Add to cart: toast, counter badge and icon-cart active
+// Add to cart toast, counter badge and icon-cart active
 $(() => {
+    // In Emporium:
     $(".add-cart-button").on("click", (e) => {
         const cartIcon = $(".cart-icon").addClass("cart-icon-active");
         addToast();
-        addCounter();
+        addCounter();  // Usa questa funzione per incrementare e salvare il nuovo valore
     });
 
-    // single product
+    // In Single product
     $(".add-cart-single").on("click", () => {
         const value = parseInt($(".input-box").val());
-
+    
         if (!isNaN(value) && value > 0) {
-            addCounterSingle(value);
+            addCounterSingle(value); // Aggiunge il numero specificato di articoli
         } else {
             console.error("Invalid value:", value); 
         }
@@ -380,20 +381,42 @@ const addToast = () => {
     });
 };
 
-// Funzione per aggiornare il badge del carrello
+// Funzione per aggiornare il badge del carrello e lo stato dell'icona
 const updateCounterBadge = () => {
     const counterContainer = $("#counter-container");
-    // Se esiste già un badge, aggiorna il testo
     let badge = counterContainer.find(".counter-badge");
-    if (badge.length) {
-        badge.find(".text-style-badge").text(totalItems);
+    const cartIcon = $(".cart-icon");
+
+    if (totalItems > 0) {
+        if (badge.length) {
+            badge.find(".text-style-badge").text(totalItems);
+        } else {
+            // Se non esiste, creane uno nuovo
+            counterContainer.append(`
+                <div class="counter-badge position-fixed sl-bg-kiwi d-flex justify-content-center align-items-center">
+                    <p class="text-style-badge">${totalItems}</p>
+                </div>
+            `);
+        }
+        // Aggiungi la classe attiva all'icona del carrello
+        cartIcon.addClass("cart-icon-active");
     } else {
-        // Se non esiste, creane uno nuovo
-        counterContainer.append(`
-            <div class="counter-badge position-fixed sl-bg-kiwi d-flex justify-content-center align-items-center">
-                <p class="text-style-badge">${totalItems}</p>
-            </div>
-        `);
+        // Se il numero di articoli è 0, rimuovi il badge e disattiva l'icona del carrello
+        badge.remove();
+        cartIcon.removeClass("cart-icon-active");
+    }
+
+    // Salva il totale aggiornato nel sessionStorage
+    sessionStorage.setItem('totalItems', totalItems);
+};
+
+// Funzione per gestire l'attivazione dell'icona del carrello
+const updateCartIconState = () => {
+    const cartIcon = $(".cart-icon");
+    if (totalItems > 0) {
+        cartIcon.addClass("cart-icon-active");
+    } else {
+        cartIcon.removeClass("cart-icon-active");
     }
 };
 
@@ -406,10 +429,16 @@ const addCounter = () => {
 // Aggiungi un valore specifico di articoli al carrello
 const addCounterSingle = (value) => {
     if (value !== undefined && value !== null) {
-        totalItems += value - 1; // Correggi l'incremento aggiungendo "value - 1" invece di "value"
+        totalItems += value -1; // Aggiungi il valore direttamente a totalItems
         updateCounterBadge();
     } else {
         console.error("Undefined value passed to addCounterSingle");
     }
 };
+
+// Recupera il totale degli articoli quando la pagina viene caricata e aggiorna il badge
+$(() => {
+    updateCounterBadge();
+    updateCartIconState(); // Imposta lo stato dell'icona del carrello quando la pagina viene caricata
+});
 
