@@ -158,7 +158,7 @@ const addFilters = () => {
     functions.forEach((functions, index) => {
         buttonsFunctions.append(`
             <button class="filter-modal d-flex justify-content-center align-items-center" data-id="${functions.id}" data-type="functions">
-                <img src="${functions.iconPath}" alt="" class="icon-filter">
+                <img src="${functions.iconPath}" alt="Function icon button" class="icon-filter">
                 <span class="text-style-button">${functions.name}</span>
             </button>
        `)
@@ -167,7 +167,7 @@ const addFilters = () => {
     feet.forEach((foot, index) => {
         buttonsFeet.append(`
             <button class="filter-modal d-flex justify-content-center align-items-center" data-id="${foot.id}" data-type="feet">
-                <img src="img/icon/piede1.svg" alt="" class="icon-filter">
+                <img src="img/icon/piede1.svg" alt="Foot icon button" class="icon-filter">
                 <span class="text-style-button">${foot.name}</span>
             </button>
        `)
@@ -190,7 +190,7 @@ const addProducts = (products) => {
         const x = product.stock > 0 ? ` <div class="d-none d-lg-flex justify-content-end card-button-external">
                                             <div class="d-none d-lg-flex card-button z-3 add-cart-button">
                                                 <button class="card-btn d-none justify-content-center align-items-center d-flex">
-                                                    <img src="img/icon/Sachetto-active.svg" alt="purchase">
+                                                    <img src="img/icon/Sachetto-active.svg" alt="Cart">
                                                 </button>
                                             </div> 
                                         </div>
@@ -208,7 +208,7 @@ const addProducts = (products) => {
                 ${w}
                 <h4 class="text-style-h4 text-center">${product.name}</h4>
                 <p class="text-style-body-copy-small mb-3 mb-lg-4">${product.price}</p>
-                <img src="${product.imagePath}" alt="" class="card-img">
+                <img src="${product.imagePath}" alt="Sock" class="card-img">
                 ${x}
             </div>
         `)

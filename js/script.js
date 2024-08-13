@@ -282,9 +282,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
 });
 
   
-// Quantity button Single product
-// Variabile per tenere traccia del totale degli articoli nel carrello
-let totalItems = parseInt(sessionStorage.getItem('totalItems')) || 0; // Recupera il valore dal sessionStorage o imposta a 0 se non esiste
+// Cart: Single Product and Emporium
+// Variable to keep track of the total number of items in the cart
+let totalItems = parseInt(sessionStorage.getItem('totalItems')) || 0; // Retrieve the value from sessionStorage or set to 0 if it doesn't exist
 
 // Quantity button Single product
 $(function() {
@@ -305,15 +305,15 @@ $(function() {
         plusBtn.prop("disabled", value >= parseInt(inputBox.attr("max")));
     }
 
-    // Funzione per gestire il click del pulsante di incremento
+    // Function to handle the click of the increment button
     function handleButtonClick(event) {
         const target = $(event.target);
         if (target.hasClass("minus")) {
             decreaseValue();
         } else if (target.hasClass("plus")) {
-            let previousValue = parseInt(inputBox.val()); // Cattura il valore corrente
+            let previousValue = parseInt(inputBox.val()); /// Capture the current value
             increaseValue();
-            // Utilizza previousValue per le tue operazioni
+            // Use previousValue for your operations
         }
     }
 
@@ -350,7 +350,7 @@ $(() => {
     $(".add-cart-button").on("click", (e) => {
         const cartIcon = $(".cart-icon").addClass("cart-icon-active");
         addToast();
-        addCounter();  // Usa questa funzione per incrementare e salvare il nuovo valore
+        addCounter();  // Increment and save the new value
     });
 
     // In Single product
@@ -358,7 +358,7 @@ $(() => {
         const value = parseInt($(".input-box").val());
     
         if (!isNaN(value) && value > 0) {
-            addCounterSingle(value); // Aggiunge il numero specificato di articoli
+            addCounterSingle(value); // Adds the specified number of items
         } else {
             console.error("Invalid value:", value); 
         }
@@ -371,7 +371,7 @@ const addToast = () => {
     toastContainer.find('.sl-toast').remove();
 
     toastContainer.append(`
-        <div class="sl-toast sl-bg-kiwi effect-style-default-shadow position-fixed z-3">
+        <div class="sl-toast sl-bg-kiwi effect-style-default-shadow position-fixed">
             <p class="text-style-body-copy">Calze aggiunte al carrello</p>
         </div>
     `);
@@ -381,7 +381,7 @@ const addToast = () => {
     });
 };
 
-// Funzione per aggiornare il badge del carrello e lo stato dell'icona
+// Function to update the cart badge and the icon state
 const updateCounterBadge = () => {
     const counterContainer = $("#counter-container");
     let badge = counterContainer.find(".counter-badge");
@@ -391,26 +391,26 @@ const updateCounterBadge = () => {
         if (badge.length) {
             badge.find(".text-style-badge").text(totalItems);
         } else {
-            // Se non esiste, creane uno nuovo
+            // If the badge doesn't exist, create a new one
             counterContainer.append(`
                 <div class="counter-badge position-fixed sl-bg-kiwi d-flex justify-content-center align-items-center">
                     <p class="text-style-badge">${totalItems}</p>
                 </div>
             `);
         }
-        // Aggiungi la classe attiva all'icona del carrello
+        // Add the active class to the cart icon
         cartIcon.addClass("cart-icon-active");
     } else {
-        // Se il numero di articoli è 0, rimuovi il badge e disattiva l'icona del carrello
+        // If the number of items is 0, remove the badge and deactivate the cart icon
         badge.remove();
         cartIcon.removeClass("cart-icon-active");
     }
 
-    // Salva il totale aggiornato nel sessionStorage
+    // Save the updated total in sessionStorage
     sessionStorage.setItem('totalItems', totalItems);
 };
 
-// Funzione per gestire l'attivazione dell'icona del carrello
+// Handle the activation of the cart icon
 const updateCartIconState = () => {
     const cartIcon = $(".cart-icon");
     if (totalItems > 0) {
@@ -420,25 +420,25 @@ const updateCartIconState = () => {
     }
 };
 
-// Aggiungi un singolo articolo al carrello
+// Add a single item to the cart
 const addCounter = () => {
-    totalItems++; // Incrementa il totale degli articoli
+    totalItems++; // Increment the total number of items
     updateCounterBadge();
 };
 
-// Aggiungi un valore specifico di articoli al carrello
+// Add a specific number of items to the cart
 const addCounterSingle = (value) => {
     if (value !== undefined && value !== null) {
-        totalItems += value -1; // Aggiungi il valore direttamente a totalItems
+        totalItems += value - 1; // Add the value directly to totalItems
         updateCounterBadge();
     } else {
         console.error("Undefined value passed to addCounterSingle");
     }
 };
 
-// Recupera il totale degli articoli quando la pagina viene caricata e aggiorna il badge
+// Retrieve the total number of items when the page loads and update the badge
 $(() => {
     updateCounterBadge();
-    updateCartIconState(); // Imposta lo stato dell'icona del carrello quando la pagina viene caricata
+    updateCartIconState(); // Set the cart icon state when the page is loaded
 });
 
