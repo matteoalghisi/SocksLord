@@ -49,20 +49,15 @@
 /*end section 1*/
 
 /*start second section with animation*/
-
-
 .section-product-second{
     padding-top: 300px;
     margin-bottom: 200px;
     overflow-x: clip;
 }
 .aircraft-container-text-sm{
-    /*background-image: url(img/product/aircraft-light.png);*/
     background-size: 100% 100%;
-    
     padding-top: 28px;
     padding-bottom: 420px;
-    
     margin-bottom: -360px;
 }
 
@@ -84,7 +79,6 @@
     top: -400px;
     right: 15%;
     width: 200px;
-    /*transform: rotate(15deg); */
 }
 @media (min-width: 576px) {
     .section-product-second{
@@ -110,7 +104,6 @@
         top: -500px;
         right: -60%;
         width: 280px;
-        /*transform: rotate(15deg); */
     }
     .aircraft-container-text-sm .container{
         margin-left: 40px;
@@ -134,7 +127,6 @@
         top: -800px;
         right: -50%;
         width: 400px;
-        /*transform: rotate(15deg); */
     }
     .aircraft-container-text-sm .container{
         margin-left: 80px;
@@ -147,7 +139,6 @@
     .aircraft-container-text-sm .aircraft-sm{
         top: -900px;
         right: -55%;
-        /*transform: rotate(15deg); */
     }
     .aircraft-container-text-sm .container{
         margin-left: 100px;
@@ -159,18 +150,10 @@
         padding-bottom: 390px;
     }
 }
-
-
-
-
-
-
 /*end second section with animation*/
 
 
 /*start key features section*/
-
-/*section our socks */
 .section-key-feature {
     padding-top: 256px;
     padding-bottom: 256px;   
@@ -242,14 +225,6 @@
 }
 
 @media (min-width: 992px) {
-    /*
-    .sl-product-materials .sl-card-main{
-        width: 100%;
-    }
-    .sl-product-materials .sl-card-scroll{
-        width: 100%;
-    }
-        */
     .sl-product-materials .row{
         gap: 0;
     }
