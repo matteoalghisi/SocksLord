@@ -84,16 +84,6 @@
 #sl-cf-3 {
   background-color: #03964A;
 }
-#sl-cf-4 {
-  background-color: #ABA5F7;
-}
-#sl-cf-5 {
-  background-color: #FFED35;
-}
-#sl-cf-6 {
-  background-color: #9F498B;
-}
-
 
 /* card-space */
 .card-space {
@@ -110,15 +100,12 @@
     padding-left: 0px;
   }
 }
-.card{
-  --bs-card-bg: var(--white-avocado);
-  --bs-card-border-width: 1px;
-  --bs-card-border-color: var(--black-banana);
-  --bs-card-border-radius: 12px;
-}
 .card-emporium{
   height: 204px;
   position: relative;
+  background-color: var(--white-avocado);
+  border: 1px solid var(--black-banana);
+  border-radius: 12px;
 }
 @media (min-width: 576px) {
   .card-emporium{

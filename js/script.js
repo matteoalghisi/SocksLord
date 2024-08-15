@@ -442,3 +442,6 @@ $(() => {
     updateCartIconState(); // Set the cart icon state when the page is loaded
 });
 
+
+
+
