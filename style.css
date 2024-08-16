@@ -943,24 +943,30 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     width: auto;
     border: 1px solid var(--black-banana);
     border-radius: 12px;
-    padding: 16px 24px;
-    top: 112px;
-    right: 16px;
-    
+    padding: 12px 16px;
+    top: 64px;
+    right: 4px;    
 }
-
+@media (min-width: 576px) {
+    .sl-toast{
+        padding: 16px 24px;
+        border-radius: 6px;
+        top: 112px;
+        right: 16px;    
+    }
+}
 /* Counter badge */
 .counter-badge{
     border-radius: 200px;
     border: 1px solid var(--black-banana);
-    height: 24px;
-    width: 24px;
-    top: 60px;
-    right: 46px;
+    height: 16px;
+    width: 16px;
+    top: 30px;
+    right: 16px;
     box-shadow: 1.09px 1.09px 0px 0px var(--black-banana);
-  }
-  .text-style-badge {
-    font-size: 1rem;
+}
+.text-style-badge {
+    font-size: 0.75rem;
     font-family: "Space Grotesk";
     font-weight: 500;
     font-style: normal;
@@ -970,10 +976,21 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     margin: 0;
     padding: 0;
     color: var(--black-strawberry);
-  }
-  .cart-icon-active{
+}
+.cart-icon-active{
     background-color: var(--yellow-grape);
-  }
+}
+@media (min-width: 576px) {
+    .counter-badge{
+        height: 24px;
+        width: 24px;
+        top: 60px;
+        right: 46px;
+    }
+    .text-style-badge {
+        font-size: 1rem;
+    }
+}
 
 /* Modals */
 .cart-text{
