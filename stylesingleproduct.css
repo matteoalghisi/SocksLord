@@ -161,6 +161,8 @@
 .discover-also{
     position: relative;
     z-index: 2;
+    padding-top: 11.75rem;
+    background-image: url(img/singleproduct/SfondoColorato.svg);
 }
 
 .z-index-single-product{
