@@ -60,6 +60,7 @@ section{
         background-repeat: no-repeat;
         height: 70vh;
         width: 100%;
+        margin-bottom: 400px;
     }
 }
 .sl-team-circle{
@@ -224,7 +225,7 @@ section{
         top: -7%;
         left: 48.5%;
         fill: none;
-        stroke: red;
+        stroke: blueviolet;
     }
 }
 @media (min-width: 420px) {
@@ -280,6 +281,62 @@ section{
     }  
 }
 /*end section about us islands*/
+
+.section-aboutus-islands-d{
+    width: 100%;
+    height: fit-content;
+}
+.sl-island-row-d{
+    margin: 600px 256px 600px 256px;
+}
+.sl-island-row-d:nth-child(odd){
+    justify-content: end;
+}
+.sl-island-card-d img{
+    width: 622px !important;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-51%) translateY(-44%) !important;
+}
+.sl-island-card-d{
+    width: 360px !important;
+    
+}
+.sl-about-aircraft-d{
+    width: 300px;
+}
+
+
+
+.provani{
+    background-color: red;
+    z-index: 5;
+    width: 200px;
+    height: 100px;
+}
+
+
+/*
+.section-aboutus-islands-d .container{
+    margin-top: 0 !important;
+    margin-left: auto !important;
+    margin-bottom: 0 !important;
+    margin-right: auto !important;
+}
+    
+
+    */
+
+
+
+
+
+
+
+
+
+
+
 
 .spazio{
     width: 100%;

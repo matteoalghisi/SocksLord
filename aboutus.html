@@ -33,7 +33,68 @@
   
   <body class="sl-bg-strawberry">
    
+    <nav class="navbar navbar-expand-xl fixed-top mt-1 mx-1 mt-sm-3 mx-sm-3 p-0">
+      <div id="navbarContainer" class="container-fluid d-flex justify-content-between sl-bg-avocado border px-3 py-2 p-sm-3 effect-style-default-shadow">
+          <button class="navbar-toggler border-0 px-0 px-sm-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleNavbarRadius()">
+              <span class="toggler-icon top-bar"></span>
+              <span class="toggler-icon middle-bar"></span>
+              <span class="toggler-icon bottom-bar"></span>
+          </button>
+          <a class="navbar-brand d-flex align-items-center px-0 py-0 px-sm-3 m-0" href="index.html"><img src="img/logo/Logo-sockslord.png" alt="Sockslord's logo"/></a>
 
+          <!-- desktop -->
+          <div class="d-none d-xl-inline collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link px-3" href="product.html">Product</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link px-3" href="emporium.html">Emporium</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link px-3" href="sockslab.html">SocksLab</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link px-3" aria-current="page" href="aboutus.html">About us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link px-3" href="contact.html">Contact</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="px-sm-3" href="#"><span class="cart-icon"></span></div>
+      </div>
+
+      <!--mobile-->
+      <div class="d-xl-none">
+          <div class="sl-collapse-mobile collapse navbar-collapse d-xl-none flex-row-reverse border-start border-bottom sl-bg-avocado effect-style-default-shadow" id="navbarSupportedContent" aria-e>
+              <ul class="navbar-nav mb-2 mb-xl-0">
+                  <li class="nav-item">
+                      <a class="nav-link px-sm-3 py-3 py-sm-4" href="product.html">Product</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link px-sm-3 py-3 py-sm-4" href="emporium.html">Emporium</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link px-sm-3 py-3 py-sm-4" href="sockslab.html">SocksLab</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link px-sm-3 py-3 py-sm-4" aria-current="page" href="aboutus.html">About us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link px-sm-3 py-3 py-sm-4" href="contact.html">Contact</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+
+      <!-- Toast -->
+      <div id="sl-toast-container"></div>
+
+      <!-- Badge with counter for purchased products -->
+      <div id="counter-container"></div>
+
+    </nav>
   <!--section 1-->
   <section class="section-aboutus-1 container-fluid">
     <div class="sl-pt-first-div"></div>
@@ -104,23 +165,12 @@
    </section>
 
    <!--section about us islands-->
-   <!--mobile/desktop-->
-   <section class="section-aboutus-islands container-fluid">  
+   <!--mobile/desktop lin-->
+   <section class="section-aboutus-islands container-fluid z-3 position-relative d-xl-none">  
     <div class="container position-relative">
-      
-      
-
-     
-
-        
-
-      
-      
-    
-
       <img class=" position-absolute sl-about-aircraft z-1" src="img/aboutus/aircraft.png" alt="">
       
-      <div class="row sl-island-row">
+      <div id="sl-island-row" class="row sl-island-row">
         <div class="sl-island-card-sm  position-relative m-2">
           <img id="sl-islands-1" class="sl-islands position-absolute z-n1 d-xl-none" src="img/aboutus/island-card/mobile/island-foundation.png" alt="">
           <img id="sl-islands-1" class="sl-islands position-absolute z-n1 d-none d-xl-block" src="img/aboutus/island-card/island-big.png" alt="">
@@ -129,15 +179,12 @@
           <p class="text-style-body-copy">Nell’anno spaziale 18093 del calendario supremo, il team di SocksLord cuce la prima delle sue calze spaziali.
            La missione per la creazione di calzini intergalattici ha ufficialmente inizio.</p>
         </div>
-
-
-        
       </div>
       
       <div class="row sl-island-row">
         <div id="sl-island-card-sm-2" class="sl-island-card-sm  position-relative m-2">
           <img id="sl-islands-2" class="sl-islands position-absolute z-n1 d-xl-none" src="img/aboutus/island-card/mobile/island-imperialism.png" alt="">
-          <img id="sl-islands-1" class="sl-islands position-absolute z-n1 d-none d-xl-block" src="img/aboutus/island-card/island-big.png" alt="">
+          <img id="" class="sl-islands position-absolute z-n1 d-none d-xl-block" src="img/aboutus/island-card/island-big.png" alt="">
 
           <h4 class="text-style-h3">Imperialism</h4>
           <p class="text-style-body-copy">Cento anni dopo la creazione della prima calza, nell’anno 18193, SocksLord è pronta a iniziare la sua seconda missione spaziale: conquistare il mercato intergalattico.</p>
@@ -147,7 +194,7 @@
       <div class="row sl-island-row">
         <div id="sl-island-card-sm-3" class="sl-island-card-sm position-relative m-2">
           <img id="sl-islands-3" class="sl-islands position-absolute z-n1 d-xl-none" src="img/aboutus/island-card/mobile/island-first-collab.png" alt="">
-          <img id="sl-islands-1" class="sl-islands position-absolute z-n1 d-none d-xl-block" src="img/aboutus/island-card/island-big.png" alt="">
+          <img id="" class="sl-islands position-absolute z-n1 d-none d-xl-block" src="img/aboutus/island-card/island-big.png" alt="">
 
           <h4 class="text-style-h3">First collab</h4>
           <p class="text-style-body-copy">Raggiunto il predominio nel vasto mercato dei calzini, arriva il momento dei riflettori con la prima collaborazione interplanetaria: SocksLord x Lady Gagalactic.</p>
@@ -157,7 +204,7 @@
       <div class="row sl-island-row">
         <div id="sl-island-card-sm-4" class="sl-island-card-sm position-relative m-2">
           <img id="sl-islands-4" class="sl-islands position-absolute z-n1 d-xl-none" src="img/aboutus/island-card/mobile/island-crowning.png" alt="">
-          <img id="sl-islands-1" class="sl-islands position-absolute z-n1 d-none d-xl-block" src="img/aboutus/island-card/island-big.png" alt="">
+          <img id="" class="sl-islands position-absolute z-n1 d-none d-xl-block" src="img/aboutus/island-card/island-big.png" alt="">
 
           <h4 class="text-style-h3">Crowning</h4>
           <p class="text-style-body-copy">Nell’anno spaziale 19350 del calendario supremo, SocksLord scalza tutti i competitor e vince il premio più ambito per il dominio sui mercati spaziali: il Cosmic Mastery Prize.</p>
@@ -167,20 +214,82 @@
       <div class="row sl-island-row">
         <div id="sl-island-card-sm-5" class="sl-island-card-sm position-relative m-2">
           <img id="sl-islands-5" class="sl-islands position-absolute z-n1 d-xl-none" src="img/aboutus/island-card/mobile/island-ReSocks.png" alt="">
-          <img id="sl-islands-1" class="sl-islands position-absolute z-n1 d-none d-xl-block" src="img/aboutus/island-card/island-big.png" alt="">
+          <img id="" class="sl-isslands position-absolute z-n1 d-none d-xl-block" src="img/aboutus/island-card/island-big.png" alt="">
 
           <h4 class="text-style-h3">ReSocks</h4>
           <p class="text-style-body-copy">Nel 20824 SocksLord fa una scelta radicale e decide di ripensare alla propria filiera produttiva per intraprendere una lotta contro l’espansione dei buchi neri. Così nasce il progetto ReSocks.</p>
         </div>
       </div>
 
-
-
-     
-
     </div>
    </section>
     
+
+<div class="provani position-absolute"></div>
+
+   <!--desktop-->
+   <section class="section-aboutus-islands-d container-fluid d-none d-xl-block">
+    <div class="container position-relative">
+      
+      <img class=" position-absolute sl-about-aircraft-d z-1" src="img/aboutus/aircraft.png" alt="">
+
+
+      <div id="sl-island-row-d-1" class="row sl-island-row-d">
+        <div class="sl-island-card-d  position-relative m-2">
+          <img id="sl-islands-1-d" class="sl-islands-d position-absolute z-n1" src="img/aboutus/island-card/island-big.png" alt="">
+
+          <h4 class="text-style-h3">Foundation</h4>
+          <p class="text-style-body-copy">Nell’anno spaziale 18093 del calendario supremo, il team di SocksLord cuce la prima delle sue calze spaziali.
+           La missione per la creazione di calzini intergalattici ha ufficialmente inizio.</p>
+        </div>
+      </div>
+      <div class="row sl-island-row-d">
+        <div class="sl-island-card-d  position-relative m-2">
+          <img id="sl-islands-1-d" class="sl-islands-d position-absolute z-n1" src="img/aboutus/island-card/island-big.png" alt="">
+
+          <h4 class="text-style-h3">Foundation</h4>
+          <p class="text-style-body-copy">Nell’anno spaziale 18093 del calendario supremo, il team di SocksLord cuce la prima delle sue calze spaziali.
+           La missione per la creazione di calzini intergalattici ha ufficialmente inizio.</p>
+        </div>
+      </div>
+      <div class="row sl-island-row-d">
+        <div class="sl-island-card-d  position-relative m-2">
+          <img id="sl-islands-1-d" class="sl-islands-d position-absolute z-n1" src="img/aboutus/island-card/island-big.png" alt="">
+
+          <h4 class="text-style-h3">Foundation</h4>
+          <p class="text-style-body-copy">Nell’anno spaziale 18093 del calendario supremo, il team di SocksLord cuce la prima delle sue calze spaziali.
+           La missione per la creazione di calzini intergalattici ha ufficialmente inizio.</p>
+        </div>
+      </div>
+      <div class="row sl-island-row-d">
+        <div class="sl-island-card-d  position-relative m-2">
+          <img id="sl-islands-1-d" class="sl-islands-d position-absolute z-n1" src="img/aboutus/island-card/island-big.png" alt="">
+
+          <h4 class="text-style-h3">Foundation</h4>
+          <p class="text-style-body-copy">Nell’anno spaziale 18093 del calendario supremo, il team di SocksLord cuce la prima delle sue calze spaziali.
+           La missione per la creazione di calzini intergalattici ha ufficialmente inizio.</p>
+        </div>
+      </div>
+      <div class="row sl-island-row-d">
+        <div class="sl-island-card-d  position-relative m-2">
+          <img id="sl-islands-1-d" class="sl-islands-d position-absolute z-n1" src="img/aboutus/island-card/island-big.png" alt="">
+
+          <h4 class="text-style-h3">Foundation</h4>
+          <p class="text-style-body-copy">Nell’anno spaziale 18093 del calendario supremo, il team di SocksLord cuce la prima delle sue calze spaziali.
+           La missione per la creazione di calzini intergalattici ha ufficialmente inizio.</p>
+        </div>
+      </div>
+
+      <svg class="position-absolute sl-path-svg" viewBox="0 0 150 420" xmlns="http://www.w3.org/2000/svg"><path class="path-d" d="M 149.43 1.626 C 90.485 22.659 6.174 39.916 6.174 83.722 C 6.174 127.526 112.744 128.508 112.744 168.744 C 112.744 208.981 22.012 213.084 6.174 255.105 C -9.663 297.125 131.889 315.625 148.304 412.067"></path>
+      </svg>
+
+
+
+    </div>
+  </section>
+   
+
+
     <!-- Footer -->
     <footer  class="footer container-fluid px-3 px-sm-4 sl-bg-avocado">
 

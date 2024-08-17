@@ -52,6 +52,7 @@ $(document).ready(function () {
 
     //script for animation of aircraft in about us (use different path for different breakpoint)
     
+    
     if (window.matchMedia("(min-width: 1200px)").matches) {
         //$( ".section-aboutus-islands .container").append( $( '<svg class="d-none d-xl-block position-absolute sl-path-svg" viewBox="3.321 0.998 761.9998 1920" width="761.9998" height="1909" xmlns="http://www.w3.org/2000/svg"><path class="path" id="path" d="M 827.13 -103.41 C 679.933 557.722 69.05 349.714 75.926 603.459 C 82.802 857.205 573.371 700.695 573.903 930.168 C 574.436 1159.639 166.986 1035.422 66.197 1243.893 C -34.592 1452.365 522.437 1379.194 785.933 1603.683" stroke-width="4"></path></svg>') );
         //$(".section-aboutus-islands .container").append($('<svg class="d-none d-xl-block position-absolute sl-path-svg" viewBox="0 0 170 500" xmlns="http://www.w3.org/2000/svg"><path class="path" d="M 169.411 1.811 C 110.466 22.844 6.174 39.916 6.174 83.722 C 6.174 127.526 112.744 128.508 112.744 168.744 C 112.744 208.981 22.012 213.084 6.174 255.105 C -9.663 297.125 153.607 315.05 170.022 411.492" stroke-width="4"></path></svg>'));
@@ -177,7 +178,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             end: `bottom top+=${180 + cards.length * spacer}`,
             pin: true,
             pinSpacing: false,
-            markers: true,
+            markers: false,
             id: "card-pin",
             invalidateOnRefresh: true
         });
@@ -196,14 +197,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
     //prevDirection = 0;
 
     //animation for aircraft through islands in about us page
+    /*
     const island = gsap.timeline({
         scrollTrigger: {
-            trigger: "#sl-islands-1",
+            trigger: "#sl-island-row",
             start: "top bottom",
             end: "+=4400",
             scrub: true,
             once: true,
-            markers: true
+            markers: false
         }
     })
         .to(".sl-about-aircraft", {
@@ -215,6 +217,27 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 autoRotate: true
             }
         })
+*/
+
+    const isoni = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#sl-island-row-d-1",
+                start: "top bottom",
+                end: "+=4400",
+                scrub: true,
+                once: false,
+                markers: true
+            }
+        })
+            .to(".provani", {
+                ease: "none",
+                motionPath: {
+                    path: ".path-d",
+                    align: ".path-d",
+                    alignOrigin: [0.5, 0.5],
+                    autoRotate: true
+                }
+            })
 
     //end gsap
 });

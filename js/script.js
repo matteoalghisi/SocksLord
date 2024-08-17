@@ -129,13 +129,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 }
             }
         }
-    }
-
-
-    
-    console.log(xValue);
-
-                
+    }             
         
         
  
@@ -164,6 +158,41 @@ document.addEventListener("DOMContentLoaded", (event) => {
         .to('.aircraft-container-text-sm .text-style-body-copy', {
             color: "#000000"
         }, "<")
+
+  //animation for scrolling card in product page
+  var minWidth768 = window.matchMedia("(min-width: 992px)")
+  let slCardMainStart;
+
+  if (minWidth768.matches) { // If media query matches
+      slCardMainStart = 400;
+  } else {
+      slCardMainStart = 200;
+  }
+
+  const cards = gsap.utils.toArray(".sl-card-scroll");
+  const spacer = 4;
+
+  cards.forEach((card, index) => {
+      ScrollTrigger.create({
+          trigger: card,
+          start: `top-=${index * spacer} top+=400px`,
+          endTrigger: ".pin-panel",
+          end: `bottom top+=${180 + cards.length * spacer}`,
+          pin: true,
+          pinSpacing: false,
+          markers: true,
+          id: "card-pin",
+          invalidateOnRefresh: true
+      });
+  });
+
+  ScrollTrigger.create({
+      trigger: ".sl-card-main",
+      start: `top ${slCardMainStart}px`,
+      end: (self) => self.previous().end,
+      pin: true,
+      markers: false
+  });
 
 
 /*
@@ -218,46 +247,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         */
 
-    //animation for scrolling card in product page
-    var minWidth768 = window.matchMedia("(min-width: 992px)")
-    let slCardMainStart;
-
-    if (minWidth768.matches) { // If media query matches
-        slCardMainStart = 400;
-    } else {
-        slCardMainStart = 200;
-    }
-
-    const cards = gsap.utils.toArray(".sl-card-scroll");
-    const spacer = 4;
-
-    cards.forEach((card, index) => {
-        ScrollTrigger.create({
-            trigger: card,
-            start: `top-=${index * spacer} top+=400px`,
-            endTrigger: ".pin-panel",
-            end: `bottom top+=${180 + cards.length * spacer}`,
-            pin: true,
-            pinSpacing: false,
-            markers: true,
-            id: "card-pin",
-            invalidateOnRefresh: true
-        });
-    });
-
-    ScrollTrigger.create({
-        trigger: ".sl-card-main",
-        start: `top ${slCardMainStart}px`,
-        end: (self) => self.previous().end,
-        pin: true,
-        markers: false
-    });
+  
 
     //da cancellare queste due righe sotto
     //let rotateTo = gsap.quickTo(".sl-about-aircraft", "rotation"),
     //prevDirection = 0;
 
     //animation for aircraft through islands in about us page
+
+    /*
     const island = gsap.timeline({
         scrollTrigger: {
             trigger: "#sl-islands-1",
@@ -277,6 +275,28 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 autoRotate: true
             }
         })
+*/
+
+
+   const isoni = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#sl-island-row-d-1",
+                start: "top bottom",
+                end: "+=4400",
+                scrub: true,
+                once: false,
+                markers: true
+            }
+        })
+            .to(".provani", {
+                ease: "none",
+                motionPath: {
+                    path: ".path-d",
+                    align: ".path-d",
+                    alignOrigin: [0.5, 0.5],
+                    autoRotate: true
+                }
+            })
 
     //end gsap
 });
