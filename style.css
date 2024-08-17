@@ -547,6 +547,14 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
 }
 
 /*ombre*/
+.effect-style-shadow{
+    box-shadow: 2px 2px 0px 0px var(--black-banana);
+}
+@media (min-width: 576px) {
+    .effect-style-shadow{
+        box-shadow: 4px 4px 0px 0px var(--black-banana);  /*usata*/
+    }
+}
 .effect-style-default-shadow{
     box-shadow: 4px 4px 0px 0px var(--black-banana);  /*usata*/
 }
@@ -936,16 +944,14 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     border-radius: 6px;
     padding: 12px 16px;
     top: 64px;
-    right: 4px; 
-    box-shadow: 2px 2px 0px 0px var(--black-banana);    
+    right: 4px;    
 }
 @media (min-width: 576px) {
     .sl-toast{
         padding: 16px 24px;
         border-radius: 12px;
         top: 112px;
-        right: 16px;  
-        box-shadow: 4px 4px 0px 0px var(--black-banana);  
+        right: 16px; 
     }
 }
 /* Counter badge */
@@ -1034,13 +1040,11 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
   .modal-fullscreen .modal-content{
     border-radius: 6px;
     border: 1px solid var(--black-banana);
-    box-shadow: 2px 2px 0px 0px var(--black-banana);
   }
   @media (min-width: 576px) {
     .modal-fullscreen .modal-content{
       border-radius: 12px;
       border: 2px solid var(--black-banana);
-      box-shadow: 4px 4px 0px 0px var(--black-banana);
     }
   }
   .modal-backdrop{
