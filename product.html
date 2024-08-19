@@ -25,70 +25,74 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
 
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 
   </head>
   
   <body class="sl-product sl-bg-strawberry">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xl fixed-top mt-1 mx-1 mt-sm-3 mx-sm-3 p-0">
+      <div id="navbarContainer" class="container-fluid d-flex justify-content-between sl-bg-avocado border px-3 py-2 p-sm-3 effect-style-default-shadow">
+          <button class="navbar-toggler border-0 px-0 px-sm-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleNavbarRadius()">
+              <span class="toggler-icon top-bar"></span>
+              <span class="toggler-icon middle-bar"></span>
+              <span class="toggler-icon bottom-bar"></span>
+          </button>
+          <a class="navbar-brand d-flex align-items-center px-0 py-0 px-sm-3 m-0" href="index.html"><img src="img/logo/Logo-sockslord.png" alt="Sockslord's logo"/></a>
 
-
-    <nav class="navbar navbar-expand-xl fixed-top  mt-1 mx-1 mt-sm-3 mx-sm-3 p-0 ">
-      <div class="sl-not-collapsed container-fluid d-flex justify-content-between px-3 sl-bg-avocado border p-2 p-sm-3 effect-style-default-shadow">
-        <button id="navbar-toggler" class="navbar-toggler border-0 px-0 px-sm-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="toggler-icon top-bar"></span>
-          <span class="toggler-icon middle-bar"></span>
-          <span class="toggler-icon bottom-bar"></span>
-        </button>
-        <a class="navbar-brand d-flex align-items-center px-0 px-sm-3 m-0" href="index.html"><img src="img/logo/Logo-sockslord.png" alt="sockslord's logo"/></a>
-        
-        <!--desktop-->
-        <div class="d-none d-xl-inline collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link px-3" href="#">Product</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-3" href="#">Emporium</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-3" href="#">SocksLab</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-3" aria-current="page" href="#">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-3" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-        
-        <a class="py-1 px-sm-3" href="#"><span class="cart-icon"></span></a>
+          <!-- desktop -->
+          <div class="d-none d-xl-inline collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link px-3" href="product.html">Product</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link px-3" href="emporium.html">Emporium</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link px-3" href="sockslab.html">SocksLab</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link px-3" aria-current="page" href="aboutus.html">About us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link px-3" href="contact.html">Contact</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="px-sm-3" href="#"><span class="cart-icon"></span></div>
       </div>
 
       <!--mobile-->
-      <div class="d-xl-none ">
-      <div class="sl-collapse-mobile collapse navbar-collapse d-xl-none flex-row-reverse border-start border-end border-bottom sl-bg-avocado effect-style-default-shadow" id="navbarSupportedContent" aria-e>
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link px-3 py-4" href="#">Product</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3 py-4" href="#">Emporium</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3 py-4" href="#">SocksLab</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3 py-4" aria-current="page" href="#">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3 py-4" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
+      <div class="d-xl-none">
+          <div class="sl-collapse-mobile collapse navbar-collapse d-xl-none flex-row-reverse border-start border-bottom sl-bg-avocado effect-style-default-shadow" id="navbarSupportedContent" aria-e>
+              <ul class="navbar-nav mb-2 mb-xl-0">
+                  <li class="nav-item">
+                      <a class="nav-link px-sm-3 py-3 py-sm-4" href="product.html">Product</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link px-sm-3 py-3 py-sm-4" href="emporium.html">Emporium</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link px-sm-3 py-3 py-sm-4" href="sockslab.html">SocksLab</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link px-sm-3 py-3 py-sm-4" aria-current="page" href="aboutus.html">About us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link px-sm-3 py-3 py-sm-4" href="contact.html">Contact</a>
+                  </li>
+              </ul>
+          </div>
       </div>
 
-    </nav>
+      <!-- Toast -->
+      <div id="sl-toast-container"></div>
+
+      <!-- Badge with counter for purchased products -->
+      <div id="counter-container"></div>
+
+  </nav>
 
 
     <!--section 1-->
@@ -113,42 +117,23 @@
 
 <!--second section with animation-->
     <section class="section-product-second container-fluid">
-
-
-      
-
-        
-  
-
-          
-
-            <div class="light-container position-relative">
-              <img class="d-lg-none aircraft-light position-absolute" src="img/product/aircraft-light.png" alt="">
-              <img class="d-none d-lg-inline aircraft-light position-absolute" src="img/product/aircraft-light-2.png" alt="">
-            <div class="aircraft-container-text-sm">
-              <div class="container">
-                <div class="row px-3 mx-0 position-relative">
-                  <img class="aircraft-sm position-absolute" src="img/product/aircraft.png" alt="">
-                  <h2 class="text-style-bw-h2 sl-color-fig">OUR MISSION</h2>
-                  <h4 class="text-style-h4 sl-color-avocado">The socky experience</h4>
-                  <p class="text-style-body-copy sl-color-avocado">Trasformiamo il concetto tradizionale dei calzini, portandolo in un universo di stravaganza e innovazione.</p>
-                  <p class="text-style-body-copy sl-color-avocado">Ci impegniamo a creare calze che non siano solo accessori, ma un mix di design superbo, funzionalità avanzate ed eccentricità cosmica.</p>
-                </div>
-              </div>
+      <div class="light-container position-relative">
+          <img class="d-lg-none aircraft-light position-absolute" src="img/product/aircraft-light.png" alt="">
+          <img class="d-none d-lg-inline aircraft-light position-absolute" src="img/product/aircraft-light-2.png" alt="">
+        <div class="aircraft-container-text-sm">
+          <div class="container">
+            <div class="row px-3 mx-0 position-relative">
+              <img class="aircraft-sm position-absolute" src="img/product/aircraft.png" alt="">
+              <h2 class="text-style-bw-h2 sl-color-fig">OUR MISSION</h2>
+              <h4 class="text-style-h4 sl-color-avocado">The socky experience</h4>
+              <p class="text-style-body-copy sl-color-avocado">Trasformiamo il concetto tradizionale dei calzini, portandolo in un universo di stravaganza e innovazione.</p>
+              <p class="text-style-body-copy sl-color-avocado">Ci impegniamo a creare calze che non siano solo accessori, ma un mix di design superbo, funzionalità avanzate ed eccentricità cosmica.</p>
             </div>
           </div>
-
-
-          
-
-          <div class="offset-1 col-4">  
-          </div>
-
-
-        
-
-      
-      
+        </div>
+      </div>
+      <div class="offset-1 col-4">  
+      </div>
     </section>
 
     <!--section our key features-->
@@ -250,8 +235,6 @@
     <section class="sl-product-materials container-fluid">
       <div class="container">
 
-
-
         <div class="row mx-3 ">
           <div class="col-lg-5 d-flex justify-content-end">
             <div class="sl-card-main  d-flex justify-content-center align-items-center p-3 border effect-style-default-shadow  sl-bg-lemon">
@@ -261,44 +244,122 @@
           </div>
           <div class="col-lg-7 position-relative sl-card-scroll-wrapper pin-panel ">
             <div id="sl-card-scroll-1" class="sl-card-scroll-1 sl-card-scroll  d-flex flex-column justify-content-center p-3 border effect-style-default-shadow sl-bg-avocado">
-              <h3>SustainaSilk </h3>
-              <p class="m-0">Una seta etica e sostenibile ottenuta da una speciale razza di bachi provenienti da pianeti con condizioni climatiche ottimali, senza danneggiare l'ecosistema circostante.</p>
+              <h3>SUSTAINASILK </h3>
+              <p class="m-0">Una seta etica e sostenibile ottenuta da una speciale razza di bachi provenienti da pianeti con condizioni climatiche ottimali, senza danneggiare l'ecosistema circostante.
+              </p>
             </div>
             <div id="sl-card-scroll-2" class="sl-card-scroll  d-flex flex-column justify-content-center p-3 border effect-style-default-shadow sl-bg-avocado">
-              <h3>ggggg</h3>
-              <p class="m-0">Una seta etica e sostenibile ottenuta da una speciale razza di bachi provenienti da pianeti con condizioni climatiche ottimali, senza danneggiare l'ecosistema circostante.</p>
+              <h3>CRISTALIUM</h3>
+              <p class="m-0">Un vetro lucente e incredibilmente resistente, capace di sopportare impatti e temperature estreme senza subire danni, grazie alla sua struttura molecolare unica. Nonostante la sua robustezza, è sorprendentemente leggero.</p>
             </div>
-            <div id="sl-card-scroll-3" class="sl-card-scroll  d-flex flex-column justify-content-center p-3 mb-5 border effect-style-default-shadow sl-bg-avocado">
-              <h3>SustaikkkkkkknaSilk </h3>
-              <p class="m-0">Una seta etica e sostenibile ottenuta da una speciale razza di bachi provenienti da pianeti con condizioni climatiche ottimali, senza danneggiare l'ecosistema circostante.</p>
+            <div id="sl-card-scroll-3" class="sl-card-scroll  d-flex flex-column justify-content-center p-3 border effect-style-default-shadow sl-bg-avocado">
+              <h3>DRAKOLITH </h3>
+              <p class="m-0">La sua struttura a scaglie, flessibile e auto-regolante, crea un attrito ottimale, impedendo lo scivolamento in condizioni estreme, anche su ghiaccio e specchi.</p>
+            </div>
+            <div id="sl-card-scroll-4" class="sl-card-scroll  d-flex flex-column justify-content-center p-3 border effect-style-default-shadow sl-bg-avocado">
+              <h3>LUMIFIBRA</h3>
+              <p class="m-0">Una fibra luminescente molto resistente, flessibile e in grado di mantenere la sua luminosità per lunghi periodi di tempo senza perdita di efficienza. Facilmente ricaricabile.</p>
+            </div>
+            <div id="sl-card-scroll-5" class="sl-card-scroll  d-flex flex-column justify-content-center p-3 mb-5 border effect-style-default-shadow sl-bg-avocado">
+              <h3>LIQUIDITE</h3>
+              <p class="m-0">Consistenza fluida con una resistenza eccezionale e una colorazione opaca. Regola la temperatura corporea, mantenendo i piedi freschi anche in condizioni di calore estremo e caldi in ambienti freddi.</p>
             </div>
           </div>
         </div>
 
+      </div>
+    </section>
 
+    <!--section ReSocks-->
+    <section class="sl-product-resocks container-fluid sl-bg-avocado">
+      <div class="wave-product-bottom"></div>
+      <div class="container sl-bg-avocado d-flex flex-column align-items-center">
+        <div class="row sl-product-resocks-text pb-sm-5 pb-4 mb-3 w-100">
+          <div>
+            <h2 class="text-style-h2 sl-color-strawberry pb-4 px-0">What's new</h2>
+            <a href="emporium.html" class="sl-btn">
+              <span class="sl-btn-text text-style-button">Compila il form</span>
+              <span class="sl-btn-icon"><img src="img/icon/Arrow-right.svg" alt=""></span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="row sl-product-resocks-row w-100">
+          <div class="sl-product-resocks-card-container">
+            <div class="card flex-row sl-product-resocks-card border gap-2 ps-0 my-sm-5 my-4">
+              <div class="card-img-top sl-bg-tangerine">
+                <img src="img/product/Resocks/Resocks-1.png" alt="" class="p-1">
+              </div>
+              <div class="card-body d-flex gap-2 flex-column justify-content-center align-items-center">
+                <h4 class="card-title m-0 w-100">Reso Galaxy</h4>
+                <p class="card-text">Avvia il reso compilando il form apposito, segnalando il motivo della restituzione e i dettagli del prodotto</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row sl-product-resocks-row w-100">
+          <div class="sl-product-resocks-card-container-end">
+            <div class="card flex-row sl-product-resocks-card border gap-2 ps-0 my-sm-5 my-4">
+              <div class="card-img-top sl-bg-tangerine">
+                <img src="img/product/Resocks/Resocks-2.png" alt="" class="p-1">
+              </div>
+              <div class="card-body d-flex gap-2 flex-column justify-content-center align-items-center">
+                <h4 class="card-title m-0 w-100">Speedy packaging</h4>
+                <p class="card-text">Prepara le calze, devono esser ben imballate e impacchettate per il trasporto alla velocità della luce</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row sl-product-resocks-row w-100">
+          <div class="sl-product-resocks-card-container">
+            <div class="card flex-row sl-product-resocks-card border gap-2 ps-0 my-sm-5 my-4">
+              <div class="card-img-top sl-bg-tangerine">
+                <img src="img/product/Resocks/Resocks-3.png" alt="" class="p-1">
+              </div>
+              <div class="card-body d-flex gap-2 flex-column justify-content-center align-items-center">
+                <h4 class="card-title m-0 w-100">Ufo withdraw</h4>
+                <p class="card-text">Il nostro speciale servizio di ritiro verrà a recuperare il pacco direttamente a casa tua, in un batter d’occhio.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row sl-product-resocks-row w-100">
+          <div class="sl-product-resocks-card-container-end">
+            <div class="card flex-row sl-product-resocks-card border gap-2 ps-0 my-sm-5 my-4">
+              <div class="card-img-top sl-bg-tangerine">
+                <img src="img/product/Resocks/Resocks-4.png" alt="" class="p-1">
+              </div>
+              <div class="card-body d-flex gap-2 flex-column justify-content-center align-items-center">
+                <h4 class="card-title m-0 w-100">Magic trasformation</h4>
+                <p class="card-text">I nostri migliori artigiani apporteranno le riparazioni o modifiche, dando alle tue calze una nuova vita.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row sl-product-resocks-row w-100">
+          <div class="sl-product-resocks-card-container">
+            <div class="card flex-row sl-product-resocks-card border gap-2 ps-0 my-sm-5 my-4">
+              <div class="card-img-top sl-bg-tangerine">
+                <img src="img/product/Resocks/Resocks-5.png" alt="" class="p-1">
+              </div>
+              <div class="card-body d-flex gap-2 flex-column justify-content-center align-items-center">
+                <h4 class="card-title m-0 w-100">Brand new socks</h4>
+                <p class="card-text">A questo punto le tue calze sono pronte per essere spedite e accompagnarti in tante nuove avventure</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
     </section>
 
 
-  
-
-
-
-
-
-
-
-
-
-  
+<!--
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     
-
-
-
+-->
 
 
 

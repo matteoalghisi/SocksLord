@@ -46,9 +46,9 @@ const products = [
 ];
 
 const collabs = [{ id: 1, name: "Lux" }, { id: 2, name: "Zlatanox" }];
-const colors = [{ id: 1, name: "Arancio" }, { id: 2, name: "Giallo" }, { id: 3, name: "Verde" }];
-const functions = [{ id: 1, name: "GPS", iconPath: "img/icon/Propeller.svg" }, { id: 2, name: "Tasca", iconPath: "img/icon/Propeller.svg" }, { id: 3, name: "Led", iconPath: "img/icon/Propeller.svg" }, { id: 4, name: "Ali", iconPath: "img/icon/Propeller.svg" }];
-const feet = [{ id: 1, name: "Tentacolo", iconPath: "img/icon/Icon-footer-1.svg" }, { id: 2, name: "Tre dita", iconPath: "img/icon/Icon-footer-1.svg" }, { id: 3, name: "Normale", iconPath: "img/icon/Icon-footer-1.svg" }];
+const colors = [{ id: 1, name: "Arancio", colorClass: "sl-cf-1" }, { id: 2, name: "Giallo", colorClass: "sl-cf-2" }, { id: 3, name: "Verde", colorClass: "sl-cf-3" }];
+const functions = [{ id: 1, name: "GPS", iconPath: "img/icon/gps.svg" }, { id: 2, name: "Tasca", iconPath: "img/icon/pocket.svg" }, { id: 3, name: "Led", iconPath: "img/icon/led.svg" }, { id: 4, name: "Ali", iconPath: "img/icon/wings.svg" }];
+const feet = [{ id: 1, name: "Tentacolo", iconPath: "img/icon/foot1.svg" }, { id: 2, name: "Tre dita", iconPath: "img/icon/foot2.svg" }, { id: 3, name: "Normale", iconPath: "img/icon/foot3.svg" }];
 const materials = [{ id: 1, name: "Sustainsilk", iconPath: "img/icon/icon-material-sustainsilk.svg" }, { id: 2, name: "Cristalium", iconPath: "img/icon/icon-material-cristalium.svg" }, { id: 3, name: "Drakolith", iconPath: "img/icon/icon-material-drakolith.svg" }, { id: 4, name: "Lumifibra", iconPath: "img/icon/icon-material-lumifibra.svg" }, { id: 5, name: "Liquidite", iconPath: "img/icon/icon-material-liquidite.svg" }];
 
 let productsContainer;
@@ -57,6 +57,7 @@ let buttonsColors;
 let buttonsFunctions;
 let buttonsFeet;
 let buttonsMaterials;
+let currentIndex = 24;
 
 $(() => {
     productsContainer = $("#products-container");
@@ -66,7 +67,7 @@ $(() => {
     buttonsFeet = $("#buttons-feet");
     buttonsMaterials = $("#buttons-materials");
     
-    addProducts(products);
+    addProducts(products.slice(0, currentIndex));
     addFilters();   
     
     $(".filter-modal").on("click", (e) => {
@@ -103,7 +104,7 @@ $(() => {
 
             return true;
         });
-        addProducts(filteredProducts);
+        addProducts(filteredProducts.slice(0, currentIndex));
     })
 
     $('[data-toggle="reset-filter"]').on("click", (e) => {
@@ -117,9 +118,17 @@ $(() => {
         filters.feet = [];
         filters.materials = [];
 
-        addProducts(products);
+        addProducts(products.slice(0, currentIndex));
     })
 
+    $('.loadmore').on("click", (e) => {
+        currentIndex += 12; 
+        addProducts(products.slice(0, currentIndex)); 
+        
+        if (currentIndex >= products.length) {
+            $(".loadmore button").hide(); 
+        }
+    });
 });
 
 //Button on card
@@ -140,7 +149,7 @@ const addFilters = () => {
     colors.forEach((color, index) => {
         buttonsColors.append(`
             <button class="filter-modal d-flex justify-content-center align-items-center" data-id="${color.id}" data-type="colors">
-                <span id="sl-cf-1" class="circle-filter"></span>
+                <span id="${color.colorClass}" class="circle-filter"></span>
                 <span class="text-style-button">${color.name}</span>
             </button>
         `)
@@ -149,7 +158,7 @@ const addFilters = () => {
     functions.forEach((functions, index) => {
         buttonsFunctions.append(`
             <button class="filter-modal d-flex justify-content-center align-items-center" data-id="${functions.id}" data-type="functions">
-                <img src="${functions.iconPath}" alt="" class="icon-filter">
+                <img src="${functions.iconPath}" alt="Function icon button" class="icon-filter">
                 <span class="text-style-button">${functions.name}</span>
             </button>
        `)
@@ -158,7 +167,7 @@ const addFilters = () => {
     feet.forEach((foot, index) => {
         buttonsFeet.append(`
             <button class="filter-modal d-flex justify-content-center align-items-center" data-id="${foot.id}" data-type="feet">
-                <img src="img/icon/piede1.svg" alt="" class="icon-filter">
+                <img src="${foot.iconPath}" alt="Foot icon button" class="icon-filter">
                 <span class="text-style-button">${foot.name}</span>
             </button>
        `)
@@ -181,7 +190,7 @@ const addProducts = (products) => {
         const x = product.stock > 0 ? ` <div class="d-none d-lg-flex justify-content-end card-button-external">
                                             <div class="d-none d-lg-flex card-button z-3 add-cart-button">
                                                 <button class="card-btn d-none justify-content-center align-items-center d-flex">
-                                                    <img src="img/icon/Sachetto-active.svg" alt="purchase">
+                                                    <img src="img/icon/Sachetto-active.svg" alt="Cart">
                                                 </button>
                                             </div> 
                                         </div>
@@ -199,10 +208,9 @@ const addProducts = (products) => {
                 ${w}
                 <h4 class="text-style-h4 text-center">${product.name}</h4>
                 <p class="text-style-body-copy-small mb-3 mb-lg-4">${product.price}</p>
-                <img src="${product.imagePath}" alt="" class="card-img">
+                <img src="${product.imagePath}" alt="Sock" class="card-img">
                 ${x}
             </div>
         `)
     });
 }
-

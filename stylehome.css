@@ -159,30 +159,33 @@ section{
     background-position: center;
     
 }
-.sl-our-socks-container{
+
+.our-socks{
+    margin-top: 9rem;
+}
+
+.sl-key-feature-container{
     white-space: nowrap;
     overflow: hidden;
 }
-
-.sl-socks-slide{
+/* quando si uniscono css considerare che qui .sl-key-feature-slide ha anche padding top e bottom */
+.sl-key-feature-slide{
+    width: fit-content;
     display: inline-block;
-    overflow: hidden;
-    animation: 12s slide infinite linear; 
+    animation: 12s slide infinite linear;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
 }
-.sl-card-slider img{
-    padding-top: 32px;
-    width: 130px;
-    height: 174px;
+.sl-card-key-feature{
+    width: fit-content;
+    padding: 44px 60px 44px 60px ;
+    flex-shrink: 0;
 }
-.sl-card-slider{
-    display: inline;
-    width: fit-content; 
-    background-image: url('img/home/crateri_arancio_mobile.png');
-    background-size: cover;
-    margin: 0 32px;
-    padding: 48px;
+@media (min-width: 576px) {
+    .sl-card-key-feature{
+        padding: 56px 76px 56px 76px ;
+    }
 }
-
 @keyframes slide {
     from {
         transform: translateX(0);
@@ -191,8 +194,50 @@ section{
         transform: translateX(-100%);
     }
 }
-
-
+.card-emporium{
+height: 204px;
+width: 171px;
+position: relative;
+background-color: var(--white-avocado);
+border: 1px solid var(--black-banana);
+border-radius: 12px;
+}
+@media (min-width: 576px) {
+    .card-emporium{
+        height: 349px;
+        width: 300px;
+    }
+}
+.card-img{
+width: auto;
+height: 114px;
+}
+@media (min-width: 576px) {
+    .card-img{
+        height: 173px;
+    }
+}
+.card-soldout{
+background-color: rgba(220, 220, 224, 0.6);
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 12px;
+}
+.text-soldout{
+transform: rotate(-45deg);
+text-shadow: 2px 2px var(--black-banana);
+color: var(--orange-kiwi);
+}
+.card-link{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
 
 
 /*

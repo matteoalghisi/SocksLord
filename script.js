@@ -52,6 +52,7 @@ $(document).ready(function () {
 
     //script for animation of aircraft in about us (use different path for different breakpoint)
     
+    
     if (window.matchMedia("(min-width: 1200px)").matches) {
         //$( ".section-aboutus-islands .container").append( $( '<svg class="d-none d-xl-block position-absolute sl-path-svg" viewBox="3.321 0.998 761.9998 1920" width="761.9998" height="1909" xmlns="http://www.w3.org/2000/svg"><path class="path" id="path" d="M 827.13 -103.41 C 679.933 557.722 69.05 349.714 75.926 603.459 C 82.802 857.205 573.371 700.695 573.903 930.168 C 574.436 1159.639 166.986 1035.422 66.197 1243.893 C -34.592 1452.365 522.437 1379.194 785.933 1603.683" stroke-width="4"></path></svg>') );
         //$(".section-aboutus-islands .container").append($('<svg class="d-none d-xl-block position-absolute sl-path-svg" viewBox="0 0 170 500" xmlns="http://www.w3.org/2000/svg"><path class="path" d="M 169.411 1.811 C 110.466 22.844 6.174 39.916 6.174 83.722 C 6.174 127.526 112.744 128.508 112.744 168.744 C 112.744 208.981 22.012 213.084 6.174 255.105 C -9.663 297.125 153.607 315.05 170.022 411.492" stroke-width="4"></path></svg>'));
@@ -82,7 +83,7 @@ $(document).ready(function () {
 document.addEventListener("DOMContentLoaded", (event) => {
     gsap.registerPlugin(ScrollTrigger)
 
-    
+
     //gsap animation for aircraft in product page
     var minWidth576 = window.matchMedia("(min-width: 576px)");
     var minWidth768 = window.matchMedia("(min-width: 768px)");
@@ -129,15 +130,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 }
             }
         }
-    }             
-        
-        
- 
-
+    }          
+    
     let tlSm = gsap.timeline({
         scrollTrigger: { 
             trigger: ".aircraft-sm",
-            start: "100 center",
+            start: "200 center",
             end: "800 center",
             scrub: true,
             markers: false,
@@ -159,111 +157,55 @@ document.addEventListener("DOMContentLoaded", (event) => {
             color: "#000000"
         }, "<")
 
-  //animation for scrolling card in product page
-  var minWidth768 = window.matchMedia("(min-width: 992px)")
-  let slCardMainStart;
+    //animation for scrolling card in product page
+    var minWidth768 = window.matchMedia("(min-width: 992px)")
+    let slCardMainStart;
 
-  if (minWidth768.matches) { // If media query matches
-      slCardMainStart = 400;
-  } else {
-      slCardMainStart = 200;
-  }
+    if (minWidth768.matches) { // If media query matches
+        slCardMainStart = 400;
+    } else {
+        slCardMainStart = 200;
+    }
 
-  const cards = gsap.utils.toArray(".sl-card-scroll");
-  const spacer = 4;
+    const cards = gsap.utils.toArray(".sl-card-scroll");
+    const spacer = 4;
 
-  cards.forEach((card, index) => {
-      ScrollTrigger.create({
-          trigger: card,
-          start: `top-=${index * spacer} top+=400px`,
-          endTrigger: ".pin-panel",
-          end: `bottom top+=${180 + cards.length * spacer}`,
-          pin: true,
-          pinSpacing: false,
-          markers: true,
-          id: "card-pin",
-          invalidateOnRefresh: true
-      });
-  });
-
-  ScrollTrigger.create({
-      trigger: ".sl-card-main",
-      start: `top ${slCardMainStart}px`,
-      end: (self) => self.previous().end,
-      pin: true,
-      markers: false
-  });
-
-
-/*
-
-    let tlMd = gsap.timeline({
-        scrollTrigger: {
-            trigger: ".aircraft-md",
-            start: "200 center",
-            end: "950 center",
-            scrub: true,
+    cards.forEach((card, index) => {
+        ScrollTrigger.create({
+            trigger: card,
+            start: `top-=${index * spacer} top+=400px`,
+            endTrigger: ".pin-panel",
+            end: `bottom top+=${180 + cards.length * spacer}`,
+            pin: true,
+            pinSpacing: false,
             markers: false,
-            //toggleActions: "play pause pause pause"
-        }
-    })
-    tlMd.to('.aircraft-md', {
-        y: 510,
-        rotation: 45
-    })
-        .from('.aircraft-light-md', {
-            opacity: 0
-        })
-        .to('.aircraft-text-md', {
-            color: "#000000"
-        }, "<")
-        .to('.aircraft-btn-text-md', {
-            color: "#000000"
-        }, "<")
+            id: "card-pin",
+            invalidateOnRefresh: true
+        });
+    });
 
-    let tlLg = gsap.timeline({
-        scrollTrigger: {
-            trigger: ".aircraft-lg",
-            start: "400 center",
-            end: "1200 center",
-            scrub: true,
-            markers: false,
-            //toggleActions: "play pause pause pause"
-        }
-    })
-    tlLg.to('.aircraft-lg', {
-        y: 660,
-        rotation: 45
-    })
-        .from('.aircraft-light-lg', {
-            opacity: 0
-        })
-        .to('.aircraft-text-lg', {
-            color: "#000000"
-        }, "<")
-        .to('.aircraft-btn-text-lg', {
-            color: "#000000"
-        }, "<")
-
-        */
-
-  
+    ScrollTrigger.create({
+        trigger: ".sl-card-main",
+        start: `top ${slCardMainStart}px`,
+        end: (self) => self.previous().end,
+        pin: true,
+        markers: false
+    });
 
     //da cancellare queste due righe sotto
     //let rotateTo = gsap.quickTo(".sl-about-aircraft", "rotation"),
     //prevDirection = 0;
 
     //animation for aircraft through islands in about us page
-
     /*
     const island = gsap.timeline({
         scrollTrigger: {
-            trigger: "#sl-islands-1",
+            trigger: "#sl-island-row",
             start: "top bottom",
             end: "+=4400",
             scrub: true,
             once: true,
-            markers: true
+            markers: false
         }
     })
         .to(".sl-about-aircraft", {
@@ -277,8 +219,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         })
 */
 
-
-   const isoni = gsap.timeline({
+    const isoni = gsap.timeline({
             scrollTrigger: {
                 trigger: "#sl-island-row-d-1",
                 start: "top bottom",
@@ -302,165 +243,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 });
 
   
-// Cart: Single Product and Emporium
-// Variable to keep track of the total number of items in the cart
-let totalItems = parseInt(sessionStorage.getItem('totalItems')) || 0; // Retrieve the value from sessionStorage or set to 0 if it doesn't exist
 
-// Quantity button Single product
-$(function() {
-    const quantityContainer = $(".quantity");
-    const minusBtn = quantityContainer.find(".minus");
-    const plusBtn = quantityContainer.find(".plus");
-    const inputBox = quantityContainer.find(".input-box");
-    inputBox.val(1);
-
-    updateButtonStates();
-
-    quantityContainer.on("click", handleButtonClick);
-    inputBox.on("input", handleQuantityChange);
-
-    function updateButtonStates() {
-        const value = parseInt(inputBox.val());
-        minusBtn.prop("disabled", value <= 1);
-        plusBtn.prop("disabled", value >= parseInt(inputBox.attr("max")));
-    }
-
-    // Function to handle the click of the increment button
-    function handleButtonClick(event) {
-        const target = $(event.target);
-        if (target.hasClass("minus")) {
-            decreaseValue();
-        } else if (target.hasClass("plus")) {
-            let previousValue = parseInt(inputBox.val()); /// Capture the current value
-            increaseValue();
-            // Use previousValue for your operations
-        }
-    }
-
-    function decreaseValue() {
-        let value = parseInt(inputBox.val());
-        value = isNaN(value) ? 1 : Math.max(value - 1, 1);
-        if (value !== parseInt(inputBox.val())) {
-            inputBox.val(value);
-            updateButtonStates();
-            handleQuantityChange();
-        }
-    }
-
-    function increaseValue() {
-        let value = parseInt(inputBox.val());
-        value = isNaN(value) ? 1 : Math.min(value + 1, parseInt(inputBox.attr("max")));
-        if (value !== parseInt(inputBox.val())) {
-            inputBox.val(value);
-            updateButtonStates();
-            handleQuantityChange();
-        }
-    }
-
-    function handleQuantityChange() {
-        let value = parseInt(inputBox.val());
-        value = isNaN(value) ? 1 : value;
-        console.log("Quantity changed:", value);
-    }
-});
-
-// Add to cart toast, counter badge and icon-cart active
-$(() => {
-    // In Emporium:
-    $(".add-cart-button").on("click", (e) => {
-        const cartIcon = $(".cart-icon").addClass("cart-icon-active");
-        addToast();
-        addCounter();  // Increment and save the new value
-    });
-
-    // In Single product
-    $(".add-cart-single").on("click", () => {
-        const value = parseInt($(".input-box").val());
-    
-        if (!isNaN(value) && value > 0) {
-            addCounterSingle(value); // Adds the specified number of items
-        } else {
-            console.error("Invalid value:", value); 
-        }
-    });
-});
-
-// Add and remove toast to DOM
-const addToast = () => {
-    const toastContainer = $("#sl-toast-container");
-    toastContainer.find('.sl-toast').remove();
-
-    toastContainer.append(`
-        <div class="sl-toast sl-bg-kiwi position-fixed effect-style-shadow">
-            <p class="text-style-body-copy">Calze aggiunte al carrello</p>
-        </div>
-    `);
-    const newToast = toastContainer.find('.sl-toast');
-    newToast.delay(3500).fadeOut(500, () => {
-        $().remove();
-    });
-};
-
-// Function to update the cart badge and the icon state
-const updateCounterBadge = () => {
-    const counterContainer = $("#counter-container");
-    let badge = counterContainer.find(".counter-badge");
-    const cartIcon = $(".cart-icon");
-
-    if (totalItems > 0) {
-        if (badge.length) {
-            badge.find(".text-style-badge").text(totalItems);
-        } else {
-            // If the badge doesn't exist, create a new one
-            counterContainer.append(`
-                <div class="counter-badge position-fixed sl-bg-kiwi d-flex justify-content-center align-items-center">
-                    <p class="text-style-badge">${totalItems}</p>
-                </div>
-            `);
-        }
-        // Add the active class to the cart icon
-        cartIcon.addClass("cart-icon-active");
-    } else {
-        // If the number of items is 0, remove the badge and deactivate the cart icon
-        badge.remove();
-        cartIcon.removeClass("cart-icon-active");
-    }
-
-    // Save the updated total in sessionStorage
-    sessionStorage.setItem('totalItems', totalItems);
-};
-
-// Handle the activation of the cart icon
-const updateCartIconState = () => {
-    const cartIcon = $(".cart-icon");
-    if (totalItems > 0) {
-        cartIcon.addClass("cart-icon-active");
-    } else {
-        cartIcon.removeClass("cart-icon-active");
-    }
-};
-
-// Add a single item to the cart
-const addCounter = () => {
-    totalItems++; // Increment the total number of items
-    updateCounterBadge();
-};
-
-// Add a specific number of items to the cart
-const addCounterSingle = (value) => {
-    if (value !== undefined && value !== null) {
-        totalItems += value - 1; // Add the value directly to totalItems
-        updateCounterBadge();
-    } else {
-        console.error("Undefined value passed to addCounterSingle");
-    }
-};
-
-// Retrieve the total number of items when the page loads and update the badge
-$(() => {
-    updateCounterBadge();
-    updateCartIconState(); // Set the cart icon state when the page is loaded
-});
 
 
 
