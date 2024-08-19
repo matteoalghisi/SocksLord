@@ -108,7 +108,7 @@
       <!-- Sezione della calza -->
       <div class="section-sock sl-bg-strawberry px-3 pb-8 d-flex flex-column align-items-center">
         <img src="img/sockslab/Sockslab-mobile.svg" alt="Questa è la tua calza da modificare" class="sock-image-mobile d-block d-lg-none">
-        <img src="img/sockslab/socks/sock_default.svg" alt="Questa è la tua calza da modificare" class="sock-image-desktop d-none d-lg-block">
+        <img id="sockImage" src="img/sockslab/socks/sock_default.svg" alt="Questa è la tua calza da modificare" class="sock-image-desktop d-none d-lg-block">
       </div>
       
       <!-- Sezione dei filtri -->
@@ -123,22 +123,23 @@
 
         <!-- filtro piedi -->
         <div class="filter sl-bg-avocado effect-style-shadow border p-3 mb-3 d-flex flex-column align-items-start">
-          <h3 class="text-style-h3">Piede</h3>
-          <div class="foot-container pt-4 d-flex flex-wrap gap-2 gap-lg-3">
-            <button class="btn-filter d-flex flex-row justify-content-center align-items-center sl-bg-avocado p-3 gap-3 border">
-              <img src="img/icon/foot1.svg" alt="Questo è un piede a tentacolo"/>
-              <span class="text-style-button">Tentacolo</span>
-            </button>
-            <button class="btn-filter d-flex flex-row justify-content-center align-items-center sl-bg-avocado p-3 gap-3 border">
-              <img src="img/icon/foot2.svg" alt="Questo è un piede a tre dita"/>
-              <span class="text-style-button">Tre dita</span>
-            </button>
-            <button class="btn-filter d-flex flex-row justify-content-center align-items-center sl-bg-avocado p-3 gap-3 border">
-              <img src="img/icon/foot3.svg" alt="Questo è un piede normale"/>
-              <span class="text-style-button">Normale</span>
-            </button>
+            <h3 class="text-style-h3">Piede</h3>
+            <div id="foot" class="foot-container pt-4 d-flex flex-wrap gap-2 gap-lg-3">
+              <div class="btn-filter d-flex flex-row justify-content-center align-items-center sl-bg-avocado p-3 gap-3 border" data-foot="tentacle">
+                <img src="img/icon/foot1.svg" alt="Questo è un piede a tentacolo"/>
+                <span class="text-style-button">Tentacolo</span>
+              </div>
+              <div class="btn-filter d-flex flex-row justify-content-center align-items-center sl-bg-avocado p-3 gap-3 border" data-foot="toes">
+                <img src="img/icon/foot2.svg" alt="Questo è un piede a tre dita"/>
+                <span class="text-style-button">Tre dita</span>
+              </div>
+              <div class="btn-filter d-flex flex-row justify-content-center align-items-center sl-bg-avocado p-3 gap-3 border" data-foot="normal">
+                <img src="img/icon/foot3.svg" alt="Questo è un piede normale"/>
+                <span class="text-style-button">Normale</span>
+              </div>
+            </div>
           </div>
-        </div>
+          
 
         <!-- filtro colori -->
         <div class="filter sl-bg-avocado effect-style-shadow border p-3 mb-3 d-flex flex-column align-items-start">
