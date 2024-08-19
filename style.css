@@ -180,6 +180,34 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
 
 /*font*/
 
+.nav-link{
+    font-size: 1.125rem;
+    font-family: "Space Grotesk";
+    font-weight: 500;
+    font-style: normal;
+    line-height: 100%;
+    text-decoration: none;
+    text-transform: none;
+    color: var(--black-strawberry);
+}
+.nav-link:hover{
+    color: var(--orange-kiwi);
+}
+.nav-link.active{
+    color: var(--orange-kiwi) !important;
+}
+@media (min-width: 576px) {
+    .nav-link {
+        font-size: 1.25rem; 
+        font-family: "Space Grotesk";
+        font-weight: 500;
+        font-style: normal;
+        line-height: 100%;
+        text-decoration: none;
+        text-transform: none;
+    }
+}
+
 /*h1*/
 .text-style-h1 {
      font-size: 2.5rem;
@@ -458,33 +486,7 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     }
 }
 
-.nav-link{
-    font-size: 1.125rem;
-    font-family: "Space Grotesk";
-    font-weight: 500;
-    font-style: normal;
-    line-height: 100%;
-    text-decoration: none;
-    text-transform: none;
-    color: var(--black-strawberry);
-}
-.nav-link:hover{
-    color: var(--orange-kiwi);
-}
-.nav-link.active{
-    color: var(--orange-kiwi) !important;
-}
-@media (min-width: 576px) {
-    .nav-link {
-        font-size: 1.25rem; 
-        font-family: "Space Grotesk";
-        font-weight: 500;
-        font-style: normal;
-        line-height: 100%;
-        text-decoration: none;
-        text-transform: none;
-    }
-}
+
 
 /*altri non ancora usati e che non so se si useranno*/
 
