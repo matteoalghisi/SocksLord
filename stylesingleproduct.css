@@ -117,7 +117,7 @@
 }
 
 .input-box[type="number"] {
-    -moz-appearance: textfield;
+    appearance: textfield;
 }
   
 /* Accordion */
