@@ -93,6 +93,15 @@
     }
 }
 
+.sl-form-nav-tab .nav .nav-link.active[href="#Resocks"] {
+    background-color: var(--green-peach);
+}
+
+.sl-form-nav-tab .nav .nav-link.active[href="#Collhub"] {
+    background-color: var(--liliac-tangerine);
+}
+
+
 .sl-form-nav-tab .nav .active {
     border-width: 1px;
     color: var(--black-strawberry) !important;
