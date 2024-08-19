@@ -379,6 +379,7 @@ $(() => {
     
         if (!isNaN(value) && value > 0) {
             addCounterSingle(value); // Adds the specified number of items
+            addToast()
         } else {
             console.error("Invalid value:", value); 
         }
@@ -449,7 +450,7 @@ const addCounter = () => {
 // Add a specific number of items to the cart
 const addCounterSingle = (value) => {
     if (value !== undefined && value !== null) {
-        totalItems += value - 1; // Add the value directly to totalItems
+        totalItems += value; // Add the value directly to totalItems
         updateCounterBadge();
     } else {
         console.error("Undefined value passed to addCounterSingle");
