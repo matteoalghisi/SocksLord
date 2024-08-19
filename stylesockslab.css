@@ -2,6 +2,7 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 }
 .filter {
+    width: 80%;
     border-radius: 8px;
 }
 /*.section-filters .sl-btn-static {
@@ -20,21 +21,42 @@
 .section-filters .sl-btn-static:hover {
     color: var(--black-banana);
 }*/
-
+.btn-filter {
+    width: 156px;
+    height: 44px;
+    border-radius: 8px;
+}
+.foot-container {
+    width: 100%;
+}
 .color-container {
+    max-width: 292px;
+}
+.material-container {
+    max-width: 292px;
+}
+.functionality-container {
     max-width: 292px;
 }
 .color-option {
     padding: 8px 16px;
 }
-.circle {
+.circle-filter {
     width: 24px;
     height: 24px;
-    background-color: orange; 
     border-radius: 50%;
     border: 0.5px solid var(--black-banana); 
 }
-
+/* color filter */
+#sl-cf-1 {
+    background-color: #FF9726;
+}
+#sl-cf-2 {
+    background-color: #FFA4F7;
+}
+#sl-cf-3 {
+    background-color: #03964A;
+}
 @media (min-width: 768px) and (max-width: 991px) {
     .sock-image-mobile {
         width: 280px; 
@@ -68,10 +90,28 @@
         padding: 184px 100px 88px !important;
     }
     .filter {
+        width: 100%;
         border-radius: 12px;
         padding: 2rem !important;
     }
+    .btn-filter {
+        width: 160px;
+        height: 48px;
+        border-radius: 12px;
+    }
+    .foot-container {
+        max-width: 300px;
+        padding-top: 1.75rem !important;
+    }
     .color-container {
+        max-width: 300px;
+        padding-top: 1.75rem !important;
+    }
+    .material-container {
+        max-width: 300px;
+        padding-top: 1.75rem !important;
+    }
+    .functionality-container {
         max-width: 300px;
         padding-top: 1.75rem !important;
     }
