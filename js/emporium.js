@@ -133,10 +133,10 @@ $(() => {
 
 //Button on card
 $(document).on("mouseenter", ".card-emporium", function() {
-    $(this).find(".card-btn").removeClass("d-none");
+    $(this).find(".cart-btn").removeClass("d-none");
 });
 $(document).on("mouseleave", ".card-emporium", function() {
-    $(this).find(".card-btn").addClass("d-none");
+    $(this).find(".cart-btn").addClass("d-none");
 });
 
 // Add filters to DOM
@@ -189,7 +189,7 @@ const addProducts = (products) => {
     products.forEach((product, index) => {
         const x = product.stock > 0 ? ` <div class="d-none d-lg-flex justify-content-end card-button-external">
                                             <div class="d-none d-lg-flex card-button z-3 add-cart-button">
-                                                <button class="card-btn d-none justify-content-center align-items-center d-flex">
+                                                <button class="cart-btn d-none justify-content-center align-items-center d-flex">
                                                     <img src="img/icon/Sachetto-active.svg" alt="Cart">
                                                 </button>
                                             </div> 
@@ -203,7 +203,7 @@ const addProducts = (products) => {
         const w = product.stock > 0 ? ` <a href="${product.href}" class="card-link"></a> `: "";
                                     
         productsContainer.append(`
-            <div class="col-2 col-lg-3 card-emporium d-flex card justify-content-center align-items-center effect-style-default-shadow sl-card-c ${z}">
+            <div class="col-2 col-lg-3 card-emporium d-flex card justify-content-center align-items-center effect-style-shadow sl-card-c ${z}">
                 ${y}
                 ${w}
                 <h4 class="text-style-h4 text-center">${product.name}</h4>
@@ -212,5 +212,13 @@ const addProducts = (products) => {
                 ${x}
             </div>
         `)
+    });
+    // Riconnessione degli eventi
+    productsContainer.off("click", ".cart-btn"); // Rimuovi i listener precedenti
+    productsContainer.on("click", ".cart-btn", function() {
+        totalItems++;
+        sessionStorage.setItem('totalItems', totalItems);
+        updateCounterBadge();
+        addToast();
     });
 }

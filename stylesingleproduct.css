@@ -99,12 +99,10 @@
     color: var(--black-strawberry);
     border: none;
     cursor: pointer;
-    width: 30px;
     height: auto;
     text-align: center;
 }  
 .input-box {
-    width: 40px;
     text-align: center;
     border: none;
     outline: none;
@@ -119,7 +117,7 @@
 }
 
 .input-box[type="number"] {
-    -moz-appearance: textfield;
+    appearance: textfield;
 }
   
 /* Accordion */
