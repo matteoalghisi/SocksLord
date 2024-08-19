@@ -365,12 +365,12 @@ $(function() {
 });
 
 // Add to cart toast, counter badge and icon-cart active
+
+
 $(() => {
     // In Emporium:
     $(".add-cart-button").on("click", (e) => {
         const cartIcon = $(".cart-icon").addClass("cart-icon-active");
-        addToast();
-        addCounter();  // Increment and save the new value
     });
 
     // In Single product

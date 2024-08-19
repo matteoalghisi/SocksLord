@@ -222,3 +222,167 @@ const addProducts = (products) => {
         addToast();
     });
 }
+
+// script.js
+  
+// Cart: Single Product and Emporium
+// Variable to keep track of the total number of items in the cart
+let totalItems = parseInt(sessionStorage.getItem('totalItems')) || 0; // Retrieve the value from sessionStorage or set to 0 if it doesn't exist
+
+// Quantity button Single product
+$(function() {
+    const quantityContainer = $(".quantity");
+    const minusBtn = quantityContainer.find(".minus");
+    const plusBtn = quantityContainer.find(".plus");
+    const inputBox = quantityContainer.find(".input-box");
+    inputBox.val(1);
+
+    updateButtonStates();
+
+    quantityContainer.on("click", handleButtonClick);
+    inputBox.on("input", handleQuantityChange);
+
+    function updateButtonStates() {
+        const value = parseInt(inputBox.val());
+        minusBtn.prop("disabled", value <= 1);
+        plusBtn.prop("disabled", value >= parseInt(inputBox.attr("max")));
+    }
+
+    // Function to handle the click of the increment button
+    function handleButtonClick(event) {
+        const target = $(event.target);
+        if (target.hasClass("minus")) {
+            decreaseValue();
+        } else if (target.hasClass("plus")) {
+            let previousValue = parseInt(inputBox.val()); /// Capture the current value
+            increaseValue();
+            // Use previousValue for your operations
+        }
+    }
+
+    function decreaseValue() {
+        let value = parseInt(inputBox.val());
+        value = isNaN(value) ? 1 : Math.max(value - 1, 1);
+        if (value !== parseInt(inputBox.val())) {
+            inputBox.val(value);
+            updateButtonStates();
+            handleQuantityChange();
+        }
+    }
+
+    function increaseValue() {
+        let value = parseInt(inputBox.val());
+        value = isNaN(value) ? 1 : Math.min(value + 1, parseInt(inputBox.attr("max")));
+        if (value !== parseInt(inputBox.val())) {
+            inputBox.val(value);
+            updateButtonStates();
+            handleQuantityChange();
+        }
+    }
+
+    function handleQuantityChange() {
+        let value = parseInt(inputBox.val());
+        value = isNaN(value) ? 1 : value;
+        console.log("Quantity changed:", value);
+    }
+});
+
+// Add to cart toast, counter badge and icon-cart active
+// Funzione per gestire l'aggiunta al carrello
+
+    
+$(() => {
+    // In Emporium:
+    $(".add-cart-button").on("click", (e) => {
+        const cartIcon = $(".cart-icon").addClass("cart-icon-active");
+    });
+
+    // In Single product
+    $(".add-cart-single").on("click", () => {
+        const value = parseInt($(".input-box").val());
+    
+        if (!isNaN(value) && value > 0) {
+            addCounterSingle(value); // Adds the specified number of items
+        } else {
+            console.error("Invalid value:", value); 
+        }
+    });
+});
+
+
+// Add and remove toast to DOM
+const addToast = () => {
+    const toastContainer = $("#sl-toast-container");
+    toastContainer.find('.sl-toast').remove();
+
+    toastContainer.append(`
+        <div class="sl-toast sl-bg-kiwi position-fixed effect-style-shadow">
+            <p class="text-style-body-copy">Calze aggiunte al carrello</p>
+        </div>
+    `);
+    const newToast = toastContainer.find('.sl-toast');
+    newToast.delay(3500).fadeOut(500, () => {
+        $().remove();
+    });
+};
+
+// Function to update the cart badge and the icon state
+const updateCounterBadge = () => {
+    const counterContainer = $("#counter-container");
+    let badge = counterContainer.find(".counter-badge");
+    const cartIcon = $(".cart-icon");
+
+    if (totalItems > 0) {
+        if (badge.length) {
+            badge.find(".text-style-badge").text(totalItems);
+        } else {
+            // If the badge doesn't exist, create a new one
+            counterContainer.append(`
+                <div class="counter-badge position-fixed sl-bg-kiwi d-flex justify-content-center align-items-center">
+                    <p class="text-style-badge">${totalItems}</p>
+                </div>
+            `);
+        }
+        // Add the active class to the cart icon
+        cartIcon.addClass("cart-icon-active");
+    } else {
+        // If the number of items is 0, remove the badge and deactivate the cart icon
+        badge.remove();
+        cartIcon.removeClass("cart-icon-active");
+    }
+
+    // Save the updated total in sessionStorage
+    sessionStorage.setItem('totalItems', totalItems);
+};
+
+// Handle the activation of the cart icon
+const updateCartIconState = () => {
+    const cartIcon = $(".cart-icon");
+    if (totalItems > 0) {
+        cartIcon.addClass("cart-icon-active");
+    } else {
+        cartIcon.removeClass("cart-icon-active");
+    }
+};
+
+// Add a single item to the cart
+const addCounter = () => {
+    totalItems++; // Increment the total number of items
+    updateCounterBadge();
+};
+
+// Add a specific number of items to the cart
+const addCounterSingle = (value) => {
+    if (value !== undefined && value !== null) {
+        totalItems += value; // Add the value directly to totalItems
+        updateCounterBadge();
+    } else {
+        console.error("Undefined value passed to addCounterSingle");
+    }
+};
+
+// Retrieve the total number of items when the page loads and update the badge
+$(() => {
+    updateCounterBadge();
+    updateCartIconState(); // Set the cart icon state when the page is loaded
+});
