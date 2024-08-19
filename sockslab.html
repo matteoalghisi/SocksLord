@@ -95,16 +95,21 @@
 
       <!-- Badge with counter for purchased products -->
       <div id="counter-container"></div>
-
   </nav>
-    <!-- Main section -->
-    <section class="section-lab-container container-fluid">
-      <div class="sl-pt-first-div sl-bg-strawberry"></div>
-      <div class="section-sock sl-bg-strawberry px-3 pb-8 d-flex flex-column align-items-center">
-        <img src="img/sockslab/Sock-lab-mobile.svg" alt="Questa è la tua calza">
-      </div>
 
-      <div class="section-filters sl-bg-avocado pt-5 px-3">
+
+  <!-- Main section -->
+  <section class="section-lab-container container-fluid">
+    <div class="sl-pt-first-div sl-bg-strawberry d-block d-lg-none"></div>
+    <div class="container-fluid d-flex flex-column flex-lg-row">
+      <!-- Sezione della calza -->
+      <div class="section-sock sl-bg-strawberry px-3 pb-8 d-flex flex-column align-items-center">
+        <img src="img/sockslab/Sockslab-mobile.svg" alt="Questa è la tua calza da modificare" class="sock-image-mobile d-block d-lg-none">
+        <img src="img/sockslab/Sockslab-desktop.svg" alt="Questa è la tua calza da modificare" class="sock-image-desktop d-none d-lg-block">
+      </div>
+      
+      <!-- Sezione dei filtri -->
+      <div class="section-filters d-flex flex-column align-items-center sl-bg-avocado pt-5 px-3">
         <div class="pb-6">
           <h1 class="text-style-h1 sl-color-strawberry">Sockslab</h1>
           <h4 class="text-style-h4 sl-color-strawberry">Create your socks</h4>
@@ -112,17 +117,21 @@
             Scegli la forma del piede, il colore, il materiale e la funzione, e personalizza la tua calza in pochi e semplici step!
           </p>
         </div>
-        <div class="filter effect-style-default-shadow mb-3">
+        <div class="filter sl-bg-avocado effect-style-shadow border p-3 mb-3 d-flex flex-column align-items-start">
           <h3 class="text-style-h3">Colore</h3>
-          <div class="color-container">
-              <div class="color color-1"></div>
-              <div class="color color-2"></div>
-              <div class="color color-3"></div>
-              <div class="color color-4"></div>
-              <div class="color color-5"></div>
-              <div class="color color-6"></div>
-              <div class="color color-7"></div>
-              <div class="color color-8"></div>
+          <div class="color-container pt-4 d-flex flex-wrap gap-2 gap-lg-3">
+            <div class="color-option border p-3 d-flex flex-row align-items-center gap-3">
+              <div class="circle"></div>
+              <span class="text-style-button">Arancio</span>
+            </div>
+            <div class="color-option border p-3 d-flex flex-row align-items-center gap-3">
+              <div class="circle"></div>
+              <span class="text-style-button">Giallo</span>
+            </div>
+            <div class="color-option border p-3 d-flex flex-row align-items-center gap-3">
+              <div class="circle"></div>
+              <span class="text-style-button">Verde</span>
+            </div>
           </div>
         </div>
         <!-- stepper mobile -->
@@ -137,7 +146,8 @@
             <span class="sl-btn-text text-style-button">Fine</span>
         </a>
       </div> 
-    </section>
+    </div>
+  </section>
 
     <!-- Footer -->
     <footer  class="footer container-fluid px-3 px-sm-4 sl-bg-avocado">
