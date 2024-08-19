@@ -274,7 +274,8 @@
     border-radius: 12px;
 }
 .sl-product-resocks-card img{
-    width: 140px;
+    width: 110px;
+    height: 110px;
 }
 .sl-product-resocks-card .card-img-top{
     width: fit-content;
@@ -289,6 +290,10 @@
 @media (min-width: 576px) {
     .sl-product-resocks{
         padding-bottom: 256px;
+    }
+    .sl-product-resocks-card img{
+        width: 140px;
+        height: 140px;
     }
 }
 @media (min-width: 992px) {

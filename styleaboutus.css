@@ -218,7 +218,7 @@
         top: -7%;
         left: 48.5%;
         fill: none;
-        stroke: red;
+        stroke: var(--black-strawberry);
     }
 }
 @media (min-width: 420px) {

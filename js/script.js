@@ -53,7 +53,7 @@ $(document).ready(function () {
     //script for animation of aircraft in about us (use different path for different breakpoint)
     
     if (window.matchMedia("(min-width: 1400px)").matches) {
-        $(".section-aboutus-islands .container").append($('<svg class=" position-absolute sl-path-svg" viewBox="0 0 150 390" xmlns="http://www.w3.org/2000/svg"><path preserveAspectRatio="none" class="path" d="M 153.489 1.65 C 98.118 34.193 6.164 21.172 6.02 69.919 C 5.88 117.385 112.744 99.319 112.744 148.744 C 112.744 191.403 11.501 171.976 3.174 235.105 C -3.099 282.66 145.044 243.099 156.126 391.524" style="fill: none; stroke: rgb(186, 218, 85);"></path></svg>'));
+        $(".section-aboutus-islands .container").append($('<svg class=" position-absolute sl-path-svg" viewBox="0 0 150 390" xmlns="http://www.w3.org/2000/svg"><path preserveAspectRatio="none" class="path" d="M 153.489 1.65 C 98.118 34.193 6.164 21.172 6.02 69.919 C 5.88 117.385 112.744 99.319 112.744 148.744 C 112.744 191.403 11.501 171.976 3.174 235.105 C -3.099 282.66 145.044 243.099 156.126 391.524"></path></svg>'));
     } else{
         if (window.matchMedia("(min-width: 1200px)").matches) {
             $(".section-aboutus-islands .container").append($('<svg class=" position-absolute sl-path-svg" viewBox="0 0 150 390" xmlns="http://www.w3.org/2000/svg"><path preserveAspectRatio="none" class="path" d="M 148.024 -28.448 C 105.897 13.572 6.29 18.628 6.174 64.95 C 6.025 124.366 112.97 101.023 112.744 151.106 C 112.518 201.188 19.41 176.226 3.174 238.618 C -13.062 301.009 143.934 278.911 155.608 397.121" style="fill: none; stroke: rgb(186, 218, 85);"></path></svg>'));
@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             end: `bottom top+=${180 + cards.length * spacer}`,
             pin: true,
             pinSpacing: false,
-            markers: true,
+            markers: false,
             id: "card-pin",
             invalidateOnRefresh: true
         });
