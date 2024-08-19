@@ -299,7 +299,6 @@ END SECTION OUR SOCKS
 .sl-create-nav-tab .nav-tabs{
     width: fit-content;
     border-bottom: 1px solid var(--black-banana);
-     
 }
 .sl-create-nav-tab .nav-tabs{
     border-radius: 0 0 0 8px; 

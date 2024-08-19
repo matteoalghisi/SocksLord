@@ -127,6 +127,7 @@
   background-color: var(--white-avocado);
   border: 1px solid var(--black-banana);
   border-radius: 12px;
+  transition: transform 0.3s;
 }
 @media (min-width: 576px) {
   .card-emporium{
@@ -138,6 +139,7 @@
     transform:scale(1.2);
     color: var(--white-avocado);
     z-index: 2;
+    transition: transform 0.3s;
   }
 }
 .card-img{

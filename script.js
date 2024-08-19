@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 end: "+=4400",
                 scrub: true,
                 once: false,
-                markers: true
+                markers: false
             }
         })
             .to(".provani", {
