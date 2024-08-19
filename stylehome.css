@@ -302,7 +302,7 @@ END SECTION OUR SOCKS
      
 }
 .sl-create-nav-tab .nav-tabs{
-    border-radius: 0 0 0 8px !important; 
+    border-radius: 0 0 0 8px; 
 }
 .sl-create-nav-tab a{
     padding-left: 12px;
@@ -312,6 +312,7 @@ END SECTION OUR SOCKS
     .sl-create-nav-tab .nav{
         border-radius: 16px 16px 0 0;  
     } 
+    
 }
 .sl-create-nav-tab .nav .nav-link{
     border-left: 1px solid var(--black-banana);
@@ -434,10 +435,12 @@ END SECTION OUR SOCKS
 
 .section-resocks{
     width: 100%;
-    
+    padding-top: 40px;
     background-image: url(img/home/wave-home-2-mobile.png);
-    background-position: top;
+    background-position-y: top;
+    background-position-x: left;
     background-size: cover;
+
 }
 .section-resocks .row{
     padding-top: 200px;
@@ -450,9 +453,7 @@ END SECTION OUR SOCKS
 }
 @media (min-width: 576px) {
     .section-resocks{
-        background-image: url(img/home/wave-home-2-lg.png);
-        background-position-y: top;
-        background-position-x: left;
+        padding-top: 0;
     }
     .section-resocks .row{
         padding-top: 400px;
