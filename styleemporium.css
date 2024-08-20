@@ -13,7 +13,7 @@
 .wave-emporioum {
   width: 100%;
   height: 272px;
-  background-image: url(img/emporioum/wave-emporioum-mobile.png);
+  background-image: url(img/emporium/wave-emporioum-mobile.png);
   background-position: center;
   background-size: cover;
   margin-top: -40px;
@@ -22,7 +22,7 @@
   .wave-emporioum {
       width: 100%;
       height: 500px;
-      background-image: url(img/emporioum/wave-emporioum-desktop.png);
+      background-image: url(img/emporium/wave-emporioum-desktop.png);
       background-position-y: center;
       background-position-y: left;
       background-size: cover;
