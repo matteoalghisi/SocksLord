@@ -117,7 +117,7 @@
             <div class="tab-pane sl-form-tab-pane fade show active p-3 p-sm-5" id="Resocks">
               
               <div class="d-flex justify-content-between flex-column flex-lg-row gap-5">
-                <div class="sl-form-text d-flex flex-column gap-3">
+                <div class="sl-form-text w-100 d-flex flex-column gap-3">
                   <h4 class="tex-style-h4 mb-3">Restituzione, Riparazione, e Riciclo per un universo sostenibile</h4>
                   <p class="text-style-body-copy m-0">Restituisci le tue calze e contribuisci a rendere il nostro universo un posto migliore, un paio di calze alla volta! Puoi restituire il prodotto per motivi diversi:</p>
                   <h5 class="text-style-h5 m-0">
@@ -133,25 +133,40 @@
                   <p class="text-style-body-copy m-0">La sostenibilità è ad un portale da te. Compila il form e dai il tuo contributo a questa nobile causa. Ogni piccolo gesto conta, e insieme possiamo fare la differenza.</p> 
                 </div>
 
-                <form class="sl-form sl-bg-peach border rounded p-4">
-                  <div class="form-group pb-3">
-                    <label class="text-style-h6 pb-2" for="name">Nome</label>
-                    <input type="text" class="form-control mt-1" name="nome" placeholder="">
+                <div class="sl-form-flip">                  
+                  
+                  
+
+                  <form class="sl-form sl-bg-peach border rounded p-4 front side">
+                    <div class="form-group pb-3">
+                      <label class="text-style-h6 pb-2" for="name">Nome</label>
+                      <input type="text" class="form-control mt-1" name="nome" placeholder="">
+                    </div>
+                    <div class="form-group pb-3 pt-2">
+                      <label class="text-style-h6 pb-2" for="phone">Telefono</label>
+                      <input type="number" class="form-control mt-1" name="telefono" placeholder="">
+                    </div>
+                    <div class="form-group pb-3 pt-2">
+                      <label class="text-style-h6 pb-2" for="email">Email</label>
+                      <input type="email" class="form-control mt-1" name="email" aria-describedby="emailHelp" placeholder="">
+                    </div>
+                    <div class="form-group pb-3 pt-2">
+                      <label class="text-style-h6 pb-2" for="collabIdea">Idee per la collab</label>
+                      <textarea class="form-control mt-1" id="collabidea" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="sl-btn-tertiary text-style-button mt-2">Submit</button>
+                  </form>
+                  
+                  <div class="sl-bg-fig p-4 d-flex flex-column justify-content-between border rounded back side">
+                    <div class="d-flex flex-column justify-content-center ">
+                      <img src="img/contact/Aircraft.png" alt="">
+                      <h4 class="tex-style-h4"><span class="sl-color-kiwi" >Grazie</span> di far parte di<br>questa avventura<br>sostenibile. </h4>
+                      <p class="text-style-body-copy"></p>
+                    </div>
+                    <a class="sl-btn-tertiary text-style-button mt-2">Submit</a>
                   </div>
-                  <div class="form-group pb-3 pt-2">
-                    <label class="text-style-h6 pb-2" for="phone">Telefono</label>
-                    <input type="number" class="form-control mt-1" name="telefono" placeholder="">
-                  </div>
-                  <div class="form-group pb-3 pt-2">
-                    <label class="text-style-h6 pb-2" for="email">Email</label>
-                    <input type="email" class="form-control mt-1" name="email" aria-describedby="emailHelp" placeholder="">
-                  </div>
-                  <div class="form-group pb-3 pt-2">
-                    <label class="text-style-h6 pb-2" for="collabIdea">Idee per la collab</label>
-                    <textarea class="form-control mt-1" id="collabidea" rows="5"></textarea>
-                  </div>
-                  <button type="submit" class="sl-btn-tertiary text-style-button mt-2">Submit</button>
-                </form>
+
+                </div>
               
               </div>
             </div>
@@ -161,7 +176,7 @@
             <div class="tab-pane sl-form-tab-pane fade p-3 p-sm-5" id="Collhub">
               
               <div class="d-flex justify-content-between flex-column flex-lg gap-5">
-                <div class="sl-form-text d-flex flex-column gap-3">
+                <div class="sl-form-text w-100 d-flex flex-column gap-3">
                   <h4 class="tex-style-h4 mb-3">Sii il nostro compagno di avventure nella conquista del mercato intergalattico</h4>
                   <p class="text-style-body-copy m-0">Se condividi la nostra passione per l'unicità e l'avanguardia, potremmo formare un duo perfetto per un'avventura nel mondo della moda! Ecco tre ragioni per unirti a noi:</p>
                   <p class="text-style-body-copy m-0">
@@ -250,6 +265,12 @@
           <a class="px-sm-4 px-2 py-0 text-style-body-copy-small" href="#">Privacy intergalattica</a>
         </div>
       </footer>
+
+
+      <script>
+        $('.sl-form-flip').height($('.sl-form').outerHeight());
+        //$('.back').height($('.sl-form-flip').outerHeight());
+      </script>
   
     </body>
   </html>

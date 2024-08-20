@@ -78,17 +78,33 @@
 .sl-form input{
     height: 44px;
 }
-@media (min-width: 992px) {
-    .sl-form input{
-        width: 344px;
-    }
+
+.sl-form-flip{
+    width: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 1s ease;
 }
-
-
-
-
-
-
+.sl-form-flip:hover {
+    transform: rotateY(180deg);
+  }
+.sl-form-flip .side {
+    position: absolute;
+    backface-visibility: hidden;
+}
+.sl-form-flip .back {
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+}
+.sl-form-flip .back img{
+    width: 150px;
+}
+.sl-form-flip .back .d-flex{
+    flex-grow: 0.5;
+}
+  
 
 
 

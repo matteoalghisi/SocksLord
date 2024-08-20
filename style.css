@@ -88,6 +88,9 @@
 .sl-bg-lemon {
     background-color: var(--gray-lemon);
 }
+.sl-bg-fig {
+    background-color: var(--gray-fig);
+}
 
 /* Sizes customized */
 .pb-6 {
