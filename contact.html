@@ -100,34 +100,60 @@
     <section class="sl-container-form d-flex align-items-center justify-content-center container-fluid">
       <div class="container">
       
-      
-      
-      <div class="row justify-content-center justify-content-lg-start mx-3">  
-        <div class="tab-content border rounded-2 p-0 sl-bg-avocado">
+        <div class="row justify-content-center justify-content-lg-start mx-3">  
+          <div class="tab-content border rounded-2 p-0 sl-bg-avocado">
 
-          <div class="sl-form-nav-tab p-0 position-relative">
-            <ul class="nav nav-tabs border-0">
-              <li class="nav-item tab-resocks sl-bg-avocado">
-                  <a href="#Resocks" class="nav-link d-flex justify-content-center mb-0 active text-style-h2" data-bs-toggle="tab">Resocks</a>
-              </li>
-              <li class="nav-item tab-collhub sl-bg-avocado">
-                <a href="#Collhub" class="nav-link d-flex justify-content-center mb-0 text-style-h2" data-bs-toggle="tab">Collhub</a>
-              </li>
-            </ul>
-          </div>
-            
-          <div class="tab-pane fade show active" id="Resocks">
-            <div class="sl-form-tab-text ms-3 my-auto">
-                <div class="sl-mobile-tab-headingd-flex text-container gap-2">
-                  <h4 class="tex-style-h4">Restituzione, Riparazione, e Riciclo per un universo sostenibile</h4>
-                  <p class="text-style-body-copy">Restituisci le tue calze e contribuisci a rendere il nostro universo un posto migliore, un paio di calze alla volta! Puoi restituire il prodotto per motivi diversi:</p>
-                  <h5><img src="img/contact/star-list-item.png" alt="star-list-item"> Un refresh stellare</h5>
-                    <p>Le tue calze hanno viaggiato per anni luce e mostrano i segni del tempo? Hai voglia di aggiungere una nuova funzionalità o sostituire quelle già presenti? Restituiscile e noi ci occuperemo di apportare modifiche o riparazioni su misura. </p>
-                  <h5><img src="img/contact/star-list-item.png" alt="star-list-item"> Uno smaltimento particellare</h5>
-                  <p>Ti sei stufato delle tue calze e preferisci acquistarne un modello nuovo di zecca, ma non vuoi inquinare la nostra galassia? Non preoccuparti, ci pensiamo noi a smaltirle in maniera ecologica! Abbiamo ideato un processo ad hoc che, con poca energia, disintegra le calze in minuscole particelle che poi riutilizziamo per i nostri nuovi prodotti.  </p>
-                  <p>La sostenibilità è ad un portale da te. Compila il form e dai il tuo contributo a questa nobile causa. Ogni piccolo gesto conta, e insieme possiamo fare la differenza.</p>
+            <div class="sl-form-nav-tab p-0 position-relative">
+              <ul class="nav nav-tabs border-0">
+                <li class="nav-item tab-resocks sl-bg-avocado">
+                    <a href="#Resocks" class="nav-link d-flex justify-content-center mb-0 pt-3 pb-2 active text-style-h2" data-bs-toggle="tab">Resocks</a>
+                </li>
+                <li class="nav-item tab-collhub sl-bg-avocado">
+                  <a href="#Collhub" class="nav-link d-flex justify-content-center mb-0 pt-3 pb-2 text-style-h2" data-bs-toggle="tab">Collhub</a>
+                </li>
+              </ul>
+            </div>
+              
+            <div class="tab-pane sl-form-tab-pane fade show active d-flex justify-content-between p-5" id="Resocks">
+              
+                <div class="sl-form-text d-flex flex-column gap-3">
+                  <h4 class="tex-style-h4 mb-3">Restituzione, Riparazione, e Riciclo per un universo sostenibile</h4>
+                  <p class="text-style-body-copy m-0">Restituisci le tue calze e contribuisci a rendere il nostro universo un posto migliore, un paio di calze alla volta! Puoi restituire il prodotto per motivi diversi:</p>
+                  <h5 class="text-style-h5 m-0">
+                    <img src="img/contact/star-list-item.png" alt="star-list-item">
+                    Un refresh stellare
+                  </h5>
+                  <p class="text-style-body-copy m-0">Le tue calze hanno viaggiato per anni luce e mostrano i segni del tempo? Hai voglia di aggiungere una nuova funzionalità o sostituire quelle già presenti? Restituiscile e noi ci occuperemo di apportare modifiche o riparazioni su misura. </p>
+                  <h5 class="text-style-h5 m-0">
+                    <img src="img/contact/star-list-item.png" alt="star-list-item">
+                    Uno smaltimento particellare
+                  </h5>
+                  <p class="text-style-body-copy m-0">Ti sei stufato delle tue calze e preferisci acquistarne un modello nuovo di zecca, ma non vuoi inquinare la nostra galassia? Non preoccuparti, ci pensiamo noi a smaltirle in maniera ecologica! Abbiamo ideato un processo ad hoc che, con poca energia, disintegra le calze in minuscole particelle che poi riutilizziamo per i nostri nuovi prodotti.  </p>
+                  <p class="text-style-body-copy m-0">La sostenibilità è ad un portale da te. Compila il form e dai il tuo contributo a questa nobile causa. Ogni piccolo gesto conta, e insieme possiamo fare la differenza.</p> 
                 </div>
 
+                <form class="sl-form sl-bg-peach border rounded p-4">
+                  <div class="form-group pb-3">
+                    <label for="name">Nome</label>
+                    <input type="text" class="form-control" name="nome" placeholder="Mario Rossi">
+                  </div>
+                  <div class="form-group pb-3 pt-2">
+                    <label for="phone">Telefono</label>
+                    <input type="number" class="form-control" name="telefono" placeholder="348">
+                  </div>
+                  <div class="form-group pb-3 pt-2">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+                  </div>
+                  <div class="form-group pb-3 pt-2">
+                    <label for="collabIdea">Idee per la collab</label>
+                    <textarea class="form-control" id="collabidea" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="sl-btn-text text-style-button pt-2">Submit</button>
+                </form>
+
+
+                <!--
                 <div class="form-resocks">
                   <form action="">
                     <label for="name">Nome</label>
@@ -144,40 +170,66 @@
                     </a>                  
                   </form>
                 </div>
-              </div> 
-              </div>
-
-              <div class="tab-pane fade" id="Collhub">
-                <div class="sl-form-tab-text ms-3 my-auto">
-                  <div class="sl-mobile-tab-headingd-flex text-container gap-2">
-                    <h4 class="tex-style-h4">Sii il nostro compagno di avventure nella conquista del mercato intergalattico</h4>
-                    <p class="text-style-body-copy">Se condividi la nostra passione per l'unicità e l'avanguardia, potremmo formare un duo perfetto per un'avventura nel mondo della moda! Ecco tre ragioni per unirti a noi:</p>
-                    <p><img src="img/contact/star-list-item.png" alt="star-list-item"> La nostra collezione è unica nel suo genere, e ciascun paio di calze è un'opera di originalità e stile che pone il nostro cliente sempre al centro dell'attenzione. Collaborare con noi ti farà spiccare in mezzo ad un pubblico intergalattico.</p>
-                    <p><img src="img/contact/star-list-item.png" alt="star-list-item"> Crediamo in una creatività libera e ci piace sperimentare idee audaci e stravaganti. Collaborare con noi significa immergersi in un mondo di possibilità illimitate, dove ogni idea, anche la più insolita, può diventare un capolavoro.</p>
-                    <p><img src="img/contact/star-list-item.png" alt="star-list-item"> Per realizzare le nostre calze di alta qualità utilizziamo una tecnologia all’avanguardia, di cui potrai usufruire anche tu per raggiungere lo stesso livello di eccellenza. I prodotti che realizzeremo insieme non saranno soltanto alla moda, ma anche comodi e resistenti.</p>
-                    <p>Siamo entusiasti di esplorare nuovi confini e di creare insieme qualcosa di veramente straordinario. Contattaci oggi stesso per intraprendere questo emozionante viaggio insieme!</p>
-                  </div>
-
-                  <div class="form-collhub">
-                    <form action="">
-                      <label for="name">Nome</label>
-                      <input type="text" name="nome">
-                      <label for="name">Telefono</label>
-                      <input type="number" name="telefono">
-                      <label for="name">Email</label>
-                      <input type="email" name="email">
-                      <label for="collab">Idee per la collab</label>
-                      <textarea name="collab" id="collab"></textarea>
-                      <a href="" class="sl-btn-static pt-2">
-                        <span class="sl-btn-text text-style-button justify-content-center align-items-center">Contattaci</span>
-                      </a>
-                    </form>
-                    </div>
-                  </div> 
-                </div>
-              </div>
-              <!-- <img class="position-absolute top-0 end-0 d-none d-md-inline" src="img/home/decoration-oursocks-home.png" alt=""> -->
+                -->
+              
             </div>
+
+            <div class="tab-pane fade" id="Collhub">
+              <div class="sl-form-tab-text ms-3 my-auto">
+                <div class="sl-mobile-tab-headingd-flex text-container gap-2">
+                  <h4 class="tex-style-h4">Sii il nostro compagno di avventure nella conquista del mercato intergalattico</h4>
+                  <p class="text-style-body-copy">Se condividi la nostra passione per l'unicità e l'avanguardia, potremmo formare un duo perfetto per un'avventura nel mondo della moda! Ecco tre ragioni per unirti a noi:</p>
+                  <p><img src="img/contact/star-list-item.png" alt="star-list-item"> La nostra collezione è unica nel suo genere, e ciascun paio di calze è un'opera di originalità e stile che pone il nostro cliente sempre al centro dell'attenzione. Collaborare con noi ti farà spiccare in mezzo ad un pubblico intergalattico.</p>
+                  <p><img src="img/contact/star-list-item.png" alt="star-list-item"> Crediamo in una creatività libera e ci piace sperimentare idee audaci e stravaganti. Collaborare con noi significa immergersi in un mondo di possibilità illimitate, dove ogni idea, anche la più insolita, può diventare un capolavoro.</p>
+                  <p><img src="img/contact/star-list-item.png" alt="star-list-item"> Per realizzare le nostre calze di alta qualità utilizziamo una tecnologia all’avanguardia, di cui potrai usufruire anche tu per raggiungere lo stesso livello di eccellenza. I prodotti che realizzeremo insieme non saranno soltanto alla moda, ma anche comodi e resistenti.</p>
+                  <p>Siamo entusiasti di esplorare nuovi confini e di creare insieme qualcosa di veramente straordinario. Contattaci oggi stesso per intraprendere questo emozionante viaggio insieme!</p>
+                </div>
+
+
+                <form class="form-collhub">
+                  <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" class="form-control" name="nome" placeholder="Mario Rossi">
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Telefono</label>
+                    <input type="number" class="form-control" name="telefono" placeholder="348">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+                  </div>
+                  <div class="form-group">
+                    <label for="collabIdea">Idee per la collab</label>
+                    <textarea class="form-control" id="collabidea" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary sl-btn-text text-style-button">Submit</button>
+                </form>
+<!--
+                <div class="form-collhub">
+                  <form action="">
+                    <label for="name">Nome</label>
+                    <input type="text" name="nome">
+                    <label for="name">Telefono</label>
+                    <input type="number" name="telefono">
+                    <label for="name">Email</label>
+                    <input type="email" name="email">
+                    <label for="collab">Idee per la collab</label>
+                    <textarea name="collab" id="collab"></textarea>
+                    <a href="" class="sl-btn-static pt-2">
+                      <span class="sl-btn-text text-style-button justify-content-center align-items-center">Contattaci</span>
+                    </a>
+                  </form>
+                </div>
+               -->
+
+
+                </div> 
+
+
+              </div>
+            </div>
+                <!-- <img class="position-absolute top-0 end-0 d-none d-md-inline" src="img/home/decoration-oursocks-home.png" alt=""> -->
           </div>
         </div>
       </div>

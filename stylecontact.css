@@ -23,16 +23,14 @@
     */
 
 
-    /*tabs*/
+/*tabs*/
 .sl-form-nav-tab{
     width: fit-content;
     border-radius: 0 0 5px 0;
 }
 
 .sl-form-nav-tab .nav-tabs a{
-    padding-top: 16px;
-    padding-bottom: 8px;
-    
+     
 }
 .sl-form-nav-tab .nav-item{
     border-radius: 5px 0 0 0;
@@ -59,6 +57,7 @@
 .sl-form-nav-tab .tab-collhub .nav-link.active{
     background-color: var(--liliac-tangerine);
 }
+/*end tabs*/
 
 
 /*
@@ -206,16 +205,19 @@
     }
 }
 
+
+/*
 .sl-form-tab-text {
     color: var(--black-strawberry);
 }
+    */
 
 @media (min-width: 576px) {
     .form-collhub {
         width: 400px;
         height: 560px;
     }
-
+/*
     .sl-form-tab-text {
         display: flex;
         flex-direction: row;
@@ -223,12 +225,13 @@
         align-items: center;
         gap: auto;
     }
+        */
 
     .text-container {
         width: 561px;
     }
 }
-
+/*
 .form-collhub {
     width: 358px;
     height: 501px;
@@ -258,25 +261,32 @@
     gap: 16px;
     align-self: stretch;
 }
+    */
 
+.sl-form{
+}
+.sl-form input{
+    width: 344px;
+    height: 40px;
+
+}
+
+/*
 input[type=text],
 input[type=number],
 input[type=email],
 textarea {
     width: 100%;
-    /* padding: 16px; */
+   
     margin: 8px 0;
     display: inline-block;
     border: 1px solid var(--black-banana);
     border-radius: 10px;
     box-sizing: border-box;
 }
+*/
 
-input[type=text],
-input[type=number],
-input[type=email] {
-    height: 36px;
-}
+
 
 textarea {
     height: 144px;
