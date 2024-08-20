@@ -219,6 +219,145 @@
     </div>
   </section>
 
+
+  <!-- Prova carosello -->
+
+  <!-- Inizio section lab container -->
+<section class="section-lab-container container-fluid">
+  <div class="container">
+      <div class="row mx-3">
+          <!-- Sezione della calza -->
+          <div class="col-lg-6 d-flex justify-content-center align-items-center pb-lg-0">
+              <div class="section-sock d-flex flex-column align-items-center">
+                  <img src="img/sockslab/Sockslab-mobile.svg" alt="Questa è la tua calza da modificare" class="sock-image-mobile d-block d-lg-none">
+                  <img id="sockImage" src="img/sockslab/socks/sock_null_null_null_null.svg" alt="Questa è la tua calza da modificare" class="sock-image-desktop d-none d-lg-block">
+              </div>
+          </div>
+          
+          <!-- slider dei filtri -->
+          <div id="carousel-filters" class="carousel slide col-lg-6 d-flex flex-column justify-content-center" data-bs-interval="false">
+              <!-- bottoni di controllo -->
+              <div class="sl-button-container d-none d-lg-inline-block">
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-filters" data-bs-slide="prev">
+                      <span class="d-flex justify-content-center align-items-center" aria-hidden="true"><img src="img/icon/freccia-slider-left.svg" alt="Precedente"></span>
+                      <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carousel-filters" data-bs-slide="next">
+                      <span class="d-flex justify-content-center align-items-center" aria-hidden="true"><img src="img/icon/freccia-slider-right.svg" alt="Successivo"></span>
+                      <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
+              
+              <!-- contenuto del carosello -->
+              <div class="carousel-inner">
+                  <!-- Filtro piedi -->
+                  <div class="carousel-item active">
+                      <div class="filter sl-bg-avocado effect-style-shadow border p-3 d-flex flex-column align-items-start">
+                          <h3 class="text-style-h3">Piede</h3>
+                          <div id="foot" class="filter-sockslab pt-4 d-flex flex-wrap gap-2 gap-lg-3">
+                              <button class="btn-filter d-flex flex-row justify-content-center align-items-center sl-bg-avocado p-3 gap-3 border" data-foot="tentacle">
+                                  <img src="img/icon/foot1.svg" alt="Questo è un piede a tentacolo" class="icon-filter"/>
+                                  <span class="text-style-button">Tentacolo</span>
+                              </button>
+                              <button class="btn-filter d-flex flex-row justify-content-center align-items-center sl-bg-avocado p-3 gap-3 border" data-foot="toes">
+                                  <img src="img/icon/foot2.svg" alt="Questo è un piede a tre dita" class="icon-filter"/>
+                                  <span class="text-style-button">Tre dita</span>
+                              </button>
+                              <button class="btn-filter d-flex flex-row justify-content-center align-items-center sl-bg-avocado p-3 gap-3 border" data-foot="normal">
+                                  <img src="img/icon/foot3.svg" alt="Questo è un piede normale" class="icon-filter"/>
+                                  <span class="text-style-button">Normale</span>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Filtro colori -->
+                  <div class="carousel-item">
+                      <div class="filter sl-bg-avocado effect-style-shadow border p-3 d-flex flex-column align-items-start">
+                          <h3 class="text-style-h3">Colore</h3>
+                          <div id="color" class="filter-sockslab pt-4 d-flex flex-wrap gap-2 gap-lg-3">
+                              <button class="btn-filter d-flex flex-row justify-content-center align-items-center sl-bg-avocado p-3 gap-3 border" data-color="orange">
+                                  <span id="sl-cf-1" class="circle-filter"></span>
+                                  <span class="text-style-button">Arancio</span>
+                              </button>
+                              <button class="btn-filter d-flex flex-row justify-content-center align-items-center sl-bg-avocado p-3 gap-3 border" data-color="yellow">
+                                  <span id="sl-cf-2" class="circle-filter"></span>
+                                  <span class="text-style-button">Giallo</span>
+                              </button>
+                              <button class="btn-filter d-flex flex-row justify-content-center align-items-center sl-bg-avocado p-3 gap-3 border" data-color="green">
+                                  <span id="sl-cf-3" class="circle-filter"></span>
+                                  <span class="text-style-button">Verde</span>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Filtro materiali -->
+                  <div class="carousel-item">
+                      <div class="filter sl-bg-avocado effect-style-shadow border p-3 d-flex flex-column align-items-start">
+                          <h3 class="text-style-h3">Materiale</h3>
+                          <div id="material" class="filter-sockslab pt-4 d-flex flex-wrap gap-2 gap-lg-3">
+                              <button class="btn-filter d-flex flex-row justify-content-center align-items-center sl-bg-avocado p-3 gap-3 border" data-material="cristalium">
+                                  <img src="img/icon/icon-material-cristalium.svg" alt="Questo è il materiale Cristalium" class="circle-filter"/>
+                                  <span class="text-style-button">Cristalium</span>
+                              </button>
+                              <button class="btn-filter d-flex flex-row justify-content-center align-items-center sl-bg-avocado p-3 gap-3 border" data-material="drakolith">
+                                  <img src="img/icon/icon-material-drakolith.svg" alt="Questo è il materiale Drakolith" class="circle-filter"/>
+                                  <span class="text-style-button">Drakolith</span>
+                              </button>
+                              <button class="btn-filter d-flex flex-row justify-content-center align-items-center sl-bg-avocado p-3 gap-3 border" data-material="lumifibra">
+                                  <img src="img/icon/icon-material-lumifibra.svg" alt="Questo è il materiale Lumifibra" class="circle-filter"/>
+                                  <span class="text-style-button">Lumifibra</span>
+                              </button>
+                              <button class="btn-filter d-flex flex-row justify-content-center align-items-center sl-bg-avocado p-3 gap-3 border" data-material="liquidite">
+                                  <img src="img/icon/icon-material-liquidite.svg" alt="Questo è il materiale Liquidite" class="circle-filter"/>
+                                  <span class="text-style-button">Liquidite</span>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Filtro funzionalità -->
+                  <div class="carousel-item">
+                      <div class="filter sl-bg-avocado effect-style-shadow border p-3 d-flex flex-column align-items-start">
+                          <h3 class="text-style-h3">Funzionalità</h3>
+                          <div id="functionality" class="filter-sockslab pt-4 d-flex flex-wrap gap-2 gap-lg-3">
+                              <button class="btn-filter d-flex flex-row justify-content-center align-items-center sl-bg-avocado p-3 gap-3 border" data-functionality="pocket">
+                                  <img src="img/icon/pocket.svg" alt="Questa è una tasca" class="icon-filter"/>
+                                  <span class="text-style-button">Tasca</span>
+                              </button>
+                              <button class="btn-filter d-flex flex-row justify-content-center align-items-center sl-bg-avocado p-3 gap-3 border" data-functionality="led">
+                                  <img src="img/icon/led.svg" alt="Questa è una luce led" class="icon-filter"/>
+                                  <span class="text-style-button">Led</span>
+                              </button>
+                              <button class="btn-filter d-flex flex-row justify-content-center align-items-center sl-bg-avocado p-3 gap-3 border" data-functionality="wings">
+                                  <img src="img/icon/wings.svg" alt="Queste sono delle ali" class="icon-filter"/>
+                                  <span class="text-style-button">Ali</span>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- stepper solo per mobile -->
+              <div class="carousel-indicators d-lg-none justify-content-center d-flex mb-6">
+                  <button type="button" data-bs-target="#carousel-filters" data-bs-slide-to="0" class="active stepper" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carousel-filters" data-bs-slide-to="1" class="stepper" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carousel-filters" data-bs-slide-to="2" class="stepper" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carousel-filters" data-bs-slide-to="3" class="stepper" aria-label="Slide 4"></button>
+              </div>
+
+              <!-- bottone statico -->
+              <div class="d-flex justify-content-center mt-4">
+                  <a href="" class="sl-btn-static">
+                      <span class="sl-btn-text text-style-button">Fine</span>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
     <!-- Footer -->
     <footer  class="footer container-fluid px-3 px-sm-4 sl-bg-avocado border-top">
       
