@@ -100,9 +100,9 @@
         width: 400px;
     }
 }
-.sl-form-flip:hover {
+.sl-form-flip.flipped {
     transform: rotateY(180deg);
-  }
+}
 .sl-form-flip .side {
     position: absolute;
     backface-visibility: hidden;

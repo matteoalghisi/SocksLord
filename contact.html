@@ -170,7 +170,7 @@
             </div>
 
             <!--form 2-->
-            <div class="tab-pane sl-form-tab-pane fade show active p-3 p-sm-5" id="Collhub">
+            <div class="tab-pane sl-form-tab-pane fade p-3 p-sm-5" id="Collhub">
               
               <div class="d-flex justify-content-between flex-column flex-lg-row gap-5">
                 <div class="sl-form-text w-100 d-flex flex-column gap-3">
@@ -278,6 +278,28 @@
 
       <script>
         $('.sl-form-flip').height($('.sl-form').outerHeight());
+
+        $(document).ready(function() {
+    // Flippa al click su "Contattaci"
+    $('form.sl-form').on('submit', function(event) {
+        event.preventDefault(); // Previeni l'invio del form
+        $(this).closest('.sl-form-flip').addClass('flipped');
+    });
+
+    // Riflippa su frontside al click su "Hai altro da dirci?"
+    $('.sl-form-flip .back .sl-btn-tertiary').on('click', function(event) {
+        event.preventDefault(); // Previeni il comportamento di default del link
+        $(this).closest('.sl-form-flip').removeClass('flipped');
+    });
+
+    // Resetta lo stato flip quando si cambia tab
+    $('a[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
+        var targetTab = $(e.target).attr("href"); // Ottieni l'ID del tab attivo
+        $(targetTab).find('.sl-form-flip').removeClass('flipped');
+    });
+});
+
+
       </script>
   
     </body>
