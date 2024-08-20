@@ -1,6 +1,76 @@
 .section-sock {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 }
+
+
+/* Carosello */
+#carousel-filters {
+    position: relative;
+    overflow: visible;
+    width: 100%;
+}
+.carousel-inner {
+    overflow: hidden;
+}
+
+/*button carousel*/
+.sl-button-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.sl-button-container-small {
+    position: absolute;
+    display: flex !important;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+}
+.sl-btn-carousel-l, .sl-btn-carousel-r {
+    position: static;
+    opacity: 1;
+    padding: 12px 12px 12px 12px;
+    border: 2px solid var(--bs-border-color);
+    background-color: var(--orange-kiwi);
+    height: fit-content;
+    width: fit-content;
+}
+.sl-button-container .sl-btn-carousel-l{
+    border-radius: 50% 0 0 50%;
+    transform: translateX(2px);
+}
+.sl-button-container .sl-btn-carousel-r{
+    border-radius: 0 50% 50% 0;
+}
+/*sistemare transition*/
+.sl-button-container .sl-button-container-small:hover .sl-btn-carousel-l{
+    transition: translate 1s;
+    border-radius: 50%;
+    padding: 12px 12px 12px 12px;
+    transform: translateX(-8px);
+}
+.sl-button-container .sl-button-container-small:hover .sl-btn-carousel-r{
+    transition: translate 1s;
+    border-radius: 50%;
+    padding: 12px 12px 12px 12px;
+    transform: translateX(+9px);
+}
+/* end button carousel*/
+  
+  /* Nascondere i bottoni su dispositivi mobili 
+  @media (max-width: 991px) {
+    .sl-button-container {
+      display: none;
+    }
+  }*/
+  
+
 .filter {
     width: 80%;
     border-radius: 8px;
