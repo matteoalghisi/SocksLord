@@ -1,9 +1,5 @@
-
-
 .sl-container-form {
-    
-    margin-bottom: 60px;
-    
+    margin-bottom: 60px;  
 }
 .sl-container-form .container {
     padding: 0;    
@@ -14,8 +10,6 @@
         padding-left: calc(var(--bs-gutter-x) * .5);    
     }
 }
-
-
 /*tabs*/
 .sl-form-nav-tab{
     width: 100%;
@@ -78,13 +72,17 @@
 .sl-form input{
     height: 44px;
 }
-
 .sl-form-flip{
-    width: 400px;
+    width: 100%;
     position: relative;
     transform-style: preserve-3d;
     transform: rotateY(0deg);
     transition: transform 1s ease;
+}
+@media (min-width: 992px) {
+    .sl-form-flip{
+        width: 400px;
+    }
 }
 .sl-form-flip:hover {
     transform: rotateY(180deg);
@@ -99,21 +97,9 @@
     height: 100%;
 }
 .sl-form-flip .back img{
-    width: 150px;
+    width: 180px;
 }
 .sl-form-flip .back .d-flex{
     flex-grow: 0.5;
 }
   
-
-
-
-
-
-
-
-
-
-
-
-
