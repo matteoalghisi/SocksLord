@@ -95,17 +95,6 @@
   filter: brightness(0) saturate(100%) invert(84%) sepia(90%) saturate(96%) hue-rotate(307deg) brightness(111%) contrast(96%);
 }
 
-/* color filter */
-#sl-cf-1 {
-  background-color: #FF9726;
-}
-#sl-cf-2 {
-  background-color: #FFA4F7;
-}
-#sl-cf-3 {
-  background-color: #03964A;
-}
-
 /* card-space */
 .card-space {
   padding-top: 3.5rem;
