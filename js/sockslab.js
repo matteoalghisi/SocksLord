@@ -116,7 +116,7 @@ $('#showPopup').on('click', function() {
               </div>
               <div class="buttons">
                   <button class="text-style-button d-flex align-items-center justify-content-center m-0 sl-btn-tertiary add-cart-button" data-bs-dismiss="modal">Aggiungi al carrello</button>
-                  <button id="closePopup" class="text-style-button d-flex align-items-center justify-content-center m-0 sl-btn-quaternary">Continua a modificare</button>
+                  <button id="closePopup" class="text-style-button d-flex align-items-center justify-content-center m-0 sl-btn-quaternary">Rivedi modifiche</button>
               </div>
           </div>
       `);
