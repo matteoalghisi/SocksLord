@@ -13,7 +13,7 @@
     overflow: hidden;
 }
 
-/*button carousel*/
+/*button carousel
 .sl-button-container{
     position: absolute;
     top: 50%;
@@ -49,7 +49,8 @@
 .sl-button-container .sl-btn-carousel-r{
     border-radius: 0 50% 50% 0;
 }
-/*sistemare transition*/
+    */
+/*sistemare transition
 .sl-button-container .sl-button-container-small:hover .sl-btn-carousel-l{
     transition: translate 1s;
     border-radius: 50%;
@@ -62,6 +63,7 @@
     padding: 12px 12px 12px 12px;
     transform: translateX(+9px);
 }
+    */
 /* end button carousel*/
   
   /* Nascondere i bottoni su dispositivi mobili 
@@ -168,3 +170,98 @@
         padding-top: 1.75rem !important;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+ .sl-carousel-lab{
+     width: 100%;
+ }
+ /*button carousel*/
+.sl-carousel-lab .sl-button-container{
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    top: 50%;
+}
+.sl-carousel-lab .sl-btn-carousel-l,  .sl-carousel-lab .sl-btn-carousel-r{
+     position: static;
+     opacity: 1;
+     padding: 12px 12px 12px 12px;
+     border: 2px solid var(--bs-border-color);
+     background-color: var(--orange-kiwi);
+     height: fit-content;
+     width: fit-content;
+     z-index: 0;
+}
+.sl-carousel-lab .sl-btn-carousel-l{
+     border-radius: 50% 0 0 50%;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%) translateX(-96%);
+
+}
+.sl-carousel-lab .sl-btn-carousel-r{
+     border-radius: 0 50% 50% 0;
+     position: absolute;
+     transform: translateY(-50%) translateX(100%);
+    
+}
+.sl-carousel-lab .sl-right-button-container  {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-100%);
+    
+}
+ .sl-carousel-lab .carousel-inner:hover .sl-btn-carousel-l{
+     transition: translate 1s;
+     border-radius: 50%;
+     padding: 12px 12px 12px 12px;
+     transform: translateY(-50%) translateX(-110%);  
+}
+.sl-carousel-lab .carousel-inner:hover .sl-btn-carousel-r{
+     transition: translate 1s;
+     border-radius: 50%;
+     padding: 12px 12px 12px 12px;
+     transform: translateY(-50%) translateX(114%);
+}
+ /* end button carousel*/
+
+.sl-carousel-lab .carousel-item .filter{
+    margin: 0 !important;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 100%;
+}
+
+.sl-carousel-lab .carousel-inner{
+
+    overflow: visible;   
+ }
+.sl-carousel-lab .carousel-item{
+        width: 100%;
+}
+ 
+/* change transition duration to control the speed of fade effect */
+.sl-carousel-lab .carousel-item {
+    transition: transform 0.1s ease-in-out;
+}
+  
+.sl-carousel-lab .carousel-fade .active.carousel-item-start,
+.sl-carousel-lab .carousel-fade .active.carousel-item-end {
+    transition: opacity 0s 0.1s;
+}
+
+
+
+
+ 
