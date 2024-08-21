@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     let slCardMainStart;
 
     if (minWidth768.matches) { // If media query matches
-        slCardMainStart = 400;
+        slCardMainStart = "40%";
     } else {
         slCardMainStart = 200;
     }
@@ -170,7 +170,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     cards.forEach((card, index) => {
         ScrollTrigger.create({
             trigger: card,
-            start: `top-=${index * spacer} top+=400px`,
+            start: `top-=${index * spacer} top+=40%`,
             endTrigger: ".pin-panel",
             end: `bottom top+=${180 + cards.length * spacer}`,
             pin: true,
