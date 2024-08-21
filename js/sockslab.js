@@ -79,3 +79,56 @@ document.addEventListener('DOMContentLoaded', function () {
     sockImage.setAttribute('src', newSrc);
   }
 });
+
+  
+//POPUP 
+$(document).ready(function() {
+    $(document).on('click', '.add-cart-button', function() {
+      // Add the class cart-icon-active, counter and toast
+      const cartIcon = $(".cart-icon").addClass("cart-icon-active");
+      addCounter();
+      addToast();
+
+      // Close popup and remove overlay
+      $('#feedbackPopup').remove();
+      $('#popupOverlay').remove();
+    });
+
+$('#showPopup').on('click', function() {
+  // Find out the current URL of the filtered image
+  const currentSockImageSrc = $('#sockImage').attr('src');
+
+  // Create a dark overlay
+  const overlay = $('<div>')
+      .attr('id', 'popupOverlay')
+      .addClass('overlay')
+      .css('display', 'block'); // Imposta display a block per visualizzarlo
+
+  // Create popup
+  const popupSection = $('<section>')
+      .attr('id', 'feedbackPopup')
+      .addClass('feedback-popup')
+      .append(`
+          <div class="popup sl-bg-avocado effect-style-shadow border d-flex flex-column align-items-center justify-content-center">
+              <div class="item d-flex flex-column justify-content-center align-items-center gap-3">
+                  <img id="popupSockImage" src="${currentSockImageSrc}" alt="">
+                  <p>₹ 433,999</p>
+              </div>
+              <div class="buttons">
+                  <button class="text-style-button d-flex align-items-center justify-content-center m-0 sl-btn-tertiary add-cart-button" data-bs-dismiss="modal">Aggiungi al carrello</button>
+                  <button id="closePopup" class="text-style-button d-flex align-items-center justify-content-center m-0 sl-btn-quaternary">Continua a modificare</button>
+              </div>
+          </div>
+      `);
+
+        // Add overlay and popup to body
+        $('body').append(overlay).append(popupSection);
+
+        // Add the closing event to the button "Continua a modificare"
+        $('#closePopup').on('click', function() {
+            popupSection.remove();
+            overlay.remove(); // Remove the overlay
+        });
+    });
+});
+
