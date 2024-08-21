@@ -31,7 +31,7 @@
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
 
     <!-- JS -->
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </head>
   
   <body class="sl-bg-strawberry">
@@ -44,10 +44,9 @@
               <span class="toggler-icon middle-bar"></span>
               <span class="toggler-icon bottom-bar"></span>
           </button>
-          <a class="navbar-brand d-flex align-items-center px-0 py-0 px-sm-3 m-0" href="index.html"><img src="img/logo/Logo-sockslord.png" alt="Sockslord's logo"/></a>
-
+          <a class="navbar-brand d-flex align-items-center px-0 py-0 px-sm-3 m-0" href="index.html"  aria-current="page"><img src="img/logo/Logo-sockslord.png" alt="Sockslord's logo"></a>
           <!-- desktop -->
-          <div class="d-none d-xl-inline collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+          <div class="d-none d-xl-inline collapse navbar-collapse flex-row-reverse">
               <ul class="navbar-nav mb-2 mb-lg-0">
                   <li class="nav-item">
                       <a class="nav-link px-3" href="product.html">Product</a>
@@ -59,7 +58,7 @@
                       <a class="nav-link px-3" href="sockslab.html">SocksLab</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link px-3" aria-current="page" href="aboutus.html">About us</a>
+                      <a class="nav-link px-3" href="aboutus.html">About us</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link px-3" href="contact.html">Contact</a>
@@ -68,10 +67,9 @@
           </div>
           <div class="px-sm-3"><span class="cart-icon"></span></div>
       </div>
-
       <!--mobile-->
       <div class="d-xl-none">
-          <div class="sl-collapse-mobile collapse navbar-collapse d-xl-none flex-row-reverse border-start border-bottom sl-bg-avocado effect-style-default-shadow" id="navbarSupportedContent" aria-e>
+          <div class="sl-collapse-mobile collapse navbar-collapse d-xl-none flex-row-reverse border-start border-bottom sl-bg-avocado effect-style-default-shadow" id="navbarSupportedContent">
               <ul class="navbar-nav mb-2 mb-xl-0">
                   <li class="nav-item">
                       <a class="nav-link px-sm-3 py-3 py-sm-4" href="product.html">Product</a>
@@ -91,13 +89,10 @@
               </ul>
           </div>
       </div>
-
       <!-- Toast -->
       <div id="sl-toast-container"></div>
-
       <!-- Badge with counter for purchased products -->
       <div id="counter-container"></div>
-
     </nav>
 
     <!-- Inizio hero section -->
@@ -146,7 +141,7 @@
                 </button>
                 <div id="collab-slider-placeholder" class="sl-card-collab sl-bg-tangerine border-2 effect-style-default-shadow d-flex flex-column justify-content-center align-items-center py-5 px-6">
                   <h3 class="text-style-h3 pb-6">Lux x SocksLord</h3>
-                  <img class></img>
+                  <img src="..." alt="">
                 </div>
                 <button class="carousel-control-next sl-btn-carousel-r" type="button" data-bs-target="#carousel-all" data-bs-slide="next">
                   <span class="d-flex justify-content-center align-items-center" aria-hidden="true"><img src="img/icon/freccia-slider-right.svg" alt=""></span>
@@ -393,55 +388,73 @@
           </div>
 
           <!-- tab con indicazioni per creare la calza -->
-          <div class="sl-create-nav-tab col-xl-6  p-0 rounded-md-3 rounded-md-2 d-flex flex-row flex-md-column position-relative pt-5 pt-xl-0 m-auto">
-            <ul class="nav nav-tabs effect-style-default-shadow d-flex flex-column flex-md-row align-items-end">
+          <div class=" sl-create-nav-tab col-xl-6  p-0 rounded-md-3 rounded-md-2 d-flex flex-row flex-md-column position-relative pt-5 pt-xl-0 m-auto">
+            <ul class="d-none d-md-flex nav nav-tabs effect-style-default-shadow flex-column flex-md-row align-items-end">
               <li class="nav-item">
-                  <a href="#Piede" class="nav-link active" data-bs-toggle="tab">Piede</a>
+                  <a href="#Piede-xl" class="nav-link active" data-bs-toggle="tab">Piede</a>
               </li>
               <li class="nav-item">
-                  <a href="#Colore" class="nav-link" data-bs-toggle="tab">Colore</a>
+                  <a href="#Colore-xl" class="nav-link" data-bs-toggle="tab">Colore</a>
               </li>
               <li class="nav-item">
-                  <a href="#Materiale" class="nav-link" data-bs-toggle="tab">Materiale</a>
+                  <a href="#Materiale-xl" class="nav-link" data-bs-toggle="tab">Materiale</a>
               </li>
               <li class="nav-item">
-                <a href="#Funzione" class="nav-link" data-bs-toggle="tab">Funzione</a>
+                <a href="#Funzione-xl" class="nav-link" data-bs-toggle="tab">Funzione</a>
               </li>
               <li class="nav-item">
-                <a href="#Acquista" class="nav-link" data-bs-toggle="tab">Acquista</a>
+                <a href="#Acquista-xl" class="nav-link" data-bs-toggle="tab">Acquista</a>
+              </li>
+            </ul>
+
+            <ul class=" d-md-none nav nav-tabs effect-style-default-shadow d-flex flex-column flex-md-row align-items-end">
+              <li class="nav-item">
+                  <a href="#Piede-sm" class="nav-link active" data-bs-toggle="tab">Piede</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#Colore-sm" class="nav-link" data-bs-toggle="tab">Colore</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#Materiale-sm" class="nav-link" data-bs-toggle="tab">Materiale</a>
+              </li>
+              <li class="nav-item">
+                <a href="#Funzione-sm" class="nav-link" data-bs-toggle="tab">Funzione</a>
+              </li>
+              <li class="nav-item">
+                <a href="#Acquista-sm" class="nav-link" data-bs-toggle="tab">Acquista</a>
               </li>
             </ul>
 
             <div class="tab-content d-none d-md-inline-block effect-style-default-shadow p-3 sl-bg-kiwi">
-              <div class="tab-pane fade show active" id="Piede">
+              <div class="tab-pane fade show active" id="Piede-xl">
                 <img src="img/home/piede-tab-create.png" class="me-3" alt="">
                 <div class="sl-create-tab-text ms-3 my-auto">
                   <h4 class="tex-style-h4">Scegli la forma del tuo piede</h4>
                   <p class="text-style-body-copy">Per creare la tua calza personalizzata, come prima cosa devi selezionare la forma del tuo piede. Scegli tra tre forme: tre dita, tentacolari o piede umano!</p>
                 </div> 
               </div>
-              <div class="tab-pane fade" id="Colore">
+              <div class="tab-pane fade" id="Colore-xl">
                 <img src="img/home/piede-tab-create.png" class="me-3" alt="">
                 <div class="sl-create-tab-text ms-3 my-auto">
                   <h4 class="tex-style-h4">Scegli il colore della tua calza</h4>
                   <p class="text-style-body-copy">Il secondo step per creare la tua calza personalizzata è scegliere il colore della tua calza. Ne abbiamo tantissimi tra cui scegliere: arancio, verde e giallo.</p>
                 </div> 
               </div>
-              <div class="tab-pane fade" id="Materiale">
+              <div class="tab-pane fade" id="Materiale-xl">
                 <img src="img/home/piede-tab-create.png" class="me-3" alt="">
                 <div class="sl-create-tab-text ms-3 my-auto">
                   <h4 class="tex-style-h4">Scegli il materiale della tua calza</h4>
                   <p class="text-style-body-copy">La scelta del materiale è cruciale per garantire il massimo comfort in ogni situazione. Puoi scegliere tra Sustainsilk, Cristalium, Drakolith e tanti altri!</p>
                 </div> 
               </div>
-              <div class="tab-pane fade" id="Funzione">
+              <div class="tab-pane fade" id="Funzione-xl">
                 <img src="img/home/piede-tab-create.png" class="me-3" alt="">
                 <div class="sl-create-tab-text ms-3 my-auto">
                   <h4 class="tex-style-h4">Scegli la funzione della tua calza</h4>
                   <p class="text-style-body-copy">L’ultimo modo che hai per personalizzare la tua calza è scegliere la funzione più adatta a te! Puoi optare tra quattro funzionalità: GPS, Tasca, Led, Ali.</p>
                 </div> 
               </div>
-              <div class="tab-pane fade" id="Acquista">
+              <div class="tab-pane fade" id="Acquista-xl">
                 <img src="img/home/piede-tab-create.png" class="me-3" alt="">
                 <div class="sl-create-tab-text ms-3 my-auto">
                   <h4 class="tex-style-h4">Acquista la tua calza preferita</h4>
@@ -451,7 +464,7 @@
             </div>
 
             <div class="tab-content d-md-none effect-style-default-shadow p-3 sl-bg-kiwi">
-              <div class="tab-pane fade show active" id="Piede">
+              <div class="tab-pane fade show active" id="Piede-sm">
                 <div class="sl-create-tab-text ms-3 my-auto">
                   <div class="sl-mobile-tab-heading d-flex gap-2">
                     <h4 class="tex-style-h4 my-auto">Scegli la forma del tuo piede</h4>
@@ -460,40 +473,40 @@
                   <p class="text-style-body-copy pt-2">Per creare la tua calza personalizzata, come prima cosa devi selezionare la forma del tuo piede. Ne abbiamo tantissime tra cui scegliere: tre dita, artigli, tentacolari e tante altre ancora!</p>
                 </div> 
               </div>
-              <div class="tab-pane fade" id="Piede">
+              <div class="tab-pane fade" id="Colore-sm">
                 <div class="sl-create-tab-text ms-3 my-auto">
                   <div class="sl-mobile-tab-heading d-flex gap-2">
-                    <h4 class="tex-style-h4 my-auto">Scegli la forma del tuo piede</h4>
+                    <h4 class="tex-style-h4 my-auto">Scegli il colore della tua calza</h4>
                     <img src="img/home/piede-tab-create.png" class="" alt="">
                   </div>
-                  <p class="text-style-body-copy pt-2">Per creare la tua calza personalizzata, come prima cosa devi selezionare la forma del tuo piede. Ne abbiamo tantissime tra cui scegliere: tre dita, artigli, tentacolari e tante altre ancora!</p>
+                  <p class="text-style-body-copy pt-2">Il secondo step per creare la tua calza personalizzata è scegliere il colore della tua calza. Ne abbiamo tantissimi tra cui scegliere: arancio, verde e giallo.</p>
                 </div> 
               </div>
-              <div class="tab-pane fade" id="Piede">
+              <div class="tab-pane fade" id="Materiale-sm">
                 <div class="sl-create-tab-text ms-3 my-auto">
                   <div class="sl-mobile-tab-heading d-flex gap-2">
-                    <h4 class="tex-style-h4 my-auto">Scegli la forma del tuo piede</h4>
+                    <h4 class="tex-style-h4 my-auto">Scegli il materiale della tua calza</h4>
                     <img src="img/home/piede-tab-create.png" class="" alt="">
                   </div>
-                  <p class="text-style-body-copy pt-2">Per creare la tua calza personalizzata, come prima cosa devi selezionare la forma del tuo piede. Ne abbiamo tantissime tra cui scegliere: tre dita, artigli, tentacolari e tante altre ancora!</p>
+                  <p class="text-style-body-copy pt-2">La scelta del materiale è cruciale per garantire il massimo comfort in ogni situazione. Puoi scegliere tra Sustainsilk, Cristalium, Drakolith e tanti altri!</p>
                 </div> 
               </div>
-              <div class="tab-pane fade" id="Piede">
+              <div class="tab-pane fade" id="Funzione-sm">
                 <div class="sl-create-tab-text ms-3 my-auto">
                   <div class="sl-mobile-tab-heading d-flex gap-2">
-                    <h4 class="tex-style-h4 my-auto">Scegli la forma del tuo piede</h4>
+                    <h4 class="tex-style-h4 my-auto">Scegli la funzione della tua calza</h4>
                     <img src="img/home/piede-tab-create.png" class="" alt="">
                   </div>
-                  <p class="text-style-body-copy pt-2">Per creare la tua calza personalizzata, come prima cosa devi selezionare la forma del tuo piede. Scegli tra tre forme: tre dita, tentacolari o piede umano!</p>
+                  <p class="text-style-body-copy pt-2">L’ultimo modo che hai per personalizzare la tua calza è scegliere la funzione più adatta a te! Puoi optare tra quattro funzionalità: GPS, Tasca, Led, Ali.</p>
                 </div> 
               </div>
-              <div class="tab-pane fade" id="Piede">
+              <div class="tab-pane fade" id="Acquista-sm">
                 <div class="sl-create-tab-text ms-3 my-auto">
                   <div class="sl-mobile-tab-heading d-flex gap-2">
-                    <h4 class="tex-style-h4 my-auto">Scegli la forma del tuo piede</h4>
+                    <h4 class="tex-style-h4 my-auto">Acquista la tua calza preferita</h4>
                     <img src="img/home/piede-tab-create.png" class="" alt="">
                   </div>
-                  <p class="text-style-body-copy pt-2">Per creare la tua calza personalizzata, come prima cosa devi selezionare la forma del tuo piede. Ne abbiamo tantissime tra cui scegliere: tre dita, artigli, tentacolari e tante altre ancora!</p>
+                  <p class="text-style-body-copy pt-2">Infine, clicca su “Fine”, poi “Aggiungi al carrello” e la tua calza personalizzata è pronta per essere spedita da te!</p>
                 </div> 
               </div>
             </div>
@@ -501,9 +514,10 @@
           </div>
         </div>
 
+      
 
-
-    </div>
+      </div>
+  
     </section>
 
     <!-- Resocks section -->
@@ -524,16 +538,15 @@
               <span class="sl-btn-icon"><img src="img/icon/Arrow-right.svg" alt=""></span>
             </a>
           </div>
-        <div class="stars"></div>
 
-    </div>
+        </div>
+      </div>
     </section>
 
 <!-- Footer -->
     <footer  class="footer container-fluid px-3 px-sm-4 sl-bg-avocado border-top">
-      
       <div class="pb-5 py-4 mb-5">
-        <img class="py-4" src="img/logo/Logo-sockslord.png" width="100%" alt="sockslord's logo"/>
+        <img class="py-4 footer-logo" src="img/logo/Logo-sockslord.png" alt="sockslord's logo">
         <div class="d-flex flex-row justify-content-between align-items-center py-4">
           <ul class="nav d-flex flex-column flex-xl-row gap-4">
             <li class="nav-item">
@@ -553,10 +566,10 @@
             </li>
           </ul>
           <div class="d-flex flex-column flex-xl-row gap-3 gap-lg-4">
-            <img class="footer-icon" src="img/icon/Icon-footer-1.svg" alt="">
-            <img class="footer-icon" src="img/icon/Icon-footer-2.svg" alt="">
-            <img class="footer-icon" src="img/icon/Icon-footer-3.svg" alt="">
-            <img class="footer-icon" src="img/icon/Icon-footer-4.svg" alt="">
+            <img class="footer-icon" src="img/icon/Icon-footer-1.svg" alt="find us">
+            <img class="footer-icon" src="img/icon/Icon-footer-2.svg" alt="review">
+            <img class="footer-icon" src="img/icon/Icon-footer-3.svg" alt="call us">
+            <img class="footer-icon" src="img/icon/Icon-footer-4.svg" alt="star us">
           </div>
         </div>
       </div>

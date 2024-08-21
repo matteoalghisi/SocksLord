@@ -427,6 +427,9 @@ END SECTION OUR SOCKS
         width: 322px;
     }
 }
+.sl-create-nav-tab .tab-content.d-md-none{
+    min-height: 264px;
+}
 
 /*end section create socks*/
 
