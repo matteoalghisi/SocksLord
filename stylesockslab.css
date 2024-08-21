@@ -5,12 +5,11 @@
 .section-sock img{
     height: 30vh;
 }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
     .section-sock img{
         height: 70vh;
     }
 }
-
 /* Carosello */
 #carousel-sockslab {
     position: relative;
