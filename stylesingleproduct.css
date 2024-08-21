@@ -9,7 +9,6 @@
 }
 .black-box{
     gap: 7.25rem;
-    height: 100vh;
     padding-top: 106px;
     padding-bottom: 73px;
 }
@@ -17,6 +16,13 @@
     .black-box{
         padding-top: 160px;
         z-index: 1;
+    }
+}
+@media (min-width: 576px) {
+    .black-box{
+        padding-top: 160px;
+        z-index: 1;
+        height: 100vh;
     }
 }
 
