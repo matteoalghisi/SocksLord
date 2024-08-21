@@ -31,8 +31,8 @@
         <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
 
         <!--JS-->
-        <script type="text/javascript" src="js/emporium.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
+        <script src="js/emporium.js"></script>
+        <script src="js/script.js"></script>
         
     </head>
 
@@ -40,66 +40,61 @@
 
         <!-- Navbar -->
         <nav class="navbar navbar-expand-xl fixed-top mt-1 mx-1 mt-sm-3 mx-sm-3 p-0">
-            <div id="navbarContainer" class="container-fluid d-flex justify-content-between sl-bg-avocado border px-3 py-2 p-sm-3 effect-style-default-shadow">
-                <button class="navbar-toggler border-0 px-0 px-sm-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleNavbarRadius()">
-                    <span class="toggler-icon top-bar"></span>
-                    <span class="toggler-icon middle-bar"></span>
-                    <span class="toggler-icon bottom-bar"></span>
-                </button>
-                <a class="navbar-brand d-flex align-items-center px-0 py-0 px-sm-3 m-0" href="index.html"><img src="img/logo/Logo-sockslord.png" alt="Sockslord's logo"/></a>
-
-                <!-- desktop -->
-                <div class="d-none d-xl-inline collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link px-3" href="product.html">Product</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3 active" href="emporium.html">Emporium</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3" href="sockslab.html">SocksLab</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3" aria-current="page" href="aboutus.html">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="px-sm-3" href="#"><span class="cart-icon"></span></div>
+        <div id="navbarContainer" class="container-fluid d-flex justify-content-between sl-bg-avocado border px-3 py-2 p-sm-3 effect-style-default-shadow">
+            <button class="navbar-toggler border-0 px-0 px-sm-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleNavbarRadius()">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <a class="navbar-brand d-flex align-items-center px-0 py-0 px-sm-3 m-0" href="index.html"><img src="img/logo/Logo-sockslord.png" alt="Sockslord's logo"></a>
+            <!-- desktop -->
+            <div class="d-none d-xl-inline collapse navbar-collapse flex-row-reverse">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="product.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 active" aria-current="page" href="emporium.html">Emporium</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="sockslab.html">SocksLab</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="aboutus.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
-      
-            <!--mobile-->
-            <div class="d-xl-none">
-                <div class="sl-collapse-mobile collapse navbar-collapse d-xl-none flex-row-reverse border-start border-bottom sl-bg-avocado effect-style-default-shadow" id="navbarSupportedContent" aria-e>
-                    <ul class="navbar-nav mb-2 mb-xl-0">
-                        <li class="nav-item">
-                            <a class="nav-link px-sm-3 py-3 py-sm-4" href="product.html">Product</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-sm-3 py-3 py-sm-4" href="emporium.html">Emporium</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-sm-3 py-3 py-sm-4" href="sockslab.html">SocksLab</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-sm-3 py-3 py-sm-4" aria-current="page" href="aboutus.html">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-sm-3 py-3 py-sm-4" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="px-sm-3"><span class="cart-icon"></span></div>
+        </div>
+        <!--mobile-->
+        <div class="d-xl-none">
+            <div class="sl-collapse-mobile collapse navbar-collapse d-xl-none flex-row-reverse border-start border-bottom sl-bg-avocado effect-style-default-shadow" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-xl-0">
+                    <li class="nav-item">
+                        <a class="nav-link px-sm-3 py-3 py-sm-4" href="product.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-sm-3 py-3 py-sm-4 active" aria-current="page" href="emporium.html">Emporium</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-sm-3 py-3 py-sm-4" href="sockslab.html">SocksLab</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-sm-3 py-3 py-sm-4 active" href="aboutus.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-sm-3 py-3 py-sm-4" href="contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
-
-            <!-- Toast -->
-            <div id="sl-toast-container"></div>
-
-            <!-- Badge with counter for purchased products -->
-            <div id="counter-container"></div>
-
+        </div>
+        <!-- Toast -->
+        <div id="sl-toast-container"></div>
+        <!-- Badge with counter for purchased products -->
+        <div id="counter-container"></div>
         </nav>
 
 
@@ -206,12 +201,10 @@
         </section>
 
 
-
         <!-- Footer -->
         <footer  class="footer container-fluid px-3 px-sm-4 sl-bg-avocado border-top">
-        
             <div class="pb-5 py-4 mb-5">
-            <img class="py-4" src="img/logo/Logo-sockslord.png" width="100%" alt="Sockslord's logo"/>
+            <img class="py-4 footer-logo" src="img/logo/Logo-sockslord.png" alt="sockslord's logo">
             <div class="d-flex flex-row justify-content-between align-items-center py-4">
                 <ul class="nav d-flex flex-column flex-xl-row gap-4">
                 <li class="nav-item">
@@ -224,17 +217,17 @@
                     <a class="nav-link px-xl-3 p-0" href="sockslab.html">SocksLab</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-xl-3 p-0" aria-current="page" href="aboutus.html">About us</a>
+                    <a class="nav-link px-xl-3 p-0" href="aboutus.html">About us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link px-xl-3 p-0" href="contact.html">Contact</a>
                 </li>
                 </ul>
                 <div class="d-flex flex-column flex-xl-row gap-3 gap-lg-4">
-                <img class="footer-icon" src="img/icon/Icon-footer-1.svg" alt="Footer icon">
-                <img class="footer-icon" src="img/icon/Icon-footer-2.svg" alt="Footer icon">
-                <img class="footer-icon" src="img/icon/Icon-footer-3.svg" alt="Footer icon">
-                <img class="footer-icon" src="img/icon/Icon-footer-4.svg" alt="Footer icon">
+                <img class="footer-icon" src="img/icon/Icon-footer-1.svg" alt="find us">
+                <img class="footer-icon" src="img/icon/Icon-footer-2.svg" alt="review">
+                <img class="footer-icon" src="img/icon/Icon-footer-3.svg" alt="call us">
+                <img class="footer-icon" src="img/icon/Icon-footer-4.svg" alt="star us">
                 </div>
             </div>
             </div>
