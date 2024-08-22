@@ -290,10 +290,10 @@ END SECTION OUR SOCKS
 .sl-create-nav-tab{
     width: fit-content;
 }
-.sl-create-nav-tab>img{
-    width: 207px;
-    height: 155px;
-    transform: translateX(50%) translateY(50%);
+.sl-create-nav-tab img{
+    width: 118px;
+    height: 128px;
+    /*transform: translateX(50%) translateY(50%);*/
 }
 .sl-create-nav-tab .nav-tabs{
     width: fit-content;
@@ -399,13 +399,13 @@ END SECTION OUR SOCKS
     display: flex;
 }
 .sl-create-nav-tab .tab-content img{
-    width: 48px;
-    height: 80px; 
+    width: 76px;
+    height: 82px; 
 }
 @media (min-width: 768px) {
     .sl-create-nav-tab .tab-content img{
         width: 118px;
-        height: 195px; 
+        height: 128px; 
     } 
 }
 .sl-create-nav-tab .tab-content h4{
