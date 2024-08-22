@@ -1,6 +1,6 @@
 .section-sock {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-    padding-top: 100px;
+    /* padding-top: 100px; */
 }
 .section-sock img{
     height: 30vh;
@@ -58,11 +58,11 @@
     .section-sock {
         width: 50%;
         clip-path: none;
-        padding-top: 184px;
+        padding-top: 120px;
     }
     .section-filters {
         width: 50%;
-        padding: 184px 100px 88px !important;
+        padding: 120px 100px 88px !important;
     }
     .filter {
         width: 80%;
