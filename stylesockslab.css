@@ -28,6 +28,7 @@
 }
 .text-width {
     width: 87px;
+    text-align: left;
 }
 .filter-sockslab-active{
     color: var(--white-avocado);
