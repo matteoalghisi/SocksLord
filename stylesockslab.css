@@ -19,6 +19,7 @@
     box-sizing: border-box;
     flex: 1 1 calc(50% - 0.5rem);
     border-radius: 8px;
+    min-width: 156px
 }
 .filter-sockslab-active{
     color: var(--white-avocado);
@@ -195,4 +196,5 @@
         border-radius: 12px;
     }
 }
+
  
