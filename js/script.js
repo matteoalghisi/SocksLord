@@ -327,7 +327,7 @@ const addToast = () => {
 
     toastContainer.append(`
         <div class="sl-toast sl-bg-kiwi position-fixed effect-style-shadow">
-            <p class="text-style-body-copy">Calze aggiunte al carrello</p>
+            <p class="text-style-body-copy">Calza aggiunte al carrello</p>
         </div>
     `);
     const newToast = toastContainer.find('.sl-toast');
