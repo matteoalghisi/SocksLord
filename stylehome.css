@@ -118,7 +118,6 @@ section{
     position: static;
     opacity: 1;
     padding: 12px 12px 12px 12px;
-    border: 2px solid var(--bs-border-color);
     background-color: var(--orange-kiwi);
     height: fit-content;
     width: fit-content;

@@ -24,47 +24,47 @@
 }
 
 /* Color classes */
-.sl-color-fig{
+.sl-color-fig {
     color: var(--gray-fig);
 }
-.sl-color-lemon{
+.sl-color-lemon {
     color: var(--gray-lemon);
 }
-.sl-color-banana{
+.sl-color-banana {
     color: var(--black-banana);
 }
-.sl-color-strawberry{
+.sl-color-strawberry {
     color: var(--black-strawberry);
 }
-.sl-color-avocado{
+.sl-color-avocado {
     color: var(--white-avocado);
 }
-.sl-color-kiwi{
+.sl-color-kiwi {
     color: var(--orange-kiwi);
 }
-.sl-color-grape{
+.sl-color-grape {
     color: var(--yellow-grape);
 }
 
 /* b/w color classes */
-.sl-bw-gray-title{
+.sl-bw-gray-title {
     color: var(--bw-gray-title);
 }
 
 /* Color filters */
-#sl-cf-1{
+#sl-cf-1 {
     background-color: #F5D3AD;
 }
-#sl-cf-2{
+#sl-cf-2 {
     background-color: #E1E6AE;
 }
-#sl-cf-3{
+#sl-cf-3 {
     background-color: #ABDEB7;
 }
 
 /* Background colors */ 
 /* !!! CONTROLLARE QUELLI CHE NON SERVONO ED ELIMINARLI !!! */
-.sl-bg-avocado{
+.sl-bg-avocado {
     background-color: var(--white-avocado); /*usato*/
 }
 .sl-bg-strawberry {
@@ -99,7 +99,7 @@
 .pt-6 {
     padding-top: 2.5rem !important;  /* 40px */
   }
-.px-6{
+.px-6 {
     padding-right: 2.5rem !important;  /* 40px */
     padding-left: 2.5rem !important;  /* 40px */
 }
@@ -115,11 +115,11 @@
 .p-8 {
 padding: 5rem 11.875rem !important;  /* 80px e 190px */
 }
-.pb-8{
+.pb-8 {
     padding-bottom: 5rem !important; /* 80 px */
 }
 
-.pb-9{
+.pb-9 {
     padding-bottom: 2rem !important;  /* 32px */
 }
 @media (min-width: 576px) {
@@ -127,25 +127,20 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
         padding-bottom: 2rem !important;  /* 32px */
     }
 }
-.pt-9{
+.pt-9 {
     padding-top: 2rem !important;  /* 32px */
 }
-.pl-10{
+.pl-10 {
     padding-left: 5.125rem !important;  /* 82px */
 }
-
-.border-2 {
-    border: 2px solid var(--black-banana);
-}
-
-.sl-mt-first-div{
+.sl-mt-first-div {
     margin-top: 64px;
 }
-.sl-pt-first-div{
+.sl-pt-first-div {
     padding-top: 104px;
     z-index: -2;
 }
-.sl-mt-last-div{
+.sl-mt-last-div {
     margin-bottom: 564px;
 }
 @media (min-width: 576px) {
