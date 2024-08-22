@@ -1066,6 +1066,10 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
 .footer .footer-logo{
     width: 100%;
 }
+.footer{
+    position: relative;
+    z-index: 1000;
+}
 
 
 
