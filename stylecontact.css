@@ -134,3 +134,17 @@
     height: 100px;
     background-size: 100% 100%;
 }
+.star-list-img {
+    height: 16px;
+    width: 16px;
+}
+.sl-form-title h4 {
+    width: 60%;
+}
+.sl-form-text p {
+    width: 80%;
+}
+.highlight-text {
+    color: var(--orange-kiwi);
+    font-weight: 500;
+}
