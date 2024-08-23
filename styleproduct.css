@@ -1,9 +1,9 @@
-.sl-product{
+.b-product{
     overflow-x: hidden;
 }
 
 /*start section 1*/
-.section-aboutus-1{
+.b-product .section-aboutus-1{
     background-image: url(img/aboutus/wave-aboutus-top-mobile.png);
     background-position-y: bottom;
     background-position-x: center;
@@ -11,36 +11,36 @@
     height: fit-content;
     
 }
-.section-aboutus-1 .row{
+.b-product .section-aboutus-1 .row{
     padding-bottom: 288px;
 }
 @media (min-width: 576px) {
-    .section-aboutus-1{
+    .b-product .section-aboutus-1{
         height: 1000px;
     }
-    .section-aboutus-1 .row{
+    .b-product .section-aboutus-1 .row{
         padding-bottom: 0;
     }
 }
 @media (min-width: 768px) {
-    .section-aboutus-1{
+    .b-product .section-aboutus-1{
         background-image: url(img/aboutus/wave-aboutus-top-desktop.png);
         height: 930px;
         background-position-x: left;
     }
 }
 @media (min-width: 992px) {
-    .section-aboutus-1{
+    .b-product .section-aboutus-1{
         background-image: url(img/aboutus/wave-aboutus-top-desktop-l.png);
     }
 }
 @media (min-width: 1200px) {
-    .section-aboutus-1{
+    .b-product .section-aboutus-1{
         background-image: url(img/aboutus/wave-aboutus-top-desktop-xl.png);
     }
 }
 @media (min-width: 1400px) {
-    .section-aboutus-1{
+    .b-product .section-aboutus-1{
         background-image: url(img/aboutus/wave-aboutus-top-desktop-xxl.png);
         height: 900px;
         background-position-x: center;
@@ -49,103 +49,103 @@
 /*end section 1*/
 
 /*start second section with animation*/
-.section-product-second{
+.b-product .section-product-second{
     padding-top: 300px;
     margin-bottom: 200px;
     overflow-x: clip;
 }
-.aircraft-container-text-sm{
+.b-product .aircraft-container-text-sm{
     background-size: 100% 100%;
     padding-top: 28px;
     padding-bottom: 420px;
     margin-bottom: -360px;
 }
 
-.light-container{
+.b-product .light-container{
     width: 88%;
     height: fit-content
 }
-.light-container .aircraft-light{
+.b-product .light-container .aircraft-light{
     width: 100%;
     height: 100%;
 }
-.aircraft-container-text-sm p:nth-of-type(1){
+.b-product .aircraft-container-text-sm p:nth-of-type(1){
     width: 75%;
 }
-.aircraft-container-text-sm p:nth-of-type(2){
+.b-product .aircraft-container-text-sm p:nth-of-type(2){
     width: 58%;
 }
-.aircraft-container-text-sm .aircraft-sm{
+.b-product .aircraft-container-text-sm .aircraft-sm{
     top: -400px;
     right: 15%;
     width: 200px;
 }
 @media (min-width: 576px) {
-    .section-product-second{
+    .b-product .section-product-second{
         padding-top: 400px;
         margin-bottom: 400px;
     }
-    .aircraft-container-text-sm{
+    .b-product .aircraft-container-text-sm{
         padding-top: 40px;
         padding-bottom: 480px;
         width: 80%;
         margin-bottom: -360px;
     }
-    .light-container{
+    .b-product .light-container{
         width: 80%;
     }
-    .aircraft-container-text-sm p:nth-of-type(1){
+    .b-product .aircraft-container-text-sm p:nth-of-type(1){
         width: 77%;
     }
-    .aircraft-container-text-sm p:nth-of-type(2){
+    .b-product .aircraft-container-text-sm p:nth-of-type(2){
         width: 60%;
     }
-    .aircraft-container-text-sm .aircraft-sm{
+    .b-product .aircraft-container-text-sm .aircraft-sm{
         top: -500px;
         right: -60%;
         width: 280px;
     }
-    .aircraft-container-text-sm .container{
+    .b-product .aircraft-container-text-sm .container{
         margin-left: 40px;
     }
 }
 @media (min-width: 992px) {
-    .section-product-second{
+    .b-product .section-product-second{
         padding-top: 600px;
     }
-    .aircraft-container-text-sm{
+    .b-product .aircraft-container-text-sm{
         padding-top: 80px;
         padding-bottom: 440px;
     }
-    .aircraft-container-text-sm p:nth-of-type(1){
+    .b-product .aircraft-container-text-sm p:nth-of-type(1){
         width: 70%;
     }
-    .aircraft-container-text-sm p:nth-of-type(2){
+    .b-product .aircraft-container-text-sm p:nth-of-type(2){
         width: 60%;
     }
-    .aircraft-container-text-sm .aircraft-sm{
+    .b-product .aircraft-container-text-sm .aircraft-sm{
         top: -800px;
         right: -50%;
         width: 400px;
     }
-    .aircraft-container-text-sm .container{
+    .b-product .aircraft-container-text-sm .container{
         margin-left: 80px;
     }
 }
 @media (min-width: 1200px) {
-    .aircraft-container-text-sm{
+    .b-product .aircraft-container-text-sm{
         width: 75%;
     }
-    .aircraft-container-text-sm .aircraft-sm{
+    .b-product .aircraft-container-text-sm .aircraft-sm{
         top: -900px;
         right: -55%;
     }
-    .aircraft-container-text-sm .container{
+    .b-product .aircraft-container-text-sm .container{
         margin-left: 100px;
     }
 }
 @media (min-width: 1500px) {
-    .aircraft-container-text-sm{
+    .b-product .aircraft-container-text-sm{
         padding-top: 80px;
         padding-bottom: 390px;
     }
@@ -154,39 +154,39 @@
 
 
 /*start key features section*/
-.section-key-feature {
+.b-product .section-key-feature {
     padding-top: 256px;
     padding-bottom: 256px;   
 }
-.sl-key-feature-container{
+.b-product .sl-key-feature-container{
     white-space: nowrap;
     overflow: hidden;
 }
-.sl-key-feature-slide{
+.b-product .sl-key-feature-slide{
     width: fit-content;
     display: inline-block;
     animation: 12s slide infinite linear; 
 }
-.sl-card-key-feature{
+.b-product .sl-card-key-feature{
     width: fit-content;
     padding: 44px 60px 44px 60px ;
     flex-shrink: 0;
 }
-.sl-card-key-feature h4{
+.b-product .sl-card-key-feature h4{
     text-align: center;
 }
-.sl-card-key-feature img{
+.b-product .sl-card-key-feature img{
     width: 130px;
 }
 @media (min-width: 576px) {
-    .section-key-feature {
+    .b-product .section-key-feature {
         padding-top: 128px;
         padding-bottom: 128px;   
     }
-    .sl-card-key-feature{
+    .b-product .sl-card-key-feature{
         padding: 56px 76px 56px 76px ;
     }
-    .sl-card-key-feature img{
+    .b-product .sl-card-key-feature img{
         width: 150px;
     }
 }
@@ -203,54 +203,55 @@
 
 
 /*start product-material section*/
-.sl-product-materials{
+.b-product .sl-product-materials{
     z-index: 4;
 }
-.sl-product-materials .sl-card-main{
+.b-product .sl-product-materials .sl-card-main{
     width: 100%;
     height: 180px;
 }
-.sl-product-materials .sl-card-scroll-wrapper{
+.b-product .sl-product-materials .sl-card-scroll-wrapper{
     margin-top: 200px !important; /*vl*/
 }
-.sl-product-materials .sl-card-scroll{
+.b-product .sl-product-materials .sl-card-scroll{
     width: 100%;
     height: 180px;
     margin-bottom: 300px;
 }
-.sl-product-materials .row{
+.b-product .sl-product-materials .row{
     padding-top: 30vh;
     padding-bottom: 80vh;
     gap: 20px;
 }
 
 @media (min-width: 992px) {
-    .sl-product-materials .row{
+    .b-product .sl-product-materials .row{
         gap: 0;
     }
 }
-.sl-product-materials .sl-card-scroll h3, .sl-product-materials .sl-card-scroll p{
+.b-product .sl-product-materials .sl-card-scroll h3, 
+.b-product .sl-product-materials .sl-card-scroll p{
     width: fit-content;
 }
-#sl-card-scroll-2{
+.b-product #sl-card-scroll-2{
     transform: translateX(4px);
 }
-#sl-card-scroll-3{
+.b-product #sl-card-scroll-3{
     transform: translateX(8px);
 }
-#sl-card-scroll-4{
+.b-product #sl-card-scroll-4{
     transform: translateX(12px);
 }
-#sl-card-scroll-5{
+.b-product #sl-card-scroll-5{
     transform: translateX(16px);
 }
 
 
 /* section resocks*/
-.sl-product-resocks{
+.b-product .sl-product-resocks{
     padding-bottom: 128px;
 }
-.wave-product-bottom {
+.b-product .wave-product-bottom {
     width: 100%;
     height: 272px;
     background-image: url(img/product/wave-product-bottom-mobile.png);
@@ -259,7 +260,7 @@
     
 }
 @media (min-width: 576px) {
-    .wave-product-bottom {
+    .b-product .wave-product-bottom {
         width: 100%;
         height: 500px;
         background-image: url(img/product/wave-product-bottom-desktop.png);
@@ -267,40 +268,40 @@
         background-size: cover;
     }
 }
-.sl-product-resocks-text{
+.b-product .sl-product-resocks-text{
     padding-top: 96px;
 }
-.sl-product-resocks-card{
+.b-product .sl-product-resocks-card{
     border-radius: 12px;
 }
-.sl-product-resocks-card img{
+.b-product .sl-product-resocks-card img{
     width: 110px;
     height: 110px;
 }
-.sl-product-resocks-card .card-img-top{
+.b-product .sl-product-resocks-card .card-img-top{
     width: fit-content;
     border-radius: 11px;
     box-shadow: 0px 0px 0px 1px #000000;
 }
-.sl-product-resocks-card-container-end{
+.b-product .sl-product-resocks-card-container-end{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
 @media (min-width: 576px) {
-    .sl-product-resocks{
+    .b-product .sl-product-resocks{
         padding-bottom: 256px;
     }
-    .sl-product-resocks-card img{
+    .b-product .sl-product-resocks-card img{
         width: 140px;
         height: 140px;
     }
 }
 @media (min-width: 992px) {
-    .sl-product-resocks-row:nth-child(odd){
+    .b-product .sl-product-resocks-row:nth-child(odd){
         justify-content: end;
     } 
-    .sl-product-resocks-card{
+    .b-product .sl-product-resocks-card{
         width: 48%;
     }
 }
