@@ -329,17 +329,19 @@ a
     text-decoration: none;
     text-transform: none;
     margin: 0;
-    + p {
-        padding-top: 0.375rem;
-    }
 }
 @media (min-width: 576px) {
     .text-style-body-copy {
         font-size: 1.125rem;
         line-height: 1.25rem;
-        + p {
-            padding-top: 0.5rem;
-        }
+    }
+}
+.padding-btwn-paragraphs {
+    padding-top: 0.375rem;
+}
+@media (min-width: 576px) {
+    .padding-btwn-paragraphs {
+        padding-top: 0.5rem;
     }
 }
 
