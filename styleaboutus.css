@@ -219,6 +219,7 @@
         left: 48.5%;
         fill: none;
         stroke: var(--black-strawberry);
+        opacity: 0;
     }
 }
 @media (min-width: 420px) {
