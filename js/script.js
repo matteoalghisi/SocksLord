@@ -161,7 +161,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     if (minWidth768.matches) { // If media query matches
         slCardMainStart = "40%";
     } else {
-        slCardMainStart = 200;
+        slCardMainStart = "15%";
     }
 
     const cards = gsap.utils.toArray(".sl-card-scroll");

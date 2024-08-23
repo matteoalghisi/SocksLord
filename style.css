@@ -1012,6 +1012,7 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     --bs-modal-footer-bg: var(--white-avocado);
     --bs-modal-footer-border-color: none;
     --bs-modal-footer-border-width: none;
+    --bs-modal-zindex: 1056;
   }
   @media (min-width: 576px) {
     .modal{
@@ -1022,7 +1023,6 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
       --bs-modal-border-radius: 12px;
       --bs-modal-inner-border-radius: 12px;
       --bs-modal-footer-gap: 8px;
-      --bs-modal-zindex: 1056;
     }
   }
   .modal-dialog{
@@ -1053,6 +1053,7 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     --bs-backdrop-opacity: 20%;
     --bs-backdrop-zindex: 1055;
   }
+  
 
 /*footer*/
 .footer-icon{
