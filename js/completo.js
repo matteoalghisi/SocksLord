@@ -767,19 +767,19 @@ document.addEventListener('DOMContentLoaded', function () {
 $(document).ready(function() {
     $('.sl-form-flip').height($('.sl-form').outerHeight());
     
-    // Flippa al click su "Contattaci"
+    // Flip when click on "Contattaci"
     $('form.sl-form').on('submit', function(event) {
         event.preventDefault(); // Previeni l'invio del form
         $(this).closest('.sl-form-flip').addClass('flipped');
     });
 
-    // Riflippa su frontside al click su "Hai altro da dirci?"
+    // Re-flip when click on "Hai altro da dirci?"
     $('.sl-form-flip .back .sl-btn-tertiary').on('click', function(event) {
         event.preventDefault(); // Previeni il comportamento di default del link
         $(this).closest('.sl-form-flip').removeClass('flipped');
     });
 
-    // Resetta lo stato flip quando si cambia tab
+    // Reset the flip state when switching tabs
     $('a[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
         var targetTab = $(e.target).attr("href"); // Ottieni l'ID del tab attivo
         $(targetTab).find('.sl-form-flip').removeClass('flipped');
