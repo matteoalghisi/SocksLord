@@ -1,5 +1,5 @@
 /*start section 1*/
-.section-aboutus-1{
+.b-aboutus .section-aboutus-1{
     background-image: url(img/aboutus/wave-aboutus-top-mobile.png);
     background-position-y: bottom;
     background-position-x: center;
@@ -7,36 +7,36 @@
     height: fit-content;
     
 }
-.section-aboutus-1 .row{
+.b-aboutus .section-aboutus-1 .row{
     padding-bottom: 256px;
 }
 @media (min-width: 576px) {
-    .section-aboutus-1{
+    .b-aboutus .section-aboutus-1{
         height: 960px;
     }
-    .section-aboutus-1 .row{
+    .b-aboutus .section-aboutus-1 .row{
         padding-bottom: 0;
     }
 }
 @media (min-width: 768px) {
-    .section-aboutus-1{
+    .b-aboutus .section-aboutus-1{
         background-image: url(img/aboutus/wave-aboutus-top-desktop.png);
         height: 930px;
         background-position-x: left;
     }
 }
 @media (min-width: 992px) {
-    .section-aboutus-1{
+    .b-aboutus .section-aboutus-1{
         background-image: url(img/aboutus/wave-aboutus-top-desktop-l.png);
     }
 }
 @media (min-width: 1200px) {
-    .section-aboutus-1{
+    .b-aboutus .section-aboutus-1{
         background-image: url(img/aboutus/wave-aboutus-top-desktop-xl.png);
     }
 }
 @media (min-width: 1400px) {
-    .section-aboutus-1{
+    .b-aboutus .section-aboutus-1{
         background-image: url(img/aboutus/wave-aboutus-top-desktop-xxl.png);
         height: 800px;
         background-position-x: center;
@@ -45,14 +45,14 @@
 /*end section 1*/
 
 /* start team section*/
-.section-aboutus-team{
+.b-aboutus .section-aboutus-team{
     overflow-x: clip;
 }
-.section-aboutus-team h2{
+.b-aboutus .section-aboutus-team h2{
     width: fit-content;
 }
 @media (min-width: 576px) {
-    .sl-team-container{
+    .b-aboutus .sl-team-container{
         background-image: url(img/aboutus/Team.png);
         background-size: contain;
         background-position: center;
@@ -61,7 +61,7 @@
         width: 100%;
     }
 }
-.sl-team-circle{
+.b-aboutus .sl-team-circle{
     background-image: url(img/aboutus/circle.png);
     width: 150%;
     height: 100%;
@@ -70,19 +70,19 @@
     margin-bottom: 250px;
     transform: rotate(6deg);
 }
-.sl-teamcard{
+.b-aboutus .sl-teamcard{
     width: fit-content;
     margin: 0 auto;
 }
-.sl-teamcard img{
+.b-aboutus .sl-teamcard img{
     width: 240px;
 }
-.sl-teamcard .card-body{
+.b-aboutus .sl-teamcard .card-body{
     height: 48px;
     width: 280px;
     flex-grow: 0;
 }
-.sl-teamcard .sl-teamcard-bg{
+.b-aboutus .sl-teamcard .sl-teamcard-bg{
     width: 100%;
     margin-top: 20%;
     padding-top: 100%;
@@ -91,14 +91,14 @@
 
 
 /*start section about us islands*/
-.section-aboutus-islands .container{
+.b-aboutus .section-aboutus-islands .container{
     margin-top: 0 !important;
         margin-left: 0 !important;
         margin-bottom: 0 !important;
         margin-right: 0 !important;
 }
 @media (min-width: 1200px) {
-    .section-aboutus-islands .container{
+    .b-aboutus .section-aboutus-islands .container{
         margin-top: 0 !important;
         margin-left: auto !important;
         margin-bottom: 0 !important;
@@ -106,159 +106,160 @@
     }
 }
 
-.sl-island-row{
+.b-aboutus .sl-island-row{
     margin: 512px 0 512px 0;
 }
-.sl-island-row:first-of-type{
+.b-aboutus .sl-island-row:first-of-type{
     margin-top: 384px;
 }
-.sl-island-card-sm img{
+.b-aboutus .sl-island-card-sm img{
     left: 50%;
     top: 50%;
     transform: translateX(-56%) translateY(-48%);
     width: 370px;
 }
-.sl-island-card-sm{
+.b-aboutus .sl-island-card-sm{
     width: 200px;
 }
-#sl-island-card-sm-2 img{
+.b-aboutus #sl-island-card-sm-2 img{
     width: 330px;
 }
-#sl-island-card-sm-3{
+.b-aboutus #sl-island-card-sm-3{
     width: 210px;
 }
-#sl-island-card-sm-3 img{
+.b-aboutus #sl-island-card-sm-3 img{
     width: 390px;
 }
-#sl-island-card-sm-4{
+.b-aboutus #sl-island-card-sm-4{
     width: 210px; 
 }
-#sl-island-card-sm-4 img{
+.b-aboutus #sl-island-card-sm-4 img{
     width: 380px;
     transform: translateX(-56%) translateY(-45%);
 }
-#sl-island-card-sm-5 img{
+.b-aboutus #sl-island-card-sm-5 img{
     width: 420px;
 }
 @media (min-width: 576px) {
-    .sl-island-card-sm img{
+    .b-aboutus .sl-island-card-sm img{
         width: 470px;
         left: 45%;
     }
-    .sl-island-card-sm{
+    .b-aboutus .sl-island-card-sm{
         width: 200px;
     }
-    #sl-island-card-sm-2 img{
+    .b-aboutus #sl-island-card-sm-2 img{
         width: 470px;
         transform: translateX(-56%) translateY(-51%);
     }
-    #sl-island-card-sm-3{
+    .b-aboutus #sl-island-card-sm-3{
         width: 234px;
     }
-    #sl-island-card-sm-3 img{
+    .b-aboutus #sl-island-card-sm-3 img{
         width: 470px;
     }
-    #sl-island-card-sm-4{
+    .b-aboutus #sl-island-card-sm-4{
         width: 214px;
     }
-    #sl-island-card-sm-4 img{
+    .b-aboutus #sl-island-card-sm-4 img{
         width: 470px;
     }
-    #sl-island-card-sm-5{
+    .b-aboutus #sl-island-card-sm-5{
         width: 250px;
     }
-    #sl-island-card-sm-5 img{
+    .b-aboutus #sl-island-card-sm-5 img{
         width: 470px;
     }
 }
 
 
 @media (min-width: 1200px) {
-    .sl-island-row{
+    .b-aboutus .sl-island-row{
         margin: 512px 256px 512px 256px;
     }
-    .sl-island-row:nth-child(odd){
+    .b-aboutus .sl-island-row:nth-child(odd){
         justify-content: end;
     }
-    .sl-island-card-sm img{
+    .b-aboutus .sl-island-card-sm img{
         width: 622px !important;
         left: 50%;
         top: 50%;
         transform: translateX(-51%) translateY(-44%) !important;
     }
-    .sl-island-card-sm{
+    .b-aboutus .sl-island-card-sm{
         width: 360px !important;
         
     }
 }
 
-.section-aboutus-islands{
+.b-aboutus .section-aboutus-islands{
     width: 100%;
     height: fit-content;
     overflow-x: clip;
 }
-.sl-path-svg svg{
+.b-aboutus .sl-path-svg svg{
     width: 100%;
 }
-.sl-about-aircraft{
+.b-aboutus .sl-about-aircraft{
     display: none;
     left: -1000px !important;
     bottom: -1000px !important;
 }
 @media (min-width: 360px) {
-    .sl-about-aircraft{
+    .b-aboutus .sl-about-aircraft{
         display: block;
         top: 0;
         right: 0;
         width: 180px;
     }
-    .sl-path-svg{   
+    .b-aboutus .sl-path-svg{   
         height: 3900px;
         width: 120%;
         top: -7%;
         left: 48.5%;
         fill: none;
         stroke: var(--black-strawberry);
+        opacity: 0;
     }
 }
 @media (min-width: 420px) {
-    .sl-path-svg{     
+    .b-aboutus .sl-path-svg{     
         left: 36%;
     }
 }
 @media (min-width: 512px) {
-    .sl-path-svg{   
+    .b-aboutus .sl-path-svg{   
         width: 100%;
         top: -9%;
         left: 0;
     }
 }
 @media (min-width: 512px) {
-    .sl-about-aircraft{
+    .b-aboutus .sl-about-aircraft{
         width: 250px;
     }
-    .sl-path-svg{   
+    .b-aboutus .sl-path-svg{   
         top: -7%;
         left: 36%;
     }
 }
 @media (min-width: 576px) {
-    .sl-path-svg{   
+    .b-aboutus .sl-path-svg{   
         left: 58%;
     }
 }
 @media (min-width: 768px) {
-    .sl-about-aircraft{
+    .b-aboutus .sl-about-aircraft{
         width: 300px;
     }
-    .sl-path-svg{   
+    .b-aboutus .sl-path-svg{   
         height: 4300px;
         top: -13%;
         left: 47%;
     }
 }
 @media (min-width: 1200px) {
-    .sl-path-svg{   
+    .b-aboutus .sl-path-svg{   
         height: 4180px; 
         width: 100%;
         top: -9.7%;
@@ -266,7 +267,7 @@
     }  
 }
 @media (min-width: 1400px) {
-    .sl-path-svg{   
+    .b-aboutus .sl-path-svg{   
         height: auto; 
         width: 100%;
         top: 6%;
