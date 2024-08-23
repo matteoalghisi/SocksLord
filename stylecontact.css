@@ -138,13 +138,27 @@
     height: 16px;
     width: 16px;
 }
-.sl-form-title h4 {
-    width: 60%;
+.sl-form-text h4 {
+    width: 100%;
 }
-.sl-form-text p {
-    width: 80%;
+@media (min-width: 1200px) {
+    .sl-form-text h4 {
+        width: 60%;
+    }
+}
+.sl-form-body p {
+    width: 100%;
+    padding-top: 0 !important;
+}
+@media (min-width: 1200px) {
+    .sl-form-body p {
+        width: 80%;
+    }
 }
 .highlight-text {
     color: var(--orange-kiwi);
     font-weight: 500;
+}
+.last-paragraph {
+    padding-top: 1rem !important;
 }
