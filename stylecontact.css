@@ -129,11 +129,7 @@
 }
 /*end form section*/
 
-.b-contact .sl-yellow{
-    width: 100%;
-    height: 100px;
-    background-size: 100% 100%;
-}
+
 .b-contact .star-list-img {
     height: 16px;
     width: 16px;
@@ -161,4 +157,22 @@
 }
 .b-contact .last-paragraph {
     padding-top: 1rem !important;
+}
+
+.sl-map{
+    background-image: url(img/contact/map.png);
+    background-size: cover;
+    height: 600px;
+}
+.b-contact .sl-yellow{
+    width: 100%;
+    height: 100px;
+    background-image: url(img/contact/yellow.png);
+    background-size: 100% 100%;
+}
+.sl-yellow-svg{
+    height: 100px;
+}
+.sl-yellow-svg .path{
+    width: 100%;
 }
