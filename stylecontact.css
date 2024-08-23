@@ -55,7 +55,7 @@
     background-color: var(--liliac-tangerine);
     border-radius: 0 0 13px 0;
 }
-.b-contact sl-form-nav-tab .tab-resocks:hover .nav-link{
+.b-contact .sl-form-nav-tab .tab-resocks:hover .nav-link{
     color: var(--black-strawberry);
     
 }
