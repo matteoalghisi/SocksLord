@@ -400,12 +400,12 @@ END SECTION OUR SOCKS
     display: flex;
 }
 .b-index .sl-create-nav-tab .tab-content img{
-    width: 76px;
+    width: 81px;
     height: 82px; 
 }
 @media (min-width: 768px) {
     .b-index .sl-create-nav-tab .tab-content img{
-        width: 118px;
+        width: 126px;
         height: 128px; 
     } 
 }
