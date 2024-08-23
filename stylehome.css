@@ -1,28 +1,28 @@
-section{
+.b-index section{
     overflow-x: hidden;
 }
 /* sfondo stelle hero */
-.section-hero{
+.b-index .section-hero{
     overflow: hidden;
 }
-.sx-stars{
+.b-index .sx-stars{
     background-image: url('img/home/Stars/sx-stars-hero-mobile.png');
     background-size: contain;
     background-repeat: no-repeat;
     width: 15%;
 }
 @media (min-width: 576px) {
-    .sx-stars{
+    .b-index .sx-stars{
         background-image: url('img/home/Stars/sx-stars-hero-tablet.png');
     }
 }
 @media (min-width: 992px) {
-    .sx-stars{
+    .b-index .sx-stars{
         background-image: url('img/home/Stars/sx-stars-hero-desktop.png');
     }
 }
 
-.dx-stars{
+.b-index .dx-stars{
     background-image: url('img/home/Stars/dx-stars-hero-mobile.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -30,21 +30,21 @@ section{
     width: 15%;
 }
 @media (min-width: 576px) {
-    .dx-stars{
+    .b-index .dx-stars{
         background-image: url('img/home/Stars/dx-stars-hero-tablet.png');
     }
 }
 @media (min-width: 992px) {
-    .dx-stars{
+    .b-index .dx-stars{
         background-image: url('img/home/Stars/dx-stars-hero-desktop.png');
     }
 }
-.hero-block{
+.b-index .hero-block{
     width: 70%;
 }
 
 
-.section-hero h1{
+.b-index .section-hero h1{
    /* padding-top: 200px; mettendo la distanza più o meno come su figma, nel mio pc non rimane più al centro dello schermo il titolo*/
     padding-bottom: 54px;
     color: var(--gray-fig);
@@ -52,7 +52,7 @@ section{
 }
 
 
-.wave-home-1{
+.b-index .wave-home-1{
     width: 100%;
     height: 272px;
     background-image: url(img/home/wave-home-1-mobile.png);
@@ -60,7 +60,7 @@ section{
     background-size: cover;
 }
 @media (min-width: 576px) {
-    .wave-home-1{
+    .b-index .wave-home-1{
         width: 100%;
         height: 500px;
         background-image: url(img/home/wave-home-1-desktop.png);
@@ -71,39 +71,39 @@ section{
 
 
 /* section what's new */
-.section-whats-new{
+.b-index .section-whats-new{
    padding: 5rem 0 !important;
 }
 @media (min-width: 992px) {
-    .whats-new-text{
+    .b-index .whats-new-text{
         max-width: 600px;
     }
 }
-.sl-card-collab{
+.b-index .sl-card-collab{
    width: fit-content; 
 }
-.sl-card-collab img{
+.b-index .sl-card-collab img{
     width: 145px;
     height: 204px;
 }
 @media (min-width: 576px) {
-    .sl-card-collab img{
+    .b-index .sl-card-collab img{
         width: 180px;
         height: 230px;
     }
 }
-.sl-carousel-home{
+.b-index .sl-carousel-home{
     overflow: hidden;
 }
-.carousel-inner{
+.b-index .carousel-inner{
     pointer-events: none;
 }
 
 /*button carousel*/
-.sl-button-container{
+.b-index .sl-button-container{
     transform: translatex(50%);
 }
-.sl-button-container-small {
+.b-index .sl-button-container-small {
     position: absolute;
     display: flex !important;
     align-content: center;
@@ -111,10 +111,11 @@ section{
     align-items: center;
     transform: translateX(-50%);
 }
-.sl-button-container .sl-card-collab{
+.b-index .sl-button-container .sl-card-collab{
     opacity: 0;
 }
-.sl-button-container .sl-btn-carousel-l, .sl-button-container .sl-btn-carousel-r{
+.b-index .sl-button-container .sl-btn-carousel-l, 
+.b-index .sl-button-container .sl-btn-carousel-r{
     position: static;
     opacity: 1;
     padding: 12px 12px 12px 12px;
@@ -122,21 +123,21 @@ section{
     height: fit-content;
     width: fit-content;
 }
-.sl-button-container .sl-btn-carousel-l{
+.b-index .sl-button-container .sl-btn-carousel-l{
     border-radius: 50% 0 0 50%;
     transform: translateX(2px);
 }
-.sl-button-container .sl-btn-carousel-r{
+.b-index .sl-button-container .sl-btn-carousel-r{
     border-radius: 0 50% 50% 0;
 }
 /*sistemare transition*/
-.sl-button-container .sl-button-container-small:hover .sl-btn-carousel-l{
+.b-index .sl-button-container .sl-button-container-small:hover .sl-btn-carousel-l{
     transition: translate 1s;
     border-radius: 50%;
     padding: 12px 12px 12px 12px;
     transform: translateX(-8px);
 }
-.sl-button-container .sl-button-container-small:hover .sl-btn-carousel-r{
+.b-index .sl-button-container .sl-button-container-small:hover .sl-btn-carousel-r{
     transition: translate 1s;
     border-radius: 50%;
     padding: 12px 12px 12px 12px;
@@ -150,7 +151,7 @@ section{
 
 
 /* section our socks */
-.section-our-socks {
+.b-index .section-our-socks {
     padding-top: 300px;
     padding-bottom: 300px;
     background-image: url(img/home/Bacgkround-home-green-yellow.png);
@@ -159,29 +160,29 @@ section{
     
 }
 
-.our-socks{
+.b-index .our-socks{
     margin-top: 9rem;
 }
 
-.sl-key-feature-container{
+.b-index .sl-key-feature-container{
     white-space: nowrap;
     overflow: hidden;
 }
 /* quando si uniscono css considerare che qui .sl-key-feature-slide ha anche padding top e bottom */
-.sl-key-feature-slide{
+.b-index .sl-key-feature-slide{
     width: fit-content;
     display: inline-block;
     animation: 12s slide infinite linear;
     padding-top: 4rem;
     padding-bottom: 1rem;
 }
-.sl-card-key-feature{
+.b-index .sl-card-key-feature{
     width: fit-content;
     padding: 44px 60px 44px 60px ;
     flex-shrink: 0;
 }
 @media (min-width: 576px) {
-    .sl-card-key-feature{
+    .b-index .sl-card-key-feature{
         padding: 56px 76px 56px 76px ;
     }
 }
@@ -193,49 +194,49 @@ section{
         transform: translateX(-100%);
     }
 }
-.card-emporium{
-height: 204px;
-width: 171px;
-position: relative;
-background-color: var(--white-avocado);
-border: 1px solid var(--black-banana);
-border-radius: 12px;
+.b-index .card-emporium{
+    height: 204px;
+    width: 171px;
+    position: relative;
+    background-color: var(--white-avocado);
+    border: 1px solid var(--black-banana);
+    border-radius: 12px;
 }
 @media (min-width: 576px) {
-    .card-emporium{
+    .b-index .card-emporium{
         height: 349px;
         width: 300px;
     }
 }
-.card-img{
-width: auto;
-height: 114px;
+.b-index .card-img{
+    width: auto;
+    height: 114px;
 }
 @media (min-width: 576px) {
-    .card-img{
+    .b-index .card-img{
         height: 173px;
     }
 }
-.card-soldout{
-background-color: rgba(220, 220, 224, 0.6);
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-border-radius: 12px;
+.b-index .card-soldout{
+    background-color: rgba(220, 220, 224, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
 }
-.text-soldout{
-transform: rotate(-45deg);
-text-shadow: 2px 2px var(--black-banana);
-color: var(--orange-kiwi);
+.b-index .text-soldout{
+    transform: rotate(-45deg);
+    text-shadow: 2px 2px var(--black-banana);
+    color: var(--orange-kiwi);
 }
-.card-link{
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
+.b-index .card-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -281,38 +282,38 @@ END SECTION OUR SOCKS
 */
 
 /*start section create socks*/
-.section-create{
+.b-index .section-create{
     padding-top: 6rem;
     padding-bottom: 6rem;
     overflow: hidden;
     
 }
-.sl-create-nav-tab{
+.b-index .sl-create-nav-tab{
     width: fit-content;
 }
-.sl-create-nav-tab img{
+.b-index .sl-create-nav-tab img{
     width: 118px;
     height: 128px;
     /*transform: translateX(50%) translateY(50%);*/
 }
-.sl-create-nav-tab .nav-tabs{
+.b-index .sl-create-nav-tab .nav-tabs{
     width: fit-content;
     border-bottom: 1px solid var(--black-banana);
 }
-.sl-create-nav-tab .nav-tabs{
+.b-index .sl-create-nav-tab .nav-tabs{
     border-radius: 0 0 0 8px; 
 }
-.sl-create-nav-tab a{
+.b-index .sl-create-nav-tab a{
     padding-left: 12px;
     padding-right: 12px;
 }
 @media (min-width: 768px) {
-    .sl-create-nav-tab .nav{
+    .b-index .sl-create-nav-tab .nav{
         border-radius: 16px 16px 0 0;  
     } 
     
 }
-.sl-create-nav-tab .nav .nav-link{
+.b-index .sl-create-nav-tab .nav .nav-link{
     border-left: 1px solid var(--black-banana);
     border-bottom: 1px solid var(--black-banana);
     border-top: 1px solid var(--black-banana);
@@ -323,43 +324,43 @@ END SECTION OUR SOCKS
     display: flex;
     align-items: center;
 }
-.sl-create-nav-tab .nav .nav-link:last-child{
+.b-index .sl-create-nav-tab .nav .nav-link:last-child{
     border-bottom: 0;
 }
-.sl-create-nav-tab .nav .nav-link:last-child:hover{
+.b-index .sl-create-nav-tab .nav .nav-link:last-child:hover{
     border-bottom: 0;
 }
 @media (min-width: 768px) {
-    .sl-create-nav-tab .nav .nav-link{
+    .b-index .sl-create-nav-tab .nav .nav-link{
         border-radius: 16px 16px 0 0;
         width: fit-content;
         border-right: 1px solid var(--black-banana);
         border-bottom: 0px solid var(--black-banana);
     } 
 }
-.sl-create-nav-tab .nav .active{
+.b-index .sl-create-nav-tab .nav .active{
     background-color: var(--orange-kiwi);
     border-width: 1px;
     color: var(--black-strawberry) !important;
     border-right: 1px solid var(--orange-kiwi); 
 } 
 @media (min-width: 768px) {
-    .sl-create-nav-tab .nav .active{
+    .b-index .sl-create-nav-tab .nav .active{
         border-radius: 16px 16px 0 0;
         border-bottom: solid 1px var(--orange-kiwi);
         border-right: solid 1px var(--black-banana);
     } 
 }
-.sl-create-nav-tab .nav .nav-item{
+.b-index .sl-create-nav-tab .nav .nav-item{
     width: 100%;
     flex-grow: 1;
 }
 @media (min-width: 768px) {
-    .sl-create-nav-tab .nav .nav-item{
+    .b-index .sl-create-nav-tab .nav .nav-item{
         width: fit-content;
     } 
 }
-.sl-create-nav-tab .nav .nav-link:hover{
+.b-index .sl-create-nav-tab .nav .nav-link:hover{
     border-left: 1px solid var(--black-banana);
     border-top: 1px solid var(--black-banana);
     border-bottom: 1px solid var(--black-banana);
@@ -367,12 +368,12 @@ END SECTION OUR SOCKS
     color: var(--black-strawberry);
 }
 @media (min-width: 768px) {
-    .sl-create-nav-tab .nav .nav-link:hover{
+    .b-index .sl-create-nav-tab .nav .nav-link:hover{
         border-right: 1px solid var(--black-banana);
         border-bottom: 0px solid var(--orange-kiwi);
     }
 }
-.sl-create-nav-tab .tab-content{
+.b-index .sl-create-nav-tab .tab-content{
     width: 100%;
     border-top: 1px solid var(--black-banana);
     border-right: 1px solid var(--black-banana);
@@ -381,52 +382,52 @@ END SECTION OUR SOCKS
     z-index: 1;
 }
 @media (min-width: 768px) {
-    .sl-create-nav-tab .tab-content{
+    .b-index .sl-create-nav-tab .tab-content{
         border-left: 1px solid var(--black-banana);
         border-top: 0px solid var(--black-banana);
         border-radius: 0px 0px 8px 8px;
     }
 }
 @media (min-width: 768px) {
-    .sl-create-nav-tab .tab-content{
+    .b-index .sl-create-nav-tab .tab-content{
         border-radius: 0px 0px 16px 16px;
     } 
 }
-.sl-create-nav-tab .tab-content .tab-pane{
+.b-index .sl-create-nav-tab .tab-content .tab-pane{
     width: fit-content;
 }
-.sl-create-nav-tab .tab-content .active{
+.b-index .sl-create-nav-tab .tab-content .active{
     display: flex;
 }
-.sl-create-nav-tab .tab-content img{
+.b-index .sl-create-nav-tab .tab-content img{
     width: 76px;
     height: 82px; 
 }
 @media (min-width: 768px) {
-    .sl-create-nav-tab .tab-content img{
+    .b-index .sl-create-nav-tab .tab-content img{
         width: 118px;
         height: 128px; 
     } 
 }
-.sl-create-nav-tab .tab-content h4{
+.b-index .sl-create-nav-tab .tab-content h4{
     width: 100%;
     color: var(--black-strawberry);
 }
 @media (min-width: 768px) {
-    .sl-create-nav-tab .tab-content h4{
+    .b-index .sl-create-nav-tab .tab-content h4{
         width: 322px;
     }
 }
-.sl-create-nav-tab .tab-content p{
+.b-index .sl-create-nav-tab .tab-content p{
     width: 100%;
     color: var(--black-strawberry);
 }
 @media (min-width: 768px) {
-    .sl-create-nav-tab .tab-content p{
+    .b-index .sl-create-nav-tab .tab-content p{
         width: 322px;
     }
 }
-.sl-create-nav-tab .tab-content.d-md-none{
+.b-index .sl-create-nav-tab .tab-content.d-md-none{
     min-height: 264px;
 }
 
@@ -434,47 +435,42 @@ END SECTION OUR SOCKS
 
 /* section resocks */
 
-.section-resocks{
+.b-index .section-resocks{
     width: 100%;
     padding-top: 40px;
     background-image: url(img/home/wave-home-2-mobile.png);
     background-position-y: top;
     background-position-x: left;
     background-size: cover;
-
 }
-.section-resocks .row{
+.b-index .section-resocks .row{
     padding-top: 200px;
     padding-bottom: 100px;
-    
 }
-.wave-home-2{
-    
+.b-index .wave-home-2{
     z-index: -1;
 }
 @media (min-width: 576px) {
-    .section-resocks{
+    .b-index .section-resocks{
         padding-top: 0;
     }
-    .section-resocks .row{
+    .b-index .section-resocks .row{
         padding-top: 400px;
         padding-bottom: 120px;
     }
-    .wave-home-2{
-        height: 340px;
-        
+    .b-index .wave-home-2{
+        height: 340px;      
     }
 }
 @media (min-width: 992px) {
-    .section-resocks{
+    .b-index .section-resocks{
         background-image: url(img/home/wave-home-2-desktop.png);
         background-position: top;
     }
-    .wave-home-2{
-        height: 792px;
-        
+    .b-index .wave-home-2{
+        height: 792px;    
     }
-    .section-resocks .row{
+    .b-index .section-resocks .row{
         padding-top: 340px;
         padding-bottom: 120px;
     }
