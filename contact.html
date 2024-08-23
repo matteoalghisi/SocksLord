@@ -26,7 +26,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
 
-    <script type="text/javascript" src="js/script.js"></script>
+    <!-- <script type="text/javascript" src="js/script.js"></script> -->
+    <script type="text/javascript" src="js/completo.js"></script>
 
   </head>
   
@@ -208,7 +209,7 @@
                     </div>
                     <div class="form-group pb-3 pt-2">
                       <label class="text-style-h6 pb-2" for="phone-collhub">Telefono</label>
-                      <input type="number" class="form-control mt-1" name="telefono" placeholder="" id="phone-collhub">
+                      <input type="text" class="form-control mt-1" name="telefono" placeholder="" id="phone-collhub">
                     </div>
                     <div class="form-group pb-3 pt-2">
                       <label class="text-style-h6 pb-2" for="email-collhub">Email</label>
@@ -289,31 +290,31 @@
       </footer>
 
 
-      <script>
+      <!-- <script>
         $('.sl-form-flip').height($('.sl-form').outerHeight());
 
         $(document).ready(function() {
-    // Flippa al click su "Contattaci"
-    $('form.sl-form').on('submit', function(event) {
-        event.preventDefault(); // Previeni l'invio del form
-        $(this).closest('.sl-form-flip').addClass('flipped');
-    });
+          // Flippa al click su "Contattaci"
+          $('form.sl-form').on('submit', function(event) {
+              event.preventDefault(); // Previeni l'invio del form
+              $(this).closest('.sl-form-flip').addClass('flipped');
+          });
 
-    // Riflippa su frontside al click su "Hai altro da dirci?"
-    $('.sl-form-flip .back .sl-btn-tertiary').on('click', function(event) {
-        event.preventDefault(); // Previeni il comportamento di default del link
-        $(this).closest('.sl-form-flip').removeClass('flipped');
-    });
+          // Riflippa su frontside al click su "Hai altro da dirci?"
+          $('.sl-form-flip .back .sl-btn-tertiary').on('click', function(event) {
+              event.preventDefault(); // Previeni il comportamento di default del link
+              $(this).closest('.sl-form-flip').removeClass('flipped');
+          });
 
-    // Resetta lo stato flip quando si cambia tab
-    $('a[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
-        var targetTab = $(e.target).attr("href"); // Ottieni l'ID del tab attivo
-        $(targetTab).find('.sl-form-flip').removeClass('flipped');
-    });
-});
+          // Resetta lo stato flip quando si cambia tab
+          $('a[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
+              var targetTab = $(e.target).attr("href"); // Ottieni l'ID del tab attivo
+              $(targetTab).find('.sl-form-flip').removeClass('flipped');
+          });
+        });
 
 
-      </script>
+      </script> -->
   
     </body>
   </html>

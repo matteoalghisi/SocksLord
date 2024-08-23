@@ -50,27 +50,26 @@ $(document).ready(function () {
         });
     });
 
-    //script for animation of aircraft in about us (use different path for different breakpoint)
-    
-    if (window.matchMedia("(min-width: 1400px)").matches) {
-        $(".section-aboutus-islands .container").append($('<svg class=" position-absolute sl-path-svg" viewBox="0 0 150 390" xmlns="http://www.w3.org/2000/svg"><path preserveAspectRatio="none" class="path" d="M 153.489 1.65 C 98.118 34.193 6.164 21.172 6.02 69.919 C 5.88 117.385 112.744 99.319 112.744 148.744 C 112.744 191.403 11.501 171.976 3.174 235.105 C -3.099 282.66 145.044 243.099 156.126 391.524"></path></svg>'));
-    } else{
-        if (window.matchMedia("(min-width: 1200px)").matches) {
-            $(".section-aboutus-islands .container").append($('<svg class=" position-absolute sl-path-svg" viewBox="0 0 150 390" xmlns="http://www.w3.org/2000/svg"><path preserveAspectRatio="none" class="path" d="M 148.024 -28.448 C 105.897 13.572 6.29 18.628 6.174 64.95 C 6.025 124.366 112.97 101.023 112.744 151.106 C 112.518 201.188 19.41 176.226 3.174 238.618 C -13.062 301.009 143.934 278.911 155.608 397.121" style="fill: none; stroke: rgb(186, 218, 85);"></path></svg>'));
-        } else {
-            if (window.matchMedia("(min-width: 768px)").matches) {
-                $(".section-aboutus-islands .container").append($('<svg class=" d-none d-md-block d-xl-none position-absolute sl-path-svg" viewBox="0 0 80 495" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path class="path" id="path" d="M 113.881 -55.697 C 101.033 48.202 14.459 17.138 14.459 62.389 C 14.459 107.639 41.11 105.169 41.11 149.535 C 41.11 193.899 12.622 195.03 11.146 239.493 C 9.671 283.957 35.792 284.482 36.875 328.552 C 37.957 372.62 9.502 382.544 14.704 424.833 C 19.906 467.122 88.437 458.081 92.355 522.398"  transform="matrix(1, 0, 0, 1, -1.4210854715202004e-14, 0)"/></svg>'));
+//script for animation of aircraft in about us (use different path for different breakpoint)
+
+if (window.matchMedia("(min-width: 1400px)").matches) {
+    $(".section-aboutus-islands .container").append($('<svg class=" position-absolute sl-path-svg" viewBox="0 0 150 390" xmlns="http://www.w3.org/2000/svg"><path preserveAspectRatio="none" class="path" d="M 153.489 1.65 C 98.118 34.193 6.164 21.172 6.02 69.919 C 5.88 117.385 112.744 99.319 112.744 148.744 C 112.744 191.403 11.501 171.976 3.174 235.105 C -3.099 282.66 145.044 243.099 156.126 391.524"></path></svg>'));
+} else{
+    if (window.matchMedia("(min-width: 1200px)").matches) {
+        $(".section-aboutus-islands .container").append($('<svg class=" position-absolute sl-path-svg" viewBox="0 0 150 390" xmlns="http://www.w3.org/2000/svg"><path preserveAspectRatio="none" class="path" d="M 148.024 -28.448 C 105.897 13.572 6.29 18.628 6.174 64.95 C 6.025 124.366 112.97 101.023 112.744 151.106 C 112.518 201.188 19.41 176.226 3.174 238.618 C -13.062 301.009 143.934 278.911 155.608 397.121" style="fill: none; stroke: rgb(186, 218, 85);"></path></svg>'));
+    } else {
+        if (window.matchMedia("(min-width: 768px)").matches) {
+            $(".section-aboutus-islands .container").append($('<svg class=" d-none d-md-block d-xl-none position-absolute sl-path-svg" viewBox="0 0 80 495" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path class="path" id="path" d="M 113.881 -55.697 C 101.033 48.202 14.459 17.138 14.459 62.389 C 14.459 107.639 41.11 105.169 41.11 149.535 C 41.11 193.899 12.622 195.03 11.146 239.493 C 9.671 283.957 35.792 284.482 36.875 328.552 C 37.957 372.62 9.502 382.544 14.704 424.833 C 19.906 467.122 88.437 458.081 92.355 522.398"  transform="matrix(1, 0, 0, 1, -1.4210854715202004e-14, 0)"/></svg>'));
+        }
+        else {
+            if (window.matchMedia("(min-width: 360px)").matches) {
+                $(".section-aboutus-islands .container").append($('  <svg class="position-absolute sl-path-svg" viewBox="0 0 60 530" xmlns="http://www.w3.org/2000/svg"><path class="path" id="path" d="M 59.121 1.97 C 50.41 16.816 23.6 4.134 23.6 42.855 C 23.6 86.923 8.158 85.313 8.349 102.387 C 8.54 119.46 26.778 117.785 25.825 146.907 C 24.872 176.028 6.953 171.775 8.349 192.843 C 8.348 206.696 25.825 215.392 26.97 234.077 C 28.115 252.762 3.736 276.083 3.736 286.91 C 3.736 307.024 26.97 305.271 26.97 335.745 C 26.97 366.22 8.983 367.977 8.349 389.239 C 7.715 410.497 26.831 408.969 26.831 441.635 C 26.831 456.793 6.582 473.834 11.924 487.993 C 16.674 500.583 69.904 524.869 69.904 524.869"></path></svg>'));
             }
             else {
-                if (window.matchMedia("(min-width: 360px)").matches) {
-                    $(".section-aboutus-islands .container").append($('  <svg class="position-absolute sl-path-svg" viewBox="0 0 60 530" xmlns="http://www.w3.org/2000/svg"><path class="path" id="path" d="M 59.121 1.97 C 50.41 16.816 23.6 4.134 23.6 42.855 C 23.6 86.923 8.158 85.313 8.349 102.387 C 8.54 119.46 26.778 117.785 25.825 146.907 C 24.872 176.028 6.953 171.775 8.349 192.843 C 8.348 206.696 25.825 215.392 26.97 234.077 C 28.115 252.762 3.736 276.083 3.736 286.91 C 3.736 307.024 26.97 305.271 26.97 335.745 C 26.97 366.22 8.983 367.977 8.349 389.239 C 7.715 410.497 26.831 408.969 26.831 441.635 C 26.831 456.793 6.582 473.834 11.924 487.993 C 16.674 500.583 69.904 524.869 69.904 524.869"></path></svg>'));
-                }
-                else {
-                }
             }
         }
     }
-
+    }
     //end jquery script
 });
 
