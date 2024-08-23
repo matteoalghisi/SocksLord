@@ -761,11 +761,13 @@ document.addEventListener('DOMContentLoaded', function () {
       });
   });
   
-//   Contacts
+
 
 
 $(document).ready(function() {
+    //   Contacts
     $('.sl-form-flip').height($('.sl-form').outerHeight());
+    
     // Flippa al click su "Contattaci"
     $('form.sl-form').on('submit', function(event) {
         event.preventDefault(); // Previeni l'invio del form
