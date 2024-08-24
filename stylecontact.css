@@ -159,20 +159,28 @@
     padding-top: 1rem !important;
 }
 
-.sl-map{
-    background-image: url(img/contact/map.png);
+.b-contact .sl-map{
+    background-image: url(img/contact/map-sm.jpg);
     background-size: cover;
     height: 600px;
+    background-position: center;
+}
+@media (min-width: 576px) {
+    .b-contact .sl-map{
+        background-image: url(img/contact/map-md.jpg);
+        height: 1000px;
+    }
+}
+@media (min-width: 992px) {
+    .b-contact .sl-map{
+        background-image: url(img/contact/map-xl.jpg);
+    }
 }
 .b-contact .sl-yellow{
     width: 100%;
-    height: 100px;
+    height: 200px;
     background-image: url(img/contact/yellow.png);
-    background-size: 100% 100%;
-}
-.sl-yellow-svg{
-    height: 100px;
-}
-.sl-yellow-svg .path{
-    width: 100%;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
 }
