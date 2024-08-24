@@ -590,7 +590,7 @@ const addProducts = (products) => {
         const x = product.stock > 0 ? ` <div class="d-none d-lg-flex justify-content-end card-button-external">
                                             <div class="d-none d-lg-flex card-button z-3 add-cart-button">
                                                 <button class="cart-btn d-none justify-content-center align-items-center d-flex">
-                                                    <img src="img/icon/cart-icon.svg" alt="Cart">
+                                                    <img src="img/icon/cart-icon-active.svg" alt="Cart">
                                                 </button>
                                             </div> 
                                         </div>
