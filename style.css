@@ -2787,7 +2787,192 @@ END SECTION OUR SOCKS
 /*end style sockslab*/
 
 /*start style contact*/
+.b-contact .sl-container-form {
+    margin-bottom: 60px;  
+}
+.b-contact .sl-container-form .container {
+    padding: 0;    
+}
+.b-contact .sl-container-form .tab-content{
+    border-radius: 12px;
+}
 
+@media (min-width: 576px) {
+    .b-contact .sl-container-form .container {
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);    
+    }
+}
+/*tabs*/
+.b-contact .sl-form-nav-tab{
+    width: 100%;
+    border-radius: 0 0 12px 0;
+}
+
+.b-contact .sl-form-nav-tab .nav-tabs .nav-link{
+     font-size: 24px;
+}
+@media (min-width: 420px) {
+    .b-contact .sl-form-nav-tab .nav-tabs .nav-link{
+        font-size: 32px;
+   }
+}
+@media (min-width: 576px) {
+    .b-contact .sl-form-nav-tab .nav-tabs .nav-link{
+        font-size: 40px;
+   }
+}
+.b-contact .sl-form-nav-tab .nav-item{
+    border-radius: 11px 11px 0 0;
+    width: 50%;
+}
+@media (min-width: 992px) {
+    .b-contact .sl-form-nav-tab .nav-item{
+        width: 300px;
+    }
+}
+.b-contact .sl-form-nav-tab .tab-resocks .nav-link{
+    border-radius: 11px 0 0 0;
+    border: 0;
+    border-bottom: solid 1px var(--black-banana);
+}
+.b-contact .sl-form-nav-tab .tab-resocks:hover{
+    background-color: var(--green-peach);
+    border-radius: 11px 0 0 0;
+}
+.b-contact .sl-form-nav-tab .tab-collhub:hover{
+    background-color: var(--liliac-tangerine);
+    border-radius: 0 0 13px 0;
+}
+.b-contact .sl-form-nav-tab .tab-resocks:hover .nav-link{
+    color: var(--black-strawberry);
+    
+}
+.b-contact .sl-form-nav-tab .tab-collhub:hover .nav-link{
+    color: var(--black-strawberry);
+}
+
+.b-contact .sl-form-nav-tab .tab-collhub .nav-link{
+    border: 0;
+    border-left: solid 1px var(--black-banana);
+    border-bottom: solid 1px var(--black-banana);
+    border-radius: 0 11px 0 0;
+}
+@media (min-width: 992px) {
+    .b-contact .sl-form-nav-tab .tab-collhub .nav-link{
+        border-right: solid 1px var(--black-banana);
+        border-radius: 0 0 11px 0;   }
+}
+.b-contact .sl-form-nav-tab .nav-link.active{
+    color: var(--black-strawberry) !important;
+}
+.b-contact .sl-form-nav-tab .tab-resocks .nav-link.active{
+    background-color: var(--green-peach);
+}
+.b-contact .sl-form-nav-tab .tab-collhub .nav-link.active{
+    background-color: var(--liliac-tangerine);
+}
+/*end tabs*/
+
+.b-contact .sl-form{
+    height: fit-content;
+    width: 100%;
+    border-radius: 12px;
+}
+.b-contact .sl-form input{
+    height: 44px;
+    border-radius: 10px;
+}
+.b-contact .sl-form textarea{
+    border-radius: 10px;
+}
+.b-contact .sl-form-flip{
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 1s ease;
+}
+@media (min-width: 992px) {
+    .b-contact .sl-form-flip{
+        width: 400px;
+    }
+}
+.b-contact .sl-form-flip.flipped {
+    transform: rotateY(180deg);
+}
+.b-contact .sl-form-flip .side {
+    position: absolute;
+    backface-visibility: hidden;
+}
+.b-contact .sl-form-flip .back {
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+}
+.b-contact .sl-form-flip .back img{
+    width: 180px;
+}
+.b-contact .sl-form-flip .back .d-flex{
+    flex-grow: 0.5;
+}
+/*end form section*/
+
+
+.b-contact .star-list-img {
+    height: 16px;
+    width: 16px;
+}
+.b-contact .sl-form-text h4 {
+    width: 100%;
+}
+@media (min-width: 1200px) {
+    .b-contact .sl-form-text h4 {
+        width: 60%;
+    }
+}
+.b-contact .sl-form-body p {
+    width: 100%;
+    padding-top: 0 !important;
+}
+@media (min-width: 1200px) {
+    .b-contact .sl-form-body p {
+        width: 80%;
+    }
+}
+.b-contact .highlight-text {
+    color: var(--orange-kiwi);
+    font-weight: 500;
+}
+.b-contact .last-paragraph {
+    padding-top: 1rem !important;
+}
+
+.b-contact .sl-map{
+    background-image: url(img/contact/map-sm.jpg);
+    background-size: cover;
+    height: 600px;
+    background-position: center;
+}
+@media (min-width: 576px) {
+    .b-contact .sl-map{
+        background-image: url(img/contact/map-md.jpg);
+        height: 1000px;
+    }
+}
+@media (min-width: 992px) {
+    .b-contact .sl-map{
+        background-image: url(img/contact/map-xl.jpg);
+    }
+}
+.b-contact .sl-yellow{
+    width: 100%;
+    height: 200px;
+    background-image: url(img/contact/yellow.png);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+}
 /*end style contact*/
 
 
