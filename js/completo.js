@@ -302,8 +302,9 @@ $(function() {
 
 $(() => {
     // In Emporium:
-    $(".add-cart-button").on("click", (e) => {
+    $(".add-cart-button").off('click', '.add-cart-button').on("click", (e) => {
         const cartIcon = $(".cart-icon").addClass("cart-icon-active");
+        addCounter();
     });
 
     // In Single product
@@ -383,7 +384,7 @@ const addCounter = () => {
 // Add a specific number of items to the cart
 const addCounterSingle = (value) => {
     if (value !== undefined && value !== null) {
-        totalItems += value -1; // Add the value directly to totalItems
+        totalItems += value; // Add the value directly to totalItems
         updateCounterBadge();
     } else {
         console.error("Undefined value passed to addCounterSingle");
@@ -589,7 +590,7 @@ const addProducts = (products) => {
         const x = product.stock > 0 ? ` <div class="d-none d-lg-flex justify-content-end card-button-external">
                                             <div class="d-none d-lg-flex card-button z-3 add-cart-button">
                                                 <button class="cart-btn d-none justify-content-center align-items-center d-flex">
-                                                    <img src="img/icon/Sachetto-active.svg" alt="Cart">
+                                                    <img src="img/icon/cart-icon.svg" alt="Cart">
                                                 </button>
                                             </div> 
                                         </div>
@@ -615,7 +616,6 @@ const addProducts = (products) => {
     // Riconnessione degli eventi
     productsContainer.off("click", ".cart-btn"); // Rimuovi i listener precedenti
     productsContainer.on("click", ".cart-btn", function() {
-        totalItems++;
         sessionStorage.setItem('totalItems', totalItems);
         updateCounterBadge();
         addToast();
@@ -712,7 +712,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
   //POPUP 
   $(document).ready(function() {
-      $(document).on('click', '.add-cart-button', function() {
+      $(document).off('click', '.add-cart-button').on('click', '.add-cart-button', function() {
         // Add the class cart-icon-active, counter and toast
         const cartIcon = $(".cart-icon").addClass("cart-icon-active");
         addCounter();

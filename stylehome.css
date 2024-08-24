@@ -168,7 +168,6 @@
     white-space: nowrap;
     overflow: hidden;
 }
-/* quando si uniscono css considerare che qui .sl-key-feature-slide ha anche padding top e bottom */
 .b-index .sl-key-feature-slide{
     width: fit-content;
     display: inline-block;

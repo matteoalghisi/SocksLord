@@ -428,10 +428,12 @@ padding: 5rem 11.875rem !important;  /* 80px e 190px */
     line-height: 100%;
     text-decoration: none;
     text-transform: uppercase;
+    margin-bottom: 1.5rem;
 }
 @media (min-width: 576px) {
     .text-style-bw-h1 {
         font-size: 3.5rem;
+        margin-bottom: 2rem;
     }
 }
 /*h2*/
