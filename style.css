@@ -1368,7 +1368,7 @@ END SECTION OUR SOCKS
     
 }
 .b-index .sl-create-nav-tab{
-    width: 508.1px;
+    width: fit-content;
 }
 .b-index .sl-create-tabs-top-lg{
     width: 100% !important;
@@ -1441,6 +1441,10 @@ END SECTION OUR SOCKS
     .b-index .sl-create-nav-tab .nav .nav-item{
         width: fit-content;
     } 
+    .b-index .sl-create-nav-tab .nav .nav-item a{
+        width: 100%;
+        text-align: center;
+    }
 }
 .b-index .sl-create-nav-tab .nav .nav-link:hover{
     border-left: 1px solid var(--black-banana);
