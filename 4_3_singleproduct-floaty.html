@@ -1,418 +1,483 @@
 <!DOCTYPE html>
 <html lang="it">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Floaty Footies</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        
-        <!-- font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <title>Floaty Footies</title>
 
-        <!--bootstrap-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <!--jquery-->
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        
-        <!--gsap-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
-        <!--JS-->
-        <script src="js/script.js"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 
-    </head>
+    <!--bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <body class="sl-bg-avocado b-single">
-        <div class="external-black-box d-none d-lg-block"></div>
-        
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-xl fixed-top mt-1 mx-1 mt-sm-3 mx-sm-3 p-0">
-            <div id="navbarContainer" class="container-fluid d-flex justify-content-between sl-bg-avocado border px-3 py-2 p-sm-3 effect-style-default-shadow">
-                <button class="navbar-toggler border-0 px-0 px-sm-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleNavbarRadius()">
-                    <span class="toggler-icon top-bar"></span>
-                    <span class="toggler-icon middle-bar"></span>
-                    <span class="toggler-icon bottom-bar"></span>
-                </button>
-                <a class="navbar-brand d-flex align-items-center px-0 py-0 px-sm-3 m-0" href="index.html"><img src="img/logo/Logo-sockslord.png" alt="This is Sockslord's logo"></a>
-                <!-- desktop -->
-                <div class="d-none d-xl-inline collapse navbar-collapse flex-row-reverse">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link px-3" href="2_product.html">Product</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3 active" aria-current="page" href="4_emporium.html">Emporium</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3" href="5_sockslab.html">SocksLab</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3" href="1_aboutus.html">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3" href="3_contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="px-sm-3"><span class="cart-icon"></span></div>
+    <!--gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+
+    <!--JS-->
+    <script src="js/script.js"></script>
+
+</head>
+
+<body class="sl-bg-avocado b-single">
+    <div class="external-black-box d-none d-lg-block"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xl fixed-top mt-1 mx-1 mt-sm-3 mx-sm-3 p-0">
+        <div id="navbarContainer"
+            class="container-fluid d-flex justify-content-between sl-bg-avocado border px-3 py-2 p-sm-3 effect-style-default-shadow">
+            <button class="navbar-toggler border-0 px-0 px-sm-3 collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" onclick="toggleNavbarRadius()">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <a class="navbar-brand d-flex align-items-center px-0 py-0 px-sm-3 m-0" href="index.html"><img
+                    src="img/logo/Logo-sockslord.png" alt="This is Sockslord's logo"></a>
+            <!-- desktop -->
+            <div class="d-none d-xl-inline collapse navbar-collapse flex-row-reverse">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="2_product.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 active" aria-current="page" href="4_emporium.html">Emporium</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="5_sockslab.html">SocksLab</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="1_aboutus.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="3_contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <!--mobile-->
-            <div class="d-xl-none">
-                <div class="sl-collapse-mobile collapse navbar-collapse d-xl-none flex-row-reverse border-start border-bottom sl-bg-avocado effect-style-default-shadow" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-xl-0">
-                        <li class="nav-item">
-                            <a class="nav-link px-sm-3 py-3 py-sm-4" href="2_product.html">Product</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-sm-3 py-3 py-sm-4 active" aria-current="page" href="4_emporium.html">Emporium</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-sm-3 py-3 py-sm-4" href="5_sockslab.html">SocksLab</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-sm-3 py-3 py-sm-4" href="1_aboutus.html">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-sm-3 py-3 py-sm-4" href="3_contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="px-sm-3"><span class="cart-icon"></span></div>
+        </div>
+        <!--mobile-->
+        <div class="d-xl-none">
+            <div class="sl-collapse-mobile collapse navbar-collapse d-xl-none flex-row-reverse border-start border-bottom sl-bg-avocado effect-style-default-shadow"
+                id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-xl-0">
+                    <li class="nav-item">
+                        <a class="nav-link px-sm-3 py-3 py-sm-4" href="2_product.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-sm-3 py-3 py-sm-4 active" aria-current="page"
+                            href="4_emporium.html">Emporium</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-sm-3 py-3 py-sm-4" href="5_sockslab.html">SocksLab</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-sm-3 py-3 py-sm-4" href="1_aboutus.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-sm-3 py-3 py-sm-4" href="3_contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <!-- Toast -->
-            <div id="sl-toast-container"></div>
-            <!-- Badge with counter for purchased products -->
-            <div id="counter-container"></div>
-        </nav>
+        </div>
+        <!-- Toast -->
+        <div id="sl-toast-container"></div>
+        <!-- Badge with counter for purchased products -->
+        <div id="counter-container"></div>
+    </nav>
 
-        <!-- section single product -->
-        <section class="container-fluid d-flex flex-lg-row flex-column justify-content-center ">
-            <div class="row mx-0">
-                <!-- sock img with strawberry background-->
-                <div class="black-box sl-bg-strawberry d-flex flex-row justify-content-center align-items-center col-lg-6">
-                    <img src="img/emporium/Socks/3.svg" alt="This is Floaty Footies sock">
+    <!-- section single product -->
+    <section class="container-fluid d-flex flex-lg-row flex-column justify-content-center ">
+        <div class="row mx-0">
+            <!-- sock img with strawberry background-->
+            <div class="black-box sl-bg-strawberry d-flex flex-row justify-content-center align-items-center col-lg-6">
+                <img src="img/emporium/Socks/3.svg" alt="This is Floaty Footies sock">
+            </div>
+
+            <!-- options with avocado background -->
+            <div class="white-box sl-bg-avocado justify-content-center col-lg-6 d-flex flex-column">
+                <h1 class="text-style-h1 pb-4 pb-32px-dekstop">Floaty Footies</h1>
+                <h4 class="text-style-h4 pb-3">₹ 450,257</h4>
+                <p class="text-style-body-copy">Le Floaty Footies sono calze volanti per alieni, progettate con
+                    tecnologia anti-gravità per consentire di fluttuare leggermente sopra il suolo, migliorando la
+                    mobilità e riducendo l'affaticamento su terreni difficili.</p>
+
+                <!-- Buttons -->
+                <div class="sl-btn-group d-flex flex-sm-row flex-column pb-lg-4 pb-3">
+                    <!-- Dropdown tipologia piede -->
+                    <div class="foot-type">
+                        <p class="text-style-button d-flex align-items-center mb-0">Numero calze</p>
+                    </div>
+                    <!-- Quantity button -->
+                    <div class="quantity d-flex">
+                        <button class="minus text-style-button" aria-label="Decrease">&minus;</button>
+                        <input type="number" class="input-box text-style-button" value="1" min="1" max="100">
+                        <button class="plus text-style-button" aria-label="Increase">&plus;</button>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center flex-column align-items-center pb-6">
+                    <div class="add-cart-single w-100">
+                        <button
+                            class="sl-btn-tertiary text-style-button d-flex align-items-center justify-content-center m-0">Aggiungi
+                            al carrello</button>
+                    </div>
+                    <a href="5_sockslab.html"
+                        class="text-style-button d-flex align-items-center justify-content-center m-0 sl-btn-quaternary w-100">Crea
+                        la tua calza</a>
                 </div>
 
-                <!-- options with avocado background -->
-                <div class="white-box sl-bg-avocado justify-content-center col-lg-6 d-flex flex-column">
-                    <h1 class="text-style-h1 pb-4 pb-32px-dekstop">Floaty Footies</h1>
-                    <h4 class="text-style-h4 pb-3">₹ 450,257</h4>
-                    <p class="text-style-body-copy">Le Floaty Footies sono calze volanti per alieni, progettate con tecnologia anti-gravità per consentire di fluttuare leggermente sopra il suolo, migliorando la mobilità e riducendo l'affaticamento su terreni difficili.</p>
-
-                    <!-- Buttons -->
-                    <div class="sl-btn-group d-flex flex-sm-row flex-column pb-lg-4 pb-3">
-                        <!-- Dropdown tipologia piede -->
-                        <div class="foot-type">
-                            <p class="text-style-button d-flex align-items-center mb-0">Numero calze</p>
-                        </div>
-                        <!-- Quantity button -->
-                        <div class="quantity d-flex">
-                            <button class="minus text-style-button" aria-label="Decrease">&minus;</button>
-                            <input type="number" class="input-box text-style-button" value="1" min="1" max="100">
-                            <button class="plus text-style-button" aria-label="Increase">&plus;</button>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-center flex-column align-items-center pb-6">
-                        <div class="add-cart-single w-100">
-                            <button class="sl-btn-tertiary text-style-button d-flex align-items-center justify-content-center m-0">Aggiungi al carrello</button>
-                        </div>
-                        <a href="5_sockslab.html" class="text-style-button d-flex align-items-center justify-content-center m-0 sl-btn-quaternary w-100">Crea la tua calza</a>
-                    </div>
-
-                    <!-- Accordion descrizione calza -->
-                    <div class="accordion" id="accordion-single">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header text-style-desktop-titolo-tendina">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <!-- Accordion descrizione calza -->
+                <div class="accordion" id="accordion-single">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header text-style-desktop-titolo-tendina">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 Funzionalità
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion-single">
-                                <div class="accordion-body text-style-body-copy">
-                                    Queste calze impiegano una sofisticata tecnologia anti-gravità che genera un campo di levitazione, permettendo a chi le indossa di sollevarsi leggermente dal suolo. Questa funzionalità di volo riduce la pressione sui piedi e migliora la mobilità, rendendo più agevoli gli spostamenti su terreni accidentati o in ambienti con diverse condizioni gravitazionali.
-                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion-single">
+                            <div class="accordion-body text-style-body-copy">
+                                Queste calze impiegano una sofisticata tecnologia anti-gravità che genera un campo di
+                                levitazione, permettendo a chi le indossa di sollevarsi leggermente dal suolo. Questa
+                                funzionalità di volo riduce la pressione sui piedi e migliora la mobilità, rendendo più
+                                agevoli gli spostamenti su terreni accidentati o in ambienti con diverse condizioni
+                                gravitazionali.
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header text-style-desktop-titolo-tendina">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header text-style-desktop-titolo-tendina">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 Materiali
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-single">
-                                <div class="accordion-body text-style-body-copy">
-                                    <ul>
-                                        <li><span class="text-style-h5">Materiale anti-gravità</span>: costituito da cristalli levitanti e micro-circuiti, permette la levitazione, migliora la mobilità e riduce l'affaticamento.
-                                        </li>
-                                        <li><span class="text-style-h5">Tessuti traspiranti a base di polimeri extraterrestri</span>: permettono una ventilazione eccellente, mantenendo i piedi sempre asciutti e freschi.
-                                        </li>
-                                        <li><span class="text-style-h5">Membrana termoregolatrice interna</span>: regola automaticamente la temperatura all'interno delle calze, mantenendo i piedi caldi quando fa freddo e freschi quando fa caldo.
-                                        </li>
-                                        <li><span class="text-style-h5">Micro-strutture flessibili</span>: incorporano la tecnologia anti-gravità nelle calze, consentendo levitazione leggera e una distribuzione uniforme della pressione.
-                                        </li>
-                                        <li><span class="text-style-h5">Rivestimenti anti-usura</span>: strati protettivi applicati nelle aree più soggette a usura, garantendo una maggiore durata delle calze.
-                                        </li>
-                                    </ul>
-                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-single">
+                            <div class="accordion-body text-style-body-copy">
+                                <ul>
+                                    <li><span class="text-style-h5">Materiale anti-gravità</span>: costituito da
+                                        cristalli levitanti e micro-circuiti, permette la levitazione, migliora la
+                                        mobilità e riduce l'affaticamento.
+                                    </li>
+                                    <li><span class="text-style-h5">Tessuti traspiranti a base di polimeri
+                                            extraterrestri</span>: permettono una ventilazione eccellente, mantenendo i
+                                        piedi sempre asciutti e freschi.
+                                    </li>
+                                    <li><span class="text-style-h5">Membrana termoregolatrice interna</span>: regola
+                                        automaticamente la temperatura all'interno delle calze, mantenendo i piedi caldi
+                                        quando fa freddo e freschi quando fa caldo.
+                                    </li>
+                                    <li><span class="text-style-h5">Micro-strutture flessibili</span>: incorporano la
+                                        tecnologia anti-gravità nelle calze, consentendo levitazione leggera e una
+                                        distribuzione uniforme della pressione.
+                                    </li>
+                                    <li><span class="text-style-h5">Rivestimenti anti-usura</span>: strati protettivi
+                                        applicati nelle aree più soggette a usura, garantendo una maggiore durata delle
+                                        calze.
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header text-style-desktop-titolo-tendina">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header text-style-desktop-titolo-tendina">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 Lavorazione
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion-single">
-                                <div class="accordion-body text-style-body-copy">
-                                    Le calze sono prodotte mediante una tessitura avanzata che combina una struttura resistente con tessuti traspiranti. La tecnologia anti-gravità è integrata attraverso cristalli levitanti e micro-circuiti fusi nel tessuto e la membrana termoregolatrice viene laminata all'interno delle calze per mantenere una temperatura costante. Dopo la produzione, le calze sono rifinite con attenzione ai rivestimenti anti-usura e alle micro-strutture flessibili.
-                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion-single">
+                            <div class="accordion-body text-style-body-copy">
+                                Le calze sono prodotte mediante una tessitura avanzata che combina una struttura
+                                resistente con tessuti traspiranti. La tecnologia anti-gravità è integrata attraverso
+                                cristalli levitanti e micro-circuiti fusi nel tessuto e la membrana termoregolatrice
+                                viene laminata all'interno delle calze per mantenere una temperatura costante. Dopo la
+                                produzione, le calze sono rifinite con attenzione ai rivestimenti anti-usura e alle
+                                micro-strutture flessibili.
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header text-style-desktop-titolo-tendina">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        Riciclaggio
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordion-single">
-                                <div class="accordion-body text-style-body-copy">
-                                    <ol>
-                                        <li><span class="text-style-h5">Raccolta e Separazione</span>: i materiali delle calze vengono raccolti e divisi in base ai tipi per facilitare il riciclaggio. 
-                                        </li>
-                                        <li><span class="text-style-h5">Pulizia</span>: i materiali separati vengono sottoposti a un processo di pulizia per rimuovere impurità e residui.
-                                        </li>
-                                        <li><span class="text-style-h5">Riprocessamento</span>: i materiali puliti vengono riciclati e trasformati in nuovi prodotti o in materie prime (le fibre vengono usate per nuovi tessuti, mentre dai componenti tecnologici vengono recuperati i materiali preziosi). 
-                                        </li>
-                                        <li><span class="text-style-h5">Reintroduzione</span>: i materiali riciclati vengono utilizzati per produrre nuovi articoli, chiudendo il ciclo di produzione.
-                                        </li>
-                                    </ol>
-                                </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header text-style-desktop-titolo-tendina">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Riciclaggio
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordion-single">
+                            <div class="accordion-body text-style-body-copy">
+                                <ol>
+                                    <li><span class="text-style-h5">Raccolta e Separazione</span>: i materiali delle
+                                        calze vengono raccolti e divisi in base ai tipi per facilitare il riciclaggio.
+                                    </li>
+                                    <li><span class="text-style-h5">Pulizia</span>: i materiali separati vengono
+                                        sottoposti a un processo di pulizia per rimuovere impurità e residui.
+                                    </li>
+                                    <li><span class="text-style-h5">Riprocessamento</span>: i materiali puliti vengono
+                                        riciclati e trasformati in nuovi prodotti o in materie prime (le fibre vengono
+                                        usate per nuovi tessuti, mentre dai componenti tecnologici vengono recuperati i
+                                        materiali preziosi).
+                                    </li>
+                                    <li><span class="text-style-h5">Reintroduzione</span>: i materiali riciclati vengono
+                                        utilizzati per produrre nuovi articoli, chiudendo il ciclo di produzione.
+                                    </li>
+                                </ol>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Start section Discover also -->
-        <section class="container-fluid d-flex flex-column justify-content-start discover-also">
-            <div class="container">
-                <h2 class="text-style-h2">Discover also</h2>
+    <!-- Start section Discover also -->
+    <section class="container-fluid d-flex flex-column justify-content-start discover-also">
+        <div class="container">
+            <h2 class="text-style-h2">Discover also</h2>
+        </div>
+
+        <!--cards containers-->
+        <div class="sl-key-feature-container d-flex flex-row gap-4">
+            <div class="sl-key-feature-slide d-flex flex-row gap-4">
+
+                <div
+                    class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mt-5">
+                    <a href="4_1_singleproduct_luminares.html" class="card-link"></a>
+                    <h4 class="text-style-h4 text-center">Luminares</h4>
+                    <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 433,999</p>
+                    <img src="img/emporium/Socks/1.svg" alt="This is Luminares sock" class="card-img">
+
+                </div>
+
+                <div
+                    class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mb-5">
+                    <a href="4_2_singleproduct_lux.html" class="card-link"></a>
+                    <h4 class="text-style-h4 text-center">Lux x SocksLord</h4>
+                    <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 7380,257</p>
+                    <img src="img/emporium/Socks/2.svg" alt="This is Lux x SockLord sock" class="card-img">
+                </div>
+
+                <div
+                    class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mt-5">
+                    <div class="card-soldout d-flex justify-content-center align-items-center">
+                        <p class="text-style-h2 text-soldout">Esaurita</p>
+                    </div>
+                    <h4 class="text-style-h4 text-center">MystiPockets</h4>
+                    <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 2820</p>
+                    <img src="img/emporium/Socks/4.svg" alt="This is MystiPockets sock" class="card-img">
+                </div>
+
+                <div
+                    class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mb-5">
+                    <div class="card-soldout d-flex justify-content-center align-items-center">
+                        <p class="text-style-h2 text-soldout">Esaurita</p>
+                    </div>
+                    <h4 class="text-style-h4 text-center">RouteSocks</h4>
+                    <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 1489,495</p>
+                    <img src="img/emporium/Socks/6.svg" alt="This is RouteSocks sock" class="card-img">
+                </div>
+
+                <div
+                    class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mt-5">
+                    <div class="card-soldout d-flex justify-content-center align-items-center">
+                        <p class="text-style-h2 text-soldout">Esaurita</p>
+                    </div>
+                    <h4 class="text-style-h4 text-center">Zlatanox</h4>
+                    <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 8725,362</p>
+                    <img src="img/emporium/Socks/31.svg" alt="This is Zlatanox sock" class="card-img">
+                </div>
+
+                <div
+                    class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mb-5">
+                    <div class="card-soldout d-flex justify-content-center align-items-center">
+                        <p class="text-style-h2 text-soldout">Esaurita</p>
+                    </div>
+                    <h4 class="text-style-h4 text-center">RouteSocks</h4>
+                    <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 1489,495</p>
+                    <img src="img/emporium/Socks/15.svg" alt="This is RouteSocks sock" class="card-img">
+                </div>
             </div>
-            
-            <!--cards containers-->
-            <div class="sl-key-feature-container d-flex flex-row gap-4">
-                <div class="sl-key-feature-slide d-flex flex-row gap-4">
 
-                    <div class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mt-5">
-                        <a href="4_1_singleproduct_luminares.html" class="card-link"></a>
-                            <h4 class="text-style-h4 text-center">Luminares</h4>
-                            <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 433,999</p>
-                            <img src="img/emporium/Socks/1.svg" alt="This is Luminares sock" class="card-img">
-                        
-                    </div>
+            <div class="sl-key-feature-slide d-flex flex-row gap-4">
 
-                    <div class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mb-5">
-                        <a href="4_2_singleproduct_lux.html" class="card-link"></a>
-                        <h4 class="text-style-h4 text-center">Lux x SocksLord</h4>
-                        <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 7380,257</p>
-                        <img src="img/emporium/Socks/2.svg" alt="This is Lux x SockLord sock" class="card-img">
-                    </div>
+                <div
+                    class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mt-5">
+                    <a href="4_1_singleproduct_luminares.html" class="card-link"></a>
+                    <h4 class="text-style-h4 text-center">Luminares</h4>
+                    <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 433,999</p>
+                    <img src="img/emporium/Socks/1.svg" alt="This is Luminares sock" class="card-img">
 
-                    <div class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mt-5">
-                        <div class="card-soldout d-flex justify-content-center align-items-center">
-                            <p class="text-style-h2 text-soldout">Esaurita</p>
-                        </div>
-                        <h4 class="text-style-h4 text-center">MystiPockets</h4>
-                        <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 2820</p>
-                        <img src="img/emporium/Socks/4.svg" alt="This is MystiPockets sock" class="card-img">
-                    </div>
-
-                    <div class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mb-5">
-                        <div class="card-soldout d-flex justify-content-center align-items-center">
-                            <p class="text-style-h2 text-soldout">Esaurita</p>
-                        </div>
-                        <h4 class="text-style-h4 text-center">RouteSocks</h4>
-                        <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 1489,495</p>
-                        <img src="img/emporium/Socks/6.svg" alt="This is RouteSocks sock" class="card-img">
-                    </div>
-
-                    <div class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mt-5">
-                        <div class="card-soldout d-flex justify-content-center align-items-center">
-                            <p class="text-style-h2 text-soldout">Esaurita</p>
-                        </div>
-                        <h4 class="text-style-h4 text-center">Zlatanox</h4>
-                        <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 8725,362</p>
-                        <img src="img/emporium/Socks/31.svg" alt="This is Zlatanox sock" class="card-img">
-                    </div>
-
-                    <div class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mb-5">
-                        <div class="card-soldout d-flex justify-content-center align-items-center">
-                            <p class="text-style-h2 text-soldout">Esaurita</p>
-                        </div>
-                        <h4 class="text-style-h4 text-center">RouteSocks</h4>
-                        <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 1489,495</p>
-                        <img src="img/emporium/Socks/15.svg" alt="This is RouteSocks sock" class="card-img">
-                    </div>
                 </div>
-        
-                <div class="sl-key-feature-slide d-flex flex-row gap-4">
 
-                    <div class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mt-5">
-                        <a href="4_1_singleproduct_luminares.html" class="card-link"></a>
-                            <h4 class="text-style-h4 text-center">Luminares</h4>
-                            <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 433,999</p>
-                            <img src="img/emporium/Socks/1.svg" alt="This is Luminares sock" class="card-img">
-                        
-                    </div>
-
-                    <div class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mb-5">
-                        <a href="4_2_singleproduct_lux.html" class="card-link"></a>
-                        <h4 class="text-style-h4 text-center">Lux x SocksLord</h4>
-                        <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 7380,257</p>
-                        <img src="img/emporium/Socks/2.svg" alt="This is Lux x SockLord sock" class="card-img">
-                    </div>
-
-                    <div class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mt-5">
-                        <div class="card-soldout d-flex justify-content-center align-items-center">
-                            <p class="text-style-h2 text-soldout">Esaurita</p>
-                        </div>
-                        <h4 class="text-style-h4 text-center">MystiPockets</h4>
-                        <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 2820</p>
-                        <img src="img/emporium/Socks/4.svg" alt="This is MystiPockets sock" class="card-img">
-                    </div>
-
-                    <div class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mb-5">
-                        <div class="card-soldout d-flex justify-content-center align-items-center">
-                            <p class="text-style-h2 text-soldout">Esaurita</p>
-                        </div>
-                        <h4 class="text-style-h4 text-center">RouteSocks</h4>
-                        <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 1489,495</p>
-                        <img src="img/emporium/Socks/6.svg" alt="This is RouteSocks sock" class="card-img">
-                    </div>
-
-                    <div class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mt-5">
-                        <div class="card-soldout d-flex justify-content-center align-items-center">
-                            <p class="text-style-h2 text-soldout">Esaurita</p>
-                        </div>
-                        <h4 class="text-style-h4 text-center">Zlatanox</h4>
-                        <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 8725,362</p>
-                        <img src="img/emporium/Socks/31.svg" alt="This is Zlatanox sock" class="card-img">
-                    </div>
-
-                    <div class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mb-5">
-                        <div class="card-soldout d-flex justify-content-center align-items-center">
-                            <p class="text-style-h2 text-soldout">Esaurita</p>
-                        </div>
-                        <h4 class="text-style-h4 text-center">RouteSocks</h4>
-                        <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 1489,495</p>
-                        <img src="img/emporium/Socks/15.svg" alt="This is RouteSocks sock" class="card-img">
-                    </div>
+                <div
+                    class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mb-5">
+                    <a href="4_2_singleproduct_lux.html" class="card-link"></a>
+                    <h4 class="text-style-h4 text-center">Lux x SocksLord</h4>
+                    <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 7380,257</p>
+                    <img src="img/emporium/Socks/2.svg" alt="This is Lux x SockLord sock" class="card-img">
                 </div>
-        
-                <div class="sl-key-feature-slide d-flex flex-row gap-4">
 
-                    <div class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mt-5">
-                        <a href="4_1_singleproduct_luminares.html" class="card-link"></a>
-                            <h4 class="text-style-h4 text-center">Luminares</h4>
-                            <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 433,999</p>
-                            <img src="img/emporium/Socks/1.svg" alt="This is Luminares sock" class="card-img">
-                        
+                <div
+                    class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mt-5">
+                    <div class="card-soldout d-flex justify-content-center align-items-center">
+                        <p class="text-style-h2 text-soldout">Esaurita</p>
                     </div>
-
-                    <div class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mb-5">
-                        <a href="4_2_singleproduct_lux.html" class="card-link"></a>
-                        <h4 class="text-style-h4 text-center">Lux x SocksLord</h4>
-                        <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 7380,257</p>
-                        <img src="img/emporium/Socks/2.svg" alt="This is Lux x SockLord sock" class="card-img">
-                    </div>
-
-                    <div class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mt-5">
-                        <div class="card-soldout d-flex justify-content-center align-items-center">
-                            <p class="text-style-h2 text-soldout">Esaurita</p>
-                        </div>
-                        <h4 class="text-style-h4 text-center">MystiPockets</h4>
-                        <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 2820</p>
-                        <img src="img/emporium/Socks/4.svg" alt="This is MystiPockets sock" class="card-img">
-                    </div>
-
-                    <div class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mb-5">
-                        <div class="card-soldout d-flex justify-content-center align-items-center">
-                            <p class="text-style-h2 text-soldout">Esaurita</p>
-                        </div>
-                        <h4 class="text-style-h4 text-center">RouteSocks</h4>
-                        <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 1489,495</p>
-                        <img src="img/emporium/Socks/6.svg" alt="This is RouteSocks sock" class="card-img">
-                    </div>
-
-                    <div class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mt-5">
-                        <div class="card-soldout d-flex justify-content-center align-items-center">
-                            <p class="text-style-h2 text-soldout">Esaurita</p>
-                        </div>
-                        <h4 class="text-style-h4 text-center">Zlatanox</h4>
-                        <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 8725,362</p>
-                        <img src="img/emporium/Socks/31.svg" alt="This is Zlatanox sock" class="card-img">
-                    </div>
-
-                    <div class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mb-5">
-                        <div class="card-soldout d-flex justify-content-center align-items-center">
-                            <p class="text-style-h2 text-soldout">Esaurita</p>
-                        </div>
-                        <h4 class="text-style-h4 text-center">RouteSocks</h4>
-                        <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 1489,495</p>
-                        <img src="img/emporium/Socks/15.svg" alt="This is RouteSocks sock" class="card-img">
-                    </div>
+                    <h4 class="text-style-h4 text-center">MystiPockets</h4>
+                    <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 2820</p>
+                    <img src="img/emporium/Socks/4.svg" alt="This is MystiPockets sock" class="card-img">
                 </div>
-            </div>    
-        </section>
+
+                <div
+                    class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mb-5">
+                    <div class="card-soldout d-flex justify-content-center align-items-center">
+                        <p class="text-style-h2 text-soldout">Esaurita</p>
+                    </div>
+                    <h4 class="text-style-h4 text-center">RouteSocks</h4>
+                    <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 1489,495</p>
+                    <img src="img/emporium/Socks/6.svg" alt="This is RouteSocks sock" class="card-img">
+                </div>
+
+                <div
+                    class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mt-5">
+                    <div class="card-soldout d-flex justify-content-center align-items-center">
+                        <p class="text-style-h2 text-soldout">Esaurita</p>
+                    </div>
+                    <h4 class="text-style-h4 text-center">Zlatanox</h4>
+                    <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 8725,362</p>
+                    <img src="img/emporium/Socks/31.svg" alt="This is Zlatanox sock" class="card-img">
+                </div>
+
+                <div
+                    class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mb-5">
+                    <div class="card-soldout d-flex justify-content-center align-items-center">
+                        <p class="text-style-h2 text-soldout">Esaurita</p>
+                    </div>
+                    <h4 class="text-style-h4 text-center">RouteSocks</h4>
+                    <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 1489,495</p>
+                    <img src="img/emporium/Socks/15.svg" alt="This is RouteSocks sock" class="card-img">
+                </div>
+            </div>
+
+            <div class="sl-key-feature-slide d-flex flex-row gap-4">
+
+                <div
+                    class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mt-5">
+                    <a href="4_1_singleproduct_luminares.html" class="card-link"></a>
+                    <h4 class="text-style-h4 text-center">Luminares</h4>
+                    <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 433,999</p>
+                    <img src="img/emporium/Socks/1.svg" alt="This is Luminares sock" class="card-img">
+
+                </div>
+
+                <div
+                    class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mb-5">
+                    <a href="4_2_singleproduct_lux.html" class="card-link"></a>
+                    <h4 class="text-style-h4 text-center">Lux x SocksLord</h4>
+                    <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 7380,257</p>
+                    <img src="img/emporium/Socks/2.svg" alt="This is Lux x SockLord sock" class="card-img">
+                </div>
+
+                <div
+                    class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mt-5">
+                    <div class="card-soldout d-flex justify-content-center align-items-center">
+                        <p class="text-style-h2 text-soldout">Esaurita</p>
+                    </div>
+                    <h4 class="text-style-h4 text-center">MystiPockets</h4>
+                    <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 2820</p>
+                    <img src="img/emporium/Socks/4.svg" alt="This is MystiPockets sock" class="card-img">
+                </div>
+
+                <div
+                    class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mb-5">
+                    <div class="card-soldout d-flex justify-content-center align-items-center">
+                        <p class="text-style-h2 text-soldout">Esaurita</p>
+                    </div>
+                    <h4 class="text-style-h4 text-center">RouteSocks</h4>
+                    <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 1489,495</p>
+                    <img src="img/emporium/Socks/6.svg" alt="This is RouteSocks sock" class="card-img">
+                </div>
+
+                <div
+                    class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mt-5">
+                    <div class="card-soldout d-flex justify-content-center align-items-center">
+                        <p class="text-style-h2 text-soldout">Esaurita</p>
+                    </div>
+                    <h4 class="text-style-h4 text-center">Zlatanox</h4>
+                    <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 8725,362</p>
+                    <img src="img/emporium/Socks/31.svg" alt="This is Zlatanox sock" class="card-img">
+                </div>
+
+                <div
+                    class="col-2 col-lg-3 card-emporium d-flex card sl-card-key-feature justify-content-center align-items-center effect-style-default-shadow sl-card-c mb-5">
+                    <div class="card-soldout d-flex justify-content-center align-items-center">
+                        <p class="text-style-h2 text-soldout">Esaurita</p>
+                    </div>
+                    <h4 class="text-style-h4 text-center">RouteSocks</h4>
+                    <p class="text-style-body-copy-small mb-3 mb-lg-4">₹ 1489,495</p>
+                    <img src="img/emporium/Socks/15.svg" alt="This is RouteSocks sock" class="card-img">
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
-        <!-- Footer -->
-        <footer  class="footer container-fluid px-3 px-sm-4 sl-bg-avocado border-top">
-            <div class="pb-5 py-4 mb-5">
+    <!-- Footer -->
+    <footer class="footer container-fluid px-3 px-sm-4 sl-bg-avocado border-top">
+        <div class="pb-5 py-4 mb-5">
             <img class="py-4 footer-logo" src="img/logo/Logo-sockslord.png" alt="This is Sockslord's logo">
             <div class="d-flex flex-row justify-content-between align-items-center py-4">
                 <ul class="nav d-flex flex-column flex-xl-row gap-4">
-                <li class="nav-item">
-                    <a class="nav-link px-xl-3 p-0" href="2_product.html">Product</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-xl-3 p-0" href="4_emporium.html">Emporium</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-xl-3 p-0" href="5_sockslab.html">SocksLab</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-xl-3 p-0" href="1_aboutus.html">About us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-xl-3 p-0" href="3_contact.html">Contact</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-xl-3 p-0" href="2_product.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-xl-3 p-0" href="4_emporium.html">Emporium</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-xl-3 p-0" href="5_sockslab.html">SocksLab</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-xl-3 p-0" href="1_aboutus.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-xl-3 p-0" href="3_contact.html">Contact</a>
+                    </li>
                 </ul>
                 <div class="d-flex flex-column flex-xl-row gap-3 gap-lg-4">
-                <img class="footer-icon" src="img/icon/Icon-footer-1.svg" alt="This is the find us icon">
-                <img class="footer-icon" src="img/icon/Icon-footer-2.svg" alt="This is the review icon">
-                <img class="footer-icon" src="img/icon/Icon-footer-3.svg" alt="This is the call us icon">
-                <img class="footer-icon" src="img/icon/Icon-footer-4.svg" alt="This is the star us icon">
+                    <img class="footer-icon" src="img/icon/Icon-footer-1.svg" alt="This is the find us icon">
+                    <img class="footer-icon" src="img/icon/Icon-footer-2.svg" alt="This is the review icon">
+                    <img class="footer-icon" src="img/icon/Icon-footer-3.svg" alt="This is the call us icon">
+                    <img class="footer-icon" src="img/icon/Icon-footer-4.svg" alt="This is the star us icon">
                 </div>
             </div>
-            </div>
-            <div class="d-flex justify-content-center pt-5 mt-5 pb-2">
+        </div>
+        <div class="d-flex justify-content-center pt-5 mt-5 pb-2">
             <a class="px-sm-4 px-2 py-0 text-style-body-copy-small" href="#">Biscotti spaziali</a>
             <a class="px-sm-4 px-2 py-0 text-style-body-copy-small" href="#">Privacy intergalattica</a>
-            </div>
-        </footer>
-        
-  
-    </body>
-</html>  
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

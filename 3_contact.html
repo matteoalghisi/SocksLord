@@ -1,287 +1,322 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Contact</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <title>Contact</title>
 
-    <!--bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <!--jquery-->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!--gsap-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 
-    <!-- <script type="text/javascript" src="js/script.js"></script> -->
-    <script type="text/javascript" src="js/script.js"></script>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 
-  </head>
-  
-  <body class="sl-bg-grape b-contact">
+  <!--bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <!--jquery-->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!--gsap-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-xl fixed-top mt-1 mx-1 mt-sm-3 mx-sm-3 p-0">
-      <div id="navbarContainer" class="container-fluid d-flex justify-content-between sl-bg-avocado border px-3 py-2 p-sm-3 effect-style-default-shadow">
-          <button class="navbar-toggler border-0 px-0 px-sm-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleNavbarRadius()">
-              <span class="toggler-icon top-bar"></span>
-              <span class="toggler-icon middle-bar"></span>
-              <span class="toggler-icon bottom-bar"></span>
-          </button>
-          <a class="navbar-brand d-flex align-items-center px-0 py-0 px-sm-3 m-0" href="index.html"><img src="img/logo/Logo-sockslord.png" alt="This is Sockslord's logo"/></a>
+  <!-- <script type="text/javascript" src="js/script.js"></script> -->
+  <script type="text/javascript" src="js/script.js"></script>
 
-          <!-- desktop -->
-          <div class="d-none d-xl-inline collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
-              <ul class="navbar-nav mb-2 mb-lg-0">
-                  <li class="nav-item">
-                      <a class="nav-link px-3" href="2_product.html">Product</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link px-3" href="4_emporium.html">Emporium</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link px-3" href="5_sockslab.html">SocksLab</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link px-3" aria-current="page" href="1_aboutus.html">About us</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link px-3 active" href="3_contact.html">Contact</a>
-                  </li>
-              </ul>
-          </div>
-          <div class="px-sm-3" href="#"><span class="cart-icon"></span></div>
+</head>
+
+<body class="sl-bg-grape b-contact">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-xl fixed-top mt-1 mx-1 mt-sm-3 mx-sm-3 p-0">
+    <div id="navbarContainer"
+      class="container-fluid d-flex justify-content-between sl-bg-avocado border px-3 py-2 p-sm-3 effect-style-default-shadow">
+      <button class="navbar-toggler border-0 px-0 px-sm-3 collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation" onclick="toggleNavbarRadius()">
+        <span class="toggler-icon top-bar"></span>
+        <span class="toggler-icon middle-bar"></span>
+        <span class="toggler-icon bottom-bar"></span>
+      </button>
+      <a class="navbar-brand d-flex align-items-center px-0 py-0 px-sm-3 m-0" href="index.html"><img
+          src="img/logo/Logo-sockslord.png" alt="This is Sockslord's logo" /></a>
+
+      <!-- desktop -->
+      <div class="d-none d-xl-inline collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link px-3" href="2_product.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="4_emporium.html">Emporium</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="5_sockslab.html">SocksLab</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" aria-current="page" href="1_aboutus.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3 active" href="3_contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
+      <div class="px-sm-3" href="#"><span class="cart-icon"></span></div>
+    </div>
 
-      <!--mobile-->
-      <div class="d-xl-none">
-          <div class="sl-collapse-mobile collapse navbar-collapse d-xl-none flex-row-reverse border-start border-bottom sl-bg-avocado effect-style-default-shadow" id="navbarSupportedContent" aria-e>
-              <ul class="navbar-nav mb-2 mb-xl-0">
-                  <li class="nav-item">
-                      <a class="nav-link px-sm-3 py-3 py-sm-4" href="2_product.html">Product</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link px-sm-3 py-3 py-sm-4" href="4_emporium.html">Emporium</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link px-sm-3 py-3 py-sm-4" href="5_sockslab.html">SocksLab</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link px-sm-3 py-3 py-sm-4" aria-current="page" href="1_aboutus.html">About us</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link px-sm-3 py-3 py-sm-4" href="3_contact.html">Contact</a>
-                  </li>
-              </ul>
-          </div>
+    <!--mobile-->
+    <div class="d-xl-none">
+      <div
+        class="sl-collapse-mobile collapse navbar-collapse d-xl-none flex-row-reverse border-start border-bottom sl-bg-avocado effect-style-default-shadow"
+        id="navbarSupportedContent" aria-e>
+        <ul class="navbar-nav mb-2 mb-xl-0">
+          <li class="nav-item">
+            <a class="nav-link px-sm-3 py-3 py-sm-4" href="2_product.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-sm-3 py-3 py-sm-4" href="4_emporium.html">Emporium</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-sm-3 py-3 py-sm-4" href="5_sockslab.html">SocksLab</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-sm-3 py-3 py-sm-4" aria-current="page" href="1_aboutus.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-sm-3 py-3 py-sm-4" href="3_contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
+    </div>
 
-      <!-- Toast -->
-      <div id="sl-toast-container"></div>
+    <!-- Toast -->
+    <div id="sl-toast-container"></div>
 
-      <!-- Badge with counter for purchased products -->
-      <div id="counter-container"></div>
+    <!-- Badge with counter for purchased products -->
+    <div id="counter-container"></div>
 
   </nav>
 
 
-    <section class="sl-container-form container-fluid sl-pt-first-div">
-      <div class="container">
-      
-        <div class="row justify-content-center justify-content-lg-start mx-1 mx-sm-3">  
-          <div class="tab-content border p-0 sl-bg-avocado">
+  <section class="sl-container-form container-fluid sl-pt-first-div">
+    <div class="container">
 
-            <div class="sl-form-nav-tab p-0 position-relative">
-              <ul class="nav nav-tabs border-0">
-                <li class="nav-item tab-resocks sl-bg-avocado">
-                    <a href="#Resocks" class="nav-link d-flex justify-content-center mb-0 pt-3 pb-2 active text-style-h2" data-bs-toggle="tab">Resocks</a>
-                </li>
-                <li class="nav-item tab-collhub sl-bg-avocado">
-                  <a href="#Collhub" class="nav-link d-flex justify-content-center mb-0 pt-3 pb-2 text-style-h2" data-bs-toggle="tab">Collhub</a>
-                </li>
-              </ul>
-            </div>
-              
-            <!--form 1-->
-            <div class="tab-pane sl-form-tab-pane fade show active p-3 p-sm-5" id="Resocks">
-              
-              <div class="d-flex justify-content-between flex-column flex-lg-row gap-5">
-                <div class="sl-form-text w-100 d-flex flex-column">
-                  <h4 class="text-style-h4 mb-3">Restituzione, Riparazione, e Riciclo per un universo sostenibile</h4>
-                  <div class="sl-form-body w-100 d-flex flex-column gap-4">
-                    <p class="text-style-body-copy m-0">Restituisci le tue calze e contribuisci a rendere il nostro universo un posto migliore, un paio di calze alla volta! Puoi restituire il prodotto per motivi diversi:</p>
-                    <div class="sl-text-list d-flex flex-column gap-2">
-                      <h5 class="text-style-h5 m-0">
-                        <img src="img/contact/star-list-item.png" alt="This is a star-list-item" class="star-list-img">
-                        Un refresh stellare
-                      </h5>
-                      <p class="text-style-body-copy m-0">Le tue calze hanno viaggiato per anni luce e mostrano i segni del tempo? Hai voglia di aggiungere una nuova funzionalità o sostituire quelle già presenti? Restituiscile e noi ci occuperemo di apportare modifiche o riparazioni su misura.</p>
-                    </div>
-                    <div class="d-flex flex-column gap-2">
-                      <h5 class="text-style-h5 m-0">
-                        <img src="img/contact/star-list-item.png" alt="This is a star-list-item" class="star-list-img">
-                        Uno smaltimento particellare
-                      </h5>
-                      <p class="text-style-body-copy m-0">Ti sei stufato delle tue calze e preferisci acquistarne un modello nuovo di zecca, ma non vuoi inquinare la nostra galassia? Non preoccuparti, ci pensiamo noi a smaltirle in maniera ecologica! Abbiamo ideato un processo ad hoc che, con poca energia, disintegra le calze in minuscole particelle che poi riutilizziamo per i nostri nuovi prodotti.</p>
-                    </div>
-                    <p class="last-paragraph text-style-body-copy m-0">La sostenibilità è ad un portale da te. Compila il form e dai il tuo contributo a questa nobile causa. <span class="highlight-text">Ogni piccolo gesto conta, e insieme possiamo fare la differenza.</span></p> 
-                  </div>
-                </div>
+      <div class="row justify-content-center justify-content-lg-start mx-1 mx-sm-3">
+        <div class="tab-content border p-0 sl-bg-avocado">
 
-                <div class="sl-form-flip flex-shrink-0">
-                  <!--frontside-->                  
-                  <form class="sl-form sl-bg-peach border p-4 front side">
-                    <div class="form-group pb-3">
-                      <label class="text-style-h6 pb-2" for="name-resocks">Nome</label>
-                      <input type="text" class="form-control mt-1" name="nome" placeholder="" id="name-resocks">
-                    </div>
-                    <div class="form-group pb-3 pt-2">
-                      <label class="text-style-h6 pb-2" for="phone-resocks">Telefono</label>
-                      <input type="text" class="form-control mt-1" name="telefono" placeholder="" id="phone-resocks">
-                    </div>
-                    <div class="form-group pb-3 pt-2">
-                      <label class="text-style-h6 pb-2" for="email-resocks">Email</label>
-                      <input type="email" class="form-control mt-1" name="email" placeholder="" id="email-resocks">
-                    </div>
-                    <div class="form-group pb-3 pt-2">
-                      <label class="text-style-h6 pb-2" for="resocks-reason">Motivo del Reso Galaxy</label>
-                      <textarea class="form-control mt-1" id="resocks-reason" rows="5"></textarea>
-                    </div>
-                    <button type="submit" class="sl-btn-tertiary text-style-button mt-2">Contattaci</button>
-                  </form>
-                  <!--backside-->
-                  <div class="sl-bg-fig p-4 d-flex flex-column justify-content-between border back side">
-                    <div class="d-flex flex-column justify-content-center ">
-                      <img src="img/contact/Aircraft.png" alt="This is the image of an aircraft">
-                      <h4 class="text-style-h4 pt-3"><span class="sl-color-kiwi" >Grazie</span> di far parte di<br>questa avventura<br>sostenibile. </h4>
-                      <p class="text-style-body-copy"></p>
-                    </div>
-                    <a class="sl-btn-tertiary text-style-button mt-2 text-center">Hai altro da dirci?</a>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-
-            <!--form 2-->
-            <div class="tab-pane sl-form-tab-pane fade p-3 p-sm-5" id="Collhub">
-              
-              <div class="d-flex justify-content-between flex-column flex-lg-row gap-5">
-                <div class="sl-form-text w-100 d-flex flex-column">
-                  <h4 class="text-style-h4 mb-3">Sii il nostro compagno di avventure nella conquista del mercato intergalattico</h4>
-                  <div class="sl-form-body w-100 d-flex flex-column gap-4">
-                    <p class="text-style-body-copy m-0">Se condividi la nostra passione per l'unicità e l'avanguardia, potremmo formare un duo perfetto per un'avventura nel mondo della moda! Ecco tre ragioni per unirti a noi:</p>
-                    <p class="text-style-body-copy m-0">
-                      <img src="img/contact/star-list-item.png" alt="This is a star-list-item" class="star-list-img">
-                      La nostra collezione è unica nel suo genere, e ciascun paio di calze è un'opera di originalità e stile che pone il nostro cliente sempre al centro dell'attenzione. Collaborare con noi ti farà spiccare in mezzo ad un pubblico intergalattico.
-                    </p>
-                    <p class="text-style-body-copy m-0">
-                      <img src="img/contact/star-list-item.png" alt="This is a star-list-item" class="star-list-img">
-                      Crediamo in una creatività libera e ci piace sperimentare idee audaci e stravaganti. Collaborare con noi significa immergersi in un mondo di possibilità illimitate, dove ogni idea, anche la più insolita, può diventare un capolavoro.
-                    </p> 
-                    <p class="text-style-body-copy m-0">
-                      <img src="img/contact/star-list-item.png" alt="This is a star-list-item" class="star-list-img">
-                      Per realizzare le nostre calze di alta qualità utilizziamo una tecnologia all’avanguardia, di cui potrai usufruire anche tu per raggiungere lo stesso livello di eccellenza. I prodotti che realizzeremo insieme non saranno soltanto alla moda, ma anche comodi e resistenti.
-                    </p> 
-                    <p class="last-paragraph text-style-body-copy m-0">Siamo entusiasti di esplorare nuovi confini e di creare insieme qualcosa di veramente straordinario. <span class="highlight-text">Contattaci oggi stesso per intraprendere questo emozionante viaggio insieme!</span></p> 
-                    </div>
-                </div>
-
-                <div class="sl-form-flip flex-shrink-0">
-                  <!--frontside-->                  
-                  <form class="sl-form sl-bg-tangerine border rounded p-4 front side">
-                    <div class="form-group pb-3">
-                      <label class="text-style-h6 pb-2" for="name-collub">Nome</label>
-                      <input type="text" class="form-control mt-1" name="nome" placeholder="" id="name-collub">
-                    </div>
-                    <div class="form-group pb-3 pt-2">
-                      <label class="text-style-h6 pb-2" for="phone-collhub">Telefono</label>
-                      <input type="text" class="form-control mt-1" name="telefono" placeholder="" id="phone-collhub">
-                    </div>
-                    <div class="form-group pb-3 pt-2">
-                      <label class="text-style-h6 pb-2" for="email-collhub">Email</label>
-                      <input type="email" class="form-control mt-1" name="email" placeholder="" id="email-collhub">
-                    </div>
-                    <div class="form-group pb-3 pt-2">
-                      <label class="text-style-h6 pb-2" for="collabIdea">Idee per la collab</label>
-                      <textarea class="form-control mt-1" id="collabIdea" rows="5"></textarea>
-                    </div>
-                    <button type="submit" class="sl-btn-tertiary text-style-button mt-2">Contattaci</button>
-                  </form>
-                  <!--backside-->
-                  <div class="sl-bg-fig p-4 d-flex flex-column justify-content-between border rounded back side">
-                    <div class="d-flex flex-column justify-content-center ">
-                      <img src="img/contact/Aircraft.png" alt="This is the image of an aircraft">
-                      <h4 class="text-style-h4 pt-3"><span class="sl-color-kiwi" >Grazie</span> di far parte di<br>questa avventura<br>sostenibile. </h4>
-                      <p class="text-style-body-copy"></p>
-                    </div>
-                    <a class="sl-btn-tertiary text-style-button mt-2 text-center">Hai altro da dirci?</a>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-
-      
-    </section>
-
-    <section class="sl-map">
-      <div class="sl-yellow"></div>
-    </section>    
-
-
-    <!-- Footer -->
-    <footer  class="footer container-fluid px-3 px-sm-4 sl-bg-avocado border-top">
-      
-        <div class="pb-5 py-4 mb-5">
-          <img class="py-4" src="img/logo/Logo-sockslord.png" width="100%" alt="This is Sockslord's logo"/>
-          <div class="d-flex flex-row justify-content-between align-items-center py-4">
-            <ul class="nav d-flex flex-column flex-xl-row gap-4">
-              <li class="nav-item">
-                <a class="nav-link px-xl-3 p-0" href="2_product.html">Product</a>
+          <div class="sl-form-nav-tab p-0 position-relative">
+            <ul class="nav nav-tabs border-0">
+              <li class="nav-item tab-resocks sl-bg-avocado">
+                <a href="#Resocks" class="nav-link d-flex justify-content-center mb-0 pt-3 pb-2 active text-style-h2"
+                  data-bs-toggle="tab">Resocks</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link px-xl-3 p-0" href="4_emporium.html">Emporium</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-xl-3 p-0" href="5_sockslab.html">SocksLab</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-xl-3 p-0" aria-current="page" href="1_aboutus.html">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-xl-3 p-0" href="3_contact.html">Contact</a>
+              <li class="nav-item tab-collhub sl-bg-avocado">
+                <a href="#Collhub" class="nav-link d-flex justify-content-center mb-0 pt-3 pb-2 text-style-h2"
+                  data-bs-toggle="tab">Collhub</a>
               </li>
             </ul>
-            <div class="d-flex flex-column flex-xl-row gap-3 gap-lg-4">
-              <img class="footer-icon" src="img/icon/Icon-footer-1.svg" alt="This is the find us icon">
-              <img class="footer-icon" src="img/icon/Icon-footer-2.svg" alt="This is the review icon">
-              <img class="footer-icon" src="img/icon/Icon-footer-3.svg" alt="This is the call us icon">
-              <img class="footer-icon" src="img/icon/Icon-footer-4.svg" alt="This is the star us icon">
+          </div>
+
+          <!--form 1-->
+          <div class="tab-pane sl-form-tab-pane fade show active p-3 p-sm-5" id="Resocks">
+
+            <div class="d-flex justify-content-between flex-column flex-lg-row gap-5">
+              <div class="sl-form-text w-100 d-flex flex-column">
+                <h4 class="text-style-h4 mb-3">Restituzione, Riparazione, e Riciclo per un universo sostenibile</h4>
+                <div class="sl-form-body w-100 d-flex flex-column gap-4">
+                  <p class="text-style-body-copy m-0">Restituisci le tue calze e contribuisci a rendere il nostro
+                    universo un posto migliore, un paio di calze alla volta! Puoi restituire il prodotto per motivi
+                    diversi:</p>
+                  <div class="sl-text-list d-flex flex-column gap-2">
+                    <h5 class="text-style-h5 m-0">
+                      <img src="img/contact/star-list-item.png" alt="This is a star-list-item" class="star-list-img">
+                      Un refresh stellare
+                    </h5>
+                    <p class="text-style-body-copy m-0">Le tue calze hanno viaggiato per anni luce e mostrano i segni
+                      del tempo? Hai voglia di aggiungere una nuova funzionalità o sostituire quelle già presenti?
+                      Restituiscile e noi ci occuperemo di apportare modifiche o riparazioni su misura.</p>
+                  </div>
+                  <div class="d-flex flex-column gap-2">
+                    <h5 class="text-style-h5 m-0">
+                      <img src="img/contact/star-list-item.png" alt="This is a star-list-item" class="star-list-img">
+                      Uno smaltimento particellare
+                    </h5>
+                    <p class="text-style-body-copy m-0">Ti sei stufato delle tue calze e preferisci acquistarne un
+                      modello nuovo di zecca, ma non vuoi inquinare la nostra galassia? Non preoccuparti, ci pensiamo
+                      noi a smaltirle in maniera ecologica! Abbiamo ideato un processo ad hoc che, con poca energia,
+                      disintegra le calze in minuscole particelle che poi riutilizziamo per i nostri nuovi prodotti.</p>
+                  </div>
+                  <p class="last-paragraph text-style-body-copy m-0">La sostenibilità è ad un portale da te. Compila il
+                    form e dai il tuo contributo a questa nobile causa. <span class="highlight-text">Ogni piccolo gesto
+                      conta, e insieme possiamo fare la differenza.</span></p>
+                </div>
+              </div>
+
+              <div class="sl-form-flip flex-shrink-0">
+                <!--frontside-->
+                <form class="sl-form sl-bg-peach border p-4 front side">
+                  <div class="form-group pb-3">
+                    <label class="text-style-h6 pb-2" for="name-resocks">Nome</label>
+                    <input type="text" class="form-control mt-1" name="nome" placeholder="" id="name-resocks">
+                  </div>
+                  <div class="form-group pb-3 pt-2">
+                    <label class="text-style-h6 pb-2" for="phone-resocks">Telefono</label>
+                    <input type="text" class="form-control mt-1" name="telefono" placeholder="" id="phone-resocks">
+                  </div>
+                  <div class="form-group pb-3 pt-2">
+                    <label class="text-style-h6 pb-2" for="email-resocks">Email</label>
+                    <input type="email" class="form-control mt-1" name="email" placeholder="" id="email-resocks">
+                  </div>
+                  <div class="form-group pb-3 pt-2">
+                    <label class="text-style-h6 pb-2" for="resocks-reason">Motivo del Reso Galaxy</label>
+                    <textarea class="form-control mt-1" id="resocks-reason" rows="5"></textarea>
+                  </div>
+                  <button type="submit" class="sl-btn-tertiary text-style-button mt-2">Contattaci</button>
+                </form>
+                <!--backside-->
+                <div class="sl-bg-fig p-4 d-flex flex-column justify-content-between border back side">
+                  <div class="d-flex flex-column justify-content-center ">
+                    <img src="img/contact/Aircraft.png" alt="This is the image of an aircraft">
+                    <h4 class="text-style-h4 pt-3"><span class="sl-color-kiwi">Grazie</span> di far parte di<br>questa
+                      avventura<br>sostenibile. </h4>
+                    <p class="text-style-body-copy"></p>
+                  </div>
+                  <a class="sl-btn-tertiary text-style-button mt-2 text-center">Hai altro da dirci?</a>
+                </div>
+              </div>
+
             </div>
           </div>
+
+          <!--form 2-->
+          <div class="tab-pane sl-form-tab-pane fade p-3 p-sm-5" id="Collhub">
+
+            <div class="d-flex justify-content-between flex-column flex-lg-row gap-5">
+              <div class="sl-form-text w-100 d-flex flex-column">
+                <h4 class="text-style-h4 mb-3">Sii il nostro compagno di avventure nella conquista del mercato
+                  intergalattico</h4>
+                <div class="sl-form-body w-100 d-flex flex-column gap-4">
+                  <p class="text-style-body-copy m-0">Se condividi la nostra passione per l'unicità e l'avanguardia,
+                    potremmo formare un duo perfetto per un'avventura nel mondo della moda! Ecco tre ragioni per unirti
+                    a noi:</p>
+                  <p class="text-style-body-copy m-0">
+                    <img src="img/contact/star-list-item.png" alt="This is a star-list-item" class="star-list-img">
+                    La nostra collezione è unica nel suo genere, e ciascun paio di calze è un'opera di originalità e
+                    stile che pone il nostro cliente sempre al centro dell'attenzione. Collaborare con noi ti farà
+                    spiccare in mezzo ad un pubblico intergalattico.
+                  </p>
+                  <p class="text-style-body-copy m-0">
+                    <img src="img/contact/star-list-item.png" alt="This is a star-list-item" class="star-list-img">
+                    Crediamo in una creatività libera e ci piace sperimentare idee audaci e stravaganti. Collaborare con
+                    noi significa immergersi in un mondo di possibilità illimitate, dove ogni idea, anche la più
+                    insolita, può diventare un capolavoro.
+                  </p>
+                  <p class="text-style-body-copy m-0">
+                    <img src="img/contact/star-list-item.png" alt="This is a star-list-item" class="star-list-img">
+                    Per realizzare le nostre calze di alta qualità utilizziamo una tecnologia all’avanguardia, di cui
+                    potrai usufruire anche tu per raggiungere lo stesso livello di eccellenza. I prodotti che
+                    realizzeremo insieme non saranno soltanto alla moda, ma anche comodi e resistenti.
+                  </p>
+                  <p class="last-paragraph text-style-body-copy m-0">Siamo entusiasti di esplorare nuovi confini e di
+                    creare insieme qualcosa di veramente straordinario. <span class="highlight-text">Contattaci oggi
+                      stesso per intraprendere questo emozionante viaggio insieme!</span></p>
+                </div>
+              </div>
+
+              <div class="sl-form-flip flex-shrink-0">
+                <!--frontside-->
+                <form class="sl-form sl-bg-tangerine border rounded p-4 front side">
+                  <div class="form-group pb-3">
+                    <label class="text-style-h6 pb-2" for="name-collub">Nome</label>
+                    <input type="text" class="form-control mt-1" name="nome" placeholder="" id="name-collub">
+                  </div>
+                  <div class="form-group pb-3 pt-2">
+                    <label class="text-style-h6 pb-2" for="phone-collhub">Telefono</label>
+                    <input type="text" class="form-control mt-1" name="telefono" placeholder="" id="phone-collhub">
+                  </div>
+                  <div class="form-group pb-3 pt-2">
+                    <label class="text-style-h6 pb-2" for="email-collhub">Email</label>
+                    <input type="email" class="form-control mt-1" name="email" placeholder="" id="email-collhub">
+                  </div>
+                  <div class="form-group pb-3 pt-2">
+                    <label class="text-style-h6 pb-2" for="collabIdea">Idee per la collab</label>
+                    <textarea class="form-control mt-1" id="collabIdea" rows="5"></textarea>
+                  </div>
+                  <button type="submit" class="sl-btn-tertiary text-style-button mt-2">Contattaci</button>
+                </form>
+                <!--backside-->
+                <div class="sl-bg-fig p-4 d-flex flex-column justify-content-between border rounded back side">
+                  <div class="d-flex flex-column justify-content-center ">
+                    <img src="img/contact/Aircraft.png" alt="This is the image of an aircraft">
+                    <h4 class="text-style-h4 pt-3"><span class="sl-color-kiwi">Grazie</span> di far parte di<br>questa
+                      avventura<br>sostenibile. </h4>
+                    <p class="text-style-body-copy"></p>
+                  </div>
+                  <a class="sl-btn-tertiary text-style-button mt-2 text-center">Hai altro da dirci?</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
-        <div class="d-flex justify-content-center pt-5 mt-5 pb-2">
-          <a class="px-sm-4 px-2 py-0 text-style-body-copy-small" href="#">Biscotti spaziali</a>
-          <a class="px-sm-4 px-2 py-0 text-style-body-copy-small" href="#">Privacy intergalattica</a>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="sl-map">
+    <div class="sl-yellow"></div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer container-fluid px-3 px-sm-4 sl-bg-avocado border-top">
+
+    <div class="pb-5 py-4 mb-5">
+      <img class="py-4" src="img/logo/Logo-sockslord.png" width="100%" alt="This is Sockslord's logo" />
+      <div class="d-flex flex-row justify-content-between align-items-center py-4">
+        <ul class="nav d-flex flex-column flex-xl-row gap-4">
+          <li class="nav-item">
+            <a class="nav-link px-xl-3 p-0" href="2_product.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-xl-3 p-0" href="4_emporium.html">Emporium</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-xl-3 p-0" href="5_sockslab.html">SocksLab</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-xl-3 p-0" aria-current="page" href="1_aboutus.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-xl-3 p-0" href="3_contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex flex-column flex-xl-row gap-3 gap-lg-4">
+          <img class="footer-icon" src="img/icon/Icon-footer-1.svg" alt="This is the find us icon">
+          <img class="footer-icon" src="img/icon/Icon-footer-2.svg" alt="This is the review icon">
+          <img class="footer-icon" src="img/icon/Icon-footer-3.svg" alt="This is the call us icon">
+          <img class="footer-icon" src="img/icon/Icon-footer-4.svg" alt="This is the star us icon">
         </div>
-      </footer>
-  
-    </body>
-  </html>
-  
+      </div>
+    </div>
+    <div class="d-flex justify-content-center pt-5 mt-5 pb-2">
+      <a class="px-sm-4 px-2 py-0 text-style-body-copy-small" href="#">Biscotti spaziali</a>
+      <a class="px-sm-4 px-2 py-0 text-style-body-copy-small" href="#">Privacy intergalattica</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

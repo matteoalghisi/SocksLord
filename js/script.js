@@ -50,25 +50,25 @@ $(document).ready(function () {
         });
     });
 
-//script for animation of aircraft in about us (use different path for different breakpoint)
+    //script for animation of aircraft in about us (use different path for different breakpoint)
 
-if (window.matchMedia("(min-width: 1400px)").matches) {
-    $(".section-aboutus-islands .container").append($('<svg class=" position-absolute sl-path-svg" viewBox="0 0 150 390" xmlns="http://www.w3.org/2000/svg"><path preserveAspectRatio="none" class="path" d="M 153.489 1.65 C 98.118 34.193 6.164 21.172 6.02 69.919 C 5.88 117.385 112.744 99.319 112.744 148.744 C 112.744 191.403 11.501 171.976 3.174 235.105 C -3.099 282.66 145.044 243.099 156.126 391.524"></path></svg>'));
-} else{
-    if (window.matchMedia("(min-width: 1200px)").matches) {
-        $(".section-aboutus-islands .container").append($('<svg class=" position-absolute sl-path-svg" viewBox="0 0 150 390" xmlns="http://www.w3.org/2000/svg"><path preserveAspectRatio="none" class="path" d="M 148.024 -28.448 C 105.897 13.572 6.29 18.628 6.174 64.95 C 6.025 124.366 112.97 101.023 112.744 151.106 C 112.518 201.188 19.41 176.226 3.174 238.618 C -13.062 301.009 143.934 278.911 155.608 397.121" style="fill: none; stroke: rgb(186, 218, 85);"></path></svg>'));
+    if (window.matchMedia("(min-width: 1400px)").matches) {
+        $(".section-aboutus-islands .container").append($('<svg class=" position-absolute sl-path-svg" viewBox="0 0 150 390" xmlns="http://www.w3.org/2000/svg"><path preserveAspectRatio="none" class="path" d="M 153.489 1.65 C 98.118 34.193 6.164 21.172 6.02 69.919 C 5.88 117.385 112.744 99.319 112.744 148.744 C 112.744 191.403 11.501 171.976 3.174 235.105 C -3.099 282.66 145.044 243.099 156.126 391.524"></path></svg>'));
     } else {
-        if (window.matchMedia("(min-width: 768px)").matches) {
-            $(".section-aboutus-islands .container").append($('<svg class=" d-none d-md-block d-xl-none position-absolute sl-path-svg" viewBox="0 0 80 495" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path class="path" id="path" d="M 113.881 -55.697 C 101.033 48.202 14.459 17.138 14.459 62.389 C 14.459 107.639 41.11 105.169 41.11 149.535 C 41.11 193.899 12.622 195.03 11.146 239.493 C 9.671 283.957 35.792 284.482 36.875 328.552 C 37.957 372.62 9.502 382.544 14.704 424.833 C 19.906 467.122 88.437 458.081 92.355 522.398"  transform="matrix(1, 0, 0, 1, -1.4210854715202004e-14, 0)"/></svg>'));
-        }
-        else {
-            if (window.matchMedia("(min-width: 360px)").matches) {
-                $(".section-aboutus-islands .container").append($('  <svg class="position-absolute sl-path-svg" viewBox="0 0 60 530" xmlns="http://www.w3.org/2000/svg"><path class="path" id="path" d="M 59.121 1.97 C 50.41 16.816 23.6 4.134 23.6 42.855 C 23.6 86.923 8.158 85.313 8.349 102.387 C 8.54 119.46 26.778 117.785 25.825 146.907 C 24.872 176.028 6.953 171.775 8.349 192.843 C 8.348 206.696 25.825 215.392 26.97 234.077 C 28.115 252.762 3.736 276.083 3.736 286.91 C 3.736 307.024 26.97 305.271 26.97 335.745 C 26.97 366.22 8.983 367.977 8.349 389.239 C 7.715 410.497 26.831 408.969 26.831 441.635 C 26.831 456.793 6.582 473.834 11.924 487.993 C 16.674 500.583 69.904 524.869 69.904 524.869"></path></svg>'));
+        if (window.matchMedia("(min-width: 1200px)").matches) {
+            $(".section-aboutus-islands .container").append($('<svg class=" position-absolute sl-path-svg" viewBox="0 0 150 390" xmlns="http://www.w3.org/2000/svg"><path preserveAspectRatio="none" class="path" d="M 148.024 -28.448 C 105.897 13.572 6.29 18.628 6.174 64.95 C 6.025 124.366 112.97 101.023 112.744 151.106 C 112.518 201.188 19.41 176.226 3.174 238.618 C -13.062 301.009 143.934 278.911 155.608 397.121" style="fill: none; stroke: rgb(186, 218, 85);"></path></svg>'));
+        } else {
+            if (window.matchMedia("(min-width: 768px)").matches) {
+                $(".section-aboutus-islands .container").append($('<svg class=" d-none d-md-block d-xl-none position-absolute sl-path-svg" viewBox="0 0 80 495" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path class="path" id="path" d="M 113.881 -55.697 C 101.033 48.202 14.459 17.138 14.459 62.389 C 14.459 107.639 41.11 105.169 41.11 149.535 C 41.11 193.899 12.622 195.03 11.146 239.493 C 9.671 283.957 35.792 284.482 36.875 328.552 C 37.957 372.62 9.502 382.544 14.704 424.833 C 19.906 467.122 88.437 458.081 92.355 522.398"  transform="matrix(1, 0, 0, 1, -1.4210854715202004e-14, 0)"/></svg>'));
             }
             else {
+                if (window.matchMedia("(min-width: 360px)").matches) {
+                    $(".section-aboutus-islands .container").append($('  <svg class="position-absolute sl-path-svg" viewBox="0 0 60 530" xmlns="http://www.w3.org/2000/svg"><path class="path" id="path" d="M 59.121 1.97 C 50.41 16.816 23.6 4.134 23.6 42.855 C 23.6 86.923 8.158 85.313 8.349 102.387 C 8.54 119.46 26.778 117.785 25.825 146.907 C 24.872 176.028 6.953 171.775 8.349 192.843 C 8.348 206.696 25.825 215.392 26.97 234.077 C 28.115 252.762 3.736 276.083 3.736 286.91 C 3.736 307.024 26.97 305.271 26.97 335.745 C 26.97 366.22 8.983 367.977 8.349 389.239 C 7.715 410.497 26.831 408.969 26.831 441.635 C 26.831 456.793 6.582 473.834 11.924 487.993 C 16.674 500.583 69.904 524.869 69.904 524.869"></path></svg>'));
+                }
+                else {
+                }
             }
         }
-    }
     }
     //end jquery script
 });
@@ -91,46 +91,46 @@ document.addEventListener("DOMContentLoaded", (event) => {
     let xValue;
     let rValue;
 
-    if (minWidth1400.matches){
+    if (minWidth1400.matches) {
         //992>
         xValue = "-410px";
         yValue = 725;
         rValue = 50;
-    } else{
-        if (minWidth1200.matches){
+    } else {
+        if (minWidth1200.matches) {
             //992>
             xValue = "-370px";
             yValue = 725;
             rValue = 50;
-        } else{
-        if (minWidth992.matches){
-            //992>
-            xValue = "-285px";
-            yValue = 630;
-            rValue = 50;
-        } else{
-            if (minWidth768.matches){
-                //768-992
-                xValue = "-260px";
-                yValue = 395;
+        } else {
+            if (minWidth992.matches) {
+                //992>
+                xValue = "-285px";
+                yValue = 630;
                 rValue = 50;
-            } else{
-                if (minWidth576.matches){
-                    xValue = "-230px";
+            } else {
+                if (minWidth768.matches) {
+                    //768-992
+                    xValue = "-260px";
                     yValue = 395;
                     rValue = 50;
-                } else{
-                    xValue = "-120px";
-                    yValue = 325;
-                    rValue = 50;
+                } else {
+                    if (minWidth576.matches) {
+                        xValue = "-230px";
+                        yValue = 395;
+                        rValue = 50;
+                    } else {
+                        xValue = "-120px";
+                        yValue = 325;
+                        rValue = 50;
                     }
                 }
             }
         }
-    }             
-        
+    }
+
     let tlSm = gsap.timeline({
-        scrollTrigger: { 
+        scrollTrigger: {
             trigger: ".aircraft-sm",
             start: "100 center",
             end: "800 center",
@@ -181,13 +181,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
     ScrollTrigger.create({
-       trigger: ".sl-card-main",
-       start: `top ${slCardMainStart}px`,
-       end: (self) => self.previous().end,
-       pin: true,
-       markers: false
+        trigger: ".sl-card-main",
+        start: `top ${slCardMainStart}px`,
+        end: (self) => self.previous().end,
+        pin: true,
+        markers: false
     });
-  
+
     //animation for aircraft through islands in about us page
 
     if (window.matchMedia("(min-width: 1200px)").matches) {
@@ -240,7 +240,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 let totalItems = parseInt(sessionStorage.getItem('totalItems')) || 0; // Retrieve the value from sessionStorage or set to 0 if it doesn't exist
 
 // Quantity button Single product
-$(function() {
+$(function () {
     const quantityContainer = $(".quantity");
     const minusBtn = quantityContainer.find(".minus");
     const plusBtn = quantityContainer.find(".plus");
@@ -310,12 +310,12 @@ $(() => {
     // In Single product
     $(".add-cart-single").on("click", () => {
         const value = parseInt($(".input-box").val());
-    
+
         if (!isNaN(value) && value > 0) {
             addCounterSingle(value); // Adds the specified number of items
             addToast()
         } else {
-            console.error("Invalid value:", value); 
+            console.error("Invalid value:", value);
         }
     });
 });
@@ -407,19 +407,19 @@ const filters = {
 };
 
 const products = [
-    { id: 1, name: "Luminares", price: "₹ 433,999", imagePath:"img/emporium/socks/1.svg", collabId: null, colorId: 3, functionId: 3, footId: 2, materialId: 1, stock: 1, href: "4_1_singleproduct_luminares.html" },
+    { id: 1, name: "Luminares", price: "₹ 433,999", imagePath: "img/emporium/socks/1.svg", collabId: null, colorId: 3, functionId: 3, footId: 2, materialId: 1, stock: 1, href: "4_1_singleproduct_luminares.html" },
     { id: 2, name: "Lux x SocksLord", price: "₹ 7380,257", imagePath: "img/emporium/socks/2.svg", collabId: 1, colorId: 2, functionId: 3, footId: 2, materialId: 4, stock: 1, href: "4_2_singleproduct_lux.html" },
     { id: 3, name: "Floaty Footies", price: "₹ 450,257", imagePath: "img/emporium/socks/3.svg", collabId: null, colorId: 1, functionId: 4, footId: 3, materialId: 3, stock: 1, href: "4_3_singleproduct-floaty.html" },
     { id: 4, name: "MystiPockets Sock", price: "₹ 2820", imagePath: "img/emporium/socks/4.svg", collabId: null, colorId: 2, functionId: 2, footId: 3, materialId: 2, stock: 0 },
-    { id: 5, name: "Luminares", price: "₹ 433,999", imagePath:"img/emporium/socks/5.svg", collabId: null, colorId: 1, functionId: 3, footId: 1, materialId: 3, stock: 0 },
+    { id: 5, name: "Luminares", price: "₹ 433,999", imagePath: "img/emporium/socks/5.svg", collabId: null, colorId: 1, functionId: 3, footId: 1, materialId: 3, stock: 0 },
     { id: 6, name: "RouteSocks", price: "₹ 1489,495", imagePath: "img/emporium/socks/6.svg", collabId: null, colorId: 3, functionId: 1, footId: 2, materialId: 4, stock: 0 },
-    { id: 7, name: "Floaty Footies", price: "₹ 450,257", imagePath: "img/emporium/socks/7.svg", collabId: null, colorId: 2, functionId: 4, footId: 2, materialId: 2, stock: 0 }, 
+    { id: 7, name: "Floaty Footies", price: "₹ 450,257", imagePath: "img/emporium/socks/7.svg", collabId: null, colorId: 2, functionId: 4, footId: 2, materialId: 2, stock: 0 },
     { id: 8, name: "MystiPockets Sock", price: "₹ 2820", imagePath: "img/emporium/socks/8.svg", collabId: null, colorId: 3, functionId: 2, footId: 3, materialId: 1, stock: 0 },
     { id: 9, name: "Floaty Footies", price: "₹ 450,257", imagePath: "img/emporium/socks/9.svg", collabId: null, colorId: 3, functionId: 4, footId: 1, materialId: 5, stock: 0 },
     { id: 10, name: "MystiPockets Sock", price: "₹ 2820", imagePath: "img/emporium/socks/10.svg", collabId: null, colorId: 1, functionId: 2, footId: 2, materialId: 1, stock: 0 },
     { id: 11, name: "Zlatanox", price: "₹ 8725,362", imagePath: "img/emporium/socks/11.svg", collabId: 2, colorId: 3, functionId: 4, footId: 2, materialId: 3, stock: 0 },
     { id: 12, name: "RouteSocks", price: "₹ 1489,495", imagePath: "img/emporium/socks/12.svg", collabId: null, colorId: 2, functionId: 1, footId: 3, materialId: 3, stock: 0 },
-    { id: 13, name: "Luminares", price: "₹ 433,999", imagePath:"img/emporium/socks/13.svg", collabId: null, colorId: 2, functionId: 3, footId: 1, materialId: 1, stock: 0 },
+    { id: 13, name: "Luminares", price: "₹ 433,999", imagePath: "img/emporium/socks/13.svg", collabId: null, colorId: 2, functionId: 3, footId: 1, materialId: 1, stock: 0 },
     { id: 14, name: "Lux x SocksLord", price: "₹ 7380,257", imagePath: "img/emporium/socks/14.svg", collabId: 1, colorId: 3, functionId: 3, footId: 1, materialId: 4, stock: 0 },
     { id: 15, name: "RouteSocks", price: "₹ 1489,495", imagePath: "img/emporium/socks/15.svg", collabId: null, colorId: 1, functionId: 1, footId: 2, materialId: 4, stock: 0 },
     { id: 16, name: "MystiPockets Sock", price: "₹ 2820", imagePath: "img/emporium/socks/16.svg", collabId: null, colorId: 2, functionId: 2, footId: 1, materialId: 5, stock: 0 },
@@ -430,19 +430,19 @@ const products = [
     { id: 21, name: "Zlatanox", price: "₹ 8725,362", imagePath: "img/emporium/socks/21.svg", collabId: 2, colorId: 2, functionId: 4, footId: 3, materialId: 3, stock: 0 },
     { id: 22, name: "Floaty Footies", price: "₹ 450,257", imagePath: "img/emporium/socks/22.svg", collabId: null, colorId: 1, functionId: 4, footId: 2, materialId: 1, stock: 0 },
     { id: 23, name: "Lux x SocksLord", price: "₹ 7380,257", imagePath: "img/emporium/socks/23.svg", collabId: 1, colorId: 3, functionId: 3, footId: 2, materialId: 4, stock: 0 },
-    { id: 24, name: "Luminares", price: "₹ 433,999", imagePath:"img/emporium/socks/24.svg", collabId: null, colorId: 2, functionId: 3, footId: 3, materialId: 4, stock: 0 },
+    { id: 24, name: "Luminares", price: "₹ 433,999", imagePath: "img/emporium/socks/24.svg", collabId: null, colorId: 2, functionId: 3, footId: 3, materialId: 4, stock: 0 },
     { id: 25, name: "MystiPockets Sock", price: "₹ 2820", imagePath: "img/emporium/socks/25.svg", collabId: null, colorId: 3, functionId: 2, footId: 2, materialId: 2, stock: 0 },
-    { id: 26, name: "Luminares", price: "₹ 433,999", imagePath:"img/emporium/socks/26.svg", collabId: null, colorId: 2, functionId: 3, footId: 2, materialId: 5, stock: 0 },
+    { id: 26, name: "Luminares", price: "₹ 433,999", imagePath: "img/emporium/socks/26.svg", collabId: null, colorId: 2, functionId: 3, footId: 2, materialId: 5, stock: 0 },
     { id: 27, name: "Floaty Footies", price: "₹ 450,257", imagePath: "img/emporium/socks/27.svg", collabId: null, colorId: 1, functionId: 4, footId: 1, materialId: 2, stock: 0 },
-    { id: 28, name: "Luminares", price: "₹ 433,999", imagePath:"img/emporium/socks/28.svg", collabId: null, colorId: 3, functionId: 3, footId: 2, materialId: 5, stock: 0 },
-    { id: 29, name: "Luminares", price: "₹ 433,999", imagePath:"img/emporium/socks/29.svg", collabId: null, colorId: 2, functionId: 3, footId: 3, materialId: 1, stock: 0 },
+    { id: 28, name: "Luminares", price: "₹ 433,999", imagePath: "img/emporium/socks/28.svg", collabId: null, colorId: 3, functionId: 3, footId: 2, materialId: 5, stock: 0 },
+    { id: 29, name: "Luminares", price: "₹ 433,999", imagePath: "img/emporium/socks/29.svg", collabId: null, colorId: 2, functionId: 3, footId: 3, materialId: 1, stock: 0 },
     { id: 30, name: "Lux x SocksLord", price: "₹ 7380,257", imagePath: "img/emporium/socks/30.svg", collabId: 1, colorId: 3, functionId: 3, footId: 3, materialId: 4, stock: 0 },
     { id: 31, name: "Zlatanox", price: "₹ 8725,362", imagePath: "img/emporium/socks/31.svg", collabId: 2, colorId: 1, functionId: 4, footId: 1, materialId: 3, stock: 0 },
     { id: 32, name: "RouteSocks", price: "₹ 1489,495", imagePath: "img/emporium/socks/32.svg", collabId: null, colorId: 2, functionId: 1, footId: 1, materialId: 2, stock: 0 },
     { id: 33, name: "MystiPockets Sock", price: "₹ 2820", imagePath: "img/emporium/socks/33.svg", collabId: null, colorId: 3, functionId: 2, footId: 3, materialId: 5, stock: 0 },
     { id: 34, name: "MystiPockets Sock", price: "₹ 2820", imagePath: "img/emporium/socks/34.svg", collabId: null, colorId: 1, functionId: 2, footId: 2, materialId: 3, stock: 0 },
     { id: 35, name: "RouteSocks", price: "₹ 1489,495", imagePath: "img/emporium/socks/35.svg", collabId: null, colorId: 2, functionId: 1, footId: 3, materialId: 5, stock: 0 },
-    { id: 36, name: "Luminares", price: "₹ 433,999", imagePath:"img/emporium/socks/36.svg", collabId: null, colorId: 3, functionId: 3, footId: 1, materialId: 2, stock: 0 },
+    { id: 36, name: "Luminares", price: "₹ 433,999", imagePath: "img/emporium/socks/36.svg", collabId: null, colorId: 3, functionId: 3, footId: 1, materialId: 2, stock: 0 },
 ];
 
 const collabs = [{ id: 1, name: "Lux" }, { id: 2, name: "Zlatanox" }];
@@ -466,10 +466,10 @@ $(() => {
     buttonsFunctions = $("#buttons-functions");
     buttonsFeet = $("#buttons-feet");
     buttonsMaterials = $("#buttons-materials");
-    
+
     addProducts(products.slice(0, currentIndex));
-    addFilters();   
-    
+    addFilters();
+
     $(".filter-modal").on("click", (e) => {
         const filterElement = $(e.currentTarget);
         const filterId = filterElement.attr("data-id");
@@ -522,20 +522,20 @@ $(() => {
     })
 
     $('.loadmore').on("click", (e) => {
-        currentIndex += 12; 
-        addProducts(products.slice(0, currentIndex)); 
-        
+        currentIndex += 12;
+        addProducts(products.slice(0, currentIndex));
+
         if (currentIndex >= products.length) {
-            $(".loadmore button").hide(); 
+            $(".loadmore button").hide();
         }
     });
 });
 
 //Button on card
-$(document).on("mouseenter", ".card-emporium", function() {
+$(document).on("mouseenter", ".card-emporium", function () {
     $(this).find(".cart-btn").removeClass("d-none");
 });
-$(document).on("mouseleave", ".card-emporium", function() {
+$(document).on("mouseleave", ".card-emporium", function () {
     $(this).find(".cart-btn").addClass("d-none");
 });
 
@@ -599,9 +599,9 @@ const addProducts = (products) => {
                                             <p class="text-style-h2 text-soldout">Esaurita</p>
                                         </div>
                                     `: "";
-        const z = product.stock > 0 ? ` card-emporium-hover `: "";
-        const w = product.stock > 0 ? ` <a href="${product.href}" class="card-link"></a> `: "";
-                                    
+        const z = product.stock > 0 ? ` card-emporium-hover ` : "";
+        const w = product.stock > 0 ? ` <a href="${product.href}" class="card-link"></a> ` : "";
+
         productsContainer.append(`
             <div class="col-2 col-lg-3 card-emporium d-flex card justify-content-center align-items-center effect-style-shadow sl-card-c ${z}">
                 ${y}
@@ -615,7 +615,7 @@ const addProducts = (products) => {
     });
     // Riconnessione degli eventi
     productsContainer.off("click", ".cart-btn"); // Rimuovi i listener precedenti
-    productsContainer.on("click", ".cart-btn", function() {
+    productsContainer.on("click", ".cart-btn", function () {
         sessionStorage.setItem('totalItems', totalItems);
         updateCounterBadge();
         addToast();
@@ -623,7 +623,7 @@ const addProducts = (products) => {
 }
 
 // Sockslab
-$(function() {
+$(function () {
     $('.sl-button-spacer').width($('.carousel-item').outerWidth());
 });
 
@@ -633,111 +633,111 @@ document.addEventListener('DOMContentLoaded', function () {
     const colorButtons = document.querySelectorAll('#color .btn-filter');
     const materialButtons = document.querySelectorAll('#material .btn-filter');
     const functionalityButtons = document.querySelectorAll('#functionality .btn-filter');
-    
+
     let currentFoot = null;  // Initialize 'default'
     let currentColor = null;  // Initialize empty (color not selected)
     let currentMaterial = null;  // Initialize empty (material not selected)
     let currentFunctionality = null;  // Initialize empty (functionality not selected)
-  
+
     function handleSelection(buttons, currentSelection, attribute) {
-      // `button` è il pulsante su cui è stato cliccato
-      // `buttons` è la lista di tutti i pulsanti dello stesso tipo
-      return function(button) {
-        const selectedValue = button.getAttribute(attribute);
-        const icon = button.querySelector('.icon-filter');
-        const circle = button.querySelector('.circle-filter');
-  
-        // Deselect all
-        buttons.forEach(btn => {
-          btn.classList.remove('filter-sockslab-active');
-          const btnIcon = btn.querySelector('.icon-filter');
-          const btnCircle = btn.querySelector('.circle-filter');
-          if (btnIcon) btnIcon.classList.remove('icon-filter-active');
-          if (btnCircle) btnCircle.classList.remove('circle-filter-active');
-        });
-  
-        if (currentSelection === selectedValue) {
-          // If the button is already selected, deselect it
-          return null;
-        } else {
-          // Otherwise, select the new value
-          button.classList.add('filter-sockslab-active');  // Add the class if selected
-          if (icon) icon.classList.add('icon-filter-active');
-          if (circle) circle.classList.add('circle-filter-active');
-          return selectedValue;
+        // `button` è il pulsante su cui è stato cliccato
+        // `buttons` è la lista di tutti i pulsanti dello stesso tipo
+        return function (button) {
+            const selectedValue = button.getAttribute(attribute);
+            const icon = button.querySelector('.icon-filter');
+            const circle = button.querySelector('.circle-filter');
+
+            // Deselect all
+            buttons.forEach(btn => {
+                btn.classList.remove('filter-sockslab-active');
+                const btnIcon = btn.querySelector('.icon-filter');
+                const btnCircle = btn.querySelector('.circle-filter');
+                if (btnIcon) btnIcon.classList.remove('icon-filter-active');
+                if (btnCircle) btnCircle.classList.remove('circle-filter-active');
+            });
+
+            if (currentSelection === selectedValue) {
+                // If the button is already selected, deselect it
+                return null;
+            } else {
+                // Otherwise, select the new value
+                button.classList.add('filter-sockslab-active');  // Add the class if selected
+                if (icon) icon.classList.add('icon-filter-active');
+                if (circle) circle.classList.add('circle-filter-active');
+                return selectedValue;
+            }
         }
-      }
     }
-  
+
     footButtons.forEach(button => {
-      button.addEventListener('click', function () {
-        currentFoot = handleSelection(footButtons, currentFoot, 'data-foot')(this);
-        updateSockImage();  // Update the image with the selected options
-      });
+        button.addEventListener('click', function () {
+            currentFoot = handleSelection(footButtons, currentFoot, 'data-foot')(this);
+            updateSockImage();  // Update the image with the selected options
+        });
     });
-  
+
     colorButtons.forEach(button => {
-      button.addEventListener('click', function () {
-        currentColor = handleSelection(colorButtons, currentColor, 'data-color')(this);
-        updateSockImage();  // Update the image with the selected options
-      });
+        button.addEventListener('click', function () {
+            currentColor = handleSelection(colorButtons, currentColor, 'data-color')(this);
+            updateSockImage();  // Update the image with the selected options
+        });
     });
-  
+
     materialButtons.forEach(button => {
-      button.addEventListener('click', function () {
-        currentMaterial = handleSelection(materialButtons, currentMaterial, 'data-material')(this);
-        updateSockImage();  // Update the image with the selected options
-      });
+        button.addEventListener('click', function () {
+            currentMaterial = handleSelection(materialButtons, currentMaterial, 'data-material')(this);
+            updateSockImage();  // Update the image with the selected options
+        });
     });
-  
+
     functionalityButtons.forEach(button => {
-      button.addEventListener('click', function () {
-        currentFunctionality = handleSelection(functionalityButtons, currentFunctionality, 'data-functionality')(this);
-        updateSockImage();  // Update the image with the selected options
-      });
+        button.addEventListener('click', function () {
+            currentFunctionality = handleSelection(functionalityButtons, currentFunctionality, 'data-functionality')(this);
+            updateSockImage();  // Update the image with the selected options
+        });
     });
-  
+
     function updateSockImage() {
-      // Build the image path by concatenating foot, color, material, and functionality
-      let newSrc = `img/sockslab/socks/sock_${currentFoot !== null ? currentFoot : 'null'}`;
-      newSrc += `_${currentColor !== null ? currentColor : 'null'}`;
-      newSrc += `_${currentMaterial !== null ? currentMaterial : 'null'}`;
-      newSrc += `_${currentFunctionality !== null ? currentFunctionality : 'null'}`;
-      newSrc += `.svg`;
-  
-      sockImage.setAttribute('src', newSrc);
+        // Build the image path by concatenating foot, color, material, and functionality
+        let newSrc = `img/sockslab/socks/sock_${currentFoot !== null ? currentFoot : 'null'}`;
+        newSrc += `_${currentColor !== null ? currentColor : 'null'}`;
+        newSrc += `_${currentMaterial !== null ? currentMaterial : 'null'}`;
+        newSrc += `_${currentFunctionality !== null ? currentFunctionality : 'null'}`;
+        newSrc += `.svg`;
+
+        sockImage.setAttribute('src', newSrc);
     }
-  });
-  
-    
-  //POPUP 
-  $(document).ready(function() {
-      $(document).off('click', '.add-cart-button').on('click', '.add-cart-button', function() {
+});
+
+
+//POPUP 
+$(document).ready(function () {
+    $(document).off('click', '.add-cart-button').on('click', '.add-cart-button', function () {
         // Add the class cart-icon-active, counter and toast
         const cartIcon = $(".cart-icon").addClass("cart-icon-active");
         addCounter();
         addToast();
-  
+
         // Close popup and remove overlay
         $('#feedbackPopup').remove();
         $('#popupOverlay').remove();
-      });
-  
-  $('#showPopup').on('click', function() {
-    // Find out the current URL of the filtered image
-    const currentSockImageSrc = $('#sockImage').attr('src');
-  
-    // Create a dark overlay
-    const overlay = $('<div>')
-        .attr('id', 'popupOverlay')
-        .addClass('overlay')
-        .css('display', 'block'); // Imposta display a block per visualizzarlo
-  
-    // Create popup
-    const popupSection = $('<section>')
-        .attr('id', 'feedbackPopup')
-        .addClass('feedback-popup')
-        .append(`
+    });
+
+    $('#showPopup').on('click', function () {
+        // Find out the current URL of the filtered image
+        const currentSockImageSrc = $('#sockImage').attr('src');
+
+        // Create a dark overlay
+        const overlay = $('<div>')
+            .attr('id', 'popupOverlay')
+            .addClass('overlay')
+            .css('display', 'block'); // Imposta display a block per visualizzarlo
+
+        // Create popup
+        const popupSection = $('<section>')
+            .attr('id', 'feedbackPopup')
+            .addClass('feedback-popup')
+            .append(`
             <div class="popup sl-bg-avocado effect-style-shadow border d-flex flex-column align-items-center justify-content-center">
                 <div class="item d-flex flex-column justify-content-center align-items-center gap-3">
                     <img id="popupSockImage" src="${currentSockImageSrc}" alt="">
@@ -749,32 +749,32 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
             </div>
         `);
-  
-          // Add overlay and popup to body
-          $('body').append(overlay).append(popupSection);
-  
-          // Add the closing event to the button "Continua a modificare"
-          $('#closePopup').on('click', function() {
-              popupSection.remove();
-              overlay.remove(); // Remove the overlay
-          });
-      });
-  });
-  
+
+        // Add overlay and popup to body
+        $('body').append(overlay).append(popupSection);
+
+        // Add the closing event to the button "Continua a modificare"
+        $('#closePopup').on('click', function () {
+            popupSection.remove();
+            overlay.remove(); // Remove the overlay
+        });
+    });
+});
+
 
 
 //   Contacts
-$(document).ready(function() {
+$(document).ready(function () {
     $('.sl-form-flip').height($('.sl-form').outerHeight());
-    
+
     // Flip when click on "Contattaci"
-    $('form.sl-form').on('submit', function(event) {
+    $('form.sl-form').on('submit', function (event) {
         event.preventDefault(); // Previeni l'invio del form
         $(this).closest('.sl-form-flip').addClass('flipped');
     });
 
     // Re-flip when click on "Hai altro da dirci?"
-    $('.sl-form-flip .back .sl-btn-tertiary').on('click', function(event) {
+    $('.sl-form-flip .back .sl-btn-tertiary').on('click', function (event) {
         event.preventDefault(); // Previeni il comportamento di default del link
         $(this).closest('.sl-form-flip').removeClass('flipped');
     });
